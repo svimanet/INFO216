@@ -1,0 +1,152 @@
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+<2016-03-06T01:00:00>
+      <http://purl.org/dc/terms/abstract>
+              "Skyet" .
+
+<2016-03-04T01:00:00>
+      <http://purl.org/dc/terms/abstract>
+              "Delvis skyet" .
+
+<2016-03-09T07:00:00>
+      <http://purl.org/dc/terms/abstract>
+              "Delvis skyet" .
+
+<2016-03-02T18:00:00>
+      <http://purl.org/dc/terms/abstract>
+              "Snø" .
+
+<2016-03-02T12:00:00>
+      <http://purl.org/dc/terms/abstract>
+              "Skyet" .
+
+<2016-03-06T13:00:00>
+      <http://purl.org/dc/terms/abstract>
+              "Skyet" .
+
+<2016-03-07T07:00:00>
+      <http://purl.org/dc/terms/abstract>
+              "Delvis skyet" .
+
+<2016-03-07T19:00:00>
+      <http://purl.org/dc/terms/abstract>
+              "Delvis skyet" .
+
+<2016-03-08T01:00:00>
+      <http://purl.org/dc/terms/abstract>
+              "Delvis skyet" .
+
+<2016-03-02T00:00:00>
+      <http://purl.org/dc/terms/abstract>
+              "Sludd" .
+
+<2016-03-02T06:00:00>
+      <http://purl.org/dc/terms/abstract>
+              "Regn" .
+
+<2016-03-04T19:00:00>
+      <http://purl.org/dc/terms/abstract>
+              "Skyet" .
+
+<2016-03-06T07:00:00>
+      <http://purl.org/dc/terms/abstract>
+              "Skyet" .
+
+<2016-03-09T01:00:00>
+      <http://purl.org/dc/terms/abstract>
+              "Delvis skyet" .
+
+<2016-03-01T00:00:00>
+      <http://purl.org/dc/terms/abstract>
+              "Skyet" .
+
+<2016-03-04T07:00:00>
+      <http://purl.org/dc/terms/abstract>
+              "Delvis skyet" .
+
+<2016-03-09T13:00:00>
+      <http://purl.org/dc/terms/abstract>
+              "Skyet" .
+
+<2016-03-04T13:00:00>
+      <http://purl.org/dc/terms/abstract>
+              "Delvis skyet" .
+
+<2016-03-03T13:00:00>
+      <http://purl.org/dc/terms/abstract>
+              "Skyet" .
+
+<2016-02-29T15:00:00>
+      <http://purl.org/dc/terms/abstract>
+              "Skyet" .
+
+<2016-03-01T06:00:00>
+      <http://purl.org/dc/terms/abstract>
+              "Snø" .
+
+<2016-03-03T07:00:00>
+      <http://purl.org/dc/terms/abstract>
+              "Skyet" .
+
+<2016-03-08T19:00:00>
+      <http://purl.org/dc/terms/abstract>
+              "Klarvær" .
+
+<2016-03-03T01:00:00>
+      <http://purl.org/dc/terms/abstract>
+              "Skyet" .
+
+<2016-03-06T19:00:00>
+      <http://purl.org/dc/terms/abstract>
+              "Delvis skyet" .
+
+<2016-03-08T07:00:00>
+      <http://purl.org/dc/terms/abstract>
+              "Delvis skyet" .
+
+<2016-03-07T01:00:00>
+      <http://purl.org/dc/terms/abstract>
+              "Delvis skyet" .
+
+<2016-03-01T12:00:00>
+      <http://purl.org/dc/terms/abstract>
+              "Snø" .
+
+<2016-03-07T13:00:00>
+      <http://purl.org/dc/terms/abstract>
+              "Skyet" .
+
+<2016-03-01T18:00:00>
+      <http://purl.org/dc/terms/abstract>
+              "Sludd" .
+
+<2016-03-03T19:00:00>
+      <http://purl.org/dc/terms/abstract>
+              "Delvis skyet" .
+
+<2016-03-05T19:00:00>
+      <http://purl.org/dc/terms/abstract>
+              "Skyet" .
+
+<2016-03-08T13:00:00>
+      <http://purl.org/dc/terms/abstract>
+              "Delvis skyet" .
+
+<2016-03-05T13:00:00>
+      <http://purl.org/dc/terms/abstract>
+              "Skyet" .
+
+<2016-02-29T18:00:00>
+      <http://purl.org/dc/terms/abstract>
+              "Skyet" .
+
+<2016-03-05T07:00:00>
+      <http://purl.org/dc/terms/abstract>
+              "Skyet" .
+
+<2016-03-05T01:00:00>
+      <http://purl.org/dc/terms/abstract>
+              "Delvis skyet" .
