@@ -5,3 +5,4 @@ package no.uib.info216;
  */
 public class JenaTest {
 }
+//hallao
