@@ -3,10 +3,13 @@
  */
 package no.uib.info233.v2016.puz001.Oblig;
 
+import java.io.ObjectOutputStream;
 import org.apache.jena.rdf.model.Model;
 import org.apache.jena.rdf.model.ModelFactory;
 import org.apache.jena.rdf.model.Property;
 import org.apache.jena.rdf.model.Resource;
+import org.apache.jena.riot.Lang;
+import org.apache.jena.riot.system.StreamRDFWriter;
 
 /**
  * @author mariuslillevik
@@ -16,7 +19,9 @@ import org.apache.jena.rdf.model.Resource;
  */
 public class CreatingRdf {
 
-	
+//	private File file = new File("Facebook.rdf");
+//	private StreamRDFWriter writer = new StreamRDFWriter();
+	private ObjectOutputStream os;
 	public void createModel(){
 		
 	Model model = ModelFactory.createDefaultModel();
@@ -49,6 +54,9 @@ public class CreatingRdf {
 			person.addLiteral(events, "1");
 			
 			System.out.println(person);
+			
+			
+			StreamRDFWriter.write(os, model.getGraph(), Lang.TURTLE) ;
 
 	}
 

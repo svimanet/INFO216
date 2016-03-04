@@ -36,7 +36,7 @@ public class Main {
 		user.setOAuthAccessToken(new AccessToken(accessToken));
 		
 		printInterests(user);
-		cr.createModel();
+//		cr.createModel();
 
 	}
 	
