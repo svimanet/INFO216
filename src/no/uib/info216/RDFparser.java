@@ -14,18 +14,13 @@ public class RDFparser {
 
     JenaTest jt = new JenaTest();
 
-    private ArrayList<String> dateFrom;
-    private ArrayList<String> nameTag;
+    private ArrayList<String> dateFrom = jt.getFromtag();
+    private ArrayList<String> nameTag = jt.getNametag();
 
     Model model = ModelFactory.createDefaultModel();
-
-    ArrayList<HashMap<String, String>> listName = jt.getDataStruct();
-    int arrayLength = listName.size();
+    int arrayLength = nameTag.size();
 
     public void createOntology(){
-
-        this.dateFrom = jt.getFromtag();
-        this.nameTag = jt.getNametag();
 
         for(int i = 0; i < arrayLength; i++){
 
@@ -38,10 +33,7 @@ public class RDFparser {
         }
     }
 
-    public RDFparser(){
-
-        createOntology();
-
+    public void writerMethod(){
         OntModel m = ModelFactory.createOntologyModel( OntModelSpec.OWL_MEM, model);
 
         FileWriter out = null;
@@ -55,5 +47,12 @@ public class RDFparser {
                 try {out.close();} catch (IOException ignore) {}
             }
         }
+    }
+
+    public RDFparser(){
+
+        createOntology();
+        writerMethod();
+
     }
 }
