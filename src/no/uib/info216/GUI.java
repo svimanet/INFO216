@@ -10,6 +10,14 @@ import java.awt.*;
  */
 public class GUI extends JPanel{
 
+    private JPanel monday;
+    private JPanel tuesday;
+    private JPanel wednesday;
+    private JPanel thursday;
+    private JPanel friday;
+    private JPanel saturday;
+    private JPanel sunday;
+
     public GUI(){
 
         JFrame spine = new JFrame();
@@ -18,13 +26,13 @@ public class GUI extends JPanel{
         spine.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         spine.setLayout(new FlowLayout());
 
-        JPanel monday = new JPanel();
-        JPanel tuesday = new JPanel();
-        JPanel wednesday = new JPanel();
-        JPanel thursday = new JPanel();
-        JPanel friday = new JPanel();
-        JPanel saturday = new JPanel();
-        JPanel sunday = new JPanel();
+        monday = new JPanel();
+        tuesday = new JPanel();
+        wednesday = new JPanel();
+        thursday = new JPanel();
+        friday = new JPanel();
+        saturday = new JPanel();
+        sunday = new JPanel();
 
         JPanel monday1 = new JPanel();
         monday1.setSize(250, 50);
@@ -79,9 +87,37 @@ public class GUI extends JPanel{
         sunday.add(txtSunday);
     }
 
-    public static void main (String[] args){
-
-        GUI gui = new GUI();
-
+    public JPanel getMonday() {
+        return monday;
     }
+
+    public JPanel getTuesday() {
+        return tuesday;
+    }
+
+    public JPanel getWednesday() {
+        return wednesday;
+    }
+
+    public JPanel getThursday() {
+        return thursday;
+    }
+
+    public JPanel getFriday() {
+        return friday;
+    }
+
+    public JPanel getSaturday() {
+        return saturday;
+    }
+
+    public JPanel getSunday() {
+        return sunday;
+    }
+//
+//    public static void main (String[] args){
+//
+//        GUI gui = new GUI();
+//
+//    }
 }

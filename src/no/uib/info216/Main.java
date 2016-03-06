@@ -8,6 +8,7 @@ public class Main {
     public static void main(String[] args) {
 
         RDFparser rp = new RDFparser();
+        Listener listen = new Listener();
 
     }
 }
