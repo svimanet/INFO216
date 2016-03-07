@@ -55,48 +55,39 @@ public class Interests {
 	public void getInterests(Facebook fb) throws FacebookException {
 
 		for (Television t : fb.getTelevision()) {
-			getTvShows().add(t.getName());
+			tvShows.add(t.getName());
 		}
 
 		for (Movie m : fb.getMovies()) {
-			getMovies().add(m.getName());
+			movies.add(m.getName());
 		}
 
 		for (Music m : fb.getMusic()) {
-			getMusic().add(m.getName());
+			music.add(m.getName());
 		}
 
 		for (Book b : fb.getBooks()) {
-			getBook().add(b.getName());
+			book.add(b.getName());
 		}
 
 		for (Game g : fb.getGames()) {
-			getGames().add(g.getName());
+			games.add(g.getName());
 		}
 
 		for (Event e : fb.getEvents()) {
-			getEvents().add(e.getName());
+			events.add(e.getName());
 
-			for (Like l : fb.getUserLikes()) {
-				getLikes().add(l.getName());
-			}
-
+		for (Like l : fb.getUserLikes()) {
+				likes.add(l.getName());
 		}
 	}
+}
 
 	/**
 	 * @return the tvShows
 	 */
 	public ArrayList<String> getTvShows() {
 		return tvShows;
-	}
-
-	/**
-	 * @param tvShows
-	 *            the tvShows to set
-	 */
-	public void setTvShows(ArrayList<String> tvShows) {
-		this.tvShows = tvShows;
 	}
 
 	/**
@@ -107,26 +98,10 @@ public class Interests {
 	}
 
 	/**
-	 * @param movies
-	 *            the movies to set
-	 */
-	public void setMovies(ArrayList<String> movies) {
-		this.movies = movies;
-	}
-
-	/**
 	 * @return the music
 	 */
 	public ArrayList<String> getMusic() {
 		return music;
-	}
-
-	/**
-	 * @param music
-	 *            the music to set
-	 */
-	public void setMusic(ArrayList<String> music) {
-		this.music = music;
 	}
 
 	/**
@@ -137,26 +112,10 @@ public class Interests {
 	}
 
 	/**
-	 * @param book
-	 *            the book to set
-	 */
-	public void setBook(ArrayList<String> book) {
-		this.book = book;
-	}
-
-	/**
 	 * @return the games
 	 */
 	public ArrayList<String> getGames() {
 		return games;
-	}
-
-	/**
-	 * @param games
-	 *            the games to set
-	 */
-	public void setGames(ArrayList<String> games) {
-		this.games = games;
 	}
 
 	/**
@@ -167,26 +126,9 @@ public class Interests {
 	}
 
 	/**
-	 * @param events
-	 *            the events to set
-	 */
-	public void setEvents(ArrayList<String> events) {
-		this.events = events;
-	}
-
-	/**
 	 * @return the likes
 	 */
 	public ArrayList<String> getLikes() {
 		return likes;
 	}
-
-	/**
-	 * @param likes
-	 *            the likes to set
-	 */
-	public void setLikes(ArrayList<String> likes) {
-		this.likes = likes;
-	}
-
 }

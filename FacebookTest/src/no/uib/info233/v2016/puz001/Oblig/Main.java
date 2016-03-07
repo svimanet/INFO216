@@ -40,18 +40,20 @@ public class Main {
 
 		cr.getIr().getInterests(user);
 		cr.createModel();
-		writeToFile();
+		writeToFile(user);
 	}
 
 	/**
 	 * This methid writes the ontolgy model to a .ttl file. Which is rdt turtle
 	 * syntax.
+	 * @throws FacebookException 
+	 * @throws IllegalStateException 
 	 */
-	public static void writeToFile() {
+	public static void writeToFile(Facebook fb) throws IllegalStateException, FacebookException {
 		FileWriter out = null;
 		try {
-			out = new FileWriter("rdfOut.ttl");
-			m.write(out, "Turtle");
+			out = new FileWriter(fb.getId() + ".ttl");
+			m.write(out, "TURTLE");
 		} catch (IOException e) {
 			e.printStackTrace();
 		} finally {
