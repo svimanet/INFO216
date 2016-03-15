@@ -17,7 +17,7 @@ public class Main {
         gui.getMonday().addMouseListener(new MouseListener() {
             @Override
             public void mouseClicked(MouseEvent e) {
-
+                System.out.println("mandag");
             }
             @Override
             public void mousePressed(MouseEvent e) {}
@@ -32,7 +32,7 @@ public class Main {
         gui.getTuesday().addMouseListener(new MouseListener() {
             @Override
             public void mouseClicked(MouseEvent e) {
-
+                System.out.println("tirsdag");
             }
             @Override
             public void mousePressed(MouseEvent e) {}
@@ -47,7 +47,7 @@ public class Main {
         gui.getWednesday().addMouseListener(new MouseListener() {
             @Override
             public void mouseClicked(MouseEvent e) {
-
+                System.out.println("onsdag");
             }
             @Override
             public void mousePressed(MouseEvent e) {}
@@ -62,7 +62,7 @@ public class Main {
         gui.getThursday().addMouseListener(new MouseListener() {
             @Override
             public void mouseClicked(MouseEvent e) {
-
+                System.out.println("torsdag");
             }
             @Override
             public void mousePressed(MouseEvent e) {}
@@ -77,7 +77,7 @@ public class Main {
         gui.getFriday().addMouseListener(new MouseListener() {
             @Override
             public void mouseClicked(MouseEvent e) {
-
+                System.out.println("fredag");
             }
             @Override
             public void mousePressed(MouseEvent e) {}
@@ -92,7 +92,7 @@ public class Main {
         gui.getSaturday().addMouseListener(new MouseListener() {
             @Override
             public void mouseClicked(MouseEvent e) {
-
+                System.out.println("lørdag");
             }
             @Override
             public void mousePressed(MouseEvent e) {}
@@ -107,7 +107,7 @@ public class Main {
         gui.getSunday().addMouseListener(new MouseListener() {
             @Override
             public void mouseClicked(MouseEvent e) {
-
+                System.out.println("søndag");
             }
             @Override
             public void mousePressed(MouseEvent e) {}
