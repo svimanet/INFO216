@@ -4,11 +4,24 @@ import com.sun.deploy.panel.JavaPanel;
 
 import javax.swing.*;
 import java.awt.*;
+import javax.swing.JTabbedPane;
+import javax.swing.ImageIcon;
+import javax.swing.JLabel;
+import javax.swing.JPanel;
+import javax.swing.JFrame;
+import javax.swing.JComponent;
+import javax.swing.SwingUtilities;
+import javax.swing.UIManager;
+import javax.swing.border.Border;
+import java.awt.BorderLayout;
+import java.awt.Dimension;
+import java.awt.GridLayout;
+import java.awt.event.KeyEvent;
 
 /**
  * Created by svimanet on 05/03/16.
  */
-public class GUI extends JPanel{
+public class GUI extends JPanel {
 
     private JPanel monday;
     private JPanel tuesday;
@@ -18,7 +31,7 @@ public class GUI extends JPanel{
     private JPanel saturday;
     private JPanel sunday;
 
-    public GUI(){
+    public GUI() {
 
         JFrame spine = new JFrame();
         spine.setSize(530, 500);
@@ -39,19 +52,19 @@ public class GUI extends JPanel{
         monday1.setBackground(Color.gray);
 
         JLabel txtMonday = new JLabel("monday");
-        JLabel txtTuesday= new JLabel("tuesday");
+        JLabel txtTuesday = new JLabel("tuesday");
         JLabel txtWednesday = new JLabel("wednesday");
         JLabel txtThursday = new JLabel("thursday");
         JLabel txtFriday = new JLabel("friday");
         JLabel txtSaturday = new JLabel("saturday");
         JLabel txtSunday = new JLabel("sunday");
 
-        monday.setBackground(Color.black);
-        tuesday.setBackground(Color.LIGHT_GRAY);
-        wednesday.setBackground(Color.blue);
-        thursday.setBackground(Color.black.red);
-        friday.setBackground(Color.cyan);
-        saturday.setBackground(Color.gray);
+        monday.setBackground(Color.LIGHT_GRAY);
+        tuesday.setBackground(Color.green);
+        wednesday.setBackground(Color.LIGHT_GRAY);
+        thursday.setBackground(Color.LIGHT_GRAY);
+        friday.setBackground(Color.lightGray);
+        saturday.setBackground(Color.LIGHT_GRAY);
         sunday.setBackground(Color.lightGray);
 
         txtMonday.setPreferredSize(new Dimension(500, 50));
@@ -114,10 +127,4 @@ public class GUI extends JPanel{
     public JPanel getSunday() {
         return sunday;
     }
-//
-//    public static void main (String[] args){
-//
-//        GUI gui = new GUI();
-//
-//    }
 }
