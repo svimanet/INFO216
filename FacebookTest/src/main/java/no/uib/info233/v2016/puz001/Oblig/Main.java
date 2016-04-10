@@ -23,7 +23,6 @@ public class Main {
 	private static String accessToken = "CAAWPYu13aFoBANPxUeh3v3mv5GA5eMv6s69PcpJzWugJu0u5dq8anPeETqOQiaZCeZBhH0AKEcdRDKmpTs9JXQZC0UO2Fzf3lSJ7ZBXsSkMqXQxG3JA4bFHZCQVdtrhG7UYr9BNh6VCbkOoSv43c5QwehhnOZA9aRBij7iNR2ZCZB70veAMajfcc";
 	private static String appToken = "1565029937145946|RVWOId2jQZjW89yHa9fONbi4rto";
 	static Facebook user = new FacebookFactory().getInstance();
-	static ArrayList<String> arrayList = new ArrayList<>();
 	private static CreatingRdf cr = new CreatingRdf();
 	private static OntModel m = ModelFactory.createOntologyModel(OntModelSpec.OWL_MEM, cr.getModel());
 
@@ -44,7 +43,7 @@ public class Main {
 	}
 
 	/**
-	 * This methid writes the ontolgy model to a .ttl file. Which is rdt turtle
+	 * This method writes the ontolgy model to a .ttl file. Which is rdf turtle
 	 * syntax.
 	 * @throws FacebookException 
 	 * @throws IllegalStateException 

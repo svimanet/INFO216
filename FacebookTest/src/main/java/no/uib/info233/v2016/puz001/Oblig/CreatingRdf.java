@@ -57,6 +57,7 @@ public class CreatingRdf {
 	 * @return the model
 	 */
 	public Model getModel() {
+
 		return model;
 	}
 
@@ -65,6 +66,7 @@ public class CreatingRdf {
 	 * @return the ir
 	 */
 	public Interests getIr() {
+
 		return ir;
 	}
 }
