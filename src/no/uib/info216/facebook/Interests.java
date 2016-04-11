@@ -31,19 +31,6 @@ public class Interests {
 	private ArrayList<String> events = new ArrayList<String>();
 	private ArrayList<String> likes = new ArrayList<String>();
 
-	/**
-	 * Constructor for the
-	 * 
-	 * @param shows
-	 * @param movies
-	 * @param music
-	 * @param book
-	 * @param games
-	 * @param events
-	 */
-	public Interests() {
-
-	}
 
 	/**
 	 * This is a simple method which prints all the interests the current user
