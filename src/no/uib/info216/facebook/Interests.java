@@ -1,8 +1,8 @@
 /**
  * 
  */
-package no.uib.info233.v2016.puz001.Oblig;
 
+package no.uib.info216.facebook;
 import java.util.ArrayList;
 
 import facebook4j.Book;

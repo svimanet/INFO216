@@ -1,5 +1,6 @@
 package no.uib.info216;
 
+import com.hp.hpl.jena.mem.ArrayBunch;
 import com.hp.hpl.jena.ontology.OntModel;
 import com.hp.hpl.jena.ontology.OntModelSpec;
 import com.hp.hpl.jena.rdf.model.*;
@@ -16,6 +17,7 @@ public class RDFparser {
 
     private ArrayList<String> dateFrom = jt.getFromtag();
     private ArrayList<String> nameTag = jt.getNametag();
+    private ArrayList<String> windTag = jt.getWindSpeedName();
 
     Model model = ModelFactory.createDefaultModel();
     int arrayLength = nameTag.size();
@@ -26,11 +28,15 @@ public class RDFparser {
 
             String itemdateFrom = this.dateFrom.get(i);
             String itemnameTag = this.nameTag.get(i);
+            String itemwindTag = this.windTag.get(i);
 
             Resource weatherData
                     = model.createResource(itemdateFrom)
-                    .addProperty(DCTerms.abstract_, itemnameTag);
+                    .addProperty(DCTerms.abstract_, itemnameTag)
+                    .addProperty(DCTerms.abstract_, itemwindTag);
         }
+
+
     }
 
     public void writerMethod(){

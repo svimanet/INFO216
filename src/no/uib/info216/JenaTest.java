@@ -111,6 +111,10 @@ public class JenaTest {
         return fromtag;
     }
 
+    public ArrayList<String> getWindSpeedName() {
+        return windSpeedName;
+    }
+
     public ArrayList<HashMap<String, String>> getDataStruct() {
         return dataStruct;
     }
