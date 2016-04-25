@@ -6,6 +6,10 @@
 .idea/vcs.xml
 .idea/jsLibraryMappings.xml
 
+
+# Python
+.rope*
+
 # Sensitive or high-churn files:
 .idea/dataSources.ids
 .idea/dataSources.xml
@@ -42,7 +46,6 @@ crashlytics-build.properties
 fabric.properties
 
 .metadata
-bin/
 tmp/
 *.tmp
 *.bak
@@ -51,6 +54,7 @@ tmp/
 local.properties
 .settings/
 .loadpath
+main.iml
 
 # Eclipse Core
 .project
