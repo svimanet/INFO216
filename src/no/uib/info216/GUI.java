@@ -1,130 +1,121 @@
 package no.uib.info216;
 
-import com.sun.deploy.panel.JavaPanel;
-
 import javax.swing.*;
-import java.awt.*;
-import javax.swing.JTabbedPane;
-import javax.swing.ImageIcon;
-import javax.swing.JLabel;
-import javax.swing.JPanel;
-import javax.swing.JFrame;
-import javax.swing.JComponent;
-import javax.swing.SwingUtilities;
-import javax.swing.UIManager;
-import javax.swing.border.Border;
 import java.awt.BorderLayout;
 import java.awt.Dimension;
 import java.awt.GridLayout;
 import java.awt.event.KeyEvent;
 
 /**
- * Created by svimanet on 05/03/16.
+ * Created 04.04.2016.
+ * Class for setting up the GUI and making it all visible.
+ *
  */
-public class GUI extends JPanel {
+public class GUI extends JPanel{
 
-    private JPanel monday;
-    private JPanel tuesday;
-    private JPanel wednesday;
-    private JPanel thursday;
-    private JPanel friday;
-    private JPanel saturday;
-    private JPanel sunday;
+    private JTextArea tab1 = new JTextArea("Tab 1");
+    private JTextArea tab2 = new JTextArea("Tab 2");
+    private JTextArea tab3 = new JTextArea("Tab 3");
+    private JTextArea tab4 = new JTextArea("Tab 4");
+    private JTextArea tab5 = new JTextArea("Tab 5");
+    private JTextArea tab6 = new JTextArea("Tab 6");
+    private JTextArea tab7 = new JTextArea("Tab 7");
+
+    private JPanel panel1 = new JPanel();
+    private JPanel panel2 = new JPanel();
+    private JPanel panel3 = new JPanel();
+    private JPanel panel4 = new JPanel();
+    private JPanel panel5 = new JPanel();
+    private JPanel panel6 = new JPanel();
+    private JPanel panel7 = new JPanel();
 
     public GUI() {
 
-        JFrame spine = new JFrame();
-        spine.setSize(530, 500);
-        spine.setVisible(true);
-        spine.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        spine.setLayout(new FlowLayout());
+        super(new GridLayout(1, 3));
 
-        monday = new JPanel();
-        tuesday = new JPanel();
-        wednesday = new JPanel();
-        thursday = new JPanel();
-        friday = new JPanel();
-        saturday = new JPanel();
-        sunday = new JPanel();
+        JTabbedPane tabbedPane = new JTabbedPane();
+        ImageIcon icon = createImageIcon("images/middle.gif");
+        tabbedPane.setPreferredSize(new Dimension(600, 300));
 
-        JPanel monday1 = new JPanel();
-        monday1.setSize(250, 50);
-        monday1.setBackground(Color.gray);
+        //JComponent panel1 = makeTextPanel("-- micromandag-Det Akademiske Kvarter sol-11-celsius  ");
+        tabbedPane.addTab("Mandag", icon, panel1, "Mandag");
+        tabbedPane.setMnemonicAt(0, KeyEvent.VK_1);
+        panel1.add(tab1);
 
-        JLabel txtMonday = new JLabel("monday");
-        JLabel txtTuesday = new JLabel("tuesday");
-        JLabel txtWednesday = new JLabel("wednesday");
-        JLabel txtThursday = new JLabel("thursday");
-        JLabel txtFriday = new JLabel("friday");
-        JLabel txtSaturday = new JLabel("saturday");
-        JLabel txtSunday = new JLabel("sunday");
+        //JComponent panel2 = makeTextPanel("sol-12-celsius");
+        JComponent panel2 = makeTextPanel(tab2.getText());
+        tabbedPane.addTab("Tirsdag", icon, panel2, "Tirsdag");
+        tabbedPane.setMnemonicAt(1, KeyEvent.VK_2);
 
-        monday.setBackground(Color.LIGHT_GRAY);
-        tuesday.setBackground(Color.green);
-        wednesday.setBackground(Color.LIGHT_GRAY);
-        thursday.setBackground(Color.LIGHT_GRAY);
-        friday.setBackground(Color.lightGray);
-        saturday.setBackground(Color.LIGHT_GRAY);
-        sunday.setBackground(Color.lightGray);
+        //JComponent panel3 = makeTextPanel("50% Quiz-Det Akademiske Kvarter");
+        JComponent panel3 = makeTextPanel(tab3.getText());
+        tabbedPane.addTab("Onsdag", icon, panel3, "Onsdag");
+        tabbedPane.setMnemonicAt(2, KeyEvent.VK_3);
 
-        txtMonday.setPreferredSize(new Dimension(500, 50));
-        txtTuesday.setPreferredSize(new Dimension(500, 50));
-        txtWednesday.setPreferredSize(new Dimension(500, 50));
-        txtThursday.setPreferredSize(new Dimension(500, 50));
-        txtFriday.setPreferredSize(new Dimension(500, 50));
-        txtSaturday.setPreferredSize(new Dimension(500, 50));
-        txtSunday.setPreferredSize(new Dimension(500, 50));
+        //JComponent panel4 = makeTextPanel("0% Feministisk initiativ møte-Det Akademiske Kvarter skyet-8-celsius");
+        JComponent panel4 = makeTextPanel(tab4.getText());
+        tabbedPane.addTab("Torsdag", icon, panel4, "Torsdag");
+        tabbedPane.setMnemonicAt(3, KeyEvent.VK_4);
 
-        monday.setSize(500, 50);
-        tuesday.setSize(500, 50);
-        wednesday.setSize(500, 50);
-        thursday.setSize(500, 50);
-        friday.setSize(500, 50);
-        saturday.setSize(500, 50);
-        sunday.setSize(500, 50);
+        //JComponent panel5 = makeTextPanel("10% pysjamas party-kvarteret Regn-5-celsius");
+        JComponent panel5 = makeTextPanel(tab5.getText());
+        tabbedPane.addTab("Fredag", icon, panel5, "Fredag");
+        tabbedPane.setMnemonicAt(4, KeyEvent.VK_5);
 
-        spine.add(monday);
-        spine.add(tuesday);
-        spine.add(wednesday);
-        spine.add(thursday);
-        spine.add(friday);
-        spine.add(saturday);
-        spine.add(sunday);
+        //JComponent panel6 = makeTextPanel("80% Konsert-Verftet Skyet-9-celsius ");
+        JComponent panel6 = makeTextPanel(tab6.getText());
+        tabbedPane.addTab("Lørdag", icon, panel6, "Lørdag");
+        tabbedPane.setMnemonicAt(5, KeyEvent.VK_6);
 
-        monday.add(txtMonday);
-        tuesday.add(txtTuesday);
-        wednesday.add(txtWednesday);
-        thursday.add(txtThursday);
-        friday.add(txtFriday);
-        saturday.add(txtSaturday);
-        sunday.add(txtSunday);
+        //JComponent panel7 = makeTextPanel("100% ingenting-heima kem-bryr-seg");
+        JComponent panel7 = makeTextPanel(tab7.getText());
+        tabbedPane.addTab("Søndag", icon, panel7, "Søndag");
+        tabbedPane.setMnemonicAt(6, KeyEvent.VK_7);
+
+        //Add the tabbed pane to this panel.
+        add(tabbedPane);
+
+        //The following line enables to use scrolling tabs.
+        tabbedPane.setTabLayoutPolicy(JTabbedPane.SCROLL_TAB_LAYOUT);
     }
 
-    public JPanel getMonday() {
-        return monday;
+    protected JComponent makeTextPanel(String text) {
+        JPanel panel = new JPanel(false);
+        JLabel filler = new JLabel(text);
+        filler.setHorizontalAlignment(JLabel.CENTER);
+        panel.setLayout(new GridLayout(1, 1));
+        panel.add(filler);
+        return panel;
     }
 
-    public JPanel getTuesday() {
-        return tuesday;
+    /** Returns an ImageIcon, or null if the path was invalid. */
+    protected static ImageIcon createImageIcon(String path) {
+        java.net.URL imgURL = GUI.class.getResource(path);
+        if (imgURL != null) {
+            return new ImageIcon(imgURL);
+        } else {
+            System.err.println("Couldn't find file: " + path);
+            return null;
+        }
     }
 
-    public JPanel getWednesday() {
-        return wednesday;
-    }
+    /**
+     * Create the GUI and show it.  For thread safety,
+     * this method should be invoked from
+     * the event dispatch thread.
+     */
 
-    public JPanel getThursday() {
-        return thursday;
-    }
 
-    public JPanel getFriday() {
-        return friday;
-    }
+    public static void createAndShowGUI() {
+        //Create and set up the window.
+        JFrame frame = new JFrame("216");
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
-    public JPanel getSaturday() {
-        return saturday;
-    }
+        //Add content to the window.
+        frame.add(new GUI(), BorderLayout.CENTER);
 
-    public JPanel getSunday() {
-        return sunday;
+        //Display the window.
+        frame.pack();
+        frame.setVisible(true);
     }
 }

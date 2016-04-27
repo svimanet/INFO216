@@ -1,14 +1,16 @@
 /**
  * 
  */
-package no.uib.info233.v2016.puz001.Oblig;
+package no.uib.info216.facebook;
 
 import java.util.ArrayList;
-
-import org.apache.jena.rdf.model.Model;
-import org.apache.jena.rdf.model.ModelFactory;
-import org.apache.jena.rdf.model.Property;
-import org.apache.jena.rdf.model.Resource;
+import com.hp.hpl.jena.mem.ArrayBunch;
+import com.hp.hpl.jena.ontology.OntModel;
+import com.hp.hpl.jena.ontology.OntModelSpec;
+import com.hp.hpl.jena.rdf.model.*;
+import com.hp.hpl.jena.vocabulary.DCTerms;
+import java.io.*;
+import java.util.*;
 
 /**
  * @author mariuslillevik
