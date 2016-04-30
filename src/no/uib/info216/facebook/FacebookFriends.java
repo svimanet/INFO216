@@ -49,7 +49,7 @@ public class FacebookFriends {
 		cr.createModel();
 		writeToFile(user);
 
-		test(createUserWithRandomInterests(4));
+		test(createUserWithRandomInterests(4)); //Creates 4 "Fake" users.
 	}
 
 	/**
@@ -89,7 +89,14 @@ public class FacebookFriends {
 		Set<String> randomUniqueList = new HashSet<String>();
 		ArrayList<String> randomList = new ArrayList<String>();
 
-		for(int i = 0;i < arrayList.size()/4; i++){
+		int size = 0;
+		if(arrayList.size() < 10){
+			size = arrayList.size()/2;
+		} else{
+			size = arrayList.size()/4;
+		}
+
+		for(int i = 0;i < size; i++){
 			int  n = random.nextInt(arrayList.size()) + 0;
 			String s = arrayList.get(n);
 				randomUniqueList.add(s);
