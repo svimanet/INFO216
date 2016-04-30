@@ -25,14 +25,14 @@ public class JenaTest {
     private ArrayList<String> fromtag = new ArrayList<String>();
     private ArrayList<String> totag = new ArrayList<String>();
     private ArrayList<String> windDirection = new ArrayList<String>();
-    private ArrayList<String> windDirectionName = new ArrayList<>();
+    private ArrayList<String> windDirectionName = new ArrayList<String>();
     private ArrayList<String> windSpeed = new ArrayList<String>();
     private ArrayList<String> windSpeedName = new ArrayList<String>();
     private ArrayList<String> temprature = new ArrayList<String>();
 
     long diff = new Date().getTime() - file.lastModified();
 
-    public ArrayList<HashMap<String,String>> dataStruct = new ArrayList<>();
+    public ArrayList<HashMap<String,String>> dataStruct = new ArrayList<HashMap<String,String>>();
 
     /**
      * Checks the varsel.xml file on startup.
@@ -96,7 +96,7 @@ public class JenaTest {
         NodeList timeNodeList = nodelist.getElementsByTagName("time");
 
         for (int i = 0; i < timeNodeList.getLength(); i++) {
-            HashMap<String, String> obj = new HashMap<>();
+            HashMap<String, String> obj = new HashMap<String, String>();
             Node node = timeNodeList.item(i);
             Element eElement = (Element) node;
 
