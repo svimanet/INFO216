@@ -1,0 +1,6432 @@
+
+
+<div class="col-sm-12">
+  
+  <div class="row eve-cats" id="event-categories">
+    
+    <div class="col-xs-4 col-sm-2 btn-cats" data-toggle="buttons">
+      <label class="btn btn-default btn-xs btn-block truncate active" title="Push to show arts &amp; culture events">
+	<span class="pull-left"><i title="Event category: Arts & Culture" class="fa fa-font"></i></span>
+	<input type="checkbox" value="2" checked>Arts &amp; Culture
+      </label>
+    </div>
+    
+    <div class="col-xs-4 col-sm-2 btn-cats" data-toggle="buttons">
+      <label class="btn btn-default btn-xs btn-block truncate active" title="Push to show business events">
+	<span class="pull-left"><i title="Event category: Business" class="fa fa-briefcase"></i></span>
+	<input type="checkbox" value="8" checked>Business
+      </label>
+    </div>
+    
+    <div class="col-xs-4 col-sm-2 btn-cats" data-toggle="buttons">
+      <label class="btn btn-default btn-xs btn-block truncate active" title="Push to show community events">
+	<span class="pull-left"><i title="Event category: Community" class="fa fa-users"></i></span>
+	<input type="checkbox" value="12" checked>Community
+      </label>
+    </div>
+    
+    <div class="col-xs-4 col-sm-2 btn-cats" data-toggle="buttons">
+      <label class="btn btn-default btn-xs btn-block truncate active" title="Push to show education events">
+	<span class="pull-left"><i title="Event category: Education" class="fa fa-mortar-board"></i></span>
+	<input type="checkbox" value="6" checked>Education
+      </label>
+    </div>
+    
+    <div class="col-xs-4 col-sm-2 btn-cats" data-toggle="buttons">
+      <label class="btn btn-default btn-xs btn-block truncate active" title="Push to show entertainment events">
+	<span class="pull-left"><i title="Event category: Entertainment" class="fa fa-microphone"></i></span>
+	<input type="checkbox" value="5" checked>Entertainment
+      </label>
+    </div>
+    
+    <div class="col-xs-4 col-sm-2 btn-cats" data-toggle="buttons">
+      <label class="btn btn-default btn-xs btn-block truncate active" title="Push to show food &amp; drink events">
+	<span class="pull-left"><i title="Event category: Food & Drink" class="fa fa-glass"></i></span>
+	<input type="checkbox" value="4" checked>Food &amp; Drink
+      </label>
+    </div>
+    
+    <div class="col-xs-4 col-sm-2 btn-cats" data-toggle="buttons">
+      <label class="btn btn-default btn-xs btn-block truncate active" title="Push to show health &amp; wellnes events">
+	<span class="pull-left"><i title="Event category: Health & Wellnes" class="fa fa-leaf"></i></span>
+	<input type="checkbox" value="10" checked>Health &amp; Wellnes
+      </label>
+    </div>
+    
+    <div class="col-xs-4 col-sm-2 btn-cats" data-toggle="buttons">
+      <label class="btn btn-default btn-xs btn-block truncate active" title="Push to show media events">
+	<span class="pull-left"><i title="Event category: Media" class="fa fa-television"></i></span>
+	<input type="checkbox" value="7" checked>Media
+      </label>
+    </div>
+    
+    <div class="col-xs-4 col-sm-2 btn-cats" data-toggle="buttons">
+      <label class="btn btn-default btn-xs btn-block truncate active" title="Push to show music events">
+	<span class="pull-left"><i title="Event category: Music" class="fa fa-music"></i></span>
+	<input type="checkbox" value="3" checked>Music
+      </label>
+    </div>
+    
+    <div class="col-xs-4 col-sm-2 btn-cats" data-toggle="buttons">
+      <label class="btn btn-default btn-xs btn-block truncate active" title="Push to show public authority events">
+	<span class="pull-left"><i title="Event category: Public Authority" class="fa fa-cogs"></i></span>
+	<input type="checkbox" value="13" checked>Public Authority
+      </label>
+    </div>
+    
+    <div class="col-xs-4 col-sm-2 btn-cats" data-toggle="buttons">
+      <label class="btn btn-default btn-xs btn-block truncate active" title="Push to show sports &amp; fitness events">
+	<span class="pull-left"><i title="Event category: Sports & Fitness" class="fa fa-futbol-o"></i></span>
+	<input type="checkbox" value="9" checked>Sports &amp; Fitness
+      </label>
+    </div>
+    
+    <div class="col-xs-4 col-sm-2 btn-cats" data-toggle="buttons">
+      <label class="btn btn-default btn-xs btn-block truncate active" title="Push to show transportation events">
+	<span class="pull-left"><i title="Event category: Transportation" class="fa fa-street-view"></i></span>
+	<input type="checkbox" value="11" checked>Transportation
+      </label>
+    </div>
+    
+    <div class="col-xs-4 col-sm-2 btn-cats" data-toggle="buttons">
+      <label class="btn btn-default btn-xs btn-block truncate active" title="Push to show universal events">
+	<span class="pull-left"><i title="Event category: Universal" class="fa fa-clock-o"></i></span>
+	<input type="checkbox" value="1" checked>Universal
+      </label>
+    </div>
+    
+    <div class="col-xs-4 col-sm-2 btn-cats" data-toggle="buttons">
+      <label class="btn btn-default btn-xs btn-block truncate active" title="Push to show weather events">
+	<span class="pull-left"><i title="Event category: Weather" class="fa fa-sun-o"></i></span>
+	<input type="checkbox" value="14" checked>Weather
+      </label>
+    </div>
+    
+  </div>
+  
+  <div class="btn-toolbar">
+    
+    <button class="btn btn-primary" id="set-ec" type="button">
+      <i class="fa fa-search"></i> filter events</button>
+    
+    
+    <a class="btn btn-success pull-right"
+       href="/t/search/add/433291/">
+      <i class="fa fa-plus"></i> add trigg</a>
+    
+  </div><br>
+</div>
+
+
+<div class="col-sm-12">
+  <div class="list-group">
+  
+  <a class="list-group-item" href="/event/manon-lescaut-metropolitan-opera/4797726/">
+    <h5 class="pull-right">in 0h</h5>
+    <h4 class="truncate">
+    
+    <i title="Event category: Entertainment" class="fa fa-microphone"></i>
+    
+    Manon Lescaut - Metropolitan Opera
+    </h4>
+    <span class="badge">
+    
+    Sat 18:55
+    
+    </span>
+    <p class="truncate">bergen kino</p>
+    
+    <span class="pull-right">
+      <strong>0.2 km</strong>
+    </span>
+    
+    <p class="truncate">
+      <i title="Location category: Universal" class="fa fa-location-arrow"></i>
+      <strong>
+	
+	Bergen Kino
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  <a class="list-group-item" href="/event/clear-21-c-358-f/6025444/">
+    <h5 class="pull-right">in 0h</h5>
+    <h4 class="truncate">
+    
+      
+      <i title="Event category: Weather" class="fa fa-sun-o"></i>
+      
+    
+    Clear 2.1 °C / 35.8 °F
+    </h4>
+    <span class="badge">
+    
+    Sat 19:00
+    
+    </span>
+    <p class="truncate">clear sky</p>
+    
+    <span class="pull-right">
+      <strong>0.2 km</strong>
+    </span>
+    
+    <p class="truncate">
+      <i title="Location category: Place" class="fa fa-map-pin"></i>
+      <strong>
+	
+	Bergen (Weather)
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  <a class="list-group-item" href="/event/mesternes-mester/4990039/">
+    <h5 class="pull-right">in 1h</h5>
+    <h4 class="truncate">
+    
+    <i title="Event category: Media" class="fa fa-television"></i>
+    
+    Mesternes Mester
+    </h4>
+    <span class="badge">
+    
+    Sat 19:55
+    
+    </span>
+    <p class="truncate">tv show episode 10</p>
+    
+    <p class="truncate">
+      <i title="Location category: Region" class="fa fa-flag-o"></i>
+      <strong>
+	
+	NRK1 (NO)
+	  
+	  TV Network, Norway
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  <a class="list-group-item" href="/event/hakon-kornstad-tenor-battle-grand-bergen-jazzforum/2761050/">
+    <h5 class="pull-right">in 2h</h5>
+    <h4 class="truncate">
+    
+    <i title="Event category: Music" class="fa fa-music"></i>
+    
+    HÅKON KORNSTAD &quot;TENOR BATTLE&quot; @ GRAND // Bergen Jazzforum
+    </h4>
+    <span class="badge">
+    
+    Sat 21:00
+    
+    </span>
+    <p class="truncate">bergen jazzforum</p>
+    
+    <span class="pull-right">
+      <strong>0.1 km</strong>
+    </span>
+    
+    <p class="truncate">
+      <i title="Location category: Universal" class="fa fa-location-arrow"></i>
+      <strong>
+	
+	Grand Bergen
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  <a class="list-group-item" href="/event/spidergawd-hulen/3661160/">
+    <h5 class="pull-right">in 2h</h5>
+    <h4 class="truncate">
+    
+    <i title="Event category: Universal" class="fa fa-clock-o"></i>
+    
+    SPIDERGAWD // Hulen
+    </h4>
+    <span class="badge">
+    
+    Sat 21:00
+    
+    </span>
+    <p class="truncate">hulen</p>
+    
+    <span class="pull-right">
+      <strong>0.7 km</strong>
+    </span>
+    
+    <p class="truncate">
+      <i title="Location category: Universal" class="fa fa-location-arrow"></i>
+      <strong>
+	
+	Hulen
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  <a class="list-group-item" href="/event/clear-09-c-305-f/6025445/">
+    <h5 class="pull-right">in 3h</h5>
+    <h4 class="truncate">
+    
+      
+      <i title="Event category: Weather" class="fa fa-sun-o"></i>
+      
+    
+    Clear -0.9 °C / 30.5 °F
+    </h4>
+    <span class="badge">
+    
+    Sat 22:00
+    
+    </span>
+    <p class="truncate">clear sky</p>
+    
+    <span class="pull-right">
+      <strong>0.2 km</strong>
+    </span>
+    
+    <p class="truncate">
+      <i title="Location category: Place" class="fa fa-map-pin"></i>
+      <strong>
+	
+	Bergen (Weather)
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  <a class="list-group-item" href="/event/klubb-kok-pres-heisann-etterfest-med-karpe-diem/5967571/">
+    <h5 class="pull-right">in 3h</h5>
+    <h4 class="truncate">
+    
+    <i title="Event category: Universal" class="fa fa-clock-o"></i>
+    
+    KLUBB KOK pres HEISANN ETTERFEST med KARPE DIEM
+    </h4>
+    <span class="badge">
+    
+    Sat 22:00
+    
+    </span>
+    <p class="truncate">klubb kok</p>
+    
+    <span class="pull-right">
+      <strong>0.2 km</strong>
+    </span>
+    
+    <p class="truncate">
+      <i title="Location category: Universal" class="fa fa-location-arrow"></i>
+      <strong>
+	
+	Klubb Kok
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  <a class="list-group-item" href="/event/varyr-klubben/5667748/">
+    <h5 class="pull-right">in 3h</h5>
+    <h4 class="truncate">
+    
+    <i title="Event category: Arts & Culture" class="fa fa-font"></i>
+    
+    Våryr Klubben
+    </h4>
+    <span class="badge">
+    
+    Sat 22:00
+    
+    </span>
+    <p class="truncate">k l u b b e n</p>
+    
+    <span class="pull-right">
+      <strong>0.3 km</strong>
+    </span>
+    
+    <p class="truncate">
+      <i title="Location category: Universal" class="fa fa-location-arrow"></i>
+      <strong>
+	
+	Landmark Bergen
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  <a class="list-group-item" href="/event/lysverket-presenterer-kahuun-ploink/3971041/">
+    <h5 class="pull-right">in 3h</h5>
+    <h4 class="truncate">
+    
+    <i title="Event category: Universal" class="fa fa-clock-o"></i>
+    
+    Lysverket presenterer Kahuun (PLOINK)
+    </h4>
+    <span class="badge">
+    
+    Sat 22:00
+    
+    </span>
+    <p class="truncate">lysverket</p>
+    
+    <span class="pull-right">
+      <strong>0.4 km</strong>
+    </span>
+    
+    <p class="truncate">
+      <i title="Location category: Universal" class="fa fa-location-arrow"></i>
+      <strong>
+	
+	Lysverket
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  <a class="list-group-item" href="/event/cuban-party-your-chance-to-dance/6074936/">
+    <h5 class="pull-right">in 3h</h5>
+    <h4 class="truncate">
+    
+    <i title="Event category: Universal" class="fa fa-clock-o"></i>
+    
+    Cuban Party - Your Chance To Dance!
+    </h4>
+    <span class="badge">
+    
+    Sat 22:00
+    
+    </span>
+    <p class="truncate">cuban party bergen</p>
+    
+    <span class="pull-right">
+      <strong>0.5 km</strong>
+    </span>
+    
+    <p class="truncate">
+      <i title="Location category: Universal" class="fa fa-location-arrow"></i>
+      <strong>
+	
+	Cuban Party Bergen
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  <a class="list-group-item" href="/event/kono-16-presents-carina-faye/6073885/">
+    <h5 class="pull-right">in 3h</h5>
+    <h4 class="truncate">
+    
+    <i title="Event category: Universal" class="fa fa-clock-o"></i>
+    
+    KONo 16 presents: Carina Faye
+    </h4>
+    <span class="badge">
+    
+    Sat 22:00
+    
+    </span>
+    <p class="truncate">kono 16</p>
+    
+    <span class="pull-right">
+      <strong>0.6 km</strong>
+    </span>
+    
+    <p class="truncate">
+      <i title="Location category: Universal" class="fa fa-location-arrow"></i>
+      <strong>
+	
+	KONo 16
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  <a class="list-group-item" href="/event/allison/4059333/">
+    <h5 class="pull-right">in 3h</h5>
+    <h4 class="truncate">
+    
+    <i title="Event category: Universal" class="fa fa-clock-o"></i>
+    
+    ALLISON
+    </h4>
+    <span class="badge">
+    
+    Sat 22:30
+    
+    </span>
+    <p class="truncate">madamfelle</p>
+    
+    <span class="pull-right">
+      <strong>0.7 km</strong>
+    </span>
+    
+    <p class="truncate">
+      <i title="Location category: Universal" class="fa fa-location-arrow"></i>
+      <strong>
+	
+	MadamFelle
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  <a class="list-group-item" href="/event/clouds-22-c-281-f/6025446/">
+    <h5 class="pull-right">in 6h</h5>
+    <h4 class="truncate">
+    
+      
+      <i title="Event category: Weather" class="fa fa-sun-o"></i>
+      
+    
+    Clouds -2.2 °C / 28.1 °F
+    </h4>
+    <span class="badge">
+    
+    Sun 01:00
+    
+    </span>
+    <p class="truncate">few clouds</p>
+    
+    <span class="pull-right">
+      <strong>0.2 km</strong>
+    </span>
+    
+    <p class="truncate">
+      <i title="Location category: Place" class="fa fa-map-pin"></i>
+      <strong>
+	
+	Bergen (Weather)
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  <a class="list-group-item" href="/event/clouds-18-c-288-f/6130787/">
+    <h5 class="pull-right">in 9h</h5>
+    <h4 class="truncate">
+    
+      
+      <i title="Event category: Weather" class="fa fa-cloud"></i>
+      
+    
+    Clouds -1.8 °C / 28.8 °F
+    </h4>
+    <span class="badge">
+    
+    Sun 04:00
+    
+    </span>
+    <p class="truncate">broken clouds</p>
+    
+    <span class="pull-right">
+      <strong>0.2 km</strong>
+    </span>
+    
+    <p class="truncate">
+      <i title="Location category: Place" class="fa fa-map-pin"></i>
+      <strong>
+	
+	Bergen (Weather)
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  <a class="list-group-item" href="/event/clouds-15-c-293-f/6130788/">
+    <h5 class="pull-right">in 12h</h5>
+    <h4 class="truncate">
+    
+      
+      <i title="Event category: Weather" class="fa fa-cloud"></i>
+      
+    
+    Clouds -1.5 °C / 29.3 °F
+    </h4>
+    <span class="badge">
+    
+    Sun 07:00
+    
+    </span>
+    <p class="truncate">broken clouds</p>
+    
+    <span class="pull-right">
+      <strong>0.2 km</strong>
+    </span>
+    
+    <p class="truncate">
+      <i title="Location category: Place" class="fa fa-map-pin"></i>
+      <strong>
+	
+	Bergen (Weather)
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  <a class="list-group-item" href="/event/clouds-09-c-337-f/6130789/">
+    <h5 class="pull-right">in 15h</h5>
+    <h4 class="truncate">
+    
+      
+      <i title="Event category: Weather" class="fa fa-cloud"></i>
+      
+    
+    Clouds 0.9 °C / 33.7 °F
+    </h4>
+    <span class="badge">
+    
+    Sun 10:00
+    
+    </span>
+    <p class="truncate">scattered clouds</p>
+    
+    <span class="pull-right">
+      <strong>0.2 km</strong>
+    </span>
+    
+    <p class="truncate">
+      <i title="Location category: Place" class="fa fa-map-pin"></i>
+      <strong>
+	
+	Bergen (Weather)
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  <a class="list-group-item" href="/event/flyenkids-inviterer-til-smaksverksted-pa-flysletten/4474977/">
+    <h5 class="pull-right">in 16h</h5>
+    <h4 class="truncate">
+    
+    <i title="Event category: Universal" class="fa fa-clock-o"></i>
+    
+    FløyenKids inviterer til Smaksverksted på Fløysletten
+    </h4>
+    <span class="badge">
+    
+    Sun 11:00
+    
+    </span>
+    <p class="truncate">fløyen</p>
+    
+    <span class="pull-right">
+      <strong>0.7 km</strong>
+    </span>
+    
+    <p class="truncate">
+      <i title="Location category: Universal" class="fa fa-location-arrow"></i>
+      <strong>
+	
+	Fløyen
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  <a class="list-group-item" href="/event/booster-kids-it-konferanse-for-barn/4565415/">
+    <h5 class="pull-right">in 17h</h5>
+    <h4 class="truncate">
+    
+    <i title="Event category: Arts & Culture" class="fa fa-font"></i>
+    
+    Booster kids - IT-konferanse for barn!
+    </h4>
+    <span class="badge">
+    
+    Sun 12:00
+    
+    </span>
+    <p class="truncate">bergen offentlige bibliotek</p>
+    
+    <span class="pull-right">
+      <strong>0.6 km</strong>
+    </span>
+    
+    <p class="truncate">
+      <i title="Location category: Universal" class="fa fa-location-arrow"></i>
+      <strong>
+	
+	Bergen Offentlige Bibliotek
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  <a class="list-group-item" href="/event/gratis-selvforsvarsseminar-for-kvinner/5605128/">
+    <h5 class="pull-right">in 17h</h5>
+    <h4 class="truncate">
+    
+    <i title="Event category: Education" class="fa fa-mortar-board"></i>
+    
+    GRATIS selvforsvarsseminar for kvinner
+    </h4>
+    <span class="badge">
+    
+    Sun 12:00
+    
+    </span>
+    <p class="truncate">bushido kampsportsenter / kmg-bergen</p>
+    
+    <span class="pull-right">
+      <strong>8.8 km</strong>
+    </span>
+    
+    <p class="truncate">
+      <i title="Location category: Universal" class="fa fa-location-arrow"></i>
+      <strong>
+	
+	Bushido Kampsportsenter
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  <a class="list-group-item" href="/event/bajazz-du-og-jeg-og-vi-to-tre-fir/3305389/">
+    <h5 class="pull-right">in 17h</h5>
+    <h4 class="truncate">
+    
+    <i title="Event category: Music" class="fa fa-music"></i>
+    
+    BAJAZZ: DU OG JEG OG VI – TO – TRE – FIR
+    </h4>
+    <span class="badge">
+    
+    Sun 12:30
+    
+    </span>
+    <p class="truncate">bajazz</p>
+    
+    <span class="pull-right">
+      <strong>0.9 km</strong>
+    </span>
+    
+    <p class="truncate">
+      <i title="Location category: Universal" class="fa fa-location-arrow"></i>
+      <strong>
+	
+	USF Verftet
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  <a class="list-group-item" href="/event/clouds-38-c-388-f/6130790/">
+    <h5 class="pull-right">in 18h</h5>
+    <h4 class="truncate">
+    
+      
+      <i title="Event category: Weather" class="fa fa-cloud"></i>
+      
+    
+    Clouds 3.8 °C / 38.8 °F
+    </h4>
+    <span class="badge">
+    
+    Sun 13:00
+    
+    </span>
+    <p class="truncate">scattered clouds</p>
+    
+    <span class="pull-right">
+      <strong>0.2 km</strong>
+    </span>
+    
+    <p class="truncate">
+      <i title="Location category: Place" class="fa fa-map-pin"></i>
+      <strong>
+	
+	Bergen (Weather)
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  <a class="list-group-item" href="/event/booster-kids-infomte-for-voksne/6134982/">
+    <h5 class="pull-right">in 19h</h5>
+    <h4 class="truncate">
+    
+    <i title="Event category: Universal" class="fa fa-clock-o"></i>
+    
+    Booster Kids - infomøte for voksne
+    </h4>
+    <span class="badge">
+    
+    Sun 14:00
+    
+    </span>
+    <p class="truncate">lær kidsa koding</p>
+    
+    <span class="pull-right">
+      <strong>0.6 km</strong>
+    </span>
+    
+    <p class="truncate">
+      <i title="Location category: Universal" class="fa fa-location-arrow"></i>
+      <strong>
+	
+	Bergen Offentlige Bibliotek
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  <a class="list-group-item" href="/event/clouds-40-c-391-f/6130791/">
+    <h5 class="pull-right">in 21h</h5>
+    <h4 class="truncate">
+    
+      
+      <i title="Event category: Weather" class="fa fa-cloud"></i>
+      
+    
+    Clouds 4.0 °C / 39.1 °F
+    </h4>
+    <span class="badge">
+    
+    Sun 16:00
+    
+    </span>
+    <p class="truncate">scattered clouds</p>
+    
+    <span class="pull-right">
+      <strong>0.2 km</strong>
+    </span>
+    
+    <p class="truncate">
+      <i title="Location category: Place" class="fa fa-map-pin"></i>
+      <strong>
+	
+	Bergen (Weather)
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  <a class="list-group-item" href="/event/clear-11-c-339-f/6130792/">
+    <h5 class="pull-right">in 1d 0h</h5>
+    <h4 class="truncate">
+    
+      
+      <i title="Event category: Weather" class="fa fa-sun-o"></i>
+      
+    
+    Clear 1.1 °C / 33.9 °F
+    </h4>
+    <span class="badge">
+    
+    Sun 19:00
+    
+    </span>
+    <p class="truncate">clear sky</p>
+    
+    <span class="pull-right">
+      <strong>0.2 km</strong>
+    </span>
+    
+    <p class="truncate">
+      <i title="Location category: Place" class="fa fa-map-pin"></i>
+      <strong>
+	
+	Bergen (Weather)
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  <a class="list-group-item" href="/event/mnozilbrass/3497545/">
+    <h5 class="pull-right">in 1d 0h</h5>
+    <h4 class="truncate">
+    
+    <i title="Event category: Music" class="fa fa-music"></i>
+    
+    MnozilBrass
+    </h4>
+    <span class="badge">
+    
+    Sun 19:00
+    
+    </span>
+    <p class="truncate">grieghallen</p>
+    
+    <span class="pull-right">
+      <strong>0.4 km</strong>
+    </span>
+    
+    <p class="truncate">
+      <i title="Location category: Universal" class="fa fa-location-arrow"></i>
+      <strong>
+	
+	Grieghallen
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  <a class="list-group-item" href="/event/thomas-dybdahl-grieghallen-6-mars/4434391/">
+    <h5 class="pull-right">in 1d 1h</h5>
+    <h4 class="truncate">
+    
+    <i title="Event category: Community" class="fa fa-users"></i>
+    
+    Thomas Dybdahl – Grieghallen - 6. Mars
+    </h4>
+    <span class="badge">
+    
+    Sun 20:00
+    
+    </span>
+    <p class="truncate">uken i bergen</p>
+    
+    <span class="pull-right">
+      <strong>0.4 km</strong>
+    </span>
+    
+    <p class="truncate">
+      <i title="Location category: Universal" class="fa fa-location-arrow"></i>
+      <strong>
+	
+	Grieghallen
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  <a class="list-group-item" href="/event/thomas-dybdahl/4414986/">
+    <h5 class="pull-right">in 1d 2h</h5>
+    <h4 class="truncate">
+    
+    <i title="Event category: Music" class="fa fa-music"></i>
+    
+    Thomas Dybdahl
+    </h4>
+    <span class="badge">
+    
+    Sun 21:00
+    
+    </span>
+    <p class="truncate">grieghallen</p>
+    
+    <span class="pull-right">
+      <strong>0.5 km</strong>
+    </span>
+    
+    <p class="truncate">
+      <i title="Location category: Universal" class="fa fa-location-arrow"></i>
+      <strong>
+	
+	Peer Gynt-salen, Grieghallen
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  <a class="list-group-item" href="/event/neste-sommer/5050367/">
+    <h5 class="pull-right">in 1d 2h</h5>
+    <h4 class="truncate">
+    
+    <i title="Event category: Media" class="fa fa-television"></i>
+    
+    Neste Sommer
+    </h4>
+    <span class="badge">
+    
+    Sun 21:30
+    
+    </span>
+    <p class="truncate">tv show episode 4</p>
+    
+    <p class="truncate">
+      <i title="Location category: Region" class="fa fa-flag-o"></i>
+      <strong>
+	
+	TV Norge (NO)
+	  
+	  TV Network, Norway
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  <a class="list-group-item" href="/event/clear-16-c-291-f/6130793/">
+    <h5 class="pull-right">in 1d 3h</h5>
+    <h4 class="truncate">
+    
+      
+      <i title="Event category: Weather" class="fa fa-sun-o"></i>
+      
+    
+    Clear -1.6 °C / 29.1 °F
+    </h4>
+    <span class="badge">
+    
+    Sun 22:00
+    
+    </span>
+    <p class="truncate">clear sky</p>
+    
+    <span class="pull-right">
+      <strong>0.2 km</strong>
+    </span>
+    
+    <p class="truncate">
+      <i title="Location category: Place" class="fa fa-map-pin"></i>
+      <strong>
+	
+	Bergen (Weather)
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  <a class="list-group-item" href="/event/helt-perfekt/5852372/">
+    <h5 class="pull-right">in 1d 3h</h5>
+    <h4 class="truncate">
+    
+    <i title="Event category: Media" class="fa fa-television"></i>
+    
+    Helt Perfekt
+    </h4>
+    <span class="badge">
+    
+    Sun 22:00
+    
+    </span>
+    <p class="truncate">tv show sommerhuset</p>
+    
+    <p class="truncate">
+      <i title="Location category: Region" class="fa fa-flag-o"></i>
+      <strong>
+	
+	TV Norge (NO)
+	  
+	  TV Network, Norway
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  <a class="list-group-item" href="/event/clear-33-c-261-f/6198126/">
+    <h5 class="pull-right">in 1d 6h</h5>
+    <h4 class="truncate">
+    
+      
+      <i title="Event category: Weather" class="fa fa-sun-o"></i>
+      
+    
+    Clear -3.3 °C / 26.1 °F
+    </h4>
+    <span class="badge">
+    
+    Mon 01:00
+    
+    </span>
+    <p class="truncate">clear sky</p>
+    
+    <span class="pull-right">
+      <strong>0.2 km</strong>
+    </span>
+    
+    <p class="truncate">
+      <i title="Location category: Place" class="fa fa-map-pin"></i>
+      <strong>
+	
+	Bergen (Weather)
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  <a class="list-group-item" href="/event/clear-45-c-239-f/6198127/">
+    <h5 class="pull-right">in 1d 9h</h5>
+    <h4 class="truncate">
+    
+      
+      <i title="Event category: Weather" class="fa fa-sun-o"></i>
+      
+    
+    Clear -4.5 °C / 23.9 °F
+    </h4>
+    <span class="badge">
+    
+    Mon 04:00
+    
+    </span>
+    <p class="truncate">clear sky</p>
+    
+    <span class="pull-right">
+      <strong>0.2 km</strong>
+    </span>
+    
+    <p class="truncate">
+      <i title="Location category: Place" class="fa fa-map-pin"></i>
+      <strong>
+	
+	Bergen (Weather)
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  <a class="list-group-item" href="/event/clear-55-c-222-f/6198128/">
+    <h5 class="pull-right">in 1d 12h</h5>
+    <h4 class="truncate">
+    
+      
+      <i title="Event category: Weather" class="fa fa-sun-o"></i>
+      
+    
+    Clear -5.5 °C / 22.2 °F
+    </h4>
+    <span class="badge">
+    
+    Mon 07:00
+    
+    </span>
+    <p class="truncate">clear sky</p>
+    
+    <span class="pull-right">
+      <strong>0.2 km</strong>
+    </span>
+    
+    <p class="truncate">
+      <i title="Location category: Place" class="fa fa-map-pin"></i>
+      <strong>
+	
+	Bergen (Weather)
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  <a class="list-group-item" href="/event/clear-19-c-285-f/6198129/">
+    <h5 class="pull-right">in 1d 15h</h5>
+    <h4 class="truncate">
+    
+      
+      <i title="Event category: Weather" class="fa fa-sun-o"></i>
+      
+    
+    Clear -1.9 °C / 28.5 °F
+    </h4>
+    <span class="badge">
+    
+    Mon 10:00
+    
+    </span>
+    <p class="truncate">clear sky</p>
+    
+    <span class="pull-right">
+      <strong>0.2 km</strong>
+    </span>
+    
+    <p class="truncate">
+      <i title="Location category: Place" class="fa fa-map-pin"></i>
+      <strong>
+	
+	Bergen (Weather)
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  <a class="list-group-item" href="/event/nm-i-konomi-hib/6105191/">
+    <h5 class="pull-right">in 1d 17h</h5>
+    <h4 class="truncate">
+    
+    <i title="Event category: Universal" class="fa fa-clock-o"></i>
+    
+    NM i økonomi - HiB
+    </h4>
+    <span class="badge">
+    
+    Mon 12:00
+    
+    </span>
+    <p class="truncate">econa hib</p>
+    
+    <span class="pull-right">
+      <strong>1.6 km</strong>
+    </span>
+    
+    <p class="truncate">
+      <i title="Location category: Universal" class="fa fa-location-arrow"></i>
+      <strong>
+	
+	Econa HiB
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  <a class="list-group-item" href="/event/clear-21-c-359-f/6198130/">
+    <h5 class="pull-right">in 1d 18h</h5>
+    <h4 class="truncate">
+    
+      
+      <i title="Event category: Weather" class="fa fa-sun-o"></i>
+      
+    
+    Clear 2.1 °C / 35.9 °F
+    </h4>
+    <span class="badge">
+    
+    Mon 13:00
+    
+    </span>
+    <p class="truncate">clear sky</p>
+    
+    <span class="pull-right">
+      <strong>0.2 km</strong>
+    </span>
+    
+    <p class="truncate">
+      <i title="Location category: Place" class="fa fa-map-pin"></i>
+      <strong>
+	
+	Bergen (Weather)
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  <a class="list-group-item" href="/event/clear-32-c-377-f/6198131/">
+    <h5 class="pull-right">in 1d 21h</h5>
+    <h4 class="truncate">
+    
+      
+      <i title="Event category: Weather" class="fa fa-sun-o"></i>
+      
+    
+    Clear 3.2 °C / 37.7 °F
+    </h4>
+    <span class="badge">
+    
+    Mon 16:00
+    
+    </span>
+    <p class="truncate">clear sky</p>
+    
+    <span class="pull-right">
+      <strong>0.2 km</strong>
+    </span>
+    
+    <p class="truncate">
+      <i title="Location category: Place" class="fa fa-map-pin"></i>
+      <strong>
+	
+	Bergen (Weather)
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  <a class="list-group-item" href="/event/freerun-puppyclass-6-uker-12-timer/3533507/">
+    <h5 class="pull-right">in 1d 22h</h5>
+    <h4 class="truncate">
+    
+    <i title="Event category: Sports & Fitness" class="fa fa-futbol-o"></i>
+    
+    FreeRun PuppyClass - 6 uker # 12 timer
+    </h4>
+    <span class="badge">
+    
+    Mon 17:30
+    
+    </span>
+    <p class="truncate">freerun training</p>
+    
+    <span class="pull-right">
+      <strong>9.2 km</strong>
+    </span>
+    
+    <p class="truncate">
+      <i title="Location category: Universal" class="fa fa-location-arrow"></i>
+      <strong>
+	
+	FreeRun Training
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  <a class="list-group-item" href="/event/debatt-om-kvalitet-i-spill-og-spilljournalistikk/5667467/">
+    <h5 class="pull-right">in 1d 23h</h5>
+    <h4 class="truncate">
+    
+    <i title="Event category: Arts & Culture" class="fa fa-font"></i>
+    
+    Debatt om kvalitet i spill, og spilljournalistikk
+    </h4>
+    <span class="badge">
+    
+    Mon 18:00
+    
+    </span>
+    <p class="truncate">bergen offentlige bibliotek</p>
+    
+    <span class="pull-right">
+      <strong>0.6 km</strong>
+    </span>
+    
+    <p class="truncate">
+      <i title="Location category: Universal" class="fa fa-location-arrow"></i>
+      <strong>
+	
+	Bergen Offentlige Bibliotek
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  <a class="list-group-item" href="/event/bokklubb-for-ungdom/6044583/">
+    <h5 class="pull-right">in 1d 23h</h5>
+    <h4 class="truncate">
+    
+    <i title="Event category: Arts & Culture" class="fa fa-font"></i>
+    
+    Bokklubb for ungdom
+    </h4>
+    <span class="badge">
+    
+    Mon 18:00
+    
+    </span>
+    <p class="truncate">urom</p>
+    
+    <span class="pull-right">
+      <strong>0.6 km</strong>
+    </span>
+    
+    <p class="truncate">
+      <i title="Location category: Universal" class="fa fa-location-arrow"></i>
+      <strong>
+	
+	UROM
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  <a class="list-group-item" href="/event/nye-dansekurs-mars-2016-kom-og-dans-bergen/5524124/">
+    <h5 class="pull-right">in 1d 23h</h5>
+    <h4 class="truncate">
+    
+    <i title="Event category: Universal" class="fa fa-clock-o"></i>
+    
+    Nye DANSEKURS mars 2016 - Kom og Dans Bergen
+    </h4>
+    <span class="badge">
+    
+    Mon 18:00
+    
+    </span>
+    <p class="truncate">kom og dans bergen</p>
+    
+    <span class="pull-right">
+      <strong>4.0 km</strong>
+    </span>
+    
+    <p class="truncate">
+      <i title="Location category: Universal" class="fa fa-location-arrow"></i>
+      <strong>
+	
+	Kom og Dans Bergen
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  <a class="list-group-item" href="/event/monster-magnet/2561774/">
+    <h5 class="pull-right">in 2d 0h</h5>
+    <h4 class="truncate">
+    
+    <i title="Event category: Music" class="fa fa-music"></i>
+    
+    Monster Magnet
+    </h4>
+    <span class="badge">
+    
+    Mon 19:00
+    
+    </span>
+    <p class="truncate">live music performance</p>
+    
+    <span class="pull-right">
+      <strong>0.2 km</strong>
+    </span>
+    
+    <p class="truncate">
+      <i title="Location category: Universal" class="fa fa-location-arrow"></i>
+      <strong>
+	
+	Garage
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  <a class="list-group-item" href="/event/clear-03-c-326-f/6198132/">
+    <h5 class="pull-right">in 2d 0h</h5>
+    <h4 class="truncate">
+    
+      
+      <i title="Event category: Weather" class="fa fa-sun-o"></i>
+      
+    
+    Clear 0.3 °C / 32.6 °F
+    </h4>
+    <span class="badge">
+    
+    Mon 19:00
+    
+    </span>
+    <p class="truncate">clear sky</p>
+    
+    <span class="pull-right">
+      <strong>0.2 km</strong>
+    </span>
+    
+    <p class="truncate">
+      <i title="Location category: Place" class="fa fa-map-pin"></i>
+      <strong>
+	
+	Bergen (Weather)
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  <a class="list-group-item" href="/event/madama-butterfly/3497544/">
+    <h5 class="pull-right">in 2d 0h</h5>
+    <h4 class="truncate">
+    
+    <i title="Event category: Music" class="fa fa-music"></i>
+    
+    Madama butterfly
+    </h4>
+    <span class="badge">
+    
+    Mon 19:00
+    
+    </span>
+    <p class="truncate">grieghallen</p>
+    
+    <span class="pull-right">
+      <strong>0.4 km</strong>
+    </span>
+    
+    <p class="truncate">
+      <i title="Location category: Universal" class="fa fa-location-arrow"></i>
+      <strong>
+	
+	Grieghallen
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  <a class="list-group-item" href="/event/arsmtet/5927185/">
+    <h5 class="pull-right">in 2d 0h</h5>
+    <h4 class="truncate">
+    
+    <i title="Event category: Community" class="fa fa-users"></i>
+    
+    Årsmøtet
+    </h4>
+    <span class="badge">
+    
+    Mon 19:00
+    
+    </span>
+    <p class="truncate">røde kors askøy</p>
+    
+    <span class="pull-right">
+      <strong>5.7 km</strong>
+    </span>
+    
+    <p class="truncate">
+      <i title="Location category: Universal" class="fa fa-location-arrow"></i>
+      <strong>
+	
+	Røde Kors Askøy
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  <a class="list-group-item" href="/event/mandagsklubben-7-mars-minority-tammie-tambourine-jose-alejandro/5926539/">
+    <h5 class="pull-right">in 2d 0h</h5>
+    <h4 class="truncate">
+    
+    <i title="Event category: Music" class="fa fa-music"></i>
+    
+    Mandagsklubben - 7. Mars // Minority // Tammie Tambourine // Jose Alejandro
+    </h4>
+    <span class="badge">
+    
+    Mon 19:30
+    
+    </span>
+    <p class="truncate">lille ole bull</p>
+    
+    <span class="pull-right">
+      <strong>0.1 km</strong>
+    </span>
+    
+    <p class="truncate">
+      <i title="Location category: Universal" class="fa fa-location-arrow"></i>
+      <strong>
+	
+	Lille Ole Bull
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  <a class="list-group-item" href="/event/monster-magnet-celebrating-the-am-years-live/3369080/">
+    <h5 class="pull-right">in 2d 1h</h5>
+    <h4 class="truncate">
+    
+    <i title="Event category: Universal" class="fa fa-clock-o"></i>
+    
+    MONSTER MAGNET - Celebrating the A&amp;M years Live!
+    </h4>
+    <span class="badge">
+    
+    Mon 20:00
+    
+    </span>
+    <p class="truncate">garage bergen</p>
+    
+    <span class="pull-right">
+      <strong>0.2 km</strong>
+    </span>
+    
+    <p class="truncate">
+      <i title="Location category: Universal" class="fa fa-location-arrow"></i>
+      <strong>
+	
+	Garage Bergen
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  <a class="list-group-item" href="/event/clear-25-c-275-f/6198133/">
+    <h5 class="pull-right">in 2d 3h</h5>
+    <h4 class="truncate">
+    
+      
+      <i title="Event category: Weather" class="fa fa-sun-o"></i>
+      
+    
+    Clear -2.5 °C / 27.5 °F
+    </h4>
+    <span class="badge">
+    
+    Mon 22:00
+    
+    </span>
+    <p class="truncate">clear sky</p>
+    
+    <span class="pull-right">
+      <strong>0.2 km</strong>
+    </span>
+    
+    <p class="truncate">
+      <i title="Location category: Place" class="fa fa-map-pin"></i>
+      <strong>
+	
+	Bergen (Weather)
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  <a class="list-group-item" href="/event/clear-36-c-255-f/6198134/">
+    <h5 class="pull-right">in 2d 6h</h5>
+    <h4 class="truncate">
+    
+      
+      <i title="Event category: Weather" class="fa fa-sun-o"></i>
+      
+    
+    Clear -3.6 °C / 25.5 °F
+    </h4>
+    <span class="badge">
+    
+    Tue 01:00
+    
+    </span>
+    <p class="truncate">clear sky</p>
+    
+    <span class="pull-right">
+      <strong>0.2 km</strong>
+    </span>
+    
+    <p class="truncate">
+      <i title="Location category: Place" class="fa fa-map-pin"></i>
+      <strong>
+	
+	Bergen (Weather)
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  <a class="list-group-item" href="/event/clear-42-c-245-f/6256669/">
+    <h5 class="pull-right">in 2d 9h</h5>
+    <h4 class="truncate">
+    
+      
+      <i title="Event category: Weather" class="fa fa-sun-o"></i>
+      
+    
+    Clear -4.2 °C / 24.5 °F
+    </h4>
+    <span class="badge">
+    
+    Tue 04:00
+    
+    </span>
+    <p class="truncate">clear sky</p>
+    
+    <span class="pull-right">
+      <strong>0.2 km</strong>
+    </span>
+    
+    <p class="truncate">
+      <i title="Location category: Place" class="fa fa-map-pin"></i>
+      <strong>
+	
+	Bergen (Weather)
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  <a class="list-group-item" href="/event/clear-50-c-231-f/6256670/">
+    <h5 class="pull-right">in 2d 12h</h5>
+    <h4 class="truncate">
+    
+      
+      <i title="Event category: Weather" class="fa fa-sun-o"></i>
+      
+    
+    Clear -5.0 °C / 23.1 °F
+    </h4>
+    <span class="badge">
+    
+    Tue 07:00
+    
+    </span>
+    <p class="truncate">clear sky</p>
+    
+    <span class="pull-right">
+      <strong>0.2 km</strong>
+    </span>
+    
+    <p class="truncate">
+      <i title="Location category: Place" class="fa fa-map-pin"></i>
+      <strong>
+	
+	Bergen (Weather)
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  <a class="list-group-item" href="/event/clear-08-c-306-f/6256671/">
+    <h5 class="pull-right">in 2d 15h</h5>
+    <h4 class="truncate">
+    
+      
+      <i title="Event category: Weather" class="fa fa-sun-o"></i>
+      
+    
+    Clear -0.8 °C / 30.6 °F
+    </h4>
+    <span class="badge">
+    
+    Tue 10:00
+    
+    </span>
+    <p class="truncate">clear sky</p>
+    
+    <span class="pull-right">
+      <strong>0.2 km</strong>
+    </span>
+    
+    <p class="truncate">
+      <i title="Location category: Place" class="fa fa-map-pin"></i>
+      <strong>
+	
+	Bergen (Weather)
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  <a class="list-group-item" href="/event/clear-36-c-385-f/6256672/">
+    <h5 class="pull-right">in 2d 18h</h5>
+    <h4 class="truncate">
+    
+      
+      <i title="Event category: Weather" class="fa fa-sun-o"></i>
+      
+    
+    Clear 3.6 °C / 38.5 °F
+    </h4>
+    <span class="badge">
+    
+    Tue 13:00
+    
+    </span>
+    <p class="truncate">clear sky</p>
+    
+    <span class="pull-right">
+      <strong>0.2 km</strong>
+    </span>
+    
+    <p class="truncate">
+      <i title="Location category: Place" class="fa fa-map-pin"></i>
+      <strong>
+	
+	Bergen (Weather)
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  <a class="list-group-item" href="/event/clear-34-c-381-f/6256673/">
+    <h5 class="pull-right">in 2d 21h</h5>
+    <h4 class="truncate">
+    
+      
+      <i title="Event category: Weather" class="fa fa-sun-o"></i>
+      
+    
+    Clear 3.4 °C / 38.1 °F
+    </h4>
+    <span class="badge">
+    
+    Tue 16:00
+    
+    </span>
+    <p class="truncate">clear sky</p>
+    
+    <span class="pull-right">
+      <strong>0.2 km</strong>
+    </span>
+    
+    <p class="truncate">
+      <i title="Location category: Place" class="fa fa-map-pin"></i>
+      <strong>
+	
+	Bergen (Weather)
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  <a class="list-group-item" href="/event/8-mars-med-bergen-rd-ungdom/6342677/">
+    <h5 class="pull-right">in 2d 21h</h5>
+    <h4 class="truncate">
+    
+    <i title="Event category: Community" class="fa fa-users"></i>
+    
+    8. mars med Bergen Rød Ungdom
+    </h4>
+    <span class="badge">
+    
+    Tue 16:15
+    
+    </span>
+    <p class="truncate">bergen rød ungdom</p>
+    
+    <span class="pull-right">
+      <strong>0.7 km</strong>
+    </span>
+    
+    <p class="truncate">
+      <i title="Location category: Universal" class="fa fa-location-arrow"></i>
+      <strong>
+	
+	Bergen Rød Ungdom
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  <a class="list-group-item" href="/event/friends-of-lysverket-9-london-baby-knappettmcdonaldbateman/3971040/">
+    <h5 class="pull-right">in 2d 22h</h5>
+    <h4 class="truncate">
+    
+    <i title="Event category: Universal" class="fa fa-clock-o"></i>
+    
+    Friends of Lysverket #9 - London, baby! Knappett/McDonald/Bateman
+    </h4>
+    <span class="badge">
+    
+    Tue 17:00
+    
+    </span>
+    <p class="truncate">lysverket</p>
+    
+    <span class="pull-right">
+      <strong>0.4 km</strong>
+    </span>
+    
+    <p class="truncate">
+      <i title="Location category: Universal" class="fa fa-location-arrow"></i>
+      <strong>
+	
+	Lysverket
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  <a class="list-group-item" href="/event/handarbeidskveld/6166002/">
+    <h5 class="pull-right">in 2d 22h</h5>
+    <h4 class="truncate">
+    
+    <i title="Event category: Universal" class="fa fa-clock-o"></i>
+    
+    Håndarbeidskveld
+    </h4>
+    <span class="badge">
+    
+    Tue 17:30
+    
+    </span>
+    <p class="truncate">event</p>
+    
+    <span class="pull-right">
+      <strong>0.1 km</strong>
+    </span>
+    
+    <p class="truncate">
+      <i title="Location category: Universal" class="fa fa-location-arrow"></i>
+      <strong>
+	
+	Salem Åpen Barnehage
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  <a class="list-group-item" href="/event/apen-dag-pa-bi-campus-bergen/3305418/">
+    <h5 class="pull-right">in 2d 23h</h5>
+    <h4 class="truncate">
+    
+    <i title="Event category: Education" class="fa fa-mortar-board"></i>
+    
+    Åpen dag på BI - campus Bergen
+    </h4>
+    <span class="badge">
+    
+    Tue 18:00
+    
+    </span>
+    <p class="truncate">handelshøyskolen bi - campus bergen</p>
+    
+    <span class="pull-right">
+      <strong>1.0 km</strong>
+    </span>
+    
+    <p class="truncate">
+      <i title="Location category: Universal" class="fa fa-location-arrow"></i>
+      <strong>
+	
+	Handelshøyskolen BI - campus Bergen
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  <a class="list-group-item" href="/event/anna-ternheim-bergen-live-sessions/2998510/">
+    <h5 class="pull-right">in 3d 0h</h5>
+    <h4 class="truncate">
+    
+    <i title="Event category: Universal" class="fa fa-clock-o"></i>
+    
+    Anna Ternheim - Bergen Live Sessions
+    </h4>
+    <span class="badge">
+    
+    Tue 19:00
+    
+    </span>
+    <p class="truncate">bergen live</p>
+    
+    <span class="pull-right">
+      <strong>0.1 km</strong>
+    </span>
+    
+    <p class="truncate">
+      <i title="Location category: Universal" class="fa fa-location-arrow"></i>
+      <strong>
+	
+	Ole Bull Scene
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  <a class="list-group-item" href="/event/clouds-21-c-357-f/6256674/">
+    <h5 class="pull-right">in 3d 0h</h5>
+    <h4 class="truncate">
+    
+      
+      <i title="Event category: Weather" class="fa fa-cloud"></i>
+      
+    
+    Clouds 2.1 °C / 35.7 °F
+    </h4>
+    <span class="badge">
+    
+    Tue 19:00
+    
+    </span>
+    <p class="truncate">broken clouds</p>
+    
+    <span class="pull-right">
+      <strong>0.2 km</strong>
+    </span>
+    
+    <p class="truncate">
+      <i title="Location category: Place" class="fa fa-map-pin"></i>
+      <strong>
+	
+	Bergen (Weather)
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  
+  <span id="more-60" class="list-group-item">
+    <a class="text-center" href="#"
+       onclick="fetch_upcoming(60); return false;">
+      <h4>Show more events</h4></a>
+  </span>
+  
+  </div>
+</div>
+
+<script type="text/javascript">
+$(function() {
+  $("#up-addr").html("Bergen, Norway");
+  $("#set-ec").click(function(){
+    var ec_sel = []
+    $("#event-categories input:checked").each(function(){
+      ec_sel.push($(this).val());
+    });
+    set_val('/device/', {'ec':ec_sel}, fetch_upcoming);
+  });
+});
+</script>
+
+
+
+<div class="col-sm-12">
+  <div class="list-group">
+  
+  <a class="list-group-item" href="/event/mesternes-mester/4990039/">
+    <h5 class="pull-right">in 1h</h5>
+    <h4 class="truncate">
+    
+    <i title="Event category: Media" class="fa fa-television"></i>
+    
+    Mesternes Mester
+    </h4>
+    <span class="badge">
+    
+    Sat 19:55
+    
+    </span>
+    <p class="truncate">tv show episode 10</p>
+    
+    <p class="truncate">
+      <i title="Location category: Region" class="fa fa-flag-o"></i>
+      <strong>
+	
+	NRK1 (NO)
+	  
+	  TV Network, Norway
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  <a class="list-group-item" href="/event/neste-sommer/5050367/">
+    <h5 class="pull-right">in 1d 2h</h5>
+    <h4 class="truncate">
+    
+    <i title="Event category: Media" class="fa fa-television"></i>
+    
+    Neste Sommer
+    </h4>
+    <span class="badge">
+    
+    Sun 21:30
+    
+    </span>
+    <p class="truncate">tv show episode 4</p>
+    
+    <p class="truncate">
+      <i title="Location category: Region" class="fa fa-flag-o"></i>
+      <strong>
+	
+	TV Norge (NO)
+	  
+	  TV Network, Norway
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  <a class="list-group-item" href="/event/helt-perfekt/5852372/">
+    <h5 class="pull-right">in 1d 3h</h5>
+    <h4 class="truncate">
+    
+    <i title="Event category: Media" class="fa fa-television"></i>
+    
+    Helt Perfekt
+    </h4>
+    <span class="badge">
+    
+    Sun 22:00
+    
+    </span>
+    <p class="truncate">tv show sommerhuset</p>
+    
+    <p class="truncate">
+      <i title="Location category: Region" class="fa fa-flag-o"></i>
+      <strong>
+	
+	TV Norge (NO)
+	  
+	  TV Network, Norway
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  <a class="list-group-item" href="/event/anna-ternheim-ole-bull-scene-bergen/3294586/">
+    <h5 class="pull-right">in 3d 1h</h5>
+    <h4 class="truncate">
+    
+    <i title="Event category: Music" class="fa fa-music"></i>
+    
+    Anna Ternheim - Ole Bull Scene, Bergen
+    </h4>
+    <span class="badge">
+    
+    Tue 20:00
+    
+    </span>
+    <p class="truncate">anna ternheim</p>
+    
+    <span class="pull-right">
+      <strong>0.1 km</strong>
+    </span>
+    
+    <p class="truncate">
+      <i title="Location category: Universal" class="fa fa-location-arrow"></i>
+      <strong>
+	
+	Ole Bull Scene
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  <a class="list-group-item" href="/event/no-stress-tegnetirsdag-08-mars/6094983/">
+    <h5 class="pull-right">in 3d 1h</h5>
+    <h4 class="truncate">
+    
+    <i title="Event category: Universal" class="fa fa-clock-o"></i>
+    
+    No Stress ◆ TegneTirsdag ◆ 08. Mars
+    </h4>
+    <span class="badge">
+    
+    Tue 20:00
+    
+    </span>
+    <p class="truncate">no stress</p>
+    
+    <span class="pull-right">
+      <strong>0.5 km</strong>
+    </span>
+    
+    <p class="truncate">
+      <i title="Location category: Universal" class="fa fa-location-arrow"></i>
+      <strong>
+	
+	No Stress
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  <a class="list-group-item" href="/event/jeilo-hver-tirsdag/6293890/">
+    <h5 class="pull-right">in 3d 2h</h5>
+    <h4 class="truncate">
+    
+    <i title="Event category: Media" class="fa fa-television"></i>
+    
+    Jeilo ❅ Hver Tirsdag ❅
+    </h4>
+    <span class="badge">
+    
+    Tue 21:00
+    
+    </span>
+    <p class="truncate">utetrend</p>
+    
+    <span class="pull-right">
+      <strong>0.1 km</strong>
+    </span>
+    
+    <p class="truncate">
+      <i title="Location category: Universal" class="fa fa-location-arrow"></i>
+      <strong>
+	
+	Cafè Contra Bar
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  <a class="list-group-item" href="/event/clouds-08-c-335-f/6256675/">
+    <h5 class="pull-right">in 3d 3h</h5>
+    <h4 class="truncate">
+    
+      
+      <i title="Event category: Weather" class="fa fa-cloud"></i>
+      
+    
+    Clouds 0.8 °C / 33.5 °F
+    </h4>
+    <span class="badge">
+    
+    Tue 22:00
+    
+    </span>
+    <p class="truncate">scattered clouds</p>
+    
+    <span class="pull-right">
+      <strong>0.2 km</strong>
+    </span>
+    
+    <p class="truncate">
+      <i title="Location category: Place" class="fa fa-map-pin"></i>
+      <strong>
+	
+	Bergen (Weather)
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  <a class="list-group-item" href="/event/full-moon-party-uken-i-bergen/4525923/">
+    <h5 class="pull-right">in 3d 3h</h5>
+    <h4 class="truncate">
+    
+    <i title="Event category: Community" class="fa fa-users"></i>
+    
+    Full Moon Party - UKEN i Bergen
+    </h4>
+    <span class="badge">
+    
+    Tue 22:30
+    
+    </span>
+    <p class="truncate">uken i bergen</p>
+    
+    <span class="pull-right">
+      <strong>3.7 km</strong>
+    </span>
+    
+    <p class="truncate">
+      <i title="Location category: Universal" class="fa fa-location-arrow"></i>
+      <strong>
+	
+	UKEN i Bergen
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  <a class="list-group-item" href="/event/clouds-02-c-316-f/6256676/">
+    <h5 class="pull-right">in 3d 6h</h5>
+    <h4 class="truncate">
+    
+      
+      <i title="Event category: Weather" class="fa fa-cloud"></i>
+      
+    
+    Clouds -0.2 °C / 31.6 °F
+    </h4>
+    <span class="badge">
+    
+    Wed 01:00
+    
+    </span>
+    <p class="truncate">scattered clouds</p>
+    
+    <span class="pull-right">
+      <strong>0.2 km</strong>
+    </span>
+    
+    <p class="truncate">
+      <i title="Location category: Place" class="fa fa-map-pin"></i>
+      <strong>
+	
+	Bergen (Weather)
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  <a class="list-group-item" href="/event/clouds-09-c-304-f/6317105/">
+    <h5 class="pull-right">in 3d 9h</h5>
+    <h4 class="truncate">
+    
+      
+      <i title="Event category: Weather" class="fa fa-cloud"></i>
+      
+    
+    Clouds -0.9 °C / 30.4 °F
+    </h4>
+    <span class="badge">
+    
+    Wed 04:00
+    
+    </span>
+    <p class="truncate">scattered clouds</p>
+    
+    <span class="pull-right">
+      <strong>0.2 km</strong>
+    </span>
+    
+    <p class="truncate">
+      <i title="Location category: Place" class="fa fa-map-pin"></i>
+      <strong>
+	
+	Bergen (Weather)
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  <a class="list-group-item" href="/event/clouds-17-c-289-f/6317106/">
+    <h5 class="pull-right">in 3d 12h</h5>
+    <h4 class="truncate">
+    
+      
+      <i title="Event category: Weather" class="fa fa-cloud"></i>
+      
+    
+    Clouds -1.7 °C / 28.9 °F
+    </h4>
+    <span class="badge">
+    
+    Wed 07:00
+    
+    </span>
+    <p class="truncate">scattered clouds</p>
+    
+    <span class="pull-right">
+      <strong>0.2 km</strong>
+    </span>
+    
+    <p class="truncate">
+      <i title="Location category: Place" class="fa fa-map-pin"></i>
+      <strong>
+	
+	Bergen (Weather)
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  <a class="list-group-item" href="/event/apen-dag-pa-uib-2016/5220969/">
+    <h5 class="pull-right">in 3d 13h</h5>
+    <h4 class="truncate">
+    
+    <i title="Event category: Education" class="fa fa-mortar-board"></i>
+    
+    Åpen dag på UiB 2016
+    </h4>
+    <span class="badge">
+    
+    Wed 08:30
+    
+    </span>
+    <p class="truncate">universitetet i bergen</p>
+    
+    <span class="pull-right">
+      <strong>0.4 km</strong>
+    </span>
+    
+    <p class="truncate">
+      <i title="Location category: Universal" class="fa fa-location-arrow"></i>
+      <strong>
+	
+	Universitetet i Bergen
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  <a class="list-group-item" href="/event/apen-dag-pa-hib/5410240/">
+    <h5 class="pull-right">in 3d 14h</h5>
+    <h4 class="truncate">
+    
+    <i title="Event category: Education" class="fa fa-mortar-board"></i>
+    
+    Åpen dag på HiB
+    </h4>
+    <span class="badge">
+    
+    Wed 09:00
+    
+    </span>
+    <p class="truncate">høgskolen i bergen</p>
+    
+    <span class="pull-right">
+      <strong>2.9 km</strong>
+    </span>
+    
+    <p class="truncate">
+      <i title="Location category: Universal" class="fa fa-location-arrow"></i>
+      <strong>
+	
+	Høgskolen i Bergen
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  <a class="list-group-item" href="/event/clouds-11-c-339-f/6317107/">
+    <h5 class="pull-right">in 3d 15h</h5>
+    <h4 class="truncate">
+    
+      
+      <i title="Event category: Weather" class="fa fa-sun-o"></i>
+      
+    
+    Clouds 1.1 °C / 33.9 °F
+    </h4>
+    <span class="badge">
+    
+    Wed 10:00
+    
+    </span>
+    <p class="truncate">few clouds</p>
+    
+    <span class="pull-right">
+      <strong>0.2 km</strong>
+    </span>
+    
+    <p class="truncate">
+      <i title="Location category: Place" class="fa fa-map-pin"></i>
+      <strong>
+	
+	Bergen (Weather)
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  <a class="list-group-item" href="/event/morbide-fortellinger3-frode-ulvund-om-straff-og-de-farlige-fattige-i-bergen-1700-tallet-til-1900-tallet/3810262/">
+    <h5 class="pull-right">in 3d 17h</h5>
+    <h4 class="truncate">
+    
+    <i title="Event category: Arts & Culture" class="fa fa-font"></i>
+    
+    Morbide fortellinger#3 Frode Ulvund om straff og de “farlige” fattige i Bergen 1700-tallet til 1900-tallet
+    </h4>
+    <span class="badge">
+    
+    Wed 12:00
+    
+    </span>
+    <p class="truncate">bergen offentlige bibliotek</p>
+    
+    <span class="pull-right">
+      <strong>0.6 km</strong>
+    </span>
+    
+    <p class="truncate">
+      <i title="Location category: Universal" class="fa fa-location-arrow"></i>
+      <strong>
+	
+	Bergen Offentlige Bibliotek
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  <a class="list-group-item" href="/event/clear-38-c-388-f/6317108/">
+    <h5 class="pull-right">in 3d 18h</h5>
+    <h4 class="truncate">
+    
+      
+      <i title="Event category: Weather" class="fa fa-sun-o"></i>
+      
+    
+    Clear 3.8 °C / 38.8 °F
+    </h4>
+    <span class="badge">
+    
+    Wed 13:00
+    
+    </span>
+    <p class="truncate">clear sky</p>
+    
+    <span class="pull-right">
+      <strong>0.2 km</strong>
+    </span>
+    
+    <p class="truncate">
+      <i title="Location category: Place" class="fa fa-map-pin"></i>
+      <strong>
+	
+	Bergen (Weather)
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  <a class="list-group-item" href="/event/clouds-41-c-393-f/6317109/">
+    <h5 class="pull-right">in 3d 21h</h5>
+    <h4 class="truncate">
+    
+      
+      <i title="Event category: Weather" class="fa fa-cloud"></i>
+      
+    
+    Clouds 4.1 °C / 39.3 °F
+    </h4>
+    <span class="badge">
+    
+    Wed 16:00
+    
+    </span>
+    <p class="truncate">scattered clouds</p>
+    
+    <span class="pull-right">
+      <strong>0.2 km</strong>
+    </span>
+    
+    <p class="truncate">
+      <i title="Location category: Place" class="fa fa-map-pin"></i>
+      <strong>
+	
+	Bergen (Weather)
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  <a class="list-group-item" href="/event/rain-20-c-355-f/6317110/">
+    <h5 class="pull-right">in 4d 0h</h5>
+    <h4 class="truncate">
+    
+      
+      <i title="Event category: Weather" class="fa fa-cloud"></i>
+      
+    
+    Rain 2.0 °C / 35.5 °F
+    </h4>
+    <span class="badge">
+    
+    Wed 19:00
+    
+    </span>
+    <p class="truncate">light rain</p>
+    
+    <span class="pull-right">
+      <strong>0.2 km</strong>
+    </span>
+    
+    <p class="truncate">
+      <i title="Location category: Place" class="fa fa-map-pin"></i>
+      <strong>
+	
+	Bergen (Weather)
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  <a class="list-group-item" href="/event/bibeltime-apostlenes-gjerninger/4580951/">
+    <h5 class="pull-right">in 4d 0h</h5>
+    <h4 class="truncate">
+    
+    <i title="Event category: Universal" class="fa fa-clock-o"></i>
+    
+    Bibeltime: Apostlenes gjerninger
+    </h4>
+    <span class="badge">
+    
+    Wed 19:00
+    
+    </span>
+    <p class="truncate">delk bergen</p>
+    
+    <span class="pull-right">
+      <strong>0.3 km</strong>
+    </span>
+    
+    <p class="truncate">
+      <i title="Location category: Universal" class="fa fa-location-arrow"></i>
+      <strong>
+	
+	DELK Bergen
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  <a class="list-group-item" href="/event/madama-butterfly/3497543/">
+    <h5 class="pull-right">in 4d 0h</h5>
+    <h4 class="truncate">
+    
+    <i title="Event category: Music" class="fa fa-music"></i>
+    
+    Madama Butterfly
+    </h4>
+    <span class="badge">
+    
+    Wed 19:00
+    
+    </span>
+    <p class="truncate">grieghallen</p>
+    
+    <span class="pull-right">
+      <strong>0.4 km</strong>
+    </span>
+    
+    <p class="truncate">
+      <i title="Location category: Universal" class="fa fa-location-arrow"></i>
+      <strong>
+	
+	Grieghallen
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  <a class="list-group-item" href="/event/pa-troen-ls-hva-har-troen-betydd-for-norsk-politikk/3840330/">
+    <h5 class="pull-right">in 4d 0h</h5>
+    <h4 class="truncate">
+    
+    <i title="Event category: Universal" class="fa fa-clock-o"></i>
+    
+    På troen løs: Hva har troen betydd for norsk politikk?
+    </h4>
+    <span class="badge">
+    
+    Wed 19:00
+    
+    </span>
+    <p class="truncate">litteraturhuset i bergen</p>
+    
+    <span class="pull-right">
+      <strong>0.4 km</strong>
+    </span>
+    
+    <p class="truncate">
+      <i title="Location category: Universal" class="fa fa-location-arrow"></i>
+      <strong>
+	
+	Litteraturhuset i Bergen
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  <a class="list-group-item" href="/event/synopsis-spesial-vi-som-elsker-west-wing/5612259/">
+    <h5 class="pull-right">in 4d 0h</h5>
+    <h4 class="truncate">
+    
+    <i title="Event category: Universal" class="fa fa-clock-o"></i>
+    
+    Synopsis-spesial: Vi som elsker West Wing
+    </h4>
+    <span class="badge">
+    
+    Wed 19:00
+    
+    </span>
+    <p class="truncate">litteraturhuset i bergen</p>
+    
+    <span class="pull-right">
+      <strong>0.4 km</strong>
+    </span>
+    
+    <p class="truncate">
+      <i title="Location category: Universal" class="fa fa-location-arrow"></i>
+      <strong>
+	
+	Litteraturhuset i Bergen
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  <a class="list-group-item" href="/event/til-kjernen-vold/3810261/">
+    <h5 class="pull-right">in 4d 0h</h5>
+    <h4 class="truncate">
+    
+    <i title="Event category: Arts & Culture" class="fa fa-font"></i>
+    
+    Til kjernen: Vold
+    </h4>
+    <span class="badge">
+    
+    Wed 19:00
+    
+    </span>
+    <p class="truncate">bergen offentlige bibliotek</p>
+    
+    <span class="pull-right">
+      <strong>0.6 km</strong>
+    </span>
+    
+    <p class="truncate">
+      <i title="Location category: Universal" class="fa fa-location-arrow"></i>
+      <strong>
+	
+	Bergen Offentlige Bibliotek
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  <a class="list-group-item" href="/event/rain-02-c-324-f/6317111/">
+    <h5 class="pull-right">in 4d 3h</h5>
+    <h4 class="truncate">
+    
+      
+      <i title="Event category: Weather" class="fa fa-cloud"></i>
+      
+    
+    Rain 0.2 °C / 32.4 °F
+    </h4>
+    <span class="badge">
+    
+    Wed 22:00
+    
+    </span>
+    <p class="truncate">light rain</p>
+    
+    <span class="pull-right">
+      <strong>0.2 km</strong>
+    </span>
+    
+    <p class="truncate">
+      <i title="Location category: Place" class="fa fa-map-pin"></i>
+      <strong>
+	
+	Bergen (Weather)
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  <a class="list-group-item" href="/event/rain-04-c-328-f/6317112/">
+    <h5 class="pull-right">in 4d 6h</h5>
+    <h4 class="truncate">
+    
+      
+      <i title="Event category: Weather" class="fa fa-cloud"></i>
+      
+    
+    Rain 0.4 °C / 32.8 °F
+    </h4>
+    <span class="badge">
+    
+    Thu 01:00
+    
+    </span>
+    <p class="truncate">light rain</p>
+    
+    <span class="pull-right">
+      <strong>0.2 km</strong>
+    </span>
+    
+    <p class="truncate">
+      <i title="Location category: Place" class="fa fa-map-pin"></i>
+      <strong>
+	
+	Bergen (Weather)
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  <a class="list-group-item" href="/event/hillary-eller-bernie-trump-eller-cruz-frokostmte-om-den-amerikanske-valgkampen/4524029/">
+    <h5 class="pull-right">in 4d 14h</h5>
+    <h4 class="truncate">
+    
+    <i title="Event category: Universal" class="fa fa-clock-o"></i>
+    
+    Hillary eller Bernie? Trump eller Cruz? Frokostmøte om den amerikanske valgkampen!
+    </h4>
+    <span class="badge">
+    
+    Thu 09:00
+    
+    </span>
+    <p class="truncate">lo i bergen og omland</p>
+    
+    <span class="pull-right">
+      <strong>0.2 km</strong>
+    </span>
+    
+    <p class="truncate">
+      <i title="Location category: Universal" class="fa fa-location-arrow"></i>
+      <strong>
+	
+	LO i Bergen og Omland
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  <a class="list-group-item" href="/event/mathandtering-og-smittevern-bergen/3953284/">
+    <h5 class="pull-right">in 4d 14h</h5>
+    <h4 class="truncate">
+    
+    <i title="Event category: Universal" class="fa fa-clock-o"></i>
+    
+    Mathåndtering og Smittevern, Bergen
+    </h4>
+    <span class="badge">
+    
+    Thu 09:00
+    
+    </span>
+    <p class="truncate">barn-nett</p>
+    
+    <span class="pull-right">
+      <strong>0.6 km</strong>
+    </span>
+    
+    <p class="truncate">
+      <i title="Location category: Universal" class="fa fa-location-arrow"></i>
+      <strong>
+	
+	Barn-Nett
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  <a class="list-group-item" href="/event/presentasjon-av-seniortreff-med-datatema/5839214/">
+    <h5 class="pull-right">in 4d 17h</h5>
+    <h4 class="truncate">
+    
+    <i title="Event category: Universal" class="fa fa-clock-o"></i>
+    
+    Presentasjon av seniortreff med datatema
+    </h4>
+    <span class="badge">
+    
+    Thu 12:00
+    
+    </span>
+    <p class="truncate">ezy data a.s.</p>
+    
+    <span class="pull-right">
+      <strong>1.0 km</strong>
+    </span>
+    
+    <p class="truncate">
+      <i title="Location category: Universal" class="fa fa-location-arrow"></i>
+      <strong>
+	
+	Sandviken seniorsenter
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  <a class="list-group-item" href="/event/multi-anders-vinjar-julian-skar-kari-telstad-sundet/4250488/">
+    <h5 class="pull-right">in 4d 22h</h5>
+    <h4 class="truncate">
+    
+    <i title="Event category: Universal" class="fa fa-clock-o"></i>
+    
+    MULTI : Anders Vinjar, Julian Skar &amp; Kari Telstad Sundet
+    </h4>
+    <span class="badge">
+    
+    Thu 17:00
+    
+    </span>
+    <p class="truncate">borealis contemporary music festival</p>
+    
+    <span class="pull-right">
+      <strong>0.4 km</strong>
+    </span>
+    
+    <p class="truncate">
+      <i title="Location category: Universal" class="fa fa-location-arrow"></i>
+      <strong>
+	
+	ØSTRE
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  <a class="list-group-item" href="/event/vin-viten/5467856/">
+    <h5 class="pull-right">in 4d 23h</h5>
+    <h4 class="truncate">
+    
+    <i title="Event category: Arts & Culture" class="fa fa-font"></i>
+    
+    Vin &amp; Viten
+    </h4>
+    <span class="badge">
+    
+    Thu 18:00
+    
+    </span>
+    <p class="truncate">universitetsmuseet i bergen</p>
+    
+    <span class="pull-right">
+      <strong>0.4 km</strong>
+    </span>
+    
+    <p class="truncate">
+      <i title="Location category: Universal" class="fa fa-location-arrow"></i>
+      <strong>
+	
+	Universitetsmuseet i Bergen
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  <a class="list-group-item" href="/event/rie-nakajima-throw/5516739/">
+    <h5 class="pull-right">in 4d 23h</h5>
+    <h4 class="truncate">
+    
+    <i title="Event category: Universal" class="fa fa-clock-o"></i>
+    
+    Rie Nakajima : Throw
+    </h4>
+    <span class="badge">
+    
+    Thu 18:00
+    
+    </span>
+    <p class="truncate">borealis contemporary music festival</p>
+    
+    <span class="pull-right">
+      <strong>0.4 km</strong>
+    </span>
+    
+    <p class="truncate">
+      <i title="Location category: Universal" class="fa fa-location-arrow"></i>
+      <strong>
+	
+	Lydgalleriet
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  <a class="list-group-item" href="/event/fellestrening-med-mats-mollandsy/5024559/">
+    <h5 class="pull-right">in 4d 23h</h5>
+    <h4 class="truncate">
+    
+    <i title="Event category: Universal" class="fa fa-clock-o"></i>
+    
+    Fellestrening med Mats Mollandsøy!
+    </h4>
+    <span class="badge">
+    
+    Thu 18:00
+    
+    </span>
+    <p class="truncate">løvstakken opp</p>
+    
+    <span class="pull-right">
+      <strong>1.9 km</strong>
+    </span>
+    
+    <p class="truncate">
+      <i title="Location category: Universal" class="fa fa-location-arrow"></i>
+      <strong>
+	
+	Løvstakken Opp
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  <a class="list-group-item" href="/event/axwell-ingrosso-sonny-alven-uken-i-bergen/3205406/">
+    <h5 class="pull-right">in 4d 23h</h5>
+    <h4 class="truncate">
+    
+    <i title="Event category: Community" class="fa fa-users"></i>
+    
+    AXWELL Λ INGROSSO + SONNY ALVEN @ UKEN I BERGEN
+    </h4>
+    <span class="badge">
+    
+    Thu 18:00
+    
+    </span>
+    <p class="truncate">uken i bergen</p>
+    
+    <span class="pull-right">
+      <strong>3.7 km</strong>
+    </span>
+    
+    <p class="truncate">
+      <i title="Location category: Universal" class="fa fa-location-arrow"></i>
+      <strong>
+	
+	UKEN i Bergen
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  <a class="list-group-item" href="/event/go-pro-night/5476231/">
+    <h5 class="pull-right">in 4d 23h</h5>
+    <h4 class="truncate">
+    
+    <i title="Event category: Sports & Fitness" class="fa fa-futbol-o"></i>
+    
+    Go Pro Night
+    </h4>
+    <span class="badge">
+    
+    Thu 18:00
+    
+    </span>
+    <p class="truncate">nemoclassicdiving</p>
+    
+    <span class="pull-right">
+      <strong>3.8 km</strong>
+    </span>
+    
+    <p class="truncate">
+      <i title="Location category: Universal" class="fa fa-location-arrow"></i>
+      <strong>
+	
+	NemoClassicDiving
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  <a class="list-group-item" href="/event/allmte-for-kulturfest-asane-2016/5731622/">
+    <h5 class="pull-right">in 4d 23h</h5>
+    <h4 class="truncate">
+    
+    <i title="Event category: Universal" class="fa fa-clock-o"></i>
+    
+    Allmøte for Kulturfest Åsane 2016
+    </h4>
+    <span class="badge">
+    
+    Thu 18:30
+    
+    </span>
+    <p class="truncate">arna og åsane kulturkontor</p>
+    
+    <span class="pull-right">
+      <strong>8.3 km</strong>
+    </span>
+    
+    <p class="truncate">
+      <i title="Location category: Universal" class="fa fa-location-arrow"></i>
+      <strong>
+	
+	Arna og Åsane kulturkontor
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  <a class="list-group-item" href="/event/dave-fields-band-europa/2130532/">
+    <h5 class="pull-right">in 5d 0h</h5>
+    <h4 class="truncate">
+    
+    <i title="Event category: Music" class="fa fa-music"></i>
+    
+    Dave Fields Band, Europa
+    </h4>
+    <span class="badge">
+    
+    Thu 19:00
+    
+    </span>
+    <p class="truncate">live music performance</p>
+    
+    <span class="pull-right">
+      <strong>0.1 km</strong>
+    </span>
+    
+    <p class="truncate">
+      <i title="Location category: Universal" class="fa fa-location-arrow"></i>
+      <strong>
+	
+	BERGEN BLUES &amp; ROOTS CLUB BLUESCRUISE
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  <a class="list-group-item" href="/event/fullt-lsmaking-brouwerij-de-molen-ne-m-john-brus-pamelding/6135065/">
+    <h5 class="pull-right">in 5d 0h</h5>
+    <h4 class="truncate">
+    
+    <i title="Event category: Universal" class="fa fa-clock-o"></i>
+    
+    FULLT! - ØLSMAKING - Brouwerij de Molen (NE) m/ John Brus **PÅMELDING**
+    </h4>
+    <span class="badge">
+    
+    Thu 19:00
+    
+    </span>
+    <p class="truncate">apollon bergen</p>
+    
+    <span class="pull-right">
+      <strong>0.2 km</strong>
+    </span>
+    
+    <p class="truncate">
+      <i title="Location category: Universal" class="fa fa-location-arrow"></i>
+      <strong>
+	
+	Apollon Bergen
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  <a class="list-group-item" href="/event/mal-og-mening-brannskadd/3840329/">
+    <h5 class="pull-right">in 5d 0h</h5>
+    <h4 class="truncate">
+    
+    <i title="Event category: Universal" class="fa fa-clock-o"></i>
+    
+    Mål og mening: Brannskadd
+    </h4>
+    <span class="badge">
+    
+    Thu 19:00
+    
+    </span>
+    <p class="truncate">litteraturhuset i bergen</p>
+    
+    <span class="pull-right">
+      <strong>0.4 km</strong>
+    </span>
+    
+    <p class="truncate">
+      <i title="Location category: Universal" class="fa fa-location-arrow"></i>
+      <strong>
+	
+	Litteraturhuset i Bergen
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  <a class="list-group-item" href="/event/klassekamp-i-litteraturen-og-samfunnet1-foredrag-av-asa-linderborg/3702146/">
+    <h5 class="pull-right">in 5d 0h</h5>
+    <h4 class="truncate">
+    
+    <i title="Event category: Arts & Culture" class="fa fa-font"></i>
+    
+    Klassekamp i litteraturen og samfunnet#1 Foredrag av Åsa Linderborg
+    </h4>
+    <span class="badge">
+    
+    Thu 19:00
+    
+    </span>
+    <p class="truncate">bergen offentlige bibliotek</p>
+    
+    <span class="pull-right">
+      <strong>0.6 km</strong>
+    </span>
+    
+    <p class="truncate">
+      <i title="Location category: Universal" class="fa fa-location-arrow"></i>
+      <strong>
+	
+	Bergen Offentlige Bibliotek
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  <a class="list-group-item" href="/event/maria-mena/3021858/">
+    <h5 class="pull-right">in 5d 0h</h5>
+    <h4 class="truncate">
+    
+    <i title="Event category: Universal" class="fa fa-clock-o"></i>
+    
+    Maria Mena
+    </h4>
+    <span class="badge">
+    
+    Thu 19:00
+    
+    </span>
+    <p class="truncate">bergen live</p>
+    
+    <span class="pull-right">
+      <strong>0.9 km</strong>
+    </span>
+    
+    <p class="truncate">
+      <i title="Location category: Universal" class="fa fa-location-arrow"></i>
+      <strong>
+	
+	Røkeriet, USF
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  <a class="list-group-item" href="/event/bit20-ensemble-spiller-sigurd-fischer-olsen-santiago-diez-fischer-under-ordene/4250487/">
+    <h5 class="pull-right">in 5d 0h</h5>
+    <h4 class="truncate">
+    
+    <i title="Event category: Universal" class="fa fa-clock-o"></i>
+    
+    BIT20 Ensemble spiller Sigurd Fischer Olsen &amp;  Santiago Díez-Fischer : Under Ordene
+    </h4>
+    <span class="badge">
+    
+    Thu 19:00
+    
+    </span>
+    <p class="truncate">borealis contemporary music festival</p>
+    
+    <span class="pull-right">
+      <strong>1.2 km</strong>
+    </span>
+    
+    <p class="truncate">
+      <i title="Location category: Universal" class="fa fa-location-arrow"></i>
+      <strong>
+	
+	Bergen Kjøtt
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  <a class="list-group-item" href="/event/kvinnesamling/5795221/">
+    <h5 class="pull-right">in 5d 0h</h5>
+    <h4 class="truncate">
+    
+    <i title="Event category: Universal" class="fa fa-clock-o"></i>
+    
+    Kvinnesamling
+    </h4>
+    <span class="badge">
+    
+    Thu 19:00
+    
+    </span>
+    <p class="truncate">credokirken</p>
+    
+    <span class="pull-right">
+      <strong>6.2 km</strong>
+    </span>
+    
+    <p class="truncate">
+      <i title="Location category: Universal" class="fa fa-location-arrow"></i>
+      <strong>
+	
+	Credokirken
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  <a class="list-group-item" href="/event/debutanttripp-natur-og-landskap/3840328/">
+    <h5 class="pull-right">in 5d 1h</h5>
+    <h4 class="truncate">
+    
+    <i title="Event category: Universal" class="fa fa-clock-o"></i>
+    
+    Debutanttripp: Natur og landskap
+    </h4>
+    <span class="badge">
+    
+    Thu 20:00
+    
+    </span>
+    <p class="truncate">litteraturhuset i bergen</p>
+    
+    <span class="pull-right">
+      <strong>0.4 km</strong>
+    </span>
+    
+    <p class="truncate">
+      <i title="Location category: Universal" class="fa fa-location-arrow"></i>
+      <strong>
+	
+	Litteraturhuset i Bergen
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  <a class="list-group-item" href="/event/maria-mena/2101648/">
+    <h5 class="pull-right">in 5d 1h</h5>
+    <h4 class="truncate">
+    
+    <i title="Event category: Music" class="fa fa-music"></i>
+    
+    Maria Mena
+    </h4>
+    <span class="badge">
+    
+    Thu 20:00
+    
+    </span>
+    <p class="truncate">live music performance</p>
+    
+    <span class="pull-right">
+      <strong>0.9 km</strong>
+    </span>
+    
+    <p class="truncate">
+      <i title="Location category: Universal" class="fa fa-location-arrow"></i>
+      <strong>
+	
+	USF Verftet
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  <a class="list-group-item" href="/event/releasekonsert-atlanter-support-wilhelms-midnight-madness-kvarteret-10-mars/3198307/">
+    <h5 class="pull-right">in 5d 2h</h5>
+    <h4 class="truncate">
+    
+    <i title="Event category: Universal" class="fa fa-clock-o"></i>
+    
+    Releasekonsert: Atlanter + Support: Wilhelm&#39;s Midnight Madness @ Kvarteret 10. mars
+    </h4>
+    <span class="badge">
+    
+    Thu 21:00
+    
+    </span>
+    <p class="truncate">bergen realistforening</p>
+    
+    <span class="pull-right">
+      <strong>0.2 km</strong>
+    </span>
+    
+    <p class="truncate">
+      <i title="Location category: Universal" class="fa fa-location-arrow"></i>
+      <strong>
+	
+	Det Akademiske Kvarter
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  <a class="list-group-item" href="/event/multi-julian-skar-kari-telstad-sundet/4250486/">
+    <h5 class="pull-right">in 5d 2h</h5>
+    <h4 class="truncate">
+    
+    <i title="Event category: Universal" class="fa fa-clock-o"></i>
+    
+    MULTI : Julian Skar &amp; Kari Telstad Sundet
+    </h4>
+    <span class="badge">
+    
+    Thu 21:00
+    
+    </span>
+    <p class="truncate">borealis contemporary music festival</p>
+    
+    <span class="pull-right">
+      <strong>0.4 km</strong>
+    </span>
+    
+    <p class="truncate">
+      <i title="Location category: Universal" class="fa fa-location-arrow"></i>
+      <strong>
+	
+	ØSTRE
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  <a class="list-group-item" href="/event/elg/4164895/">
+    <h5 class="pull-right">in 5d 2h</h5>
+    <h4 class="truncate">
+    
+    <i title="Event category: Universal" class="fa fa-clock-o"></i>
+    
+    ELG
+    </h4>
+    <span class="badge">
+    
+    Thu 21:00
+    
+    </span>
+    <p class="truncate">madamfelle</p>
+    
+    <span class="pull-right">
+      <strong>0.7 km</strong>
+    </span>
+    
+    <p class="truncate">
+      <i title="Location category: Universal" class="fa fa-location-arrow"></i>
+      <strong>
+	
+	MadamFelle
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  <a class="list-group-item" href="/event/all-the-luck-in-the-world-supp-tammie-tambourine-hulen/3909068/">
+    <h5 class="pull-right">in 5d 2h</h5>
+    <h4 class="truncate">
+    
+    <i title="Event category: Universal" class="fa fa-clock-o"></i>
+    
+    All the Luck in the World + supp. Tammie Tambourine // Hulen
+    </h4>
+    <span class="badge">
+    
+    Thu 21:00
+    
+    </span>
+    <p class="truncate">hulen</p>
+    
+    <span class="pull-right">
+      <strong>0.7 km</strong>
+    </span>
+    
+    <p class="truncate">
+      <i title="Location category: Universal" class="fa fa-location-arrow"></i>
+      <strong>
+	
+	Hulen
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  <a class="list-group-item" href="/event/object-collection-its-all-true-world-premiere/4250485/">
+    <h5 class="pull-right">in 5d 2h</h5>
+    <h4 class="truncate">
+    
+    <i title="Event category: Universal" class="fa fa-clock-o"></i>
+    
+    Object Collection: It&#39;s All True: World Premiere
+    </h4>
+    <span class="badge">
+    
+    Thu 21:00
+    
+    </span>
+    <p class="truncate">borealis contemporary music festival</p>
+    
+    <span class="pull-right">
+      <strong>1.0 km</strong>
+    </span>
+    
+    <p class="truncate">
+      <i title="Location category: Universal" class="fa fa-location-arrow"></i>
+      <strong>
+	
+	Cornerteateret
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  <a class="list-group-item" href="/event/klubbstuen-sam-marriott/4595793/">
+    <h5 class="pull-right">in 5d 3h</h5>
+    <h4 class="truncate">
+    
+    <i title="Event category: Universal" class="fa fa-clock-o"></i>
+    
+    KLUBBSTUEN: SAM MARRIOTT
+    </h4>
+    <span class="badge">
+    
+    Thu 22:00
+    
+    </span>
+    <p class="truncate">kono 16</p>
+    
+    <span class="pull-right">
+      <strong>0.6 km</strong>
+    </span>
+    
+    <p class="truncate">
+      <i title="Location category: Universal" class="fa fa-location-arrow"></i>
+      <strong>
+	
+	KONo 16
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  <a class="list-group-item" href="/event/egyptian-females-experimental-music-session/4250484/">
+    <h5 class="pull-right">in 5d 4h</h5>
+    <h4 class="truncate">
+    
+    <i title="Event category: Universal" class="fa fa-clock-o"></i>
+    
+    Egyptian Females Experimental Music Session
+    </h4>
+    <span class="badge">
+    
+    Thu 23:00
+    
+    </span>
+    <p class="truncate">borealis contemporary music festival</p>
+    
+    <span class="pull-right">
+      <strong>0.4 km</strong>
+    </span>
+    
+    <p class="truncate">
+      <i title="Location category: Universal" class="fa fa-location-arrow"></i>
+      <strong>
+	
+	ØSTRE
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  <a class="list-group-item" href="/event/samtale-operas-bold-new-future/4250483/">
+    <h5 class="pull-right">in 5d 18h</h5>
+    <h4 class="truncate">
+    
+    <i title="Event category: Universal" class="fa fa-clock-o"></i>
+    
+    Samtale : Opera&#39;s Bold New Future
+    </h4>
+    <span class="badge">
+    
+    Fri 13:00
+    
+    </span>
+    <p class="truncate">borealis contemporary music festival</p>
+    
+    <span class="pull-right">
+      <strong>0.3 km</strong>
+    </span>
+    
+    <p class="truncate">
+      <i title="Location category: Universal" class="fa fa-location-arrow"></i>
+      <strong>
+	
+	Bergen Kunsthall
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  <a class="list-group-item" href="/event/visjon-expo-alternativmessen-i-grieghallen-bergen-11-13-mars/3077682/">
+    <h5 class="pull-right">in 5d 18h</h5>
+    <h4 class="truncate">
+    
+    <i title="Event category: Media" class="fa fa-television"></i>
+    
+    Visjon Expo Alternativmessen i Grieghallen, Bergen 11.-13. mars
+    </h4>
+    <span class="badge">
+    
+    Fri 13:00
+    
+    </span>
+    <p class="truncate">visjon expo alternativmessen</p>
+    
+    <span class="pull-right">
+      <strong>0.4 km</strong>
+    </span>
+    
+    <p class="truncate">
+      <i title="Location category: Universal" class="fa fa-location-arrow"></i>
+      <strong>
+	
+	Grieghallen
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  <a class="list-group-item" href="/event/bushido-samurai-camp-2016/2696283/">
+    <h5 class="pull-right">in 5d 21h</h5>
+    <h4 class="truncate">
+    
+    <i title="Event category: Education" class="fa fa-mortar-board"></i>
+    
+    Bushido Samurai Camp 2016
+    </h4>
+    <span class="badge">
+    
+    Fri 16:30
+    
+    </span>
+    <p class="truncate">bushido kampsportsenter</p>
+    
+    <span class="pull-right">
+      <strong>3.1 km</strong>
+    </span>
+    
+    <p class="truncate">
+      <i title="Location category: Universal" class="fa fa-location-arrow"></i>
+      <strong>
+	
+	Sjøkrigsskolen
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  <a class="list-group-item" href="/event/familiepakken-uken-16-msondre-justad/4082987/">
+    <h5 class="pull-right">in 5d 23h</h5>
+    <h4 class="truncate">
+    
+    <i title="Event category: Community" class="fa fa-users"></i>
+    
+    Familiepakken - UKEN 16 m/Sondre Justad
+    </h4>
+    <span class="badge">
+    
+    Fri 18:00
+    
+    </span>
+    <p class="truncate">uken i bergen</p>
+    
+    <span class="pull-right">
+      <strong>3.7 km</strong>
+    </span>
+    
+    <p class="truncate">
+      <i title="Location category: Universal" class="fa fa-location-arrow"></i>
+      <strong>
+	
+	UKEN i Bergen
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  <a class="list-group-item" href="/event/plattform-and-borealis-present-dan-fox/4272570/">
+    <h5 class="pull-right">in 6d 0h</h5>
+    <h4 class="truncate">
+    
+    <i title="Event category: Universal" class="fa fa-clock-o"></i>
+    
+    Plattform and Borealis present: Dan Fox
+    </h4>
+    <span class="badge">
+    
+    Fri 19:00
+    
+    </span>
+    <p class="truncate">plattform</p>
+    
+    <span class="pull-right">
+      <strong>0.3 km</strong>
+    </span>
+    
+    <p class="truncate">
+      <i title="Location category: Universal" class="fa fa-location-arrow"></i>
+      <strong>
+	
+	Landmark Bergen
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  <a class="list-group-item" href="/event/madama-butterfly/3497542/">
+    <h5 class="pull-right">in 6d 0h</h5>
+    <h4 class="truncate">
+    
+    <i title="Event category: Music" class="fa fa-music"></i>
+    
+    Madama Butterfly
+    </h4>
+    <span class="badge">
+    
+    Fri 19:00
+    
+    </span>
+    <p class="truncate">grieghallen</p>
+    
+    <span class="pull-right">
+      <strong>0.4 km</strong>
+    </span>
+    
+    <p class="truncate">
+      <i title="Location category: Universal" class="fa fa-location-arrow"></i>
+      <strong>
+	
+	Grieghallen
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  <a class="list-group-item" href="/event/forspill-ars-amandi-kunsten-a-elske/3840327/">
+    <h5 class="pull-right">in 6d 0h</h5>
+    <h4 class="truncate">
+    
+    <i title="Event category: Universal" class="fa fa-clock-o"></i>
+    
+    Forspill: Ars amandi – Kunsten å elske
+    </h4>
+    <span class="badge">
+    
+    Fri 19:00
+    
+    </span>
+    <p class="truncate">litteraturhuset i bergen</p>
+    
+    <span class="pull-right">
+      <strong>0.4 km</strong>
+    </span>
+    
+    <p class="truncate">
+      <i title="Location category: Universal" class="fa fa-location-arrow"></i>
+      <strong>
+	
+	Litteraturhuset i Bergen
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  <a class="list-group-item" href="/event/amorphis-fin-supp-omnium-gatherum-og-poem-bergen/3305426/">
+    <h5 class="pull-right">in 6d 0h</h5>
+    <h4 class="truncate">
+    
+    <i title="Event category: Business" class="fa fa-briefcase"></i>
+    
+    AMORPHIS (FIN) supp: Omnium Gatherum og Poem - BERGEN
+    </h4>
+    <span class="badge">
+    
+    Fri 19:00
+    
+    </span>
+    <p class="truncate">blastphemy production as</p>
+    
+    <span class="pull-right">
+      <strong>0.9 km</strong>
+    </span>
+    
+    <p class="truncate">
+      <i title="Location category: Universal" class="fa fa-location-arrow"></i>
+      <strong>
+	
+	USF Verftet
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  <a class="list-group-item" href="/event/amorphis/3162935/">
+    <h5 class="pull-right">in 6d 0h</h5>
+    <h4 class="truncate">
+    
+    <i title="Event category: Music" class="fa fa-music"></i>
+    
+    Amorphis
+    </h4>
+    <span class="badge">
+    
+    Fri 19:00
+    
+    </span>
+    <p class="truncate">live music performance</p>
+    
+    <span class="pull-right">
+      <strong>0.9 km</strong>
+    </span>
+    
+    <p class="truncate">
+      <i title="Location category: Venue" class="fa fa-building"></i>
+      <strong>
+	
+	Usf
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  
+  <span id="more-120" class="list-group-item">
+    <a class="text-center" href="#"
+       onclick="fetch_upcoming(120); return false;">
+      <h4>Show more events</h4></a>
+  </span>
+  
+  </div>
+</div>
+
+
+
+<div class="col-sm-12">
+  <div class="list-group">
+  
+  <a class="list-group-item" href="/event/mesternes-mester/4990039/">
+    <h5 class="pull-right">in 1h</h5>
+    <h4 class="truncate">
+    
+    <i title="Event category: Media" class="fa fa-television"></i>
+    
+    Mesternes Mester
+    </h4>
+    <span class="badge">
+    
+    Sat 19:55
+    
+    </span>
+    <p class="truncate">tv show episode 10</p>
+    
+    <p class="truncate">
+      <i title="Location category: Region" class="fa fa-flag-o"></i>
+      <strong>
+	
+	NRK1 (NO)
+	  
+	  TV Network, Norway
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  <a class="list-group-item" href="/event/neste-sommer/5050367/">
+    <h5 class="pull-right">in 1d 2h</h5>
+    <h4 class="truncate">
+    
+    <i title="Event category: Media" class="fa fa-television"></i>
+    
+    Neste Sommer
+    </h4>
+    <span class="badge">
+    
+    Sun 21:30
+    
+    </span>
+    <p class="truncate">tv show episode 4</p>
+    
+    <p class="truncate">
+      <i title="Location category: Region" class="fa fa-flag-o"></i>
+      <strong>
+	
+	TV Norge (NO)
+	  
+	  TV Network, Norway
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  <a class="list-group-item" href="/event/helt-perfekt/5852372/">
+    <h5 class="pull-right">in 1d 3h</h5>
+    <h4 class="truncate">
+    
+    <i title="Event category: Media" class="fa fa-television"></i>
+    
+    Helt Perfekt
+    </h4>
+    <span class="badge">
+    
+    Sun 22:00
+    
+    </span>
+    <p class="truncate">tv show sommerhuset</p>
+    
+    <p class="truncate">
+      <i title="Location category: Region" class="fa fa-flag-o"></i>
+      <strong>
+	
+	TV Norge (NO)
+	  
+	  TV Network, Norway
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  <a class="list-group-item" href="/event/sigrid-murat-til-bergen-11-13-mars-2016/3990039/">
+    <h5 class="pull-right">in 6d 1h</h5>
+    <h4 class="truncate">
+    
+    <i title="Event category: Universal" class="fa fa-clock-o"></i>
+    
+    Sigrid &amp; Murat til Bergen 11.-13. mars 2016
+    </h4>
+    <span class="badge">
+    
+    Fri 20:00
+    
+    </span>
+    <p class="truncate">tango abrazo</p>
+    
+    <span class="pull-right">
+      <strong>0.5 km</strong>
+    </span>
+    
+    <p class="truncate">
+      <i title="Location category: Universal" class="fa fa-location-arrow"></i>
+      <strong>
+	
+	Tango Abrazo
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  <a class="list-group-item" href="/event/idol/6300557/">
+    <h5 class="pull-right">in 6d 1h</h5>
+    <h4 class="truncate">
+    
+    <i title="Event category: Media" class="fa fa-television"></i>
+    
+    Idol
+    </h4>
+    <span class="badge">
+    
+    Fri 20:00
+    
+    </span>
+    <p class="truncate">tv show season 9, episode 14</p>
+    
+    <p class="truncate">
+      <i title="Location category: Region" class="fa fa-flag-o"></i>
+      <strong>
+	
+	TV 2 (NO)
+	  
+	  TV Network, Norway
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  <a class="list-group-item" href="/event/hurra-torpedo-teglverket/3556001/">
+    <h5 class="pull-right">in 6d 2h</h5>
+    <h4 class="truncate">
+    
+    <i title="Event category: Universal" class="fa fa-clock-o"></i>
+    
+    HURRA TORPEDO @ TEGLVERKET
+    </h4>
+    <span class="badge">
+    
+    Fri 21:00
+    
+    </span>
+    <p class="truncate">aktive studenters forening</p>
+    
+    <span class="pull-right">
+      <strong>0.2 km</strong>
+    </span>
+    
+    <p class="truncate">
+      <i title="Location category: Universal" class="fa fa-location-arrow"></i>
+      <strong>
+	
+	Det Akademiske Kvarter
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  <a class="list-group-item" href="/event/oslo-ess-eurotrash/3466458/">
+    <h5 class="pull-right">in 6d 2h</h5>
+    <h4 class="truncate">
+    
+    <i title="Event category: Universal" class="fa fa-clock-o"></i>
+    
+    OSLO ESS + Eurotrash
+    </h4>
+    <span class="badge">
+    
+    Fri 21:00
+    
+    </span>
+    <p class="truncate">garage bergen</p>
+    
+    <span class="pull-right">
+      <strong>0.2 km</strong>
+    </span>
+    
+    <p class="truncate">
+      <i title="Location category: Universal" class="fa fa-location-arrow"></i>
+      <strong>
+	
+	Garage Bergen
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  <a class="list-group-item" href="/event/shakanaka-supp-madstheanimal-st-bennetts-hulen/5732526/">
+    <h5 class="pull-right">in 6d 2h</h5>
+    <h4 class="truncate">
+    
+    <i title="Event category: Universal" class="fa fa-clock-o"></i>
+    
+    Shakanaka + supp. Madstheanimal &amp; St. Bennett&#39;s // Hulen
+    </h4>
+    <span class="badge">
+    
+    Fri 21:00
+    
+    </span>
+    <p class="truncate">hulen</p>
+    
+    <span class="pull-right">
+      <strong>0.7 km</strong>
+    </span>
+    
+    <p class="truncate">
+      <i title="Location category: Universal" class="fa fa-location-arrow"></i>
+      <strong>
+	
+	Hulen
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  <a class="list-group-item" href="/event/christian-mcbride-trio-bergen-jazzforum/3305388/">
+    <h5 class="pull-right">in 6d 2h</h5>
+    <h4 class="truncate">
+    
+    <i title="Event category: Music" class="fa fa-music"></i>
+    
+    CHRISTIAN McBRIDE TRIO // BERGEN JAZZFORUM
+    </h4>
+    <span class="badge">
+    
+    Fri 21:00
+    
+    </span>
+    <p class="truncate">bergen jazzforum</p>
+    
+    <span class="pull-right">
+      <strong>0.9 km</strong>
+    </span>
+    
+    <p class="truncate">
+      <i title="Location category: Universal" class="fa fa-location-arrow"></i>
+      <strong>
+	
+	Bergen Jazzforum
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  <a class="list-group-item" href="/event/vitskrieg-m-lisa-tnne-bergen-11-mars/5429615/">
+    <h5 class="pull-right">in 6d 2h</h5>
+    <h4 class="truncate">
+    
+    <i title="Event category: Community" class="fa fa-users"></i>
+    
+    VITSKRIEG m. Lisa Tønne - Bergen 11. Mars
+    </h4>
+    <span class="badge">
+    
+    Fri 21:30
+    
+    </span>
+    <p class="truncate">uken i bergen</p>
+    
+    <span class="pull-right">
+      <strong>3.7 km</strong>
+    </span>
+    
+    <p class="truncate">
+      <i title="Location category: Universal" class="fa fa-location-arrow"></i>
+      <strong>
+	
+	UKEN i Bergen
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  <a class="list-group-item" href="/event/zoran-nogulicovenpa/6083632/">
+    <h5 class="pull-right">in 6d 3h</h5>
+    <h4 class="truncate">
+    
+    <i title="Event category: Universal" class="fa fa-clock-o"></i>
+    
+    Zoran Nogulic@Ovenpå
+    </h4>
+    <span class="badge">
+    
+    Fri 22:00
+    
+    </span>
+    <p class="truncate">ovenpå nightclub</p>
+    
+    <span class="pull-right">
+      <strong>0.4 km</strong>
+    </span>
+    
+    <p class="truncate">
+      <i title="Location category: Universal" class="fa fa-location-arrow"></i>
+      <strong>
+	
+	Ovenpå Nightclub
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  <a class="list-group-item" href="/event/mark-leckey-dream-english-kid-1964-1999-ad/4250482/">
+    <h5 class="pull-right">in 6d 3h</h5>
+    <h4 class="truncate">
+    
+    <i title="Event category: Universal" class="fa fa-clock-o"></i>
+    
+    Mark Leckey: Dream English Kid 1964-1999 AD
+    </h4>
+    <span class="badge">
+    
+    Fri 22:30
+    
+    </span>
+    <p class="truncate">borealis contemporary music festival</p>
+    
+    <span class="pull-right">
+      <strong>0.3 km</strong>
+    </span>
+    
+    <p class="truncate">
+      <i title="Location category: Universal" class="fa fa-location-arrow"></i>
+      <strong>
+	
+	Landmark Bergen
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  <a class="list-group-item" href="/event/de-musikalske-dvergene/4059332/">
+    <h5 class="pull-right">in 6d 3h</h5>
+    <h4 class="truncate">
+    
+    <i title="Event category: Universal" class="fa fa-clock-o"></i>
+    
+    DE MUSIKALSKE DVERGENE
+    </h4>
+    <span class="badge">
+    
+    Fri 22:30
+    
+    </span>
+    <p class="truncate">madamfelle</p>
+    
+    <span class="pull-right">
+      <strong>0.7 km</strong>
+    </span>
+    
+    <p class="truncate">
+      <i title="Location category: Universal" class="fa fa-location-arrow"></i>
+      <strong>
+	
+	MadamFelle
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  <a class="list-group-item" href="/event/klubb-kok-pres-girson-spiller-fet-rap/6344345/">
+    <h5 class="pull-right">in 6d 4h</h5>
+    <h4 class="truncate">
+    
+    <i title="Event category: Universal" class="fa fa-clock-o"></i>
+    
+    KLUBB KOK pres. GIRSON SPILLER FET RAP
+    </h4>
+    <span class="badge">
+    
+    Fri 23:00
+    
+    </span>
+    <p class="truncate">klubb kok</p>
+    
+    <span class="pull-right">
+      <strong>0.2 km</strong>
+    </span>
+    
+    <p class="truncate">
+      <i title="Location category: Universal" class="fa fa-location-arrow"></i>
+      <strong>
+	
+	Klubb Kok
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  <a class="list-group-item" href="/event/rodrigo-constanzo/4250481/">
+    <h5 class="pull-right">in 6d 4h</h5>
+    <h4 class="truncate">
+    
+    <i title="Event category: Universal" class="fa fa-clock-o"></i>
+    
+    Rodrigo Constanzo
+    </h4>
+    <span class="badge">
+    
+    Fri 23:00
+    
+    </span>
+    <p class="truncate">borealis contemporary music festival</p>
+    
+    <span class="pull-right">
+      <strong>0.3 km</strong>
+    </span>
+    
+    <p class="truncate">
+      <i title="Location category: Universal" class="fa fa-location-arrow"></i>
+      <strong>
+	
+	Bergen Kunsthall
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  <a class="list-group-item" href="/event/klubbmisjonen-lysgaard/5990692/">
+    <h5 class="pull-right">in 6d 4h</h5>
+    <h4 class="truncate">
+    
+    <i title="Event category: Music" class="fa fa-music"></i>
+    
+    Klubbmisjonen: Lysgaard
+    </h4>
+    <span class="badge">
+    
+    Fri 23:30
+    
+    </span>
+    <p class="truncate">klubbmisjonen</p>
+    
+    <span class="pull-right">
+      <strong>0.1 km</strong>
+    </span>
+    
+    <p class="truncate">
+      <i title="Location category: Universal" class="fa fa-location-arrow"></i>
+      <strong>
+	
+	Klubbmisjonen
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  <a class="list-group-item" href="/event/beatrice-dillon-kassem-mosse/4250480/">
+    <h5 class="pull-right">in 6d 5h</h5>
+    <h4 class="truncate">
+    
+    <i title="Event category: Universal" class="fa fa-clock-o"></i>
+    
+    Beatrice Dillon &amp; Kassem Mosse
+    </h4>
+    <span class="badge">
+    
+    Fri 23:59
+    
+    </span>
+    <p class="truncate">borealis contemporary music festival</p>
+    
+    <span class="pull-right">
+      <strong>0.3 km</strong>
+    </span>
+    
+    <p class="truncate">
+      <i title="Location category: Universal" class="fa fa-location-arrow"></i>
+      <strong>
+	
+	Landmark Bergen
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  <a class="list-group-item" href="/event/agility-nybegynnerkurs/5499408/">
+    <h5 class="pull-right">in 6d 15h</h5>
+    <h4 class="truncate">
+    
+    <i title="Event category: Health & Wellnes" class="fa fa-leaf"></i>
+    
+    Agility nybegynnerkurs
+    </h4>
+    <span class="badge">
+    
+    Sat 10:00
+    
+    </span>
+    <p class="truncate">dyreklinikken bergen vest</p>
+    
+    <span class="pull-right">
+      <strong>5.1 km</strong>
+    </span>
+    
+    <p class="truncate">
+      <i title="Location category: Universal" class="fa fa-location-arrow"></i>
+      <strong>
+	
+	Dyreklinikken Bergen Vest
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  <a class="list-group-item" href="/event/lillelrdag/3840326/">
+    <h5 class="pull-right">in 6d 16h</h5>
+    <h4 class="truncate">
+    
+    <i title="Event category: Universal" class="fa fa-clock-o"></i>
+    
+    Lillelørdag
+    </h4>
+    <span class="badge">
+    
+    Sat 11:00
+    
+    </span>
+    <p class="truncate">litteraturhuset i bergen</p>
+    
+    <span class="pull-right">
+      <strong>0.4 km</strong>
+    </span>
+    
+    <p class="truncate">
+      <i title="Location category: Universal" class="fa fa-location-arrow"></i>
+      <strong>
+	
+	Litteraturhuset i Bergen
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  <a class="list-group-item" href="/event/agility-workshop/4417111/">
+    <h5 class="pull-right">in 6d 16h</h5>
+    <h4 class="truncate">
+    
+    <i title="Event category: Sports & Fitness" class="fa fa-futbol-o"></i>
+    
+    Agility Workshop!
+    </h4>
+    <span class="badge">
+    
+    Sat 11:00
+    
+    </span>
+    <p class="truncate">freerun training</p>
+    
+    <span class="pull-right">
+      <strong>9.2 km</strong>
+    </span>
+    
+    <p class="truncate">
+      <i title="Location category: Universal" class="fa fa-location-arrow"></i>
+      <strong>
+	
+	FreeRun Training
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  <a class="list-group-item" href="/event/borealis-filmklubb/4250479/">
+    <h5 class="pull-right">in 6d 16h</h5>
+    <h4 class="truncate">
+    
+    <i title="Event category: Universal" class="fa fa-clock-o"></i>
+    
+    Borealis filmklubb
+    </h4>
+    <span class="badge">
+    
+    Sat 11:30
+    
+    </span>
+    <p class="truncate">borealis contemporary music festival</p>
+    
+    <span class="pull-right">
+      <strong>0.3 km</strong>
+    </span>
+    
+    <p class="truncate">
+      <i title="Location category: Universal" class="fa fa-location-arrow"></i>
+      <strong>
+	
+	Bergen Kunsthall
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  <a class="list-group-item" href="/event/mt-tonje-glimmerdal/6229985/">
+    <h5 class="pull-right">in 6d 18h</h5>
+    <h4 class="truncate">
+    
+    <i title="Event category: Arts & Culture" class="fa fa-font"></i>
+    
+    Møt Tonje Glimmerdal!
+    </h4>
+    <span class="badge">
+    
+    Sat 13:00
+    
+    </span>
+    <p class="truncate">bergen offentlige bibliotek</p>
+    
+    <span class="pull-right">
+      <strong>0.6 km</strong>
+    </span>
+    
+    <p class="truncate">
+      <i title="Location category: Universal" class="fa fa-location-arrow"></i>
+      <strong>
+	
+	Bergen Offentlige Bibliotek
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  <a class="list-group-item" href="/event/kattejenta-med-veronika-erstad/3840325/">
+    <h5 class="pull-right">in 6d 19h</h5>
+    <h4 class="truncate">
+    
+    <i title="Event category: Universal" class="fa fa-clock-o"></i>
+    
+    Kattejenta med Veronika Erstad
+    </h4>
+    <span class="badge">
+    
+    Sat 14:00
+    
+    </span>
+    <p class="truncate">litteraturhuset i bergen</p>
+    
+    <span class="pull-right">
+      <strong>0.4 km</strong>
+    </span>
+    
+    <p class="truncate">
+      <i title="Location category: Universal" class="fa fa-location-arrow"></i>
+      <strong>
+	
+	Litteraturhuset i Bergen
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  <a class="list-group-item" href="/event/konsertsirkus/5516737/">
+    <h5 class="pull-right">in 6d 19h</h5>
+    <h4 class="truncate">
+    
+    <i title="Event category: Universal" class="fa fa-clock-o"></i>
+    
+    Konsertsirkus!
+    </h4>
+    <span class="badge">
+    
+    Sat 14:00
+    
+    </span>
+    <p class="truncate">borealis contemporary music festival</p>
+    
+    <span class="pull-right">
+      <strong>0.5 km</strong>
+    </span>
+    
+    <p class="truncate">
+      <i title="Location category: Universal" class="fa fa-location-arrow"></i>
+      <strong>
+	
+	Biks
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  <a class="list-group-item" href="/event/lindesnes-trekkspillklubb-trekkspillshow/3497541/">
+    <h5 class="pull-right">in 6d 23h</h5>
+    <h4 class="truncate">
+    
+    <i title="Event category: Music" class="fa fa-music"></i>
+    
+    Lindesnes trekkspillklubb Trekkspillshow
+    </h4>
+    <span class="badge">
+    
+    Sat 18:00
+    
+    </span>
+    <p class="truncate">grieghallen</p>
+    
+    <span class="pull-right">
+      <strong>0.4 km</strong>
+    </span>
+    
+    <p class="truncate">
+      <i title="Location category: Universal" class="fa fa-location-arrow"></i>
+      <strong>
+	
+	Grieghallen
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  <a class="list-group-item" href="/event/asamisimasa-spiller-simon-lffler/4250478/">
+    <h5 class="pull-right">in 7d 0h</h5>
+    <h4 class="truncate">
+    
+    <i title="Event category: Universal" class="fa fa-clock-o"></i>
+    
+    Asamisimasa spiller Simon Løffler
+    </h4>
+    <span class="badge">
+    
+    Sat 19:00
+    
+    </span>
+    <p class="truncate">borealis contemporary music festival</p>
+    
+    <span class="pull-right">
+      <strong>1.2 km</strong>
+    </span>
+    
+    <p class="truncate">
+      <i title="Location category: Universal" class="fa fa-location-arrow"></i>
+      <strong>
+	
+	Bergen Kjøtt
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  <a class="list-group-item" href="/event/ub60-live-i-gjest-baardsens-kjeller/4282415/">
+    <h5 class="pull-right">in 7d 1h</h5>
+    <h4 class="truncate">
+    
+    <i title="Event category: Universal" class="fa fa-clock-o"></i>
+    
+    UB60 Live i Gjest Baardsens Kjeller!
+    </h4>
+    <span class="badge">
+    
+    Sat 20:00
+    
+    </span>
+    <p class="truncate">frille og dyvekes vinkjeller</p>
+    
+    <span class="pull-right">
+      <strong>0.5 km</strong>
+    </span>
+    
+    <p class="truncate">
+      <i title="Location category: Universal" class="fa fa-location-arrow"></i>
+      <strong>
+	
+	Frille og Dyvekes Vinkjeller
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  <a class="list-group-item" href="/event/kammerdrops-schubert-oktett-med-musikere-fra-harmonien/6061722/">
+    <h5 class="pull-right">in 7d 1h</h5>
+    <h4 class="truncate">
+    
+    <i title="Event category: Universal" class="fa fa-clock-o"></i>
+    
+    Kammerdrops: Schubert Oktett med musikere fra Harmonien
+    </h4>
+    <span class="badge">
+    
+    Sat 20:00
+    
+    </span>
+    <p class="truncate">nobel bopel</p>
+    
+    <span class="pull-right">
+      <strong>0.7 km</strong>
+    </span>
+    
+    <p class="truncate">
+      <i title="Location category: Universal" class="fa fa-location-arrow"></i>
+      <strong>
+	
+	nobel bopel
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  <a class="list-group-item" href="/event/staoppjazz-modi/6079134/">
+    <h5 class="pull-right">in 7d 2h</h5>
+    <h4 class="truncate">
+    
+    <i title="Event category: Music" class="fa fa-music"></i>
+    
+    StåOppJazz: MODI
+    </h4>
+    <span class="badge">
+    
+    Sat 21:00
+    
+    </span>
+    <p class="truncate">ståoppjazz</p>
+    
+    <span class="pull-right">
+      <strong>0.2 km</strong>
+    </span>
+    
+    <p class="truncate">
+      <i title="Location category: Universal" class="fa fa-location-arrow"></i>
+      <strong>
+	
+	Bergen Realistforening
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  <a class="list-group-item" href="/event/dither/4250477/">
+    <h5 class="pull-right">in 7d 2h</h5>
+    <h4 class="truncate">
+    
+    <i title="Event category: Universal" class="fa fa-clock-o"></i>
+    
+    Dither
+    </h4>
+    <span class="badge">
+    
+    Sat 21:00
+    
+    </span>
+    <p class="truncate">borealis contemporary music festival</p>
+    
+    <span class="pull-right">
+      <strong>0.3 km</strong>
+    </span>
+    
+    <p class="truncate">
+      <i title="Location category: Universal" class="fa fa-location-arrow"></i>
+      <strong>
+	
+	Landmark Bergen
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  <a class="list-group-item" href="/event/king-skurk-one-nmgg-huset501/6226024/">
+    <h5 class="pull-right">in 7d 2h</h5>
+    <h4 class="truncate">
+    
+    <i title="Event category: Universal" class="fa fa-clock-o"></i>
+    
+    King Skurk One - NMG/G-Huset/501
+    </h4>
+    <span class="badge">
+    
+    Sat 21:00
+    
+    </span>
+    <p class="truncate">victoria cafe &amp; pub</p>
+    
+    <span class="pull-right">
+      <strong>0.5 km</strong>
+    </span>
+    
+    <p class="truncate">
+      <i title="Location category: Universal" class="fa fa-location-arrow"></i>
+      <strong>
+	
+	Victoria Cafe &amp; Pub
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  <a class="list-group-item" href="/event/discobart-discoboogiefunksoul-hulen-lrdag-12-mars-3/6288164/">
+    <h5 class="pull-right">in 7d 2h</h5>
+    <h4 class="truncate">
+    
+    <i title="Event category: Entertainment" class="fa fa-microphone"></i>
+    
+    DISCOBART - DISCO/BOOGIE/FUNK/SOUL - Hulen, lørdag. 12. mars &lt;3
+    </h4>
+    <span class="badge">
+    
+    Sat 21:00
+    
+    </span>
+    <p class="truncate">discobart</p>
+    
+    <span class="pull-right">
+      <strong>0.7 km</strong>
+    </span>
+    
+    <p class="truncate">
+      <i title="Location category: Universal" class="fa fa-location-arrow"></i>
+      <strong>
+	
+	Hulen
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  <a class="list-group-item" href="/event/enslaved/1635732/">
+    <h5 class="pull-right">in 7d 2h</h5>
+    <h4 class="truncate">
+    
+    <i title="Event category: Music" class="fa fa-music"></i>
+    
+    Enslaved
+    </h4>
+    <span class="badge">
+    
+    Sat 21:00
+    
+    </span>
+    <p class="truncate">live music performance</p>
+    
+    <span class="pull-right">
+      <strong>0.9 km</strong>
+    </span>
+    
+    <p class="truncate">
+      <i title="Location category: Universal" class="fa fa-location-arrow"></i>
+      <strong>
+	
+	USF Verftet
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  <a class="list-group-item" href="/event/enslaved-support-ribozyme/3305395/">
+    <h5 class="pull-right">in 7d 2h</h5>
+    <h4 class="truncate">
+    
+    <i title="Event category: Universal" class="fa fa-clock-o"></i>
+    
+    Enslaved + support: Ribozyme
+    </h4>
+    <span class="badge">
+    
+    Sat 21:00
+    
+    </span>
+    <p class="truncate">bergen live</p>
+    
+    <span class="pull-right">
+      <strong>0.9 km</strong>
+    </span>
+    
+    <p class="truncate">
+      <i title="Location category: Universal" class="fa fa-location-arrow"></i>
+      <strong>
+	
+	Røkeriet, USF
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  <a class="list-group-item" href="/event/sondre-justad-bergen-12-mars-utsolgt/4082986/">
+    <h5 class="pull-right">in 7d 3h</h5>
+    <h4 class="truncate">
+    
+    <i title="Event category: Community" class="fa fa-users"></i>
+    
+    Sondre Justad // Bergen 12. Mars - UTSOLGT
+    </h4>
+    <span class="badge">
+    
+    Sat 22:00
+    
+    </span>
+    <p class="truncate">uken i bergen</p>
+    
+    <span class="pull-right">
+      <strong>3.7 km</strong>
+    </span>
+    
+    <p class="truncate">
+      <i title="Location category: Universal" class="fa fa-location-arrow"></i>
+      <strong>
+	
+	UKEN i Bergen
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  <a class="list-group-item" href="/event/klubb-kok-pres-stil-med-jibril/6344344/">
+    <h5 class="pull-right">in 7d 3h</h5>
+    <h4 class="truncate">
+    
+    <i title="Event category: Universal" class="fa fa-clock-o"></i>
+    
+    KLUBB KOK pres STIL med JIBRIL
+    </h4>
+    <span class="badge">
+    
+    Sat 22:30
+    
+    </span>
+    <p class="truncate">klubb kok</p>
+    
+    <span class="pull-right">
+      <strong>0.2 km</strong>
+    </span>
+    
+    <p class="truncate">
+      <i title="Location category: Universal" class="fa fa-location-arrow"></i>
+      <strong>
+	
+	Klubb Kok
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  <a class="list-group-item" href="/event/de-musikalske-dvergene/4059331/">
+    <h5 class="pull-right">in 7d 3h</h5>
+    <h4 class="truncate">
+    
+    <i title="Event category: Universal" class="fa fa-clock-o"></i>
+    
+    DE MUSIKALSKE DVERGENE
+    </h4>
+    <span class="badge">
+    
+    Sat 22:30
+    
+    </span>
+    <p class="truncate">madamfelle</p>
+    
+    <span class="pull-right">
+      <strong>0.7 km</strong>
+    </span>
+    
+    <p class="truncate">
+      <i title="Location category: Universal" class="fa fa-location-arrow"></i>
+      <strong>
+	
+	MadamFelle
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  <a class="list-group-item" href="/event/jlin-yeah-you/4250476/">
+    <h5 class="pull-right">in 7d 4h</h5>
+    <h4 class="truncate">
+    
+    <i title="Event category: Universal" class="fa fa-clock-o"></i>
+    
+    Jlin + Yeah You
+    </h4>
+    <span class="badge">
+    
+    Sat 23:00
+    
+    </span>
+    <p class="truncate">borealis contemporary music festival</p>
+    
+    <span class="pull-right">
+      <strong>0.3 km</strong>
+    </span>
+    
+    <p class="truncate">
+      <i title="Location category: Universal" class="fa fa-location-arrow"></i>
+      <strong>
+	
+	Landmark Bergen
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  <a class="list-group-item" href="/event/kono16-presents-hoes-of-techno/4595791/">
+    <h5 class="pull-right">in 7d 4h</h5>
+    <h4 class="truncate">
+    
+    <i title="Event category: Universal" class="fa fa-clock-o"></i>
+    
+    KONo16 presents: HOES OF TECHNO
+    </h4>
+    <span class="badge">
+    
+    Sat 23:00
+    
+    </span>
+    <p class="truncate">kono 16</p>
+    
+    <span class="pull-right">
+      <strong>0.6 km</strong>
+    </span>
+    
+    <p class="truncate">
+      <i title="Location category: Universal" class="fa fa-location-arrow"></i>
+      <strong>
+	
+	KONo 16
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  <a class="list-group-item" href="/event/rallylydighet-introduksjon/4417110/">
+    <h5 class="pull-right">in 7d 17h</h5>
+    <h4 class="truncate">
+    
+    <i title="Event category: Sports & Fitness" class="fa fa-futbol-o"></i>
+    
+    RallyLydighet - Introduksjon
+    </h4>
+    <span class="badge">
+    
+    Sun 12:00
+    
+    </span>
+    <p class="truncate">freerun training</p>
+    
+    <span class="pull-right">
+      <strong>9.2 km</strong>
+    </span>
+    
+    <p class="truncate">
+      <i title="Location category: Universal" class="fa fa-location-arrow"></i>
+      <strong>
+	
+	FreeRun Training
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  <a class="list-group-item" href="/event/samtale-infrasonic-the-politics-production-and-performance-of-electronic-music/4250475/">
+    <h5 class="pull-right">in 7d 18h</h5>
+    <h4 class="truncate">
+    
+    <i title="Event category: Universal" class="fa fa-clock-o"></i>
+    
+    Samtale : Infrasonic : the politics, production and performance of electronic music
+    </h4>
+    <span class="badge">
+    
+    Sun 13:00
+    
+    </span>
+    <p class="truncate">borealis contemporary music festival</p>
+    
+    <span class="pull-right">
+      <strong>0.3 km</strong>
+    </span>
+    
+    <p class="truncate">
+      <i title="Location category: Universal" class="fa fa-location-arrow"></i>
+      <strong>
+	
+	Bergen Kunsthall
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  <a class="list-group-item" href="/event/sndagsjazz-tore-hodneland-trio-inngang-kr-50-/5106861/">
+    <h5 class="pull-right">in 7d 19h</h5>
+    <h4 class="truncate">
+    
+    <i title="Event category: Music" class="fa fa-music"></i>
+    
+    Søndagsjazz: Tore Hodneland Trio (Inngang kr 50,-)
+    </h4>
+    <span class="badge">
+    
+    Sun 14:00
+    
+    </span>
+    <p class="truncate">cafe sanaa</p>
+    
+    <span class="pull-right">
+      <strong>0.5 km</strong>
+    </span>
+    
+    <p class="truncate">
+      <i title="Location category: Universal" class="fa fa-location-arrow"></i>
+      <strong>
+	
+	Cafe Sanaa
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  <a class="list-group-item" href="/event/o-yama-o/4250474/">
+    <h5 class="pull-right">in 7d 20h</h5>
+    <h4 class="truncate">
+    
+    <i title="Event category: Universal" class="fa fa-clock-o"></i>
+    
+    O Yama O
+    </h4>
+    <span class="badge">
+    
+    Sun 15:00
+    
+    </span>
+    <p class="truncate">borealis contemporary music festival</p>
+    
+    <span class="pull-right">
+      <strong>0.4 km</strong>
+    </span>
+    
+    <p class="truncate">
+      <i title="Location category: Universal" class="fa fa-location-arrow"></i>
+      <strong>
+	
+	ØSTRE
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  <a class="list-group-item" href="/event/kortreist-vedproduksjon/6134940/">
+    <h5 class="pull-right">in 7d 20h</h5>
+    <h4 class="truncate">
+    
+    <i title="Event category: Universal" class="fa fa-clock-o"></i>
+    
+    Kortreist vedproduksjon
+    </h4>
+    <span class="badge">
+    
+    Sun 15:00
+    
+    </span>
+    <p class="truncate">bærekraftige liv nattland og sædalen</p>
+    
+    <span class="pull-right">
+      <strong>7.2 km</strong>
+    </span>
+    
+    <p class="truncate">
+      <i title="Location category: Universal" class="fa fa-location-arrow"></i>
+      <strong>
+	
+	Bergendal gård
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  <a class="list-group-item" href="/event/frste-marsjeringsdag/6103089/">
+    <h5 class="pull-right">in 7d 21h</h5>
+    <h4 class="truncate">
+    
+    <i title="Event category: Universal" class="fa fa-clock-o"></i>
+    
+    Første Marsjeringsdag !
+    </h4>
+    <span class="badge">
+    
+    Sun 16:30
+    
+    </span>
+    <p class="truncate">laksevågs bueskyttere</p>
+    
+    <span class="pull-right">
+      <strong>1.4 km</strong>
+    </span>
+    
+    <p class="truncate">
+      <i title="Location category: Universal" class="fa fa-location-arrow"></i>
+      <strong>
+	
+	Laksevågs Bueskyttere
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  <a class="list-group-item" href="/event/object-collection-under-siege/4250473/">
+    <h5 class="pull-right">in 8d 1h</h5>
+    <h4 class="truncate">
+    
+    <i title="Event category: Universal" class="fa fa-clock-o"></i>
+    
+    Object Collection : Under Siege
+    </h4>
+    <span class="badge">
+    
+    Sun 20:00
+    
+    </span>
+    <p class="truncate">borealis contemporary music festival</p>
+    
+    <span class="pull-right">
+      <strong>0.3 km</strong>
+    </span>
+    
+    <p class="truncate">
+      <i title="Location category: Universal" class="fa fa-location-arrow"></i>
+      <strong>
+	
+	Landmark Bergen
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  <a class="list-group-item" href="/event/neste-sommer/5050382/">
+    <h5 class="pull-right">in 8d 2h</h5>
+    <h4 class="truncate">
+    
+    <i title="Event category: Media" class="fa fa-television"></i>
+    
+    Neste Sommer
+    </h4>
+    <span class="badge">
+    
+    Sun 21:30
+    
+    </span>
+    <p class="truncate">tv show episode 5</p>
+    
+    <p class="truncate">
+      <i title="Location category: Region" class="fa fa-flag-o"></i>
+      <strong>
+	
+	TV Norge (NO)
+	  
+	  TV Network, Norway
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  <a class="list-group-item" href="/event/varfornemmelser-med-laksevag-hagelag/6089908/">
+    <h5 class="pull-right">in 8d 23h</h5>
+    <h4 class="truncate">
+    
+    <i title="Event category: Arts & Culture" class="fa fa-font"></i>
+    
+    Vårfornemmelser med Laksevåg hagelag
+    </h4>
+    <span class="badge">
+    
+    Mon 18:00
+    
+    </span>
+    <p class="truncate">loddefjord bibliotek</p>
+    
+    <span class="pull-right">
+      <strong>5.7 km</strong>
+    </span>
+    
+    <p class="truncate">
+      <i title="Location category: Universal" class="fa fa-location-arrow"></i>
+      <strong>
+	
+	Loddefjord bibliotek
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  <a class="list-group-item" href="/event/sampol-professorens-valg-den-nordiske-velferdsmodellen/3912882/">
+    <h5 class="pull-right">in 9d 0h</h5>
+    <h4 class="truncate">
+    
+    <i title="Event category: Universal" class="fa fa-clock-o"></i>
+    
+    Sampol-professorens valg: Den nordiske velferdsmodellen
+    </h4>
+    <span class="badge">
+    
+    Mon 19:00
+    
+    </span>
+    <p class="truncate">litteraturhuset i bergen</p>
+    
+    <span class="pull-right">
+      <strong>0.4 km</strong>
+    </span>
+    
+    <p class="truncate">
+      <i title="Location category: Universal" class="fa fa-location-arrow"></i>
+      <strong>
+	
+	Litteraturhuset i Bergen
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  <a class="list-group-item" href="/event/no-stress-bergens-beste-hjemme-bartender-24-feb/6094982/">
+    <h5 class="pull-right">in 9d 1h</h5>
+    <h4 class="truncate">
+    
+    <i title="Event category: Universal" class="fa fa-clock-o"></i>
+    
+    NO STRESS // BERGENS BESTE HJEMME-BARTENDER // 24. FEB
+    </h4>
+    <span class="badge">
+    
+    Mon 20:00
+    
+    </span>
+    <p class="truncate">no stress</p>
+    
+    <span class="pull-right">
+      <strong>0.5 km</strong>
+    </span>
+    
+    <p class="truncate">
+      <i title="Location category: Universal" class="fa fa-location-arrow"></i>
+      <strong>
+	
+	No Stress
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  <a class="list-group-item" href="/event/andy-irvine-klangen-av-irland-tom-willy-rustad-norsk-multimusiker/4290432/">
+    <h5 class="pull-right">in 9d 1h</h5>
+    <h4 class="truncate">
+    
+    <i title="Event category: Music" class="fa fa-music"></i>
+    
+    ANDY IRVINE Klangen av Irland, TOM WILLY RUSTAD Norsk multimusiker
+    </h4>
+    <span class="badge">
+    
+    Mon 20:00
+    
+    </span>
+    <p class="truncate">columbi egg folkemusikklubb</p>
+    
+    <span class="pull-right">
+      <strong>0.6 km</strong>
+    </span>
+    
+    <p class="truncate">
+      <i title="Location category: Universal" class="fa fa-location-arrow"></i>
+      <strong>
+	
+	Columbi Egg folkemusikklubb
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  <a class="list-group-item" href="/event/build-and-deploy-automate-the-boring-tasks/6282129/">
+    <h5 class="pull-right">in 9d 22h</h5>
+    <h4 class="truncate">
+    
+    <i title="Event category: Universal" class="fa fa-clock-o"></i>
+    
+    Build and deploy - automate the boring tasks
+    </h4>
+    <span class="badge">
+    
+    Tue 17:00
+    
+    </span>
+    <p class="truncate">bergen nerdschool</p>
+    
+    <span class="pull-right">
+      <strong>1.2 km</strong>
+    </span>
+    
+    <p class="truncate">
+      <i title="Location category: Universal" class="fa fa-location-arrow"></i>
+      <strong>
+	
+	Faklab 3, Høyteknologisenteret
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  <a class="list-group-item" href="/event/lr-hemmeligheten-og-puss-opp-egne-mbler-i-en-fei/4251784/">
+    <h5 class="pull-right">in 9d 22h</h5>
+    <h4 class="truncate">
+    
+    <i title="Event category: Universal" class="fa fa-clock-o"></i>
+    
+    Lær hemmeligheten og puss opp egne møbler i en fei!
+    </h4>
+    <span class="badge">
+    
+    Tue 17:30
+    
+    </span>
+    <p class="truncate">eidsvåg kalkmaling</p>
+    
+    <span class="pull-right">
+      <strong>5.1 km</strong>
+    </span>
+    
+    <p class="truncate">
+      <i title="Location category: Universal" class="fa fa-location-arrow"></i>
+      <strong>
+	
+	Eidsvåg møbelmaling, kalkmaling og håndtverk av LgMortensen
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  <a class="list-group-item" href="/event/arsmte-i-vitalitetsenteret-frivilligsentral/6051088/">
+    <h5 class="pull-right">in 9d 23h</h5>
+    <h4 class="truncate">
+    
+    <i title="Event category: Universal" class="fa fa-clock-o"></i>
+    
+    Årsmøte i Vitalitetsenteret Frivilligsentral
+    </h4>
+    <span class="badge">
+    
+    Tue 18:00
+    
+    </span>
+    <p class="truncate">vitalitetsenteret frivilligsentral</p>
+    
+    <span class="pull-right">
+      <strong>0.9 km</strong>
+    </span>
+    
+    <p class="truncate">
+      <i title="Location category: Universal" class="fa fa-location-arrow"></i>
+      <strong>
+	
+	Vitalitetsenteret Frivilligsentral
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  <a class="list-group-item" href="/event/mediesamfunn-blogging-etikk-og-skjult-reklame/5096399/">
+    <h5 class="pull-right">in 10d 0h</h5>
+    <h4 class="truncate">
+    
+    <i title="Event category: Universal" class="fa fa-clock-o"></i>
+    
+    Mediesamfunn: Blogging, etikk og skjult reklame
+    </h4>
+    <span class="badge">
+    
+    Tue 19:00
+    
+    </span>
+    <p class="truncate">litteraturhuset i bergen</p>
+    
+    <span class="pull-right">
+      <strong>0.4 km</strong>
+    </span>
+    
+    <p class="truncate">
+      <i title="Location category: Universal" class="fa fa-location-arrow"></i>
+      <strong>
+	
+	Litteraturhuset i Bergen
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  <a class="list-group-item" href="/event/dagbker-3-om-litterre-dagbker/4434386/">
+    <h5 class="pull-right">in 10d 0h</h5>
+    <h4 class="truncate">
+    
+    <i title="Event category: Arts & Culture" class="fa fa-font"></i>
+    
+    Dagbøker #3 Om litterære dagbøker
+    </h4>
+    <span class="badge">
+    
+    Tue 19:00
+    
+    </span>
+    <p class="truncate">bergen offentlige bibliotek</p>
+    
+    <span class="pull-right">
+      <strong>0.6 km</strong>
+    </span>
+    
+    <p class="truncate">
+      <i title="Location category: Universal" class="fa fa-location-arrow"></i>
+      <strong>
+	
+	Bergen Offentlige Bibliotek
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  <a class="list-group-item" href="/event/arsmte-foreningen-bergendal-gard/5168296/">
+    <h5 class="pull-right">in 10d 0h</h5>
+    <h4 class="truncate">
+    
+    <i title="Event category: Community" class="fa fa-users"></i>
+    
+    Årsmøte Foreningen Bergendal gård
+    </h4>
+    <span class="badge">
+    
+    Tue 19:00
+    
+    </span>
+    <p class="truncate">bergendal gård</p>
+    
+    <span class="pull-right">
+      <strong>7.2 km</strong>
+    </span>
+    
+    <p class="truncate">
+      <i title="Location category: Universal" class="fa fa-location-arrow"></i>
+      <strong>
+	
+	Bergendal gård
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  <a class="list-group-item" href="/event/bibeltime-apostlenes-gjerninger/4580950/">
+    <h5 class="pull-right">in 11d 0h</h5>
+    <h4 class="truncate">
+    
+    <i title="Event category: Universal" class="fa fa-clock-o"></i>
+    
+    Bibeltime: Apostlenes gjerninger
+    </h4>
+    <span class="badge">
+    
+    Wed 19:00
+    
+    </span>
+    <p class="truncate">delk bergen</p>
+    
+    <span class="pull-right">
+      <strong>0.3 km</strong>
+    </span>
+    
+    <p class="truncate">
+      <i title="Location category: Universal" class="fa fa-location-arrow"></i>
+      <strong>
+	
+	DELK Bergen
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  <a class="list-group-item" href="/event/kunsten-a-reise-leipzig/3840323/">
+    <h5 class="pull-right">in 11d 0h</h5>
+    <h4 class="truncate">
+    
+    <i title="Event category: Universal" class="fa fa-clock-o"></i>
+    
+    Kunsten å reise: Leipzig
+    </h4>
+    <span class="badge">
+    
+    Wed 19:00
+    
+    </span>
+    <p class="truncate">litteraturhuset i bergen</p>
+    
+    <span class="pull-right">
+      <strong>0.4 km</strong>
+    </span>
+    
+    <p class="truncate">
+      <i title="Location category: Universal" class="fa fa-location-arrow"></i>
+      <strong>
+	
+	Litteraturhuset i Bergen
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  <a class="list-group-item" href="/event/sangene-kakkmaddafakka/3840324/">
+    <h5 class="pull-right">in 11d 0h</h5>
+    <h4 class="truncate">
+    
+    <i title="Event category: Universal" class="fa fa-clock-o"></i>
+    
+    Sangene: Kakkmaddafakka
+    </h4>
+    <span class="badge">
+    
+    Wed 19:00
+    
+    </span>
+    <p class="truncate">litteraturhuset i bergen</p>
+    
+    <span class="pull-right">
+      <strong>0.4 km</strong>
+    </span>
+    
+    <p class="truncate">
+      <i title="Location category: Universal" class="fa fa-location-arrow"></i>
+      <strong>
+	
+	Litteraturhuset i Bergen
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  
+  <span id="more-180" class="list-group-item">
+    <a class="text-center" href="#"
+       onclick="fetch_upcoming(180); return false;">
+      <h4>Show more events</h4></a>
+  </span>
+  
+  </div>
+</div>
+
+
+
+<div class="col-sm-12">
+  <div class="list-group">
+  
+  <a class="list-group-item" href="/event/mesternes-mester/4990039/">
+    <h5 class="pull-right">in 1h</h5>
+    <h4 class="truncate">
+    
+    <i title="Event category: Media" class="fa fa-television"></i>
+    
+    Mesternes Mester
+    </h4>
+    <span class="badge">
+    
+    Sat 19:55
+    
+    </span>
+    <p class="truncate">tv show episode 10</p>
+    
+    <p class="truncate">
+      <i title="Location category: Region" class="fa fa-flag-o"></i>
+      <strong>
+	
+	NRK1 (NO)
+	  
+	  TV Network, Norway
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  <a class="list-group-item" href="/event/neste-sommer/5050367/">
+    <h5 class="pull-right">in 1d 2h</h5>
+    <h4 class="truncate">
+    
+    <i title="Event category: Media" class="fa fa-television"></i>
+    
+    Neste Sommer
+    </h4>
+    <span class="badge">
+    
+    Sun 21:30
+    
+    </span>
+    <p class="truncate">tv show episode 4</p>
+    
+    <p class="truncate">
+      <i title="Location category: Region" class="fa fa-flag-o"></i>
+      <strong>
+	
+	TV Norge (NO)
+	  
+	  TV Network, Norway
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  <a class="list-group-item" href="/event/helt-perfekt/5852372/">
+    <h5 class="pull-right">in 1d 3h</h5>
+    <h4 class="truncate">
+    
+    <i title="Event category: Media" class="fa fa-television"></i>
+    
+    Helt Perfekt
+    </h4>
+    <span class="badge">
+    
+    Sun 22:00
+    
+    </span>
+    <p class="truncate">tv show sommerhuset</p>
+    
+    <p class="truncate">
+      <i title="Location category: Region" class="fa fa-flag-o"></i>
+      <strong>
+	
+	TV Norge (NO)
+	  
+	  TV Network, Norway
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  <a class="list-group-item" href="/event/idol/6300557/">
+    <h5 class="pull-right">in 6d 1h</h5>
+    <h4 class="truncate">
+    
+    <i title="Event category: Media" class="fa fa-television"></i>
+    
+    Idol
+    </h4>
+    <span class="badge">
+    
+    Fri 20:00
+    
+    </span>
+    <p class="truncate">tv show season 9, episode 14</p>
+    
+    <p class="truncate">
+      <i title="Location category: Region" class="fa fa-flag-o"></i>
+      <strong>
+	
+	TV 2 (NO)
+	  
+	  TV Network, Norway
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  <a class="list-group-item" href="/event/neste-sommer/5050382/">
+    <h5 class="pull-right">in 8d 2h</h5>
+    <h4 class="truncate">
+    
+    <i title="Event category: Media" class="fa fa-television"></i>
+    
+    Neste Sommer
+    </h4>
+    <span class="badge">
+    
+    Sun 21:30
+    
+    </span>
+    <p class="truncate">tv show episode 5</p>
+    
+    <p class="truncate">
+      <i title="Location category: Region" class="fa fa-flag-o"></i>
+      <strong>
+	
+	TV Norge (NO)
+	  
+	  TV Network, Norway
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  <a class="list-group-item" href="/event/lanseringsfest-for-forsvinningspunkt-14/6134981/">
+    <h5 class="pull-right">in 12d 0h</h5>
+    <h4 class="truncate">
+    
+    <i title="Event category: Media" class="fa fa-television"></i>
+    
+    Lanseringsfest for Forsvinningspunkt #14
+    </h4>
+    <span class="badge">
+    
+    Thu 19:00
+    
+    </span>
+    <p class="truncate">forsvinningspunkt - dikt fra lokale poeter</p>
+    
+    <span class="pull-right">
+      <strong>0.6 km</strong>
+    </span>
+    
+    <p class="truncate">
+      <i title="Location category: Universal" class="fa fa-location-arrow"></i>
+      <strong>
+	
+	Bergen Offentlige Bibliotek
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  <a class="list-group-item" href="/event/cosmic-body-av-ingri-fiksdal-no/6098874/">
+    <h5 class="pull-right">in 12d 0h</h5>
+    <h4 class="truncate">
+    
+    <i title="Event category: Universal" class="fa fa-clock-o"></i>
+    
+    Cosmic Body av Ingri Fiksdal (NO)
+    </h4>
+    <span class="badge">
+    
+    Thu 19:00
+    
+    </span>
+    <p class="truncate">bit teatergarasjen</p>
+    
+    <span class="pull-right">
+      <strong>0.9 km</strong>
+    </span>
+    
+    <p class="truncate">
+      <i title="Location category: Universal" class="fa fa-location-arrow"></i>
+      <strong>
+	
+	BIT Teatergarasjen
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  <a class="list-group-item" href="/event/elena-ferrante-ein-eventyrleg-boksuksess/6062035/">
+    <h5 class="pull-right">in 12d 0h</h5>
+    <h4 class="truncate">
+    
+    <i title="Event category: Arts & Culture" class="fa fa-font"></i>
+    
+    Elena Ferrante - ein eventyrleg boksuksess
+    </h4>
+    <span class="badge">
+    
+    Thu 19:00
+    
+    </span>
+    <p class="truncate">åsane bibliotek</p>
+    
+    <span class="pull-right">
+      <strong>8.3 km</strong>
+    </span>
+    
+    <p class="truncate">
+      <i title="Location category: Universal" class="fa fa-location-arrow"></i>
+      <strong>
+	
+	Åsane bibliotek
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  <a class="list-group-item" href="/event/la-pena-spansk-mte/5485750/">
+    <h5 class="pull-right">in 12d 0h</h5>
+    <h4 class="truncate">
+    
+    <i title="Event category: Music" class="fa fa-music"></i>
+    
+    La Peña - spansk møte
+    </h4>
+    <span class="badge">
+    
+    Thu 19:30
+    
+    </span>
+    <p class="truncate">cafe sanaa</p>
+    
+    <span class="pull-right">
+      <strong>0.5 km</strong>
+    </span>
+    
+    <p class="truncate">
+      <i title="Location category: Universal" class="fa fa-location-arrow"></i>
+      <strong>
+	
+	Cafe Sanaa
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  <a class="list-group-item" href="/event/adelphi-selection-tasting/6105783/">
+    <h5 class="pull-right">in 12d 0h</h5>
+    <h4 class="truncate">
+    
+    <i title="Event category: Universal" class="fa fa-clock-o"></i>
+    
+    Adelphi Selection tasting
+    </h4>
+    <span class="badge">
+    
+    Thu 19:30
+    
+    </span>
+    <p class="truncate">terminus whiskybar</p>
+    
+    <span class="pull-right">
+      <strong>0.7 km</strong>
+    </span>
+    
+    <p class="truncate">
+      <i title="Location category: Universal" class="fa fa-location-arrow"></i>
+      <strong>
+	
+	Terminus Whiskybar
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  <a class="list-group-item" href="/event/apen-scene-open-mic-night/6007144/">
+    <h5 class="pull-right">in 12d 1h</h5>
+    <h4 class="truncate">
+    
+    <i title="Event category: Universal" class="fa fa-clock-o"></i>
+    
+    Åpen Scene / Open Mic Night
+    </h4>
+    <span class="badge">
+    
+    Thu 20:00
+    
+    </span>
+    <p class="truncate">studentteateret immaturus</p>
+    
+    <span class="pull-right">
+      <strong>0.2 km</strong>
+    </span>
+    
+    <p class="truncate">
+      <i title="Location category: Universal" class="fa fa-location-arrow"></i>
+      <strong>
+	
+	Det Akademiske Kvarter
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  <a class="list-group-item" href="/event/peter-estdahl-landmark-17-mars/4421757/">
+    <h5 class="pull-right">in 12d 1h</h5>
+    <h4 class="truncate">
+    
+    <i title="Event category: Universal" class="fa fa-clock-o"></i>
+    
+    PETER ESTDAHL // LANDMARK // 17. mars
+    </h4>
+    <span class="badge">
+    
+    Thu 20:30
+    
+    </span>
+    <p class="truncate">landmark bergen</p>
+    
+    <span class="pull-right">
+      <strong>0.3 km</strong>
+    </span>
+    
+    <p class="truncate">
+      <i title="Location category: Universal" class="fa fa-location-arrow"></i>
+      <strong>
+	
+	Landmark Bergen
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  <a class="list-group-item" href="/event/storm-weather-shanty-choir/3910304/">
+    <h5 class="pull-right">in 12d 2h</h5>
+    <h4 class="truncate">
+    
+    <i title="Event category: Universal" class="fa fa-clock-o"></i>
+    
+    Storm Weather Shanty Choir
+    </h4>
+    <span class="badge">
+    
+    Thu 21:00
+    
+    </span>
+    <p class="truncate">bergen realistforening</p>
+    
+    <span class="pull-right">
+      <strong>0.2 km</strong>
+    </span>
+    
+    <p class="truncate">
+      <i title="Location category: Universal" class="fa fa-location-arrow"></i>
+      <strong>
+	
+	Det Akademiske Kvarter
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  <a class="list-group-item" href="/event/festival-weekend-metro-nightclub/5675392/">
+    <h5 class="pull-right">in 12d 4h</h5>
+    <h4 class="truncate">
+    
+    <i title="Event category: Universal" class="fa fa-clock-o"></i>
+    
+    Festival Weekend @Metro Nightclub
+    </h4>
+    <span class="badge">
+    
+    Thu 23:00
+    
+    </span>
+    <p class="truncate">metro nightclub</p>
+    
+    <span class="pull-right">
+      <strong>0.1 km</strong>
+    </span>
+    
+    <p class="truncate">
+      <i title="Location category: Universal" class="fa fa-location-arrow"></i>
+      <strong>
+	
+	Metro Nightclub
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  <a class="list-group-item" href="/event/fredagsdykk-18-mars/4092406/">
+    <h5 class="pull-right">in 12d 22h</h5>
+    <h4 class="truncate">
+    
+    <i title="Event category: Sports & Fitness" class="fa fa-futbol-o"></i>
+    
+    Fredagsdykk 18. mars
+    </h4>
+    <span class="badge">
+    
+    Fri 17:00
+    
+    </span>
+    <p class="truncate">nemoclassicdiving</p>
+    
+    <span class="pull-right">
+      <strong>3.8 km</strong>
+    </span>
+    
+    <p class="truncate">
+      <i title="Location category: Universal" class="fa fa-location-arrow"></i>
+      <strong>
+	
+	NemoClassicDiving
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  <a class="list-group-item" href="/event/idol/6300684/">
+    <h5 class="pull-right">in 13d 1h</h5>
+    <h4 class="truncate">
+    
+    <i title="Event category: Media" class="fa fa-television"></i>
+    
+    Idol
+    </h4>
+    <span class="badge">
+    
+    Fri 20:00
+    
+    </span>
+    <p class="truncate">tv show season 9, episode 15</p>
+    
+    <p class="truncate">
+      <i title="Location category: Region" class="fa fa-flag-o"></i>
+      <strong>
+	
+	TV 2 (NO)
+	  
+	  TV Network, Norway
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  <a class="list-group-item" href="/event/sauropod-going-to-philly-teglverket/5520381/">
+    <h5 class="pull-right">in 13d 2h</h5>
+    <h4 class="truncate">
+    
+    <i title="Event category: Universal" class="fa fa-clock-o"></i>
+    
+    SAUROPOD + GOING TO PHILLY // Teglverket
+    </h4>
+    <span class="badge">
+    
+    Fri 21:00
+    
+    </span>
+    <p class="truncate">aktive studenters forening</p>
+    
+    <span class="pull-right">
+      <strong>0.2 km</strong>
+    </span>
+    
+    <p class="truncate">
+      <i title="Location category: Universal" class="fa fa-location-arrow"></i>
+      <strong>
+	
+	Det Akademiske Kvarter
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  <a class="list-group-item" href="/event/divisjonen-slippkonsert-supp-hage-hulen/5732525/">
+    <h5 class="pull-right">in 13d 2h</h5>
+    <h4 class="truncate">
+    
+    <i title="Event category: Universal" class="fa fa-clock-o"></i>
+    
+    Divisjonen Slippkonsert + supp. HAGE // Hulen
+    </h4>
+    <span class="badge">
+    
+    Fri 21:00
+    
+    </span>
+    <p class="truncate">hulen</p>
+    
+    <span class="pull-right">
+      <strong>0.7 km</strong>
+    </span>
+    
+    <p class="truncate">
+      <i title="Location category: Universal" class="fa fa-location-arrow"></i>
+      <strong>
+	
+	Hulen
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  <a class="list-group-item" href="/event/klubb-kok-pres-unge-ferrari/4197566/">
+    <h5 class="pull-right">in 13d 3h</h5>
+    <h4 class="truncate">
+    
+    <i title="Event category: Universal" class="fa fa-clock-o"></i>
+    
+    KLUBB KOK pres UNGE FERRARI
+    </h4>
+    <span class="badge">
+    
+    Fri 22:00
+    
+    </span>
+    <p class="truncate">klubb kok</p>
+    
+    <span class="pull-right">
+      <strong>0.2 km</strong>
+    </span>
+    
+    <p class="truncate">
+      <i title="Location category: Universal" class="fa fa-location-arrow"></i>
+      <strong>
+	
+	Klubb Kok
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  <a class="list-group-item" href="/event/lysverket-presenterer-balsa-wood/4399448/">
+    <h5 class="pull-right">in 13d 3h</h5>
+    <h4 class="truncate">
+    
+    <i title="Event category: Universal" class="fa fa-clock-o"></i>
+    
+    Lysverket presenterer Balsa Wood
+    </h4>
+    <span class="badge">
+    
+    Fri 22:00
+    
+    </span>
+    <p class="truncate">lysverket</p>
+    
+    <span class="pull-right">
+      <strong>0.4 km</strong>
+    </span>
+    
+    <p class="truncate">
+      <i title="Location category: Universal" class="fa fa-location-arrow"></i>
+      <strong>
+	
+	Lysverket
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  <a class="list-group-item" href="/event/vidar-johnsen/4164894/">
+    <h5 class="pull-right">in 13d 3h</h5>
+    <h4 class="truncate">
+    
+    <i title="Event category: Universal" class="fa fa-clock-o"></i>
+    
+    VIDAR JOHNSEN
+    </h4>
+    <span class="badge">
+    
+    Fri 22:00
+    
+    </span>
+    <p class="truncate">madamfelle</p>
+    
+    <span class="pull-right">
+      <strong>0.7 km</strong>
+    </span>
+    
+    <p class="truncate">
+      <i title="Location category: Universal" class="fa fa-location-arrow"></i>
+      <strong>
+	
+	MadamFelle
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  <a class="list-group-item" href="/event/deeper-nights/4568816/">
+    <h5 class="pull-right">in 13d 4h</h5>
+    <h4 class="truncate">
+    
+    <i title="Event category: Universal" class="fa fa-clock-o"></i>
+    
+    Deeper Nights
+    </h4>
+    <span class="badge">
+    
+    Fri 23:00
+    
+    </span>
+    <p class="truncate">dwell gastrobar</p>
+    
+    <span class="pull-right">
+      <strong>0.1 km</strong>
+    </span>
+    
+    <p class="truncate">
+      <i title="Location category: Universal" class="fa fa-location-arrow"></i>
+      <strong>
+	
+	dwell gastrobar
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  <a class="list-group-item" href="/event/lille-havanna-med-bergen-vista-social-club-fredag-18-mars/4752003/">
+    <h5 class="pull-right">in 13d 4h</h5>
+    <h4 class="truncate">
+    
+    <i title="Event category: Music" class="fa fa-music"></i>
+    
+    Lille Havanna Med Bergen Vista Social Club - Fredag 18. Mars
+    </h4>
+    <span class="badge">
+    
+    Fri 23:00
+    
+    </span>
+    <p class="truncate">lille ole bull</p>
+    
+    <span class="pull-right">
+      <strong>0.1 km</strong>
+    </span>
+    
+    <p class="truncate">
+      <i title="Location category: Universal" class="fa fa-location-arrow"></i>
+      <strong>
+	
+	Lille Ole Bull
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  <a class="list-group-item" href="/event/vitenshowfestival/5830146/">
+    <h5 class="pull-right">in 13d 15h</h5>
+    <h4 class="truncate">
+    
+    <i title="Event category: Universal" class="fa fa-clock-o"></i>
+    
+    Vitenshowfestival
+    </h4>
+    <span class="badge">
+    
+    Sat 10:00
+    
+    </span>
+    <p class="truncate">vilvite</p>
+    
+    <span class="pull-right">
+      <strong>1.2 km</strong>
+    </span>
+    
+    <p class="truncate">
+      <i title="Location category: Universal" class="fa fa-location-arrow"></i>
+      <strong>
+	
+	VilVite
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  <a class="list-group-item" href="/event/lillelrdag/3840321/">
+    <h5 class="pull-right">in 13d 16h</h5>
+    <h4 class="truncate">
+    
+    <i title="Event category: Universal" class="fa fa-clock-o"></i>
+    
+    Lillelørdag
+    </h4>
+    <span class="badge">
+    
+    Sat 11:00
+    
+    </span>
+    <p class="truncate">litteraturhuset i bergen</p>
+    
+    <span class="pull-right">
+      <strong>0.4 km</strong>
+    </span>
+    
+    <p class="truncate">
+      <i title="Location category: Universal" class="fa fa-location-arrow"></i>
+      <strong>
+	
+	Litteraturhuset i Bergen
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  <a class="list-group-item" href="/event/familielrdag-med-paskekos/4234071/">
+    <h5 class="pull-right">in 13d 17h</h5>
+    <h4 class="truncate">
+    
+    <i title="Event category: Arts & Culture" class="fa fa-font"></i>
+    
+    Familielørdag med påskekos
+    </h4>
+    <span class="badge">
+    
+    Sat 12:00
+    
+    </span>
+    <p class="truncate">oasen bibliotek</p>
+    
+    <span class="pull-right">
+      <strong>5.0 km</strong>
+    </span>
+    
+    <p class="truncate">
+      <i title="Location category: Universal" class="fa fa-location-arrow"></i>
+      <strong>
+	
+	Oasen bibliotek
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  <a class="list-group-item" href="/event/primal-movement-workshop/5097394/">
+    <h5 class="pull-right">in 13d 17h</h5>
+    <h4 class="truncate">
+    
+    <i title="Event category: Universal" class="fa fa-clock-o"></i>
+    
+    Primal movement workshop
+    </h4>
+    <span class="badge">
+    
+    Sat 12:30
+    
+    </span>
+    <p class="truncate">yogaunião bergen</p>
+    
+    <span class="pull-right">
+      <strong>0.9 km</strong>
+    </span>
+    
+    <p class="truncate">
+      <i title="Location category: Universal" class="fa fa-location-arrow"></i>
+      <strong>
+	
+	YogaUnião Bergen
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  
+  </div>
+</div>
+
+

@@ -10,12 +10,14 @@ import java.util.HashSet;
 import java.util.Random;
 import java.util.Set;
 
-import org.apache.jena.base.Sys;
+
 import org.apache.jena.ontology.OntModel;
 import org.apache.jena.ontology.OntModelSpec;
 import org.apache.jena.rdf.model.ModelFactory;
 import facebook4j.*;
 import facebook4j.auth.AccessToken;
+
+
 
 
 /**
@@ -28,8 +30,9 @@ public class FacebookFriends {
 	private static String appSecret = "69fec6df69ae3da5a308d62005f85976";
 	private static String accessToken = "EAAWPYu13aFoBAAra0ZBcGf7aeYVKcTBveiR45Hf5aKpUr46ZCiO2sfdtMVEYwMarUKNRYzV5lZCOjEPe2YJKLWWQuUJDEfehHGrQfWlxr5qo0pmr6Xd47jwqEMutZA91iWKr13huOZAlFIZBarDjZCgrt141CUnqMIZD";
 	private static String appToken = "1565029937145946|RVWOId2jQZjW89yHa9fONbi4rto";
+	private static String SOURCE = "http://www.eswc2006.org/technologies/ontology";
 	private static Facebook user = new FacebookFactory().getInstance();
-	private static CreatingRdf cr = new CreatingRdf();
+	private static no.uib.info216.facebook.CreatingRdf cr = new no.uib.info216.facebook.CreatingRdf();
 	private static OntModel m = ModelFactory.createOntologyModel(OntModelSpec.OWL_MEM, cr.getModel());
 
 
@@ -60,6 +63,7 @@ public class FacebookFriends {
 	 */
 	public static void writeToFile(Facebook fb) throws IllegalStateException, FacebookException {
 		FileWriter out = null;
+
 		try {
 			out = new FileWriter(fb.getId() + ".ttl");
 			m.write(out, "TURTLE");

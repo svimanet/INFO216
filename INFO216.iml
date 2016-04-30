@@ -9,6 +9,7 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="INFO216" level="project" />
     <orderEntry type="library" name="Maven: org.apache.jena:jena-tdb:3.0.1" level="project" />
     <orderEntry type="library" name="Maven: org.apache.jena:jena-arq:3.0.1" level="project" />
     <orderEntry type="library" name="Maven: org.apache.jena:jena-core:3.0.1" level="project" />

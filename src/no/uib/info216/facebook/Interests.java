@@ -1,7 +1,9 @@
-/**
- * 
- */
+
 package no.uib.info216.facebook;
+
+
+import facebook4j.Television;
+
 
 import java.util.ArrayList;
 
@@ -13,8 +15,6 @@ import facebook4j.Game;
 import facebook4j.Like;
 import facebook4j.Movie;
 import facebook4j.Music;
-import facebook4j.Television;
-import org.apache.jena.base.Sys;
 
 /**
  * @author mariuslillevik
