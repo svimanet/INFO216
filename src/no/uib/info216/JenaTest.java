@@ -20,7 +20,7 @@ public class JenaTest {
     private ArrayList<String> nametag = new ArrayList<String>();
     private ArrayList<String> fromtag = new ArrayList<String>();
     private ArrayList<String> totag = new ArrayList<String>();
-    public ArrayList<HashMap<String,String>> dataStruct = new ArrayList<>();
+    public ArrayList<HashMap<String,String>> dataStruct = new ArrayList<HashMap<String, String>>();
 
     public void makeSymbolList(){
 
@@ -52,7 +52,7 @@ public class JenaTest {
         NodeList timeNodeList = nodelist.getElementsByTagName("time");
 
         for (int i = 0; i < timeNodeList.getLength(); i++) {
-            HashMap<String,String> obj = new HashMap<>();
+            HashMap<String,String> obj = new HashMap<String, String>();
 
             Node node = timeNodeList.item(i);
             Element eElement = (Element) node;

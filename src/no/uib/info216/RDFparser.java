@@ -1,11 +1,18 @@
 package no.uib.info216;
 
-import com.hp.hpl.jena.ontology.OntModel;
-import com.hp.hpl.jena.ontology.OntModelSpec;
-import com.hp.hpl.jena.rdf.model.*;
-import com.hp.hpl.jena.vocabulary.DCTerms;
+
+import org.apache.jena.ontology.OntModel;
+import org.apache.jena.ontology.OntModelSpec;
+import org.apache.jena.rdf.model.Model;
+import org.apache.jena.rdf.model.Resource;
+import org.apache.jena.vocabulary.DCTerms;
+
 import java.io.*;
 import java.util.*;
+
+import static org.apache.jena.rdf.model.ModelFactory.createOntologyModel;
+import static org.apache.jena.shared.RandomOrderGraph.createDefaultModel;
+
 
 /**
  * Created by svimanet on 01/03/16.
@@ -17,7 +24,10 @@ public class RDFparser {
     private ArrayList<String> dateFrom = jt.getFromtag();
     private ArrayList<String> nameTag = jt.getNametag();
 
-    Model model = ModelFactory.createDefaultModel();
+    Model model = createDefaultModel();
+
+
+
     int arrayLength = nameTag.size();
 
     public void createOntology(){
@@ -34,7 +44,7 @@ public class RDFparser {
     }
 
     public void writerMethod(){
-        OntModel m = ModelFactory.createOntologyModel( OntModelSpec.OWL_MEM, model);
+        OntModel m = createOntologyModel(OntModelSpec.OWL_MEM, model);
 
         FileWriter out = null;
         try {
