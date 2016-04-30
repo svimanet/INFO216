@@ -151,6 +151,7 @@ public class FacebookFriends {
 			int r = random.nextInt(names.size()) + 0;
 			fu.setName(names.get(r));
 			randomUsers.add(fu);
+			
 		}
 
 		return randomUsers;
