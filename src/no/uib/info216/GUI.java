@@ -77,6 +77,8 @@ public class GUI extends JPanel{
 
         //The following line enables to use scrolling tabs.
         tabbedPane.setTabLayoutPolicy(JTabbedPane.SCROLL_TAB_LAYOUT);
+
+
     }
 
     protected JComponent makeTextPanel(String text) {
@@ -104,8 +106,6 @@ public class GUI extends JPanel{
      * this method should be invoked from
      * the event dispatch thread.
      */
-
-
     public static void createAndShowGUI() {
         //Create and set up the window.
         JFrame frame = new JFrame("216");

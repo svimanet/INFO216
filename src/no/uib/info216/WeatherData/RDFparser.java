@@ -1,13 +1,14 @@
 package no.uib.info216.WeatherData;
 
-import com.hp.hpl.jena.ontology.OntModel;
-import com.hp.hpl.jena.ontology.OntModelSpec;
-import com.hp.hpl.jena.rdf.model.*;
-import com.hp.hpl.jena.vocabulary.DCTerms;
-import no.uib.info216.WeatherData.JenaTest;
 
+import java.util.ArrayList;
+import org.apache.jena.rdf.model.Model;
+import org.apache.jena.rdf.model.Resource;
 import java.io.*;
-import java.util.*;
+
+import static org.apache.jena.rdf.model.ModelFactory.createOntologyModel;
+import static org.apache.jena.shared.RandomOrderGraph.createDefaultModel;
+
 
 /**
  * Created by svimanet on 01/03/16.
@@ -20,7 +21,10 @@ public class RDFparser {
     private ArrayList<String> nameTag = jt.getNametag();
     private ArrayList<String> windTag = jt.getWindSpeedName();
 
-    Model model = ModelFactory.createDefaultModel();
+    Model model = createDefaultModel();
+
+
+
     int arrayLength = nameTag.size();
 
     public void createOntology(){
@@ -33,7 +37,7 @@ public class RDFparser {
 
             Resource weatherData
                     = model.createResource(itemdateFrom)
-                    .addProperty(DCTerms.abstract_, itemnameTag);
+                    .addProperty(org.apache.jena.vocabulary.DCTerms.abstract_, itemnameTag);
 //                    .addProperty(DCTerms.abstract_, itemwindTag);
         }
 
@@ -41,7 +45,7 @@ public class RDFparser {
     }
 
     public void writerMethod(){
-        OntModel m = ModelFactory.createOntologyModel( OntModelSpec.OWL_MEM, model);
+        org.apache.jena.ontology.OntModel m = createOntologyModel(org.apache.jena.ontology.OntModelSpec.OWL_MEM, model);
 
         FileWriter out = null;
         try {
