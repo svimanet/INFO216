@@ -24,6 +24,7 @@ public class FacebookGui extends JFrame{
 
 
     public FacebookGui(){
+        setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
         setLayout(new BorderLayout());
         setupComponents();
         tableRows();

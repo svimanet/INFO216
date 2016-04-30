@@ -22,6 +22,7 @@ public class CreatingRdf {
 
 	//Fields
 	private Model model = ModelFactory.createDefaultModel();
+	private Model usersModel = ModelFactory.createDefaultModel();
 	private Interests ir = new Interests();
 	//Properties
 	private Property tvShow = model.createProperty("https://schema.org/TVSeries");
@@ -45,6 +46,19 @@ public class CreatingRdf {
 		addRes(ir.getBook(), book, model, "Book");
 		addRes(ir.getEvents(), events, model, "Event");
 		addRes(ir.getLikes(), likes, model, "Like");
+
+	}
+
+	public void createUsersModel(ArrayList<FacebookUser> users){
+		for(FacebookUser user : users){
+			addRes(user.getEvents(), events, usersModel, user.getName() + "_" + user.getId());
+			addRes(user.getTvShows(), tvShow, usersModel, user.getName() + "_" + user.getId());
+			addRes(user.getMovies(), movie, usersModel, user.getName() + "_" + user.getId());
+			addRes(user.getMusic(), music, usersModel, user.getName() + "_" + user.getId());
+			addRes(user.getGames(), games, usersModel, user.getName() + "_" + user.getId());
+			addRes(user.getBook(), book, usersModel, user.getName() + "_" + user.getId());
+			addRes(user.getLikes(), likes, usersModel, user.getName() + "_" + user.getId());
+		}
 
 	}
 
@@ -74,4 +88,7 @@ public class CreatingRdf {
 		return ir;
 	}
 
+	public Model getUsersModel() {
+		return usersModel;
+	}
 }
