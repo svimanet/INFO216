@@ -3,6 +3,8 @@
  */
 package no.uib.info216.facebook;
 
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
@@ -34,6 +36,7 @@ public class FacebookFriends {
 	private static Facebook user = new FacebookFactory().getInstance();
 	private static no.uib.info216.facebook.CreatingRdf cr = new no.uib.info216.facebook.CreatingRdf();
 	private static OntModel m = ModelFactory.createOntologyModel(OntModelSpec.OWL_MEM, cr.getModel());
+	private static ArrayList<FacebookUser> randomUsers = createUserWithRandomInterests(5);
 
 
 	/**
@@ -52,7 +55,20 @@ public class FacebookFriends {
 		cr.createModel();
 		writeToFile(user);
 
-		test(createUserWithRandomInterests(4)); //Creates 4 "Fake" users.
+		final ArrayList<FacebookUser> users = createUserWithRandomInterests(4); //Creates 4 "Fake" users.
+
+		final FacebookGui fg = new FacebookGui();
+
+		fg.getRandomButton().addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				FacebookUser randomUser = selectRandomUser(users);
+				fg.listEvents((randomUser));
+				fg.getNameLabel().setText("Name : " + randomUser.getName());
+			}
+		});
+
+		//test(createUserWithRandomInterests(5));
+
 	}
 
 	/**
@@ -117,6 +133,10 @@ public class FacebookFriends {
 	 * @return ArrayList - A list of FacebookUser objects.
 	 */
 	public static ArrayList<FacebookUser> createUserWithRandomInterests(int numberOfUsers){
+		ArrayList<String> names = new ArrayList<String>();
+		names.add("Guri"); names.add("Pål"); names.add("Ole"); names.add("Eirik"); names.add("Knut");
+		Random random = new Random();
+
 		ArrayList<FacebookUser> randomUsers = new ArrayList<FacebookUser>();
 		for(int i = 0; i < numberOfUsers; i++) {
 			ArrayList<String> tvShows = selectRandomInterestsFromList(cr.getIr().getTvShows());
@@ -128,6 +148,8 @@ public class FacebookFriends {
 			ArrayList<String> likes = selectRandomInterestsFromList(cr.getIr().getLikes());
 
 			FacebookUser fu = new FacebookUser(tvShows, movies, music, book, games, events, likes);
+			int r = random.nextInt(names.size()) + 0;
+			fu.setName(names.get(r));
 			randomUsers.add(fu);
 		}
 
@@ -150,4 +172,19 @@ public class FacebookFriends {
 			System.out.println("NUMBER: " + (i+1) + "  ###############################################");
 		}
 	}
+
+	/**
+	 * This method selects a random user from a list
+	 * containing FacebookUser objects.
+	 * @param users
+	 * @return
+     */
+	public static FacebookUser selectRandomUser(ArrayList<FacebookUser> users){
+		Random random = new Random();
+		int user = random.nextInt(users.size()) + 0;
+
+		FacebookUser fu = users.get(user);
+		return fu;
+	}
+
 }

@@ -7,6 +7,8 @@ import java.util.ArrayList;
  */
 public class FacebookUser {
 
+    private String name = new String();
+
     private ArrayList<String> tvShows = new ArrayList<String>();
     private ArrayList<String> movies = new ArrayList<String>();
     private ArrayList<String> music = new ArrayList<String>();
@@ -87,5 +89,13 @@ public class FacebookUser {
 
     public void setTvShows(ArrayList<String> tvShows) {
         this.tvShows = tvShows;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
     }
 }
