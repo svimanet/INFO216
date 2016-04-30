@@ -7,13 +7,17 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.Random;
+import java.util.Set;
 
-import com.hp.hpl.jena.ontology.OntModelSpec;
+import org.apache.jena.base.Sys;
+import org.apache.jena.ontology.OntModel;
+import org.apache.jena.ontology.OntModelSpec;
+import org.apache.jena.rdf.model.ModelFactory;
 import facebook4j.*;
 import facebook4j.auth.AccessToken;
-import com.hp.hpl.jena.ontology.OntModel;
-import com.hp.hpl.jena.rdf.model.*;
-import static com.hp.hpl.jena.assembler.JA.OntModelSpec;
 
 
 /**
@@ -24,13 +28,14 @@ public class FacebookFriends {
 	// These are the fields for the main class.
 	private static String appId = "1565029937145946";
 	private static String appSecret = "69fec6df69ae3da5a308d62005f85976";
-	private static String accessToken = "CAAWPYu13aFoBANPxUeh3v3mv5GA5eMv6s69PcpJzWugJu0u5dq8anPeETqOQiaZCeZBhH0AKEcdRDKmpTs9JXQZC0UO2Fzf3lSJ7ZBXsSkMqXQxG3JA4bFHZCQVdtrhG7UYr9BNh6VCbkOoSv43c5QwehhnOZA9aRBij7iNR2ZCZB70veAMajfcc";
+	private static String accessToken = "EAAWPYu13aFoBAAra0ZBcGf7aeYVKcTBveiR45Hf5aKpUr46ZCiO2sfdtMVEYwMarUKNRYzV5lZCOjEPe2YJKLWWQuUJDEfehHGrQfWlxr5qo0pmr6Xd47jwqEMutZA91iWKr13huOZAlFIZBarDjZCgrt141CUnqMIZD";
 	private static String appToken = "1565029937145946|RVWOId2jQZjW89yHa9fONbi4rto";
 	private static String SOURCE = "http://www.eswc2006.org/technologies/ontology";
 	private static Facebook user = new FacebookFactory().getInstance();
 	private static no.uib.info216.facebook.CreatingRdf cr = new no.uib.info216.facebook.CreatingRdf();
 	private static OntModel m = ModelFactory.createOntologyModel(OntModelSpec.OWL_MEM, cr.getModel());
 	private static ArrayList<FacebookUser> randomUsers = createUserWithRandomInterests(5);
+
 
 
 	/**
@@ -40,6 +45,7 @@ public class FacebookFriends {
 	 * @throws FacebookException
 	 */
 	public static void main(String[] args) throws FacebookException {
+
 		user.setOAuthAppId(appId, appSecret);
 		user.setOAuthPermissions(appToken);
 		user.setOAuthAccessToken(new AccessToken(accessToken));
@@ -70,7 +76,7 @@ public class FacebookFriends {
 	 * @throws FacebookException 
 	 * @throws IllegalStateException 
 	 */
-	public static void writeToFile(facebook4j.Facebook fb) throws IllegalStateException, FacebookException {
+	public static void writeToFile(Facebook fb) throws IllegalStateException, FacebookException {
 		FileWriter out = null;
 
 		try {
@@ -83,6 +89,7 @@ public class FacebookFriends {
 				try {
 					out.close();
 				} catch (IOException ignore) {
+
 				}
 			}
 		}
