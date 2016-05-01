@@ -2,6 +2,8 @@ package no.uib.info216;
 
 import no.uib.info216.Events.EventParser;
 import no.uib.info216.RDF.RDFHandler;
+import no.uib.info216.WeatherData.Weather;
+import no.uib.info216.facebook.FacebookFriends;
 import org.apache.jena.rdf.model.Model;
 
 /**
@@ -19,14 +21,21 @@ public class Main {
 //            }
 //        });
 
-        //RDFparser weatherData = new RDFparser();
 
         RDFHandler rdfHandler = new RDFHandler();
-
 
         EventParser events = new EventParser();
         Model eventModel = events.parse();
         rdfHandler.addModel(eventModel);
+
+
+        FacebookFriends friends = new FacebookFriends();
+        Model friendsModel = friends.parse();
+        rdfHandler.addModel(friendsModel);
+
+        Weather weather = new Weather();
+        Model weatherModel = weather.parse();
+        rdfHandler.addModel(weatherModel);
 
     }
 }

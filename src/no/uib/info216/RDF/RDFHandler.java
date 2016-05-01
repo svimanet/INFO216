@@ -18,10 +18,10 @@ public class RDFHandler {
         this.model.add(model);
     }
 
-    public ResultSet runSparql(String query){
+    public ResultSet runSparql(String queryString){
 
         // Create a new query
-        String queryString =
+        queryString =
                 "SELECT ?o ?p ?s " +
                         "WHERE {" +
                         "       ?o ?p ?s " +
