@@ -3,6 +3,15 @@
  */
 package no.uib.info216.facebook;
 
+import facebook4j.Facebook;
+import facebook4j.FacebookException;
+import facebook4j.FacebookFactory;
+import facebook4j.auth.AccessToken;
+import org.apache.jena.ontology.OntModel;
+import org.apache.jena.ontology.OntModelSpec;
+import org.apache.jena.rdf.model.Model;
+import org.apache.jena.rdf.model.ModelFactory;
+
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.io.FileWriter;
@@ -11,13 +20,6 @@ import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.Random;
 import java.util.Set;
-
-import org.apache.jena.base.Sys;
-import org.apache.jena.ontology.OntModel;
-import org.apache.jena.ontology.OntModelSpec;
-import org.apache.jena.rdf.model.ModelFactory;
-import facebook4j.*;
-import facebook4j.auth.AccessToken;
 
 
 /**
@@ -72,6 +74,23 @@ public class FacebookFriends {
 
 		//test(createUserWithRandomInterests(5));
 
+	}
+
+	public Model parse(){
+		user.setOAuthAppId(appId, appSecret);
+		user.setOAuthPermissions(appToken);
+		user.setOAuthAccessToken(new AccessToken(accessToken));
+
+		try {
+			cr.getIr().getInterests(user);
+		} catch (FacebookException e) {
+			e.printStackTrace();
+		}
+
+		ArrayList<FacebookUser> users = createUserWithRandomInterests(10); //Creates 4 "Fake" users.
+		cr.createUsersModel(users);
+
+		return cr.getModel();
 	}
 
 	/**

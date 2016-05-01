@@ -1,23 +1,28 @@
 package no.uib.info216.WeatherData;
 
-import java.io.*;
-import java.net.URL;
-import java.nio.channels.Channels;
-import java.nio.channels.ReadableByteChannel;
-import java.util.*;
-import javax.xml.parsers.DocumentBuilder;
-import javax.xml.parsers.DocumentBuilderFactory;
-import javax.xml.parsers.ParserConfigurationException;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
 import org.xml.sax.SAXException;
 
+import javax.xml.parsers.DocumentBuilder;
+import javax.xml.parsers.DocumentBuilderFactory;
+import javax.xml.parsers.ParserConfigurationException;
+import java.io.File;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.net.URL;
+import java.nio.channels.Channels;
+import java.nio.channels.ReadableByteChannel;
+import java.util.ArrayList;
+import java.util.Date;
+import java.util.HashMap;
+
 /**
  * Created by svimanet on 23/02/16.
  */
-public class JenaTest {
+public class Yr{
 
     private File file = new File("varsel.xml");
 
@@ -130,7 +135,7 @@ public class JenaTest {
         System.out.print("Success!\n");
     }
 
-    public JenaTest(){
+    public Yr(){
         getWeatherAPI();
         makeSymbolList();
 
