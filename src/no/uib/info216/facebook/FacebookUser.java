@@ -8,6 +8,7 @@ import java.util.ArrayList;
 public class FacebookUser {
 
     private String name = new String();
+    private int id = 0;
 
     private ArrayList<String> tvShows = new ArrayList<String>();
     private ArrayList<String> movies = new ArrayList<String>();
@@ -97,5 +98,13 @@ public class FacebookUser {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 }

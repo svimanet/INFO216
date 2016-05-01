@@ -51,11 +51,15 @@ public class FacebookFriends {
 		user.setOAuthAccessToken(new AccessToken(accessToken));
 
 		cr.getIr().getInterests(user);
-		cr.createModel();
+		//cr.createModel();
+
+
+
+		final ArrayList<FacebookUser> users = createUserWithRandomInterests(10); //Creates 4 "Fake" users.
+		test(users);
+
+		cr.createUsersModel(users);
 		writeToFile(user);
-
-		final ArrayList<FacebookUser> users = createUserWithRandomInterests(4); //Creates 4 "Fake" users.
-
 		final FacebookGui fg = new FacebookGui();
 
 		fg.getRandomButton().addActionListener(new ActionListener() {
@@ -81,7 +85,7 @@ public class FacebookFriends {
 
 		try {
 			out = new FileWriter(fb.getId() + ".ttl");
-			m.write(out, "TURTLE");
+			cr.getUsersModel().write(out, "TURTLE");
 		} catch (IOException e) {
 			e.printStackTrace();
 		} finally {
@@ -148,7 +152,9 @@ public class FacebookFriends {
 
 			FacebookUser fu = new FacebookUser(tvShows, movies, music, book, games, events, likes);
 			int r = random.nextInt(names.size()) + 0;
+			int randomId = random.nextInt(1000) + 1;
 			fu.setName(names.get(r));
+			fu.setId(randomId);
 			randomUsers.add(fu);
 		}
 
