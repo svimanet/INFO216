@@ -1,0 +1,4217 @@
+
+
+<div class="col-sm-12">
+  
+  <div class="row eve-cats" id="event-categories">
+    
+    <div class="col-xs-4 col-sm-2 btn-cats" data-toggle="buttons">
+      <label class="btn btn-default btn-xs btn-block truncate active" title="Push to show arts &amp; culture events">
+	<span class="pull-left"><i title="Event category: Arts & Culture" class="fa fa-font"></i></span>
+	<input type="checkbox" value="2" checked>Arts &amp; Culture
+      </label>
+    </div>
+    
+    <div class="col-xs-4 col-sm-2 btn-cats" data-toggle="buttons">
+      <label class="btn btn-default btn-xs btn-block truncate active" title="Push to show business events">
+	<span class="pull-left"><i title="Event category: Business" class="fa fa-briefcase"></i></span>
+	<input type="checkbox" value="8" checked>Business
+      </label>
+    </div>
+    
+    <div class="col-xs-4 col-sm-2 btn-cats" data-toggle="buttons">
+      <label class="btn btn-default btn-xs btn-block truncate active" title="Push to show community events">
+	<span class="pull-left"><i title="Event category: Community" class="fa fa-users"></i></span>
+	<input type="checkbox" value="12" checked>Community
+      </label>
+    </div>
+    
+    <div class="col-xs-4 col-sm-2 btn-cats" data-toggle="buttons">
+      <label class="btn btn-default btn-xs btn-block truncate active" title="Push to show education events">
+	<span class="pull-left"><i title="Event category: Education" class="fa fa-mortar-board"></i></span>
+	<input type="checkbox" value="6" checked>Education
+      </label>
+    </div>
+    
+    <div class="col-xs-4 col-sm-2 btn-cats" data-toggle="buttons">
+      <label class="btn btn-default btn-xs btn-block truncate active" title="Push to show entertainment events">
+	<span class="pull-left"><i title="Event category: Entertainment" class="fa fa-microphone"></i></span>
+	<input type="checkbox" value="5" checked>Entertainment
+      </label>
+    </div>
+    
+    <div class="col-xs-4 col-sm-2 btn-cats" data-toggle="buttons">
+      <label class="btn btn-default btn-xs btn-block truncate active" title="Push to show food &amp; drink events">
+	<span class="pull-left"><i title="Event category: Food & Drink" class="fa fa-glass"></i></span>
+	<input type="checkbox" value="4" checked>Food &amp; Drink
+      </label>
+    </div>
+    
+    <div class="col-xs-4 col-sm-2 btn-cats" data-toggle="buttons">
+      <label class="btn btn-default btn-xs btn-block truncate active" title="Push to show health &amp; wellnes events">
+	<span class="pull-left"><i title="Event category: Health & Wellnes" class="fa fa-leaf"></i></span>
+	<input type="checkbox" value="10" checked>Health &amp; Wellnes
+      </label>
+    </div>
+    
+    <div class="col-xs-4 col-sm-2 btn-cats" data-toggle="buttons">
+      <label class="btn btn-default btn-xs btn-block truncate active" title="Push to show media events">
+	<span class="pull-left"><i title="Event category: Media" class="fa fa-television"></i></span>
+	<input type="checkbox" value="7" checked>Media
+      </label>
+    </div>
+    
+    <div class="col-xs-4 col-sm-2 btn-cats" data-toggle="buttons">
+      <label class="btn btn-default btn-xs btn-block truncate active" title="Push to show movies events">
+	<span class="pull-left"><i title="Event category: Movies" class="fa fa-film"></i></span>
+	<input type="checkbox" value="15" checked>Movies
+      </label>
+    </div>
+    
+    <div class="col-xs-4 col-sm-2 btn-cats" data-toggle="buttons">
+      <label class="btn btn-default btn-xs btn-block truncate active" title="Push to show music events">
+	<span class="pull-left"><i title="Event category: Music" class="fa fa-music"></i></span>
+	<input type="checkbox" value="3" checked>Music
+      </label>
+    </div>
+    
+    <div class="col-xs-4 col-sm-2 btn-cats" data-toggle="buttons">
+      <label class="btn btn-default btn-xs btn-block truncate active" title="Push to show public authority events">
+	<span class="pull-left"><i title="Event category: Public Authority" class="fa fa-cogs"></i></span>
+	<input type="checkbox" value="13" checked>Public Authority
+      </label>
+    </div>
+    
+    <div class="col-xs-4 col-sm-2 btn-cats" data-toggle="buttons">
+      <label class="btn btn-default btn-xs btn-block truncate active" title="Push to show sports &amp; fitness events">
+	<span class="pull-left"><i title="Event category: Sports & Fitness" class="fa fa-futbol-o"></i></span>
+	<input type="checkbox" value="9" checked>Sports &amp; Fitness
+      </label>
+    </div>
+    
+    <div class="col-xs-4 col-sm-2 btn-cats" data-toggle="buttons">
+      <label class="btn btn-default btn-xs btn-block truncate active" title="Push to show transportation events">
+	<span class="pull-left"><i title="Event category: Transportation" class="fa fa-street-view"></i></span>
+	<input type="checkbox" value="11" checked>Transportation
+      </label>
+    </div>
+    
+    <div class="col-xs-4 col-sm-2 btn-cats" data-toggle="buttons">
+      <label class="btn btn-default btn-xs btn-block truncate active" title="Push to show universal events">
+	<span class="pull-left"><i title="Event category: Universal" class="fa fa-clock-o"></i></span>
+	<input type="checkbox" value="1" checked>Universal
+      </label>
+    </div>
+    
+    <div class="col-xs-4 col-sm-2 btn-cats" data-toggle="buttons">
+      <label class="btn btn-default btn-xs btn-block truncate active" title="Push to show weather events">
+	<span class="pull-left"><i title="Event category: Weather" class="fa fa-sun-o"></i></span>
+	<input type="checkbox" value="14" checked>Weather
+      </label>
+    </div>
+    
+  </div>
+  
+  <div class="btn-toolbar">
+    
+    <button class="btn btn-primary" id="set-ec" type="button">
+      <i class="fa fa-search"></i> filter events</button>
+    
+    
+    <a class="btn btn-success pull-right"
+       href="/t/search/add/697291/">
+      <i class="fa fa-plus"></i> add trigg</a>
+    
+  </div><br>
+</div>
+
+
+<div class="col-sm-12">
+  <div class="list-group">
+  
+  <a class="list-group-item" href="/event/fin-fredag/13853340/">
+    <h5 class="pull-right">in 9h</h5>
+    <h4 class="truncate">
+    
+    <i title="Event category: Universal" class="fa fa-clock-o"></i>
+    
+    FIN FREDAG
+    </h4>
+    <span class="badge">
+    
+    Fri 10:00
+    
+    </span>
+    <p class="truncate">ad fontes</p>
+    
+    <span class="pull-right">
+      <strong>2.4 km</strong>
+    </span>
+    
+    <p class="truncate">
+      <i title="Location category: Universal" class="fa fa-location-arrow"></i>
+      <strong>
+	
+	Ad fontes
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  <a class="list-group-item" href="/event/serix-fagdag/13331465/">
+    <h5 class="pull-right">in 12h</h5>
+    <h4 class="truncate">
+    
+    <i title="Event category: Community" class="fa fa-users"></i>
+    
+    SeriX fagdag
+    </h4>
+    <span class="badge">
+    
+    Fri 13:00
+    
+    </span>
+    <p class="truncate">serix</p>
+    
+    <span class="pull-right">
+      <strong>2.0 km</strong>
+    </span>
+    
+    <p class="truncate">
+      <i title="Location category: Universal" class="fa fa-location-arrow"></i>
+      <strong>
+	
+	Bergen Offentlige Bibliotek
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  <a class="list-group-item" href="/event/fagstyrets-tur-til-rettsmedisinsk-avdeling-ved-haukeland-sykehus/14021064/">
+    <h5 class="pull-right">in 12h</h5>
+    <h4 class="truncate">
+    
+    <i title="Event category: Universal" class="fa fa-clock-o"></i>
+    
+    Fagstyrets tur til rettsmedisinsk avdeling ved Haukeland sykehus
+    </h4>
+    <span class="badge">
+    
+    Fri 13:00
+    
+    </span>
+    <p class="truncate">fagstyret</p>
+    
+    <span class="pull-right">
+      <strong>2.7 km</strong>
+    </span>
+    
+    <p class="truncate">
+      <i title="Location category: Universal" class="fa fa-location-arrow"></i>
+      <strong>
+	
+	Fagstyret
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  <a class="list-group-item" href="/event/yoga-harnessing-the-energy/8791892/">
+    <h5 class="pull-right">in 14h</h5>
+    <h4 class="truncate">
+    
+    <i title="Event category: Sports & Fitness" class="fa fa-futbol-o"></i>
+    
+    Yoga: Harnessing the Energy
+    </h4>
+    <span class="badge">
+    
+    Fri 15:00
+    
+    </span>
+    <p class="truncate">allmenningen yoga</p>
+    
+    <span class="pull-right">
+      <strong>1.8 km</strong>
+    </span>
+    
+    <p class="truncate">
+      <i title="Location category: Universal" class="fa fa-location-arrow"></i>
+      <strong>
+	
+	Fysioterapisenteret i Bergen Manuellterapi og Osteopati
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  <a class="list-group-item" href="/event/last-friday/10568523/">
+    <h5 class="pull-right">in 15h</h5>
+    <h4 class="truncate">
+    
+    <i title="Event category: Universal" class="fa fa-clock-o"></i>
+    
+    Last Friday
+    </h4>
+    <span class="badge">
+    
+    Fri 16:00
+    
+    </span>
+    <p class="truncate">clarion hotel admiral</p>
+    
+    <span class="pull-right">
+      <strong>2.9 km</strong>
+    </span>
+    
+    <p class="truncate">
+      <i title="Location category: Universal" class="fa fa-location-arrow"></i>
+      <strong>
+	
+	Kitchen &amp; Table Bergen
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  <a class="list-group-item" href="/event/bergen-assembly-marvin-gaye-chetwynd-the-elixia-app-episode-one/13977841/">
+    <h5 class="pull-right">in 18h</h5>
+    <h4 class="truncate">
+    
+    <i title="Event category: Universal" class="fa fa-clock-o"></i>
+    
+    Bergen Assembly | Marvin Gaye Chetwynd: The Elixia App (Episode One)
+    </h4>
+    <span class="badge">
+    
+    Fri 19:00
+    
+    </span>
+    <p class="truncate">bergen assembly</p>
+    
+    <span class="pull-right">
+      <strong>3.3 km</strong>
+    </span>
+    
+    <p class="truncate">
+      <i title="Location category: Universal" class="fa fa-location-arrow"></i>
+      <strong>
+	
+	Visningsrommet USF
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  <a class="list-group-item" href="/event/unni-wilhelmsen-utsolgt/4917311/">
+    <h5 class="pull-right">in 18h</h5>
+    <h4 class="truncate">
+    
+    <i title="Event category: Universal" class="fa fa-clock-o"></i>
+    
+    UNNI WILHELMSEN UTSOLGT
+    </h4>
+    <span class="badge">
+    
+    Fri 19:30
+    
+    </span>
+    <p class="truncate">madamfelle</p>
+    
+    <span class="pull-right">
+      <strong>2.9 km</strong>
+    </span>
+    
+    <p class="truncate">
+      <i title="Location category: Universal" class="fa fa-location-arrow"></i>
+      <strong>
+	
+	MadamFelle
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  <a class="list-group-item" href="/event/idol/12416836/">
+    <h5 class="pull-right">in 19h</h5>
+    <h4 class="truncate">
+    
+    <i title="Event category: Media" class="fa fa-television"></i>
+    
+    Idol
+    </h4>
+    <span class="badge">
+    
+    Fri 20:00
+    
+    </span>
+    <p class="truncate">tv show season 9, episode 20</p>
+    
+    <p class="truncate">
+      <i title="Location category: Region" class="fa fa-flag-o"></i>
+      <strong>
+	
+	TV 2 (NO)
+	  
+	  TV Network, Norway
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  <a class="list-group-item" href="/event/skam/8745766/">
+    <h5 class="pull-right">in 19h</h5>
+    <h4 class="truncate">
+    
+    <i title="Event category: Media" class="fa fa-television"></i>
+    
+    Skam
+    </h4>
+    <span class="badge">
+    
+    Fri 20:30
+    
+    </span>
+    <p class="truncate">tv show 9:12</p>
+    
+    <p class="truncate">
+      <i title="Location category: Region" class="fa fa-flag-o"></i>
+      <strong>
+	
+	NRK1 (NO)
+	  
+	  TV Network, Norway
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  <a class="list-group-item" href="/event/blind-idiot-god-us-hulen/3694400/">
+    <h5 class="pull-right">in 20h</h5>
+    <h4 class="truncate">
+    
+    <i title="Event category: Universal" class="fa fa-clock-o"></i>
+    
+    Blind Idiot God (US) // Hulen
+    </h4>
+    <span class="badge">
+    
+    Fri 21:00
+    
+    </span>
+    <p class="truncate">hulen</p>
+    
+    <span class="pull-right">
+      <strong>1.9 km</strong>
+    </span>
+    
+    <p class="truncate">
+      <i title="Location category: Universal" class="fa fa-location-arrow"></i>
+      <strong>
+	
+	Hulen
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  <a class="list-group-item" href="/event/sr-amerikansk-jazz/12385453/">
+    <h5 class="pull-right">in 20h</h5>
+    <h4 class="truncate">
+    
+    <i title="Event category: Music" class="fa fa-music"></i>
+    
+    Sør-Amerikansk jazz
+    </h4>
+    <span class="badge">
+    
+    Fri 21:00
+    
+    </span>
+    <p class="truncate">cafe sanaa</p>
+    
+    <span class="pull-right">
+      <strong>2.1 km</strong>
+    </span>
+    
+    <p class="truncate">
+      <i title="Location category: Universal" class="fa fa-location-arrow"></i>
+      <strong>
+	
+	Cafe Sanaa
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  <a class="list-group-item" href="/event/ramen-rave/13772549/">
+    <h5 class="pull-right">in 20h</h5>
+    <h4 class="truncate">
+    
+    <i title="Event category: Universal" class="fa fa-clock-o"></i>
+    
+    Ramen &amp; Rave
+    </h4>
+    <span class="badge">
+    
+    Fri 21:00
+    
+    </span>
+    <p class="truncate">landmark bergen</p>
+    
+    <span class="pull-right">
+      <strong>2.2 km</strong>
+    </span>
+    
+    <p class="truncate">
+      <i title="Location category: Universal" class="fa fa-location-arrow"></i>
+      <strong>
+	
+	Landmark Bergen
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  <a class="list-group-item" href="/event/johndoe-garage-29-april/12718308/">
+    <h5 class="pull-right">in 20h</h5>
+    <h4 class="truncate">
+    
+    <i title="Event category: Music" class="fa fa-music"></i>
+    
+    Johndoe - Garage 29. april
+    </h4>
+    <span class="badge">
+    
+    Fri 21:00
+    
+    </span>
+    <p class="truncate">johndoe</p>
+    
+    <span class="pull-right">
+      <strong>2.3 km</strong>
+    </span>
+    
+    <p class="truncate">
+      <i title="Location category: Universal" class="fa fa-location-arrow"></i>
+      <strong>
+	
+	Garage Bergen
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  <a class="list-group-item" href="/event/paws-uk-shakanaka-teglverket/5171033/">
+    <h5 class="pull-right">in 20h</h5>
+    <h4 class="truncate">
+    
+    <i title="Event category: Universal" class="fa fa-clock-o"></i>
+    
+    PAWS (UK) + SHAKANAKA @ TEGLVERKET
+    </h4>
+    <span class="badge">
+    
+    Fri 21:00
+    
+    </span>
+    <p class="truncate">aktive studenters forening</p>
+    
+    <span class="pull-right">
+      <strong>2.4 km</strong>
+    </span>
+    
+    <p class="truncate">
+      <i title="Location category: Universal" class="fa fa-location-arrow"></i>
+      <strong>
+	
+	Det Akademiske Kvarter
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  <a class="list-group-item" href="/event/over-engen-cock/13827648/">
+    <h5 class="pull-right">in 20h</h5>
+    <h4 class="truncate">
+    
+    <i title="Event category: Universal" class="fa fa-clock-o"></i>
+    
+    Over Engen: Cock
+    </h4>
+    <span class="badge">
+    
+    Fri 21:00
+    
+    </span>
+    <p class="truncate">den nationale scene</p>
+    
+    <span class="pull-right">
+      <strong>2.7 km</strong>
+    </span>
+    
+    <p class="truncate">
+      <i title="Location category: Universal" class="fa fa-location-arrow"></i>
+      <strong>
+	
+	Den Nationale Scene
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  <a class="list-group-item" href="/event/supersilent-bergen-jazzforum/3564778/">
+    <h5 class="pull-right">in 20h</h5>
+    <h4 class="truncate">
+    
+    <i title="Event category: Music" class="fa fa-music"></i>
+    
+    SUPERSILENT // BERGEN JAZZFORUM
+    </h4>
+    <span class="badge">
+    
+    Fri 21:00
+    
+    </span>
+    <p class="truncate">bergen jazzforum</p>
+    
+    <span class="pull-right">
+      <strong>3.3 km</strong>
+    </span>
+    
+    <p class="truncate">
+      <i title="Location category: Universal" class="fa fa-location-arrow"></i>
+      <strong>
+	
+	USF Verftet
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  <a class="list-group-item" href="/event/lysverket-presenterer-mario-urban-erlend-lyngs-ygmg/6682562/">
+    <h5 class="pull-right">in 21h</h5>
+    <h4 class="truncate">
+    
+    <i title="Event category: Universal" class="fa fa-clock-o"></i>
+    
+    Lysverket presenterer Mario Urban &amp; Erlend Lyngs (YGMG)
+    </h4>
+    <span class="badge">
+    
+    Fri 22:00
+    
+    </span>
+    <p class="truncate">lysverket</p>
+    
+    <span class="pull-right">
+      <strong>2.1 km</strong>
+    </span>
+    
+    <p class="truncate">
+      <i title="Location category: Universal" class="fa fa-location-arrow"></i>
+      <strong>
+	
+	Lysverket
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  <a class="list-group-item" href="/event/x-russefest-ovenpa-nightclub/13126966/">
+    <h5 class="pull-right">in 21h</h5>
+    <h4 class="truncate">
+    
+    <i title="Event category: Universal" class="fa fa-clock-o"></i>
+    
+    X-RUSSEFEST @OVENPÅ NIGHTCLUB
+    </h4>
+    <span class="badge">
+    
+    Fri 22:00
+    
+    </span>
+    <p class="truncate">ovenpå nightclub</p>
+    
+    <span class="pull-right">
+      <strong>2.5 km</strong>
+    </span>
+    
+    <p class="truncate">
+      <i title="Location category: Universal" class="fa fa-location-arrow"></i>
+      <strong>
+	
+	Ovenpå Nightclub
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  <a class="list-group-item" href="/event/bergen-blues-train-unni-wilhelmsen/7587867/">
+    <h5 class="pull-right">in 21h</h5>
+    <h4 class="truncate">
+    
+    <i title="Event category: Music" class="fa fa-music"></i>
+    
+    Bergen Blues Train, Unni Wilhelmsen
+    </h4>
+    <span class="badge">
+    
+    Fri 22:30
+    
+    </span>
+    <p class="truncate">live music performance</p>
+    
+    <span class="pull-right">
+      <strong>3.0 km</strong>
+    </span>
+    
+    <p class="truncate">
+      <i title="Location category: Venue" class="fa fa-building"></i>
+      <strong>
+	
+	Madam Felle
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  <a class="list-group-item" href="/event/miami-vice-machine-ricks/9340458/">
+    <h5 class="pull-right">in 22h</h5>
+    <h4 class="truncate">
+    
+    <i title="Event category: Music" class="fa fa-music"></i>
+    
+    Miami Vice Machine - Ricks
+    </h4>
+    <span class="badge">
+    
+    Fri 23:00
+    
+    </span>
+    <p class="truncate">ricks</p>
+    
+    <span class="pull-right">
+      <strong>2.6 km</strong>
+    </span>
+    
+    <p class="truncate">
+      <i title="Location category: Universal" class="fa fa-location-arrow"></i>
+      <strong>
+	
+	Ricks
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  <a class="list-group-item" href="/event/klubbmisjonen-hedda-the-head-simon-opitz/13311920/">
+    <h5 class="pull-right">in 22h</h5>
+    <h4 class="truncate">
+    
+    <i title="Event category: Music" class="fa fa-music"></i>
+    
+    Klubbmisjonen: Hedda The Head &amp; Simon Opitz
+    </h4>
+    <span class="badge">
+    
+    Fri 23:30
+    
+    </span>
+    <p class="truncate">klubbmisjonen</p>
+    
+    <span class="pull-right">
+      <strong>2.6 km</strong>
+    </span>
+    
+    <p class="truncate">
+      <i title="Location category: Universal" class="fa fa-location-arrow"></i>
+      <strong>
+	
+	Klubbmisjonen
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  <a class="list-group-item" href="/event/asf-sub-pres-oberst/11274745/">
+    <h5 class="pull-right">in 23h</h5>
+    <h4 class="truncate">
+    
+    <i title="Event category: Music" class="fa fa-music"></i>
+    
+    ASF SUB pres.: OBERST
+    </h4>
+    <span class="badge">
+    
+    Sat 00:30
+    
+    </span>
+    <p class="truncate">asf sub</p>
+    
+    <span class="pull-right">
+      <strong>2.8 km</strong>
+    </span>
+    
+    <p class="truncate">
+      <i title="Location category: Universal" class="fa fa-location-arrow"></i>
+      <strong>
+	
+	Aktive Studenters Forening
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  <a class="list-group-item" href="/event/bergen-city-marathon-2016/2761005/">
+    <h5 class="pull-right">in 1d 7h</h5>
+    <h4 class="truncate">
+    
+    <i title="Event category: Sports & Fitness" class="fa fa-futbol-o"></i>
+    
+    Bergen City Marathon 2016
+    </h4>
+    <span class="badge">
+    
+    Sat 08:00
+    
+    </span>
+    <p class="truncate">bergen city marathon</p>
+    
+    <span class="pull-right">
+      <strong>3.1 km</strong>
+    </span>
+    
+    <p class="truncate">
+      <i title="Location category: Universal" class="fa fa-location-arrow"></i>
+      <strong>
+	
+	Bergen City Marathon
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  <a class="list-group-item" href="/event/kvalifisering-til-1divisjon/12008859/">
+    <h5 class="pull-right">in 1d 8h</h5>
+    <h4 class="truncate">
+    
+    <i title="Event category: Universal" class="fa fa-clock-o"></i>
+    
+    KVALIFISERING TIL 1.DIVISJON
+    </h4>
+    <span class="badge">
+    
+    Sat 09:00
+    
+    </span>
+    <p class="truncate">fyllingen håndball damer 2. divisjon</p>
+    
+    <span class="pull-right">
+      <strong>6.5 km</strong>
+    </span>
+    
+    <p class="truncate">
+      <i title="Location category: Universal" class="fa fa-location-arrow"></i>
+      <strong>
+	
+	Framohallen
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  <a class="list-group-item" href="/event/mental-intensivtrening/9530686/">
+    <h5 class="pull-right">in 1d 9h</h5>
+    <h4 class="truncate">
+    
+    <i title="Event category: Health & Wellnes" class="fa fa-leaf"></i>
+    
+    Mental intensivtrening
+    </h4>
+    <span class="badge">
+    
+    Sat 10:00
+    
+    </span>
+    <p class="truncate">mentora</p>
+    
+    <span class="pull-right">
+      <strong>2.6 km</strong>
+    </span>
+    
+    <p class="truncate">
+      <i title="Location category: Universal" class="fa fa-location-arrow"></i>
+      <strong>
+	
+	MENTORA
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  <a class="list-group-item" href="/event/familiedag-pa-ulriken/9697393/">
+    <h5 class="pull-right">in 1d 10h</h5>
+    <h4 class="truncate">
+    
+    <i title="Event category: Universal" class="fa fa-clock-o"></i>
+    
+    Familiedag på Ulriken!
+    </h4>
+    <span class="badge">
+    
+    Sat 11:00
+    
+    </span>
+    <p class="truncate">ulriken643</p>
+    
+    <span class="pull-right">
+      <strong>0.5 km</strong>
+    </span>
+    
+    <p class="truncate">
+      <i title="Location category: Universal" class="fa fa-location-arrow"></i>
+      <strong>
+	
+	Ulriken643
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  <a class="list-group-item" href="/event/isfuglen/11931196/">
+    <h5 class="pull-right">in 1d 11h</h5>
+    <h4 class="truncate">
+    
+    <i title="Event category: Universal" class="fa fa-clock-o"></i>
+    
+    ISFUGLEN
+    </h4>
+    <span class="badge">
+    
+    Sat 12:00
+    
+    </span>
+    <p class="truncate">event</p>
+    
+    <span class="pull-right">
+      <strong>2.0 km</strong>
+    </span>
+    
+    <p class="truncate">
+      <i title="Location category: Universal" class="fa fa-location-arrow"></i>
+      <strong>
+	
+	Bergen Offentlige Bibliotek
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  <a class="list-group-item" href="/event/apen-dag-pa-bnes-gard/14005439/">
+    <h5 class="pull-right">in 1d 11h</h5>
+    <h4 class="truncate">
+    
+    <i title="Event category: Food & Drink" class="fa fa-glass"></i>
+    
+    Åpen dag på Bønes Gård
+    </h4>
+    <span class="badge">
+    
+    Sat 12:00
+    
+    </span>
+    <p class="truncate">bønes gårdsmat</p>
+    
+    <span class="pull-right">
+      <strong>6.9 km</strong>
+    </span>
+    
+    <p class="truncate">
+      <i title="Location category: Universal" class="fa fa-location-arrow"></i>
+      <strong>
+	
+	Bønes Gårdsmat
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  <a class="list-group-item" href="/event/bergen-assembly-slithering-green-contemporary-ceramics-conference/12593555/">
+    <h5 class="pull-right">in 1d 11h</h5>
+    <h4 class="truncate">
+    
+    <i title="Event category: Universal" class="fa fa-clock-o"></i>
+    
+    Bergen Assembly | Slithering Green – Contemporary Ceramics Conference
+    </h4>
+    <span class="badge">
+    
+    Sat 12:30
+    
+    </span>
+    <p class="truncate">bergen assembly</p>
+    
+    <span class="pull-right">
+      <strong>2.4 km</strong>
+    </span>
+    
+    <p class="truncate">
+      <i title="Location category: Universal" class="fa fa-location-arrow"></i>
+      <strong>
+	
+	Bergen Assembly
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  <a class="list-group-item" href="/event/makerfest-makerthon-finale-utsatt-pa-ubestemt-tid/3350323/">
+    <h5 class="pull-right">in 1d 15h</h5>
+    <h4 class="truncate">
+    
+    <i title="Event category: Arts & Culture" class="fa fa-font"></i>
+    
+    MAKERfest: MAKERthon-finale (UTSATT PÅ UBESTEMT TID)
+    </h4>
+    <span class="badge">
+    
+    Sat 16:00
+    
+    </span>
+    <p class="truncate">bergen offentlige bibliotek</p>
+    
+    <span class="pull-right">
+      <strong>2.0 km</strong>
+    </span>
+    
+    <p class="truncate">
+      <i title="Location category: Universal" class="fa fa-location-arrow"></i>
+      <strong>
+	
+	Bergen Offentlige Bibliotek
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  <a class="list-group-item" href="/event/rec-en-danseforestilling-av-terpsichore-dansekompani/12401870/">
+    <h5 class="pull-right">in 1d 16h</h5>
+    <h4 class="truncate">
+    
+    <i title="Event category: Community" class="fa fa-users"></i>
+    
+    REC - En danseforestilling av Terpsichore Dansekompani
+    </h4>
+    <span class="badge">
+    
+    Sat 17:30
+    
+    </span>
+    <p class="truncate">terpsichore dansekompani</p>
+    
+    <span class="pull-right">
+      <strong>3.3 km</strong>
+    </span>
+    
+    <p class="truncate">
+      <i title="Location category: Universal" class="fa fa-location-arrow"></i>
+      <strong>
+	
+	USF Verftet
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  <a class="list-group-item" href="/event/varkoking/11734200/">
+    <h5 class="pull-right">in 1d 17h</h5>
+    <h4 class="truncate">
+    
+    <i title="Event category: Universal" class="fa fa-clock-o"></i>
+    
+    Vårkoking!
+    </h4>
+    <span class="badge">
+    
+    Sat 18:00
+    
+    </span>
+    <p class="truncate">victoria cafe &amp; pub</p>
+    
+    <span class="pull-right">
+      <strong>2.3 km</strong>
+    </span>
+    
+    <p class="truncate">
+      <i title="Location category: Universal" class="fa fa-location-arrow"></i>
+      <strong>
+	
+	Victoria Cafe &amp; Pub
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  <a class="list-group-item" href="/event/elektra-metropolitan-opera/4797723/">
+    <h5 class="pull-right">in 1d 18h</h5>
+    <h4 class="truncate">
+    
+    <i title="Event category: Entertainment" class="fa fa-microphone"></i>
+    
+    Elektra - Metropolitan Opera
+    </h4>
+    <span class="badge">
+    
+    Sat 18:55
+    
+    </span>
+    <p class="truncate">bergen kino</p>
+    
+    <span class="pull-right">
+      <strong>2.6 km</strong>
+    </span>
+    
+    <p class="truncate">
+      <i title="Location category: Universal" class="fa fa-location-arrow"></i>
+      <strong>
+	
+	Bergen Kino
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  <a class="list-group-item" href="/event/bjrn-eidsvag/9120980/">
+    <h5 class="pull-right">in 1d 18h</h5>
+    <h4 class="truncate">
+    
+    <i title="Event category: Music" class="fa fa-music"></i>
+    
+    Bjørn Eidsvåg
+    </h4>
+    <span class="badge">
+    
+    Sat 19:00
+    
+    </span>
+    <p class="truncate">live music performance</p>
+    
+    <span class="pull-right">
+      <strong>1.5 km</strong>
+    </span>
+    
+    <p class="truncate">
+      <i title="Location category: Venue" class="fa fa-building"></i>
+      <strong>
+	
+	St. Jakob kirke
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  <a class="list-group-item" href="/event/kinky-friedman/6834840/">
+    <h5 class="pull-right">in 1d 18h</h5>
+    <h4 class="truncate">
+    
+    <i title="Event category: Universal" class="fa fa-clock-o"></i>
+    
+    Kinky Friedman
+    </h4>
+    <span class="badge">
+    
+    Sat 19:00
+    
+    </span>
+    <p class="truncate">bergen live</p>
+    
+    <span class="pull-right">
+      <strong>3.4 km</strong>
+    </span>
+    
+    <p class="truncate">
+      <i title="Location category: Universal" class="fa fa-location-arrow"></i>
+      <strong>
+	
+	Bergen Live
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  <a class="list-group-item" href="/event/alt-fra-the-beatles-1965/8791519/">
+    <h5 class="pull-right">in 1d 18h</h5>
+    <h4 class="truncate">
+    
+    <i title="Event category: Music" class="fa fa-music"></i>
+    
+    Alt fra The Beatles 1965
+    </h4>
+    <span class="badge">
+    
+    Sat 19:30
+    
+    </span>
+    <p class="truncate">grieghallen</p>
+    
+    <span class="pull-right">
+      <strong>2.1 km</strong>
+    </span>
+    
+    <p class="truncate">
+      <i title="Location category: Universal" class="fa fa-location-arrow"></i>
+      <strong>
+	
+	Grieghallen
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  <a class="list-group-item" href="/event/uljarock/9706118/">
+    <h5 class="pull-right">in 1d 19h</h5>
+    <h4 class="truncate">
+    
+    <i title="Event category: Music" class="fa fa-music"></i>
+    
+    UljaRock
+    </h4>
+    <span class="badge">
+    
+    Sat 20:00
+    
+    </span>
+    <p class="truncate">live music performance</p>
+    
+    <span class="pull-right">
+      <strong>2.5 km</strong>
+    </span>
+    
+    <p class="truncate">
+      <i title="Location category: Venue" class="fa fa-building"></i>
+      <strong>
+	
+	USF Sardinen
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  <a class="list-group-item" href="/event/fyllingenbergen-vs-slbenifica/14333141/">
+    <h5 class="pull-right">in 1d 19h</h5>
+    <h4 class="truncate">
+    
+    <i title="Event category: Universal" class="fa fa-clock-o"></i>
+    
+    FyllingenBergen vs S.L.Benifica
+    </h4>
+    <span class="badge">
+    
+    Sat 20:45
+    
+    </span>
+    <p class="truncate">fyllingenbergen håndball</p>
+    
+    <span class="pull-right">
+      <strong>6.5 km</strong>
+    </span>
+    
+    <p class="truncate">
+      <i title="Location category: Universal" class="fa fa-location-arrow"></i>
+      <strong>
+	
+	Framohallen
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  <a class="list-group-item" href="/event/major-parkinson-hulen/6748046/">
+    <h5 class="pull-right">in 1d 20h</h5>
+    <h4 class="truncate">
+    
+    <i title="Event category: Universal" class="fa fa-clock-o"></i>
+    
+    Major Parkinson // Hulen
+    </h4>
+    <span class="badge">
+    
+    Sat 21:00
+    
+    </span>
+    <p class="truncate">hulen</p>
+    
+    <span class="pull-right">
+      <strong>1.9 km</strong>
+    </span>
+    
+    <p class="truncate">
+      <i title="Location category: Universal" class="fa fa-location-arrow"></i>
+      <strong>
+	
+	Hulen
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  <a class="list-group-item" href="/event/bloody-beach-trojka-oberst-svein-rikard-mathisencopenhagen-diaries-innfdt-erlend-klette-de-yvind-helhus/4412828/">
+    <h5 class="pull-right">in 1d 20h</h5>
+    <h4 class="truncate">
+    
+    <i title="Event category: Universal" class="fa fa-clock-o"></i>
+    
+    Bloody Beach + Trojka + Oberst + Svein Rikard Mathisen/Copenhagen Diaries + Innfødt / Erlend Klette &amp; Øde Øyvind @ Helhus
+    </h4>
+    <span class="badge">
+    
+    Sat 21:00
+    
+    </span>
+    <p class="truncate">aktive studenters forening</p>
+    
+    <span class="pull-right">
+      <strong>2.4 km</strong>
+    </span>
+    
+    <p class="truncate">
+      <i title="Location category: Universal" class="fa fa-location-arrow"></i>
+      <strong>
+	
+	Det Akademiske Kvarter
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  <a class="list-group-item" href="/event/staoppjazz-svein-rikard-mathisen-copenhagen-diaries/13824923/">
+    <h5 class="pull-right">in 1d 20h</h5>
+    <h4 class="truncate">
+    
+    <i title="Event category: Music" class="fa fa-music"></i>
+    
+    StåOppJazz: Svein Rikard Mathisen / Copenhagen Diaries
+    </h4>
+    <span class="badge">
+    
+    Sat 21:00
+    
+    </span>
+    <p class="truncate">ståoppjazz</p>
+    
+    <span class="pull-right">
+      <strong>2.8 km</strong>
+    </span>
+    
+    <p class="truncate">
+      <i title="Location category: Universal" class="fa fa-location-arrow"></i>
+      <strong>
+	
+	Aktive Studenters Forening
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  <a class="list-group-item" href="/event/latin-music-lrdag-30-april-cc-100kr/12385452/">
+    <h5 class="pull-right">in 1d 21h</h5>
+    <h4 class="truncate">
+    
+    <i title="Event category: Music" class="fa fa-music"></i>
+    
+    LATIN MUSIC - Lørdag 30. April (Cc 100kr)
+    </h4>
+    <span class="badge">
+    
+    Sat 22:00
+    
+    </span>
+    <p class="truncate">cafe sanaa</p>
+    
+    <span class="pull-right">
+      <strong>2.1 km</strong>
+    </span>
+    
+    <p class="truncate">
+      <i title="Location category: Universal" class="fa fa-location-arrow"></i>
+      <strong>
+	
+	Cafe Sanaa
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  <a class="list-group-item" href="/event/building-instrument-stre-plateslipp-bergen-jazzforum/3305386/">
+    <h5 class="pull-right">in 1d 21h</h5>
+    <h4 class="truncate">
+    
+    <i title="Event category: Music" class="fa fa-music"></i>
+    
+    BUILDING INSTRUMENT @ ØSTRE (Plateslipp!) // Bergen Jazzforum
+    </h4>
+    <span class="badge">
+    
+    Sat 22:00
+    
+    </span>
+    <p class="truncate">bergen jazzforum</p>
+    
+    <span class="pull-right">
+      <strong>2.4 km</strong>
+    </span>
+    
+    <p class="truncate">
+      <i title="Location category: Universal" class="fa fa-location-arrow"></i>
+      <strong>
+	
+	ØSTRE
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  <a class="list-group-item" href="/event/saturday-session-23-thomazi-b2b-sam-marriott/13059705/">
+    <h5 class="pull-right">in 1d 21h</h5>
+    <h4 class="truncate">
+    
+    <i title="Event category: Universal" class="fa fa-clock-o"></i>
+    
+    SATURDAY SESSION #23 THOMAZI b2b SAM MARRIOTT
+    </h4>
+    <span class="badge">
+    
+    Sat 22:00
+    
+    </span>
+    <p class="truncate">kono 16</p>
+    
+    <span class="pull-right">
+      <strong>2.6 km</strong>
+    </span>
+    
+    <p class="truncate">
+      <i title="Location category: Universal" class="fa fa-location-arrow"></i>
+      <strong>
+	
+	KONo 16
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  <a class="list-group-item" href="/event/klubb-kok-pres-boge-boge/9448395/">
+    <h5 class="pull-right">in 1d 21h</h5>
+    <h4 class="truncate">
+    
+    <i title="Event category: Universal" class="fa fa-clock-o"></i>
+    
+    KLUBB KOK pres BOGE &amp; BOGE
+    </h4>
+    <span class="badge">
+    
+    Sat 22:30
+    
+    </span>
+    <p class="truncate">klubb kok</p>
+    
+    <span class="pull-right">
+      <strong>2.6 km</strong>
+    </span>
+    
+    <p class="truncate">
+      <i title="Location category: Universal" class="fa fa-location-arrow"></i>
+      <strong>
+	
+	Klubb Kok
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  <a class="list-group-item" href="/event/skuteviken/6652499/">
+    <h5 class="pull-right">in 1d 21h</h5>
+    <h4 class="truncate">
+    
+    <i title="Event category: Universal" class="fa fa-clock-o"></i>
+    
+    SKUTEVIKEN
+    </h4>
+    <span class="badge">
+    
+    Sat 22:30
+    
+    </span>
+    <p class="truncate">madamfelle</p>
+    
+    <span class="pull-right">
+      <strong>2.9 km</strong>
+    </span>
+    
+    <p class="truncate">
+      <i title="Location category: Universal" class="fa fa-location-arrow"></i>
+      <strong>
+	
+	MadamFelle
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  <a class="list-group-item" href="/event/lysverket-presenterer-dj-teddy-touch/3315425/">
+    <h5 class="pull-right">in 1d 22h</h5>
+    <h4 class="truncate">
+    
+    <i title="Event category: Universal" class="fa fa-clock-o"></i>
+    
+    Lysverket presenterer DJ TEDDY TOUCH
+    </h4>
+    <span class="badge">
+    
+    Sat 23:00
+    
+    </span>
+    <p class="truncate">lysverket</p>
+    
+    <span class="pull-right">
+      <strong>2.1 km</strong>
+    </span>
+    
+    <p class="truncate">
+      <i title="Location category: Universal" class="fa fa-location-arrow"></i>
+      <strong>
+	
+	Lysverket
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  <a class="list-group-item" href="/event/urhaug-inviterer-solid-blake/11931200/">
+    <h5 class="pull-right">in 1d 22h</h5>
+    <h4 class="truncate">
+    
+    <i title="Event category: Universal" class="fa fa-clock-o"></i>
+    
+    Urhaug inviterer: SOLID BLAKE
+    </h4>
+    <span class="badge">
+    
+    Sat 23:00
+    
+    </span>
+    <p class="truncate">landmark bergen</p>
+    
+    <span class="pull-right">
+      <strong>2.2 km</strong>
+    </span>
+    
+    <p class="truncate">
+      <i title="Location category: Universal" class="fa fa-location-arrow"></i>
+      <strong>
+	
+	Landmark Bergen
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  <a class="list-group-item" href="/event/natt-til-frste-mai-do-you-glow-in-the-dark/13838229/">
+    <h5 class="pull-right">in 1d 22h</h5>
+    <h4 class="truncate">
+    
+    <i title="Event category: Universal" class="fa fa-clock-o"></i>
+    
+    Natt til første mai - Do you GLOW in the dark?
+    </h4>
+    <span class="badge">
+    
+    Sat 23:00
+    
+    </span>
+    <p class="truncate">fincken</p>
+    
+    <span class="pull-right">
+      <strong>2.3 km</strong>
+    </span>
+    
+    <p class="truncate">
+      <i title="Location category: Universal" class="fa fa-location-arrow"></i>
+      <strong>
+	
+	Fincken
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  <a class="list-group-item" href="/event/menllizon-drummers-erikv-ricks/12200124/">
+    <h5 class="pull-right">in 1d 22h</h5>
+    <h4 class="truncate">
+    
+    <i title="Event category: Music" class="fa fa-music"></i>
+    
+    Menllizon Drummers &amp; ErikV - Ricks
+    </h4>
+    <span class="badge">
+    
+    Sat 23:00
+    
+    </span>
+    <p class="truncate">ricks</p>
+    
+    <span class="pull-right">
+      <strong>2.6 km</strong>
+    </span>
+    
+    <p class="truncate">
+      <i title="Location category: Universal" class="fa fa-location-arrow"></i>
+      <strong>
+	
+	Ricks
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  <a class="list-group-item" href="/event/miami-vice-machine-bryggeriet/11424755/">
+    <h5 class="pull-right">in 1d 22h</h5>
+    <h4 class="truncate">
+    
+    <i title="Event category: Universal" class="fa fa-clock-o"></i>
+    
+    Miami Vice Machine - Bryggeriet
+    </h4>
+    <span class="badge">
+    
+    Sat 23:00
+    
+    </span>
+    <p class="truncate">bryggeriet</p>
+    
+    <span class="pull-right">
+      <strong>2.7 km</strong>
+    </span>
+    
+    <p class="truncate">
+      <i title="Location category: Universal" class="fa fa-location-arrow"></i>
+      <strong>
+	
+	Bryggeriet
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  <a class="list-group-item" href="/event/tivoli-asf-klubb-pres-innfdt-erlend-klette-de-yvind/13824922/">
+    <h5 class="pull-right">in 1d 22h</h5>
+    <h4 class="truncate">
+    
+    <i title="Event category: Universal" class="fa fa-clock-o"></i>
+    
+    TIVOLI &amp; ASF KLUBB pres. INNFØDT / ERLEND KLETTE &amp; ØDE ØYVIND
+    </h4>
+    <span class="badge">
+    
+    Sat 23:00
+    
+    </span>
+    <p class="truncate">tivoli</p>
+    
+    <span class="pull-right">
+      <strong>2.8 km</strong>
+    </span>
+    
+    <p class="truncate">
+      <i title="Location category: Universal" class="fa fa-location-arrow"></i>
+      <strong>
+	
+	Aktive Studenters Forening
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  <a class="list-group-item" href="/event/club-eliassen-med-dj-lars-finborud/14269128/">
+    <h5 class="pull-right">in 1d 22h</h5>
+    <h4 class="truncate">
+    
+    <i title="Event category: Universal" class="fa fa-clock-o"></i>
+    
+    Club Eliassen med DJ Lars Finborud
+    </h4>
+    <span class="badge">
+    
+    Sat 23:30
+    
+    </span>
+    <p class="truncate">café opera</p>
+    
+    <span class="pull-right">
+      <strong>2.6 km</strong>
+    </span>
+    
+    <p class="truncate">
+      <i title="Location category: Universal" class="fa fa-location-arrow"></i>
+      <strong>
+	
+	Café Opera
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  <a class="list-group-item" href="/event/rd-frokost/13900205/">
+    <h5 class="pull-right">in 2d 9h</h5>
+    <h4 class="truncate">
+    
+    <i title="Event category: Community" class="fa fa-users"></i>
+    
+    Rød Frokost
+    </h4>
+    <span class="badge">
+    
+    Sun 10:00
+    
+    </span>
+    <p class="truncate">bergen rød ungdom</p>
+    
+    <span class="pull-right">
+      <strong>1.8 km</strong>
+    </span>
+    
+    <p class="truncate">
+      <i title="Location category: Universal" class="fa fa-location-arrow"></i>
+      <strong>
+	
+	Bergen Rød Ungdom
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  <a class="list-group-item" href="/event/1-mai-feiring-med-bergen-su/13839326/">
+    <h5 class="pull-right">in 2d 10h</h5>
+    <h4 class="truncate">
+    
+    <i title="Event category: Community" class="fa fa-users"></i>
+    
+    1. mai feiring med Bergen SU
+    </h4>
+    <span class="badge">
+    
+    Sun 11:00
+    
+    </span>
+    <p class="truncate">bergen sosialistisk ungdom</p>
+    
+    <span class="pull-right">
+      <strong>2.7 km</strong>
+    </span>
+    
+    <p class="truncate">
+      <i title="Location category: Universal" class="fa fa-location-arrow"></i>
+      <strong>
+	
+	Bergen Sosialistisk Ungdom
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  <a class="list-group-item" href="/event/1-mai-pa-asky/13675747/">
+    <h5 class="pull-right">in 2d 10h</h5>
+    <h4 class="truncate">
+    
+    <i title="Event category: Universal" class="fa fa-clock-o"></i>
+    
+    1. Mai på Askøy
+    </h4>
+    <span class="badge">
+    
+    Sun 11:00
+    
+    </span>
+    <p class="truncate">fagforbundet askøy</p>
+    
+    <span class="pull-right">
+      <strong>8.0 km</strong>
+    </span>
+    
+    <p class="truncate">
+      <i title="Location category: Universal" class="fa fa-location-arrow"></i>
+      <strong>
+	
+	Fagforbundet Askøy
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  <a class="list-group-item" href="/event/spotlight/14345253/">
+    <h5 class="pull-right">in 2d 11h</h5>
+    <h4 class="truncate">
+    
+    <i title="Event category: Movies" class="fa fa-film"></i>
+    
+    Spotlight
+    </h4>
+    <span class="badge">
+    
+    Sun 12:00
+    
+    </span>
+    <p class="truncate">cinema movie showtimes</p>
+    
+    <span class="pull-right">
+      <strong>2.6 km</strong>
+    </span>
+    
+    <p class="truncate">
+      <i title="Location category: Venue" class="fa fa-building"></i>
+      <strong>
+	
+	Bergen Kino
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  <a class="list-group-item" href="/event/the-jungle-book-in-disney-digital-3d/14345225/">
+    <h5 class="pull-right">in 2d 11h</h5>
+    <h4 class="truncate">
+    
+    <i title="Event category: Movies" class="fa fa-film"></i>
+    
+    The Jungle Book in Disney Digital 3D
+    </h4>
+    <span class="badge">
+    
+    Sun 12:00
+    
+    </span>
+    <p class="truncate">cinema movie showtimes</p>
+    
+    <span class="pull-right">
+      <strong>2.6 km</strong>
+    </span>
+    
+    <p class="truncate">
+      <i title="Location category: Venue" class="fa fa-building"></i>
+      <strong>
+	
+	Bergen Kino
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  <a class="list-group-item" href="/event/zootopia/14345237/">
+    <h5 class="pull-right">in 2d 11h</h5>
+    <h4 class="truncate">
+    
+    <i title="Event category: Movies" class="fa fa-film"></i>
+    
+    Zootopia
+    </h4>
+    <span class="badge">
+    
+    Sun 12:00
+    
+    </span>
+    <p class="truncate">cinema movie showtimes</p>
+    
+    <span class="pull-right">
+      <strong>2.6 km</strong>
+    </span>
+    
+    <p class="truncate">
+      <i title="Location category: Venue" class="fa fa-building"></i>
+      <strong>
+	
+	Bergen Kino
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  <a class="list-group-item" href="/event/the-good-dinosaur/14345270/">
+    <h5 class="pull-right">in 2d 11h</h5>
+    <h4 class="truncate">
+    
+    <i title="Event category: Movies" class="fa fa-film"></i>
+    
+    The Good Dinosaur
+    </h4>
+    <span class="badge">
+    
+    Sun 12:00
+    
+    </span>
+    <p class="truncate">cinema movie showtimes</p>
+    
+    <span class="pull-right">
+      <strong>2.6 km</strong>
+    </span>
+    
+    <p class="truncate">
+      <i title="Location category: Venue" class="fa fa-building"></i>
+      <strong>
+	
+	Bergen Kino
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  
+  <span id="more-60" class="list-group-item">
+    <a class="text-center" href="#"
+       onclick="fetch_upcoming(60); return false;">
+      <h4>Show more events</h4></a>
+  </span>
+  
+  </div>
+</div>
+
+<script type="text/javascript">
+$(function() {
+  $("#up-addr").html("Kronstad, Bergen, Norge");
+  $("#set-ec").click(function(){
+    var ec_sel = []
+    $("#event-categories input:checked").each(function(){
+      ec_sel.push($(this).val());
+    });
+    set_val('/device/', {'ec':ec_sel}, fetch_upcoming);
+  });
+});
+</script>
+
+
+<div class="col-sm-12">
+  <div class="list-group">
+  
+  <a class="list-group-item" href="/event/idol/12416836/">
+    <h5 class="pull-right">in 19h</h5>
+    <h4 class="truncate">
+    
+    <i title="Event category: Media" class="fa fa-television"></i>
+    
+    Idol
+    </h4>
+    <span class="badge">
+    
+    Fri 20:00
+    
+    </span>
+    <p class="truncate">tv show season 9, episode 20</p>
+    
+    <p class="truncate">
+      <i title="Location category: Region" class="fa fa-flag-o"></i>
+      <strong>
+	
+	TV 2 (NO)
+	  
+	  TV Network, Norway
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  <a class="list-group-item" href="/event/skam/8745766/">
+    <h5 class="pull-right">in 19h</h5>
+    <h4 class="truncate">
+    
+    <i title="Event category: Media" class="fa fa-television"></i>
+    
+    Skam
+    </h4>
+    <span class="badge">
+    
+    Fri 20:30
+    
+    </span>
+    <p class="truncate">tv show 9:12</p>
+    
+    <p class="truncate">
+      <i title="Location category: Region" class="fa fa-flag-o"></i>
+      <strong>
+	
+	NRK1 (NO)
+	  
+	  TV Network, Norway
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  <a class="list-group-item" href="/event/grand-hotel/14345234/">
+    <h5 class="pull-right">in 2d 11h</h5>
+    <h4 class="truncate">
+    
+    <i title="Event category: Movies" class="fa fa-film"></i>
+    
+    Grand Hotel
+    </h4>
+    <span class="badge">
+    
+    Sun 12:15
+    
+    </span>
+    <p class="truncate">cinema movie showtimes</p>
+    
+    <span class="pull-right">
+      <strong>2.6 km</strong>
+    </span>
+    
+    <p class="truncate">
+      <i title="Location category: Venue" class="fa fa-building"></i>
+      <strong>
+	
+	Bergen Kino
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  <a class="list-group-item" href="/event/captain-america-civil-war/14345203/">
+    <h5 class="pull-right">in 2d 11h</h5>
+    <h4 class="truncate">
+    
+    <i title="Event category: Movies" class="fa fa-film"></i>
+    
+    Captain America: Civil War
+    </h4>
+    <span class="badge">
+    
+    Sun 12:15
+    
+    </span>
+    <p class="truncate">cinema movie showtimes</p>
+    
+    <span class="pull-right">
+      <strong>2.6 km</strong>
+    </span>
+    
+    <p class="truncate">
+      <i title="Location category: Venue" class="fa fa-building"></i>
+      <strong>
+	
+	Bergen Kino
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  <a class="list-group-item" href="/event/welcome-to-norway/14345267/">
+    <h5 class="pull-right">in 2d 11h</h5>
+    <h4 class="truncate">
+    
+    <i title="Event category: Movies" class="fa fa-film"></i>
+    
+    Welcome to Norway!
+    </h4>
+    <span class="badge">
+    
+    Sun 12:15
+    
+    </span>
+    <p class="truncate">cinema movie showtimes</p>
+    
+    <span class="pull-right">
+      <strong>2.6 km</strong>
+    </span>
+    
+    <p class="truncate">
+      <i title="Location category: Venue" class="fa fa-building"></i>
+      <strong>
+	
+	Bergen Kino
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  <a class="list-group-item" href="/event/el-clasico/14345247/">
+    <h5 class="pull-right">in 2d 11h</h5>
+    <h4 class="truncate">
+    
+    <i title="Event category: Movies" class="fa fa-film"></i>
+    
+    El Clásico
+    </h4>
+    <span class="badge">
+    
+    Sun 12:15
+    
+    </span>
+    <p class="truncate">cinema movie showtimes</p>
+    
+    <span class="pull-right">
+      <strong>2.6 km</strong>
+    </span>
+    
+    <p class="truncate">
+      <i title="Location category: Venue" class="fa fa-building"></i>
+      <strong>
+	
+	Bergen Kino
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  <a class="list-group-item" href="/event/kung-fu-panda-3/14345231/">
+    <h5 class="pull-right">in 2d 11h</h5>
+    <h4 class="truncate">
+    
+    <i title="Event category: Movies" class="fa fa-film"></i>
+    
+    Kung Fu Panda 3
+    </h4>
+    <span class="badge">
+    
+    Sun 12:30
+    
+    </span>
+    <p class="truncate">cinema movie showtimes</p>
+    
+    <span class="pull-right">
+      <strong>2.6 km</strong>
+    </span>
+    
+    <p class="truncate">
+      <i title="Location category: Venue" class="fa fa-building"></i>
+      <strong>
+	
+	Bergen Kino
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  <a class="list-group-item" href="/event/the-jungle-book/14345213/">
+    <h5 class="pull-right">in 2d 11h</h5>
+    <h4 class="truncate">
+    
+    <i title="Event category: Movies" class="fa fa-film"></i>
+    
+    The Jungle Book
+    </h4>
+    <span class="badge">
+    
+    Sun 12:30
+    
+    </span>
+    <p class="truncate">cinema movie showtimes</p>
+    
+    <span class="pull-right">
+      <strong>2.6 km</strong>
+    </span>
+    
+    <p class="truncate">
+      <i title="Location category: Venue" class="fa fa-building"></i>
+      <strong>
+	
+	Bergen Kino
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  <a class="list-group-item" href="/event/little-grey-fergie-part-1/14345260/">
+    <h5 class="pull-right">in 2d 11h</h5>
+    <h4 class="truncate">
+    
+    <i title="Event category: Movies" class="fa fa-film"></i>
+    
+    Little Grey Fergie - Part 1
+    </h4>
+    <span class="badge">
+    
+    Sun 12:45
+    
+    </span>
+    <p class="truncate">cinema movie showtimes</p>
+    
+    <span class="pull-right">
+      <strong>2.6 km</strong>
+    </span>
+    
+    <p class="truncate">
+      <i title="Location category: Venue" class="fa fa-building"></i>
+      <strong>
+	
+	Bergen Kino
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  <a class="list-group-item" href="/event/the-boss/14345221/">
+    <h5 class="pull-right">in 2d 11h</h5>
+    <h4 class="truncate">
+    
+    <i title="Event category: Movies" class="fa fa-film"></i>
+    
+    The Boss
+    </h4>
+    <span class="badge">
+    
+    Sun 12:45
+    
+    </span>
+    <p class="truncate">cinema movie showtimes</p>
+    
+    <span class="pull-right">
+      <strong>2.6 km</strong>
+    </span>
+    
+    <p class="truncate">
+      <i title="Location category: Venue" class="fa fa-building"></i>
+      <strong>
+	
+	Bergen Kino
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  <a class="list-group-item" href="/event/where-to-invade-next/14345249/">
+    <h5 class="pull-right">in 2d 12h</h5>
+    <h4 class="truncate">
+    
+    <i title="Event category: Movies" class="fa fa-film"></i>
+    
+    Where to Invade Next
+    </h4>
+    <span class="badge">
+    
+    Sun 13:15
+    
+    </span>
+    <p class="truncate">cinema movie showtimes</p>
+    
+    <span class="pull-right">
+      <strong>2.6 km</strong>
+    </span>
+    
+    <p class="truncate">
+      <i title="Location category: Venue" class="fa fa-building"></i>
+      <strong>
+	
+	Bergen Kino
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  <a class="list-group-item" href="/event/alvin-and-the-chipmunks-the-road-chip/14345242/">
+    <h5 class="pull-right">in 2d 12h</h5>
+    <h4 class="truncate">
+    
+    <i title="Event category: Movies" class="fa fa-film"></i>
+    
+    Alvin and the Chipmunks: The Road Chip
+    </h4>
+    <span class="badge">
+    
+    Sun 13:15
+    
+    </span>
+    <p class="truncate">cinema movie showtimes</p>
+    
+    <span class="pull-right">
+      <strong>2.6 km</strong>
+    </span>
+    
+    <p class="truncate">
+      <i title="Location category: Venue" class="fa fa-building"></i>
+      <strong>
+	
+	Bergen Kino
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  <a class="list-group-item" href="/event/little-grey-fergie-part-1/14345261/">
+    <h5 class="pull-right">in 2d 12h</h5>
+    <h4 class="truncate">
+    
+    <i title="Event category: Movies" class="fa fa-film"></i>
+    
+    Little Grey Fergie - Part 1
+    </h4>
+    <span class="badge">
+    
+    Sun 13:30
+    
+    </span>
+    <p class="truncate">cinema movie showtimes</p>
+    
+    <span class="pull-right">
+      <strong>2.6 km</strong>
+    </span>
+    
+    <p class="truncate">
+      <i title="Location category: Venue" class="fa fa-building"></i>
+      <strong>
+	
+	Bergen Kino
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  <a class="list-group-item" href="/event/the-jungle-book/14345214/">
+    <h5 class="pull-right">in 2d 12h</h5>
+    <h4 class="truncate">
+    
+    <i title="Event category: Movies" class="fa fa-film"></i>
+    
+    The Jungle Book
+    </h4>
+    <span class="badge">
+    
+    Sun 13:30
+    
+    </span>
+    <p class="truncate">cinema movie showtimes</p>
+    
+    <span class="pull-right">
+      <strong>2.6 km</strong>
+    </span>
+    
+    <p class="truncate">
+      <i title="Location category: Venue" class="fa fa-building"></i>
+      <strong>
+	
+	Bergen Kino
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  <a class="list-group-item" href="/event/pyromanen/14345228/">
+    <h5 class="pull-right">in 2d 13h</h5>
+    <h4 class="truncate">
+    
+    <i title="Event category: Movies" class="fa fa-film"></i>
+    
+    Pyromanen
+    </h4>
+    <span class="badge">
+    
+    Sun 14:15
+    
+    </span>
+    <p class="truncate">cinema movie showtimes</p>
+    
+    <span class="pull-right">
+      <strong>2.6 km</strong>
+    </span>
+    
+    <p class="truncate">
+      <i title="Location category: Venue" class="fa fa-building"></i>
+      <strong>
+	
+	Bergen Kino
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  <a class="list-group-item" href="/event/fkk-fravrsgrensen-1-mai-med-bergen-ru/11394392/">
+    <h5 class="pull-right">in 2d 13h</h5>
+    <h4 class="truncate">
+    
+    <i title="Event category: Community" class="fa fa-users"></i>
+    
+    FØKK FRAVÆRSGRENSEN – 1. mai med Bergen RU
+    </h4>
+    <span class="badge">
+    
+    Sun 14:30
+    
+    </span>
+    <p class="truncate">bergen rød ungdom</p>
+    
+    <span class="pull-right">
+      <strong>1.8 km</strong>
+    </span>
+    
+    <p class="truncate">
+      <i title="Location category: Universal" class="fa fa-location-arrow"></i>
+      <strong>
+	
+	Bergen Rød Ungdom
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  <a class="list-group-item" href="/event/captain-america-civil-war-3d/14345209/">
+    <h5 class="pull-right">in 2d 13h</h5>
+    <h4 class="truncate">
+    
+    <i title="Event category: Movies" class="fa fa-film"></i>
+    
+    Captain America: Civil War 3D
+    </h4>
+    <span class="badge">
+    
+    Sun 14:30
+    
+    </span>
+    <p class="truncate">cinema movie showtimes</p>
+    
+    <span class="pull-right">
+      <strong>2.6 km</strong>
+    </span>
+    
+    <p class="truncate">
+      <i title="Location category: Venue" class="fa fa-building"></i>
+      <strong>
+	
+	Bergen Kino
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  <a class="list-group-item" href="/event/the-last-king/14345263/">
+    <h5 class="pull-right">in 2d 13h</h5>
+    <h4 class="truncate">
+    
+    <i title="Event category: Movies" class="fa fa-film"></i>
+    
+    The Last King
+    </h4>
+    <span class="badge">
+    
+    Sun 14:30
+    
+    </span>
+    <p class="truncate">cinema movie showtimes</p>
+    
+    <span class="pull-right">
+      <strong>2.6 km</strong>
+    </span>
+    
+    <p class="truncate">
+      <i title="Location category: Venue" class="fa fa-building"></i>
+      <strong>
+	
+	Bergen Kino
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  <a class="list-group-item" href="/event/deadpool/14345265/">
+    <h5 class="pull-right">in 2d 13h</h5>
+    <h4 class="truncate">
+    
+    <i title="Event category: Movies" class="fa fa-film"></i>
+    
+    Deadpool
+    </h4>
+    <span class="badge">
+    
+    Sun 14:30
+    
+    </span>
+    <p class="truncate">cinema movie showtimes</p>
+    
+    <span class="pull-right">
+      <strong>2.6 km</strong>
+    </span>
+    
+    <p class="truncate">
+      <i title="Location category: Venue" class="fa fa-building"></i>
+      <strong>
+	
+	Bergen Kino
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  <a class="list-group-item" href="/event/grand-hotel/14345235/">
+    <h5 class="pull-right">in 2d 13h</h5>
+    <h4 class="truncate">
+    
+    <i title="Event category: Movies" class="fa fa-film"></i>
+    
+    Grand Hotel
+    </h4>
+    <span class="badge">
+    
+    Sun 14:30
+    
+    </span>
+    <p class="truncate">cinema movie showtimes</p>
+    
+    <span class="pull-right">
+      <strong>2.6 km</strong>
+    </span>
+    
+    <p class="truncate">
+      <i title="Location category: Venue" class="fa fa-building"></i>
+      <strong>
+	
+	Bergen Kino
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  <a class="list-group-item" href="/event/1-mai-i-bergen/11734202/">
+    <h5 class="pull-right">in 2d 13h</h5>
+    <h4 class="truncate">
+    
+    <i title="Event category: Universal" class="fa fa-clock-o"></i>
+    
+    1. mai i Bergen
+    </h4>
+    <span class="badge">
+    
+    Sun 14:30
+    
+    </span>
+    <p class="truncate">lo i bergen og omland</p>
+    
+    <span class="pull-right">
+      <strong>2.7 km</strong>
+    </span>
+    
+    <p class="truncate">
+      <i title="Location category: Universal" class="fa fa-location-arrow"></i>
+      <strong>
+	
+	LO i Bergen og Omland
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  <a class="list-group-item" href="/event/zootopia/14345238/">
+    <h5 class="pull-right">in 2d 13h</h5>
+    <h4 class="truncate">
+    
+    <i title="Event category: Movies" class="fa fa-film"></i>
+    
+    Zootopia
+    </h4>
+    <span class="badge">
+    
+    Sun 14:45
+    
+    </span>
+    <p class="truncate">cinema movie showtimes</p>
+    
+    <span class="pull-right">
+      <strong>2.6 km</strong>
+    </span>
+    
+    <p class="truncate">
+      <i title="Location category: Venue" class="fa fa-building"></i>
+      <strong>
+	
+	Bergen Kino
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  <a class="list-group-item" href="/event/hedi-schneider-steckt-fest/14345239/">
+    <h5 class="pull-right">in 2d 13h</h5>
+    <h4 class="truncate">
+    
+    <i title="Event category: Movies" class="fa fa-film"></i>
+    
+    Hedi Schneider steckt fest
+    </h4>
+    <span class="badge">
+    
+    Sun 14:45
+    
+    </span>
+    <p class="truncate">cinema movie showtimes</p>
+    
+    <span class="pull-right">
+      <strong>2.6 km</strong>
+    </span>
+    
+    <p class="truncate">
+      <i title="Location category: Venue" class="fa fa-building"></i>
+      <strong>
+	
+	Bergen Kino
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  <a class="list-group-item" href="/event/captain-america-civil-war/14345204/">
+    <h5 class="pull-right">in 2d 14h</h5>
+    <h4 class="truncate">
+    
+    <i title="Event category: Movies" class="fa fa-film"></i>
+    
+    Captain America: Civil War
+    </h4>
+    <span class="badge">
+    
+    Sun 15:00
+    
+    </span>
+    <p class="truncate">cinema movie showtimes</p>
+    
+    <span class="pull-right">
+      <strong>2.6 km</strong>
+    </span>
+    
+    <p class="truncate">
+      <i title="Location category: Venue" class="fa fa-building"></i>
+      <strong>
+	
+	Bergen Kino
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  <a class="list-group-item" href="/event/the-jungle-book/14345215/">
+    <h5 class="pull-right">in 2d 14h</h5>
+    <h4 class="truncate">
+    
+    <i title="Event category: Movies" class="fa fa-film"></i>
+    
+    The Jungle Book
+    </h4>
+    <span class="badge">
+    
+    Sun 15:00
+    
+    </span>
+    <p class="truncate">cinema movie showtimes</p>
+    
+    <span class="pull-right">
+      <strong>2.6 km</strong>
+    </span>
+    
+    <p class="truncate">
+      <i title="Location category: Venue" class="fa fa-building"></i>
+      <strong>
+	
+	Bergen Kino
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  <a class="list-group-item" href="/event/the-boss/14345222/">
+    <h5 class="pull-right">in 2d 14h</h5>
+    <h4 class="truncate">
+    
+    <i title="Event category: Movies" class="fa fa-film"></i>
+    
+    The Boss
+    </h4>
+    <span class="badge">
+    
+    Sun 15:15
+    
+    </span>
+    <p class="truncate">cinema movie showtimes</p>
+    
+    <span class="pull-right">
+      <strong>2.6 km</strong>
+    </span>
+    
+    <p class="truncate">
+      <i title="Location category: Venue" class="fa fa-building"></i>
+      <strong>
+	
+	Bergen Kino
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  <a class="list-group-item" href="/event/the-jungle-book-in-disney-digital-3d/14345226/">
+    <h5 class="pull-right">in 2d 14h</h5>
+    <h4 class="truncate">
+    
+    <i title="Event category: Movies" class="fa fa-film"></i>
+    
+    The Jungle Book in Disney Digital 3D
+    </h4>
+    <span class="badge">
+    
+    Sun 15:15
+    
+    </span>
+    <p class="truncate">cinema movie showtimes</p>
+    
+    <span class="pull-right">
+      <strong>2.6 km</strong>
+    </span>
+    
+    <p class="truncate">
+      <i title="Location category: Venue" class="fa fa-building"></i>
+      <strong>
+	
+	Bergen Kino
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  <a class="list-group-item" href="/event/human/14345251/">
+    <h5 class="pull-right">in 2d 14h</h5>
+    <h4 class="truncate">
+    
+    <i title="Event category: Movies" class="fa fa-film"></i>
+    
+    Human
+    </h4>
+    <span class="badge">
+    
+    Sun 15:30
+    
+    </span>
+    <p class="truncate">cinema movie showtimes</p>
+    
+    <span class="pull-right">
+      <strong>2.6 km</strong>
+    </span>
+    
+    <p class="truncate">
+      <i title="Location category: Venue" class="fa fa-building"></i>
+      <strong>
+	
+	Bergen Kino
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  <a class="list-group-item" href="/event/alvin-and-the-chipmunks-the-road-chip/14345243/">
+    <h5 class="pull-right">in 2d 14h</h5>
+    <h4 class="truncate">
+    
+    <i title="Event category: Movies" class="fa fa-film"></i>
+    
+    Alvin and the Chipmunks: The Road Chip
+    </h4>
+    <span class="badge">
+    
+    Sun 15:30
+    
+    </span>
+    <p class="truncate">cinema movie showtimes</p>
+    
+    <span class="pull-right">
+      <strong>2.6 km</strong>
+    </span>
+    
+    <p class="truncate">
+      <i title="Location category: Venue" class="fa fa-building"></i>
+      <strong>
+	
+	Bergen Kino
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  <a class="list-group-item" href="/event/den-franske-forbindelsen/14345258/">
+    <h5 class="pull-right">in 2d 14h</h5>
+    <h4 class="truncate">
+    
+    <i title="Event category: Movies" class="fa fa-film"></i>
+    
+    Den Franske Forbindelsen
+    </h4>
+    <span class="badge">
+    
+    Sun 15:30
+    
+    </span>
+    <p class="truncate">cinema movie showtimes</p>
+    
+    <span class="pull-right">
+      <strong>2.6 km</strong>
+    </span>
+    
+    <p class="truncate">
+      <i title="Location category: Venue" class="fa fa-building"></i>
+      <strong>
+	
+	Bergen Kino
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  <a class="list-group-item" href="/event/kung-fu-panda-3/14345232/">
+    <h5 class="pull-right">in 2d 14h</h5>
+    <h4 class="truncate">
+    
+    <i title="Event category: Movies" class="fa fa-film"></i>
+    
+    Kung Fu Panda 3
+    </h4>
+    <span class="badge">
+    
+    Sun 15:45
+    
+    </span>
+    <p class="truncate">cinema movie showtimes</p>
+    
+    <span class="pull-right">
+      <strong>2.6 km</strong>
+    </span>
+    
+    <p class="truncate">
+      <i title="Location category: Venue" class="fa fa-building"></i>
+      <strong>
+	
+	Bergen Kino
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  <a class="list-group-item" href="/event/the-jungle-book/14345216/">
+    <h5 class="pull-right">in 2d 15h</h5>
+    <h4 class="truncate">
+    
+    <i title="Event category: Movies" class="fa fa-film"></i>
+    
+    The Jungle Book
+    </h4>
+    <span class="badge">
+    
+    Sun 16:00
+    
+    </span>
+    <p class="truncate">cinema movie showtimes</p>
+    
+    <span class="pull-right">
+      <strong>2.6 km</strong>
+    </span>
+    
+    <p class="truncate">
+      <i title="Location category: Venue" class="fa fa-building"></i>
+      <strong>
+	
+	Bergen Kino
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  <a class="list-group-item" href="/event/zootropolis-3d/14345257/">
+    <h5 class="pull-right">in 2d 15h</h5>
+    <h4 class="truncate">
+    
+    <i title="Event category: Movies" class="fa fa-film"></i>
+    
+    Zootropolis 3D
+    </h4>
+    <span class="badge">
+    
+    Sun 16:00
+    
+    </span>
+    <p class="truncate">cinema movie showtimes</p>
+    
+    <span class="pull-right">
+      <strong>2.6 km</strong>
+    </span>
+    
+    <p class="truncate">
+      <i title="Location category: Venue" class="fa fa-building"></i>
+      <strong>
+	
+	Bergen Kino
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  <a class="list-group-item" href="/event/the-good-dinosaur/14345271/">
+    <h5 class="pull-right">in 2d 15h</h5>
+    <h4 class="truncate">
+    
+    <i title="Event category: Movies" class="fa fa-film"></i>
+    
+    The Good Dinosaur
+    </h4>
+    <span class="badge">
+    
+    Sun 16:30
+    
+    </span>
+    <p class="truncate">cinema movie showtimes</p>
+    
+    <span class="pull-right">
+      <strong>2.6 km</strong>
+    </span>
+    
+    <p class="truncate">
+      <i title="Location category: Venue" class="fa fa-building"></i>
+      <strong>
+	
+	Bergen Kino
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  <a class="list-group-item" href="/event/kung-fu-panda-3/14345274/">
+    <h5 class="pull-right">in 2d 15h</h5>
+    <h4 class="truncate">
+    
+    <i title="Event category: Movies" class="fa fa-film"></i>
+    
+    Kung Fu Panda 3
+    </h4>
+    <span class="badge">
+    
+    Sun 16:30
+    
+    </span>
+    <p class="truncate">cinema movie showtimes</p>
+    
+    <span class="pull-right">
+      <strong>3.3 km</strong>
+    </span>
+    
+    <p class="truncate">
+      <i title="Location category: Venue" class="fa fa-building"></i>
+      <strong>
+	
+	Cinemateket USF
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  <a class="list-group-item" href="/event/little-grey-fergie-part-1/14345262/">
+    <h5 class="pull-right">in 2d 16h</h5>
+    <h4 class="truncate">
+    
+    <i title="Event category: Movies" class="fa fa-film"></i>
+    
+    Little Grey Fergie - Part 1
+    </h4>
+    <span class="badge">
+    
+    Sun 17:00
+    
+    </span>
+    <p class="truncate">cinema movie showtimes</p>
+    
+    <span class="pull-right">
+      <strong>2.6 km</strong>
+    </span>
+    
+    <p class="truncate">
+      <i title="Location category: Venue" class="fa fa-building"></i>
+      <strong>
+	
+	Bergen Kino
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  <a class="list-group-item" href="/event/kung-fu-panda-3/14345233/">
+    <h5 class="pull-right">in 2d 16h</h5>
+    <h4 class="truncate">
+    
+    <i title="Event category: Movies" class="fa fa-film"></i>
+    
+    Kung Fu Panda 3
+    </h4>
+    <span class="badge">
+    
+    Sun 17:15
+    
+    </span>
+    <p class="truncate">cinema movie showtimes</p>
+    
+    <span class="pull-right">
+      <strong>2.6 km</strong>
+    </span>
+    
+    <p class="truncate">
+      <i title="Location category: Venue" class="fa fa-building"></i>
+      <strong>
+	
+	Bergen Kino
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  <a class="list-group-item" href="/event/the-jungle-book/14345217/">
+    <h5 class="pull-right">in 2d 16h</h5>
+    <h4 class="truncate">
+    
+    <i title="Event category: Movies" class="fa fa-film"></i>
+    
+    The Jungle Book
+    </h4>
+    <span class="badge">
+    
+    Sun 17:30
+    
+    </span>
+    <p class="truncate">cinema movie showtimes</p>
+    
+    <span class="pull-right">
+      <strong>2.6 km</strong>
+    </span>
+    
+    <p class="truncate">
+      <i title="Location category: Venue" class="fa fa-building"></i>
+      <strong>
+	
+	Bergen Kino
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  <a class="list-group-item" href="/event/captain-america-civil-war/14345205/">
+    <h5 class="pull-right">in 2d 16h</h5>
+    <h4 class="truncate">
+    
+    <i title="Event category: Movies" class="fa fa-film"></i>
+    
+    Captain America: Civil War
+    </h4>
+    <span class="badge">
+    
+    Sun 17:30
+    
+    </span>
+    <p class="truncate">cinema movie showtimes</p>
+    
+    <span class="pull-right">
+      <strong>2.6 km</strong>
+    </span>
+    
+    <p class="truncate">
+      <i title="Location category: Venue" class="fa fa-building"></i>
+      <strong>
+	
+	Bergen Kino
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  <a class="list-group-item" href="/event/the-jungle-book-in-disney-digital-3d/14345227/">
+    <h5 class="pull-right">in 2d 16h</h5>
+    <h4 class="truncate">
+    
+    <i title="Event category: Movies" class="fa fa-film"></i>
+    
+    The Jungle Book in Disney Digital 3D
+    </h4>
+    <span class="badge">
+    
+    Sun 17:45
+    
+    </span>
+    <p class="truncate">cinema movie showtimes</p>
+    
+    <span class="pull-right">
+      <strong>2.6 km</strong>
+    </span>
+    
+    <p class="truncate">
+      <i title="Location category: Venue" class="fa fa-building"></i>
+      <strong>
+	
+	Bergen Kino
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  <a class="list-group-item" href="/event/deadpool/14345266/">
+    <h5 class="pull-right">in 2d 17h</h5>
+    <h4 class="truncate">
+    
+    <i title="Event category: Movies" class="fa fa-film"></i>
+    
+    Deadpool
+    </h4>
+    <span class="badge">
+    
+    Sun 17:50
+    
+    </span>
+    <p class="truncate">cinema movie showtimes</p>
+    
+    <span class="pull-right">
+      <strong>2.6 km</strong>
+    </span>
+    
+    <p class="truncate">
+      <i title="Location category: Venue" class="fa fa-building"></i>
+      <strong>
+	
+	Bergen Kino
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  <a class="list-group-item" href="/event/grand-hotel/14345236/">
+    <h5 class="pull-right">in 2d 17h</h5>
+    <h4 class="truncate">
+    
+    <i title="Event category: Movies" class="fa fa-film"></i>
+    
+    Grand Hotel
+    </h4>
+    <span class="badge">
+    
+    Sun 17:50
+    
+    </span>
+    <p class="truncate">cinema movie showtimes</p>
+    
+    <span class="pull-right">
+      <strong>2.6 km</strong>
+    </span>
+    
+    <p class="truncate">
+      <i title="Location category: Venue" class="fa fa-building"></i>
+      <strong>
+	
+	Bergen Kino
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  <a class="list-group-item" href="/event/welcome-to-norway/14345268/">
+    <h5 class="pull-right">in 2d 17h</h5>
+    <h4 class="truncate">
+    
+    <i title="Event category: Movies" class="fa fa-film"></i>
+    
+    Welcome to Norway!
+    </h4>
+    <span class="badge">
+    
+    Sun 17:50
+    
+    </span>
+    <p class="truncate">cinema movie showtimes</p>
+    
+    <span class="pull-right">
+      <strong>2.6 km</strong>
+    </span>
+    
+    <p class="truncate">
+      <i title="Location category: Venue" class="fa fa-building"></i>
+      <strong>
+	
+	Bergen Kino
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  <a class="list-group-item" href="/event/captain-america-civil-war-3d/14345210/">
+    <h5 class="pull-right">in 2d 17h</h5>
+    <h4 class="truncate">
+    
+    <i title="Event category: Movies" class="fa fa-film"></i>
+    
+    Captain America: Civil War 3D
+    </h4>
+    <span class="badge">
+    
+    Sun 18:00
+    
+    </span>
+    <p class="truncate">cinema movie showtimes</p>
+    
+    <span class="pull-right">
+      <strong>2.6 km</strong>
+    </span>
+    
+    <p class="truncate">
+      <i title="Location category: Venue" class="fa fa-building"></i>
+      <strong>
+	
+	Bergen Kino
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  <a class="list-group-item" href="/event/batman-v-superman-dawn-of-justice/14345244/">
+    <h5 class="pull-right">in 2d 17h</h5>
+    <h4 class="truncate">
+    
+    <i title="Event category: Movies" class="fa fa-film"></i>
+    
+    Batman v Superman: Dawn of Justice
+    </h4>
+    <span class="badge">
+    
+    Sun 18:00
+    
+    </span>
+    <p class="truncate">cinema movie showtimes</p>
+    
+    <span class="pull-right">
+      <strong>2.6 km</strong>
+    </span>
+    
+    <p class="truncate">
+      <i title="Location category: Venue" class="fa fa-building"></i>
+      <strong>
+	
+	Bergen Kino
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  <a class="list-group-item" href="/event/the-jungle-book/14345218/">
+    <h5 class="pull-right">in 2d 17h</h5>
+    <h4 class="truncate">
+    
+    <i title="Event category: Movies" class="fa fa-film"></i>
+    
+    The Jungle Book
+    </h4>
+    <span class="badge">
+    
+    Sun 18:15
+    
+    </span>
+    <p class="truncate">cinema movie showtimes</p>
+    
+    <span class="pull-right">
+      <strong>2.6 km</strong>
+    </span>
+    
+    <p class="truncate">
+      <i title="Location category: Venue" class="fa fa-building"></i>
+      <strong>
+	
+	Bergen Kino
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  <a class="list-group-item" href="/event/how-to-be-single/14345269/">
+    <h5 class="pull-right">in 2d 17h</h5>
+    <h4 class="truncate">
+    
+    <i title="Event category: Movies" class="fa fa-film"></i>
+    
+    How to Be Single
+    </h4>
+    <span class="badge">
+    
+    Sun 18:20
+    
+    </span>
+    <p class="truncate">cinema movie showtimes</p>
+    
+    <span class="pull-right">
+      <strong>2.6 km</strong>
+    </span>
+    
+    <p class="truncate">
+      <i title="Location category: Venue" class="fa fa-building"></i>
+      <strong>
+	
+	Bergen Kino
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  <a class="list-group-item" href="/event/el-clasico/14345248/">
+    <h5 class="pull-right">in 2d 17h</h5>
+    <h4 class="truncate">
+    
+    <i title="Event category: Movies" class="fa fa-film"></i>
+    
+    El Clásico
+    </h4>
+    <span class="badge">
+    
+    Sun 18:30
+    
+    </span>
+    <p class="truncate">cinema movie showtimes</p>
+    
+    <span class="pull-right">
+      <strong>2.6 km</strong>
+    </span>
+    
+    <p class="truncate">
+      <i title="Location category: Venue" class="fa fa-building"></i>
+      <strong>
+	
+	Bergen Kino
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  <a class="list-group-item" href="/event/spotlight/14345254/">
+    <h5 class="pull-right">in 2d 17h</h5>
+    <h4 class="truncate">
+    
+    <i title="Event category: Movies" class="fa fa-film"></i>
+    
+    Spotlight
+    </h4>
+    <span class="badge">
+    
+    Sun 18:30
+    
+    </span>
+    <p class="truncate">cinema movie showtimes</p>
+    
+    <span class="pull-right">
+      <strong>2.6 km</strong>
+    </span>
+    
+    <p class="truncate">
+      <i title="Location category: Venue" class="fa fa-building"></i>
+      <strong>
+	
+	Bergen Kino
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  <a class="list-group-item" href="/event/the-boss/14345223/">
+    <h5 class="pull-right">in 2d 17h</h5>
+    <h4 class="truncate">
+    
+    <i title="Event category: Movies" class="fa fa-film"></i>
+    
+    The Boss
+    </h4>
+    <span class="badge">
+    
+    Sun 18:30
+    
+    </span>
+    <p class="truncate">cinema movie showtimes</p>
+    
+    <span class="pull-right">
+      <strong>2.6 km</strong>
+    </span>
+    
+    <p class="truncate">
+      <i title="Location category: Venue" class="fa fa-building"></i>
+      <strong>
+	
+	Bergen Kino
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  <a class="list-group-item" href="/event/pyromanen/14345273/">
+    <h5 class="pull-right">in 2d 17h</h5>
+    <h4 class="truncate">
+    
+    <i title="Event category: Movies" class="fa fa-film"></i>
+    
+    Pyromanen
+    </h4>
+    <span class="badge">
+    
+    Sun 18:30
+    
+    </span>
+    <p class="truncate">cinema movie showtimes</p>
+    
+    <span class="pull-right">
+      <strong>3.3 km</strong>
+    </span>
+    
+    <p class="truncate">
+      <i title="Location category: Venue" class="fa fa-building"></i>
+      <strong>
+	
+	Cinemateket USF
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  <a class="list-group-item" href="/event/pyromanen/14345229/">
+    <h5 class="pull-right">in 2d 17h</h5>
+    <h4 class="truncate">
+    
+    <i title="Event category: Movies" class="fa fa-film"></i>
+    
+    Pyromanen
+    </h4>
+    <span class="badge">
+    
+    Sun 18:45
+    
+    </span>
+    <p class="truncate">cinema movie showtimes</p>
+    
+    <span class="pull-right">
+      <strong>2.6 km</strong>
+    </span>
+    
+    <p class="truncate">
+      <i title="Location category: Venue" class="fa fa-building"></i>
+      <strong>
+	
+	Bergen Kino
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  <a class="list-group-item" href="/event/hedi-schneider-steckt-fest/14345240/">
+    <h5 class="pull-right">in 2d 18h</h5>
+    <h4 class="truncate">
+    
+    <i title="Event category: Movies" class="fa fa-film"></i>
+    
+    Hedi Schneider steckt fest
+    </h4>
+    <span class="badge">
+    
+    Sun 19:00
+    
+    </span>
+    <p class="truncate">cinema movie showtimes</p>
+    
+    <span class="pull-right">
+      <strong>2.6 km</strong>
+    </span>
+    
+    <p class="truncate">
+      <i title="Location category: Venue" class="fa fa-building"></i>
+      <strong>
+	
+	Bergen Kino
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  <a class="list-group-item" href="/event/human/14345252/">
+    <h5 class="pull-right">in 2d 18h</h5>
+    <h4 class="truncate">
+    
+    <i title="Event category: Movies" class="fa fa-film"></i>
+    
+    Human
+    </h4>
+    <span class="badge">
+    
+    Sun 19:15
+    
+    </span>
+    <p class="truncate">cinema movie showtimes</p>
+    
+    <span class="pull-right">
+      <strong>2.6 km</strong>
+    </span>
+    
+    <p class="truncate">
+      <i title="Location category: Venue" class="fa fa-building"></i>
+      <strong>
+	
+	Bergen Kino
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  <a class="list-group-item" href="/event/the-revenant/14345256/">
+    <h5 class="pull-right">in 2d 18h</h5>
+    <h4 class="truncate">
+    
+    <i title="Event category: Movies" class="fa fa-film"></i>
+    
+    The Revenant
+    </h4>
+    <span class="badge">
+    
+    Sun 19:30
+    
+    </span>
+    <p class="truncate">cinema movie showtimes</p>
+    
+    <span class="pull-right">
+      <strong>2.6 km</strong>
+    </span>
+    
+    <p class="truncate">
+      <i title="Location category: Venue" class="fa fa-building"></i>
+      <strong>
+	
+	Bergen Kino
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  <a class="list-group-item" href="/event/unni-wilhelmsen-utsolgt/5042397/">
+    <h5 class="pull-right">in 2d 18h</h5>
+    <h4 class="truncate">
+    
+    <i title="Event category: Universal" class="fa fa-clock-o"></i>
+    
+    UNNI WILHELMSEN - UTSOLGT
+    </h4>
+    <span class="badge">
+    
+    Sun 19:30
+    
+    </span>
+    <p class="truncate">madamfelle</p>
+    
+    <span class="pull-right">
+      <strong>2.9 km</strong>
+    </span>
+    
+    <p class="truncate">
+      <i title="Location category: Universal" class="fa fa-location-arrow"></i>
+      <strong>
+	
+	MadamFelle
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  <a class="list-group-item" href="/event/unni-wilhelmsen/7587987/">
+    <h5 class="pull-right">in 2d 18h</h5>
+    <h4 class="truncate">
+    
+    <i title="Event category: Music" class="fa fa-music"></i>
+    
+    Unni Wilhelmsen
+    </h4>
+    <span class="badge">
+    
+    Sun 19:30
+    
+    </span>
+    <p class="truncate">live music performance</p>
+    
+    <span class="pull-right">
+      <strong>3.0 km</strong>
+    </span>
+    
+    <p class="truncate">
+      <i title="Location category: Venue" class="fa fa-building"></i>
+      <strong>
+	
+	Madam Felle
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  <a class="list-group-item" href="/event/captain-america-civil-war/14345206/">
+    <h5 class="pull-right">in 2d 19h</h5>
+    <h4 class="truncate">
+    
+    <i title="Event category: Movies" class="fa fa-film"></i>
+    
+    Captain America: Civil War
+    </h4>
+    <span class="badge">
+    
+    Sun 20:00
+    
+    </span>
+    <p class="truncate">cinema movie showtimes</p>
+    
+    <span class="pull-right">
+      <strong>2.6 km</strong>
+    </span>
+    
+    <p class="truncate">
+      <i title="Location category: Venue" class="fa fa-building"></i>
+      <strong>
+	
+	Bergen Kino
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  <a class="list-group-item" href="/event/the-last-king/14345264/">
+    <h5 class="pull-right">in 2d 19h</h5>
+    <h4 class="truncate">
+    
+    <i title="Event category: Movies" class="fa fa-film"></i>
+    
+    The Last King
+    </h4>
+    <span class="badge">
+    
+    Sun 20:15
+    
+    </span>
+    <p class="truncate">cinema movie showtimes</p>
+    
+    <span class="pull-right">
+      <strong>2.6 km</strong>
+    </span>
+    
+    <p class="truncate">
+      <i title="Location category: Venue" class="fa fa-building"></i>
+      <strong>
+	
+	Bergen Kino
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  <a class="list-group-item" href="/event/captain-america-civil-war-3d/14345211/">
+    <h5 class="pull-right">in 2d 19h</h5>
+    <h4 class="truncate">
+    
+    <i title="Event category: Movies" class="fa fa-film"></i>
+    
+    Captain America: Civil War 3D
+    </h4>
+    <span class="badge">
+    
+    Sun 20:15
+    
+    </span>
+    <p class="truncate">cinema movie showtimes</p>
+    
+    <span class="pull-right">
+      <strong>2.6 km</strong>
+    </span>
+    
+    <p class="truncate">
+      <i title="Location category: Venue" class="fa fa-building"></i>
+      <strong>
+	
+	Bergen Kino
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  
+  <span id="more-120" class="list-group-item">
+    <a class="text-center" href="#"
+       onclick="fetch_upcoming(120); return false;">
+      <h4>Show more events</h4></a>
+  </span>
+  
+  </div>
+</div>
+
+
+<div class="col-sm-12">
+  <div class="list-group">
+  
+  <a class="list-group-item" href="/event/idol/12416836/">
+    <h5 class="pull-right">in 19h</h5>
+    <h4 class="truncate">
+    
+    <i title="Event category: Media" class="fa fa-television"></i>
+    
+    Idol
+    </h4>
+    <span class="badge">
+    
+    Fri 20:00
+    
+    </span>
+    <p class="truncate">tv show season 9, episode 20</p>
+    
+    <p class="truncate">
+      <i title="Location category: Region" class="fa fa-flag-o"></i>
+      <strong>
+	
+	TV 2 (NO)
+	  
+	  TV Network, Norway
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  <a class="list-group-item" href="/event/skam/8745766/">
+    <h5 class="pull-right">in 19h</h5>
+    <h4 class="truncate">
+    
+    <i title="Event category: Media" class="fa fa-television"></i>
+    
+    Skam
+    </h4>
+    <span class="badge">
+    
+    Fri 20:30
+    
+    </span>
+    <p class="truncate">tv show 9:12</p>
+    
+    <p class="truncate">
+      <i title="Location category: Region" class="fa fa-flag-o"></i>
+      <strong>
+	
+	NRK1 (NO)
+	  
+	  TV Network, Norway
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  <a class="list-group-item" href="/event/captain-america-civil-war/14345272/">
+    <h5 class="pull-right">in 2d 19h</h5>
+    <h4 class="truncate">
+    
+    <i title="Event category: Movies" class="fa fa-film"></i>
+    
+    Captain America: Civil War
+    </h4>
+    <span class="badge">
+    
+    Sun 20:30
+    
+    </span>
+    <p class="truncate">cinema movie showtimes</p>
+    
+    <span class="pull-right">
+      <strong>3.3 km</strong>
+    </span>
+    
+    <p class="truncate">
+      <i title="Location category: Venue" class="fa fa-building"></i>
+      <strong>
+	
+	Cinemateket USF
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  <a class="list-group-item" href="/event/captain-america-civil-war/14345207/">
+    <h5 class="pull-right">in 2d 19h</h5>
+    <h4 class="truncate">
+    
+    <i title="Event category: Movies" class="fa fa-film"></i>
+    
+    Captain America: Civil War
+    </h4>
+    <span class="badge">
+    
+    Sun 20:40
+    
+    </span>
+    <p class="truncate">cinema movie showtimes</p>
+    
+    <span class="pull-right">
+      <strong>2.6 km</strong>
+    </span>
+    
+    <p class="truncate">
+      <i title="Location category: Venue" class="fa fa-building"></i>
+      <strong>
+	
+	Bergen Kino
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  <a class="list-group-item" href="/event/the-boss/14345224/">
+    <h5 class="pull-right">in 2d 19h</h5>
+    <h4 class="truncate">
+    
+    <i title="Event category: Movies" class="fa fa-film"></i>
+    
+    The Boss
+    </h4>
+    <span class="badge">
+    
+    Sun 20:45
+    
+    </span>
+    <p class="truncate">cinema movie showtimes</p>
+    
+    <span class="pull-right">
+      <strong>2.6 km</strong>
+    </span>
+    
+    <p class="truncate">
+      <i title="Location category: Venue" class="fa fa-building"></i>
+      <strong>
+	
+	Bergen Kino
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  <a class="list-group-item" href="/event/the-huntsman-winters-war/14345246/">
+    <h5 class="pull-right">in 2d 20h</h5>
+    <h4 class="truncate">
+    
+    <i title="Event category: Movies" class="fa fa-film"></i>
+    
+    The Huntsman: Winter&#39;&#39;s War
+    </h4>
+    <span class="badge">
+    
+    Sun 20:50
+    
+    </span>
+    <p class="truncate">cinema movie showtimes</p>
+    
+    <span class="pull-right">
+      <strong>2.6 km</strong>
+    </span>
+    
+    <p class="truncate">
+      <i title="Location category: Venue" class="fa fa-building"></i>
+      <strong>
+	
+	Bergen Kino
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  <a class="list-group-item" href="/event/where-to-invade-next/14345250/">
+    <h5 class="pull-right">in 2d 20h</h5>
+    <h4 class="truncate">
+    
+    <i title="Event category: Movies" class="fa fa-film"></i>
+    
+    Where to Invade Next
+    </h4>
+    <span class="badge">
+    
+    Sun 20:50
+    
+    </span>
+    <p class="truncate">cinema movie showtimes</p>
+    
+    <span class="pull-right">
+      <strong>2.6 km</strong>
+    </span>
+    
+    <p class="truncate">
+      <i title="Location category: Venue" class="fa fa-building"></i>
+      <strong>
+	
+	Bergen Kino
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  <a class="list-group-item" href="/event/the-jungle-book/14345219/">
+    <h5 class="pull-right">in 2d 20h</h5>
+    <h4 class="truncate">
+    
+    <i title="Event category: Movies" class="fa fa-film"></i>
+    
+    The Jungle Book
+    </h4>
+    <span class="badge">
+    
+    Sun 21:00
+    
+    </span>
+    <p class="truncate">cinema movie showtimes</p>
+    
+    <span class="pull-right">
+      <strong>2.6 km</strong>
+    </span>
+    
+    <p class="truncate">
+      <i title="Location category: Venue" class="fa fa-building"></i>
+      <strong>
+	
+	Bergen Kino
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  <a class="list-group-item" href="/event/pyromanen/14345230/">
+    <h5 class="pull-right">in 2d 20h</h5>
+    <h4 class="truncate">
+    
+    <i title="Event category: Movies" class="fa fa-film"></i>
+    
+    Pyromanen
+    </h4>
+    <span class="badge">
+    
+    Sun 21:00
+    
+    </span>
+    <p class="truncate">cinema movie showtimes</p>
+    
+    <span class="pull-right">
+      <strong>2.6 km</strong>
+    </span>
+    
+    <p class="truncate">
+      <i title="Location category: Venue" class="fa fa-building"></i>
+      <strong>
+	
+	Bergen Kino
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  <a class="list-group-item" href="/event/captain-america-civil-war-3d/14345212/">
+    <h5 class="pull-right">in 2d 20h</h5>
+    <h4 class="truncate">
+    
+    <i title="Event category: Movies" class="fa fa-film"></i>
+    
+    Captain America: Civil War 3D
+    </h4>
+    <span class="badge">
+    
+    Sun 21:15
+    
+    </span>
+    <p class="truncate">cinema movie showtimes</p>
+    
+    <span class="pull-right">
+      <strong>2.6 km</strong>
+    </span>
+    
+    <p class="truncate">
+      <i title="Location category: Venue" class="fa fa-building"></i>
+      <strong>
+	
+	Bergen Kino
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  <a class="list-group-item" href="/event/den-franske-forbindelsen/14345259/">
+    <h5 class="pull-right">in 2d 20h</h5>
+    <h4 class="truncate">
+    
+    <i title="Event category: Movies" class="fa fa-film"></i>
+    
+    Den Franske Forbindelsen
+    </h4>
+    <span class="badge">
+    
+    Sun 21:15
+    
+    </span>
+    <p class="truncate">cinema movie showtimes</p>
+    
+    <span class="pull-right">
+      <strong>2.6 km</strong>
+    </span>
+    
+    <p class="truncate">
+      <i title="Location category: Venue" class="fa fa-building"></i>
+      <strong>
+	
+	Bergen Kino
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  <a class="list-group-item" href="/event/hedi-schneider-steckt-fest/14345241/">
+    <h5 class="pull-right">in 2d 20h</h5>
+    <h4 class="truncate">
+    
+    <i title="Event category: Movies" class="fa fa-film"></i>
+    
+    Hedi Schneider steckt fest
+    </h4>
+    <span class="badge">
+    
+    Sun 21:15
+    
+    </span>
+    <p class="truncate">cinema movie showtimes</p>
+    
+    <span class="pull-right">
+      <strong>2.6 km</strong>
+    </span>
+    
+    <p class="truncate">
+      <i title="Location category: Venue" class="fa fa-building"></i>
+      <strong>
+	
+	Bergen Kino
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  <a class="list-group-item" href="/event/the-jungle-book/14345220/">
+    <h5 class="pull-right">in 2d 20h</h5>
+    <h4 class="truncate">
+    
+    <i title="Event category: Movies" class="fa fa-film"></i>
+    
+    The Jungle Book
+    </h4>
+    <span class="badge">
+    
+    Sun 21:15
+    
+    </span>
+    <p class="truncate">cinema movie showtimes</p>
+    
+    <span class="pull-right">
+      <strong>2.6 km</strong>
+    </span>
+    
+    <p class="truncate">
+      <i title="Location category: Venue" class="fa fa-building"></i>
+      <strong>
+	
+	Bergen Kino
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  
+  </div>
+</div>
+
+
+<div class="col-sm-12">
+  <div class="list-group">
+  
+  <a class="list-group-item" href="/event/idol/12416836/">
+    <h5 class="pull-right">in 19h</h5>
+    <h4 class="truncate">
+    
+    <i title="Event category: Media" class="fa fa-television"></i>
+    
+    Idol
+    </h4>
+    <span class="badge">
+    
+    Fri 20:00
+    
+    </span>
+    <p class="truncate">tv show season 9, episode 20</p>
+    
+    <p class="truncate">
+      <i title="Location category: Region" class="fa fa-flag-o"></i>
+      <strong>
+	
+	TV 2 (NO)
+	  
+	  TV Network, Norway
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  <a class="list-group-item" href="/event/skam/8745766/">
+    <h5 class="pull-right">in 19h</h5>
+    <h4 class="truncate">
+    
+    <i title="Event category: Media" class="fa fa-television"></i>
+    
+    Skam
+    </h4>
+    <span class="badge">
+    
+    Fri 20:30
+    
+    </span>
+    <p class="truncate">tv show 9:12</p>
+    
+    <p class="truncate">
+      <i title="Location category: Region" class="fa fa-flag-o"></i>
+      <strong>
+	
+	NRK1 (NO)
+	  
+	  TV Network, Norway
+	  
+	
+      </strong>
+    </p>
+  </a>
+  
+  
+  </div>
+</div>
+
