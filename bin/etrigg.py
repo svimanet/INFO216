@@ -51,16 +51,18 @@ def parse_event(url):
   soup = BeautifulSoup(r1.text, 'html.parser')
   event_name, location = soup.find_all("meta", itemprop='name')
   event = {}
-  print("Name:", event_name["content"])
-  print("start date:", soup.find(itemprop='startDate')["content"])
-  print("end date:", soup.find(itemprop='endDate')["content"])
-  print("end date:", soup.find(itemprop='endDate')["content"])
-  print("Desc:", soup.find(itemprop='description').text)
-  print("Location:", location["content"])
-  print("Addr:", soup.find(itemprop='streetAddress').text)
-  print("Url:", soup.find(class_="truncate").find("a", href=True)["href"])
-  print("Category:", soup.find("i", title=True)["title"].split(": ")[1])
-
+  # print("Name:", event_name["content"])
+  # print("start date:", soup.find(itemprop='startDate')["content"])
+  # print("end date:", soup.find(itemprop='endDate')["content"])
+  # print("end date:", soup.find(itemprop='endDate')["content"])
+  # print("Desc:", soup.find(itemprop='description').text)
+  # print("Location:", location["content"])
+  # print("Addr:", soup.find(itemprop='streetAddress').text)
+  # print("Url:", soup.find(class_="truncate").find("a", href=True)["href"])
+  # print("Category:", soup.find("i", title=True)["title"].split(": ")[1])
+  
+  id = url.split('/')
+  event["id"] = id[2]+'/'+id[3] 
   event["Name"] = event_name["content"]
   event["start date"] = soup.find(itemprop='startDate')["content"]
   event["end date"] = soup.find(itemprop='endDate')["content"]
@@ -89,7 +91,7 @@ def parse_events():
 parse_events()
 
 import json
-f = open("etrigg.json", "w")
+f = open("../etrigg.json", "w")
 f.write(json.dumps(events))
 f.close()
 
