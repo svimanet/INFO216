@@ -18,7 +18,10 @@ import static org.apache.jena.shared.RandomOrderGraph.createDefaultModel;
 
 
 /**
- * Created by svimanet on 01/03/16.
+ * Created 01/03/16.
+ * Class for making the RDF model and
+ * printing it to a file.
+ * Also initiates some sparql queries for testing.
  */
 public class Weather {
 
@@ -26,7 +29,6 @@ public class Weather {
 
     private ArrayList<String> dateFrom = yrno.getFromtag();
     private ArrayList<String> nameTag = yrno.getNametag();
-    private ArrayList<String> windTag = yrno.getWindSpeedName();
     private ArrayList<Integer> periodTag = yrno.getPeriodTag();
     private ArrayList<String> tempTag = yrno.getTemprature();
     private ArrayList<Integer> idTag = yrno.getIdList();
