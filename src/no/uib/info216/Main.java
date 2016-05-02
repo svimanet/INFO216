@@ -4,8 +4,6 @@ import no.uib.info216.Events.EventParser;
 import no.uib.info216.RDF.RDFHandler;
 import no.uib.info216.WeatherData.Weather;
 import no.uib.info216.facebook.CreateModels;
-import no.uib.info216.facebook.FacebookData;
-import no.uib.info216.facebook.RandomUserGeneration;
 import org.apache.jena.rdf.model.Model;
 
 /**
@@ -37,6 +35,9 @@ public class Main {
         Weather weather = new Weather();
         Model weatherModel = weather.parse();
         rdfHandler.addModel(weatherModel);
+
+
+        rdfHandler.runSparql("lol");
 
     }
 }
