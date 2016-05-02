@@ -109,6 +109,7 @@ public class CreateModels {
 		} else{
 			model = readFacebookTurtle();
 		}
+		this.model = model;
 		return model;
 	}
 
@@ -126,7 +127,7 @@ public class CreateModels {
 		RDFHandler rdfHandler = new RDFHandler();
 		CreateModels cm = new CreateModels();
 
-		Model model = cm.readFacebookTurtle();
+		Model model = cm.checkIfKeyExists(); //cm.readFacebookTurtle();
 		rdfHandler.addModel(model);
 		//rdfHandler.saveModel("FacebookFriends.ttl", model);
 		String queryString =
