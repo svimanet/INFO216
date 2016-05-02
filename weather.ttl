@@ -1,0 +1,54 @@
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+
+<2016-05-05>  <http://purl.oclc.org/NET/ssnx/cf/cf-feature>
+                "Regn" , "Skyet" ;
+        <http://purl.oclc.org/NET/ssnx/qu/dim#Temperature>
+                "14" , "10" , "9" , "12" .
+
+<2016-05-03>  <http://purl.oclc.org/NET/ssnx/cf/cf-feature>
+                "Delvis skyet" , "Regn" , "Skyet" , "Tåke" ;
+        <http://purl.oclc.org/NET/ssnx/qu/dim#Temperature>
+                "7" , "10" , "9" , "8" .
+
+<2016-05-08>  <http://purl.oclc.org/NET/ssnx/cf/cf-feature>
+                "Skyet" , "Delvis skyet" ;
+        <http://purl.oclc.org/NET/ssnx/qu/dim#Temperature>
+                "8" , "14" , "16" , "7" .
+
+<2016-05-01>  <http://purl.oclc.org/NET/ssnx/cf/cf-feature>
+                "Regn" ;
+        <http://purl.oclc.org/NET/ssnx/qu/dim#Temperature>
+                "7" .
+
+<2016-05-06>  <http://purl.oclc.org/NET/ssnx/cf/cf-feature>
+                "Skyet" , "Regn" , "Delvis skyet" ;
+        <http://purl.oclc.org/NET/ssnx/qu/dim#Temperature>
+                "14" , "10" , "11" .
+
+<2016-05-10>  <http://purl.oclc.org/NET/ssnx/cf/cf-feature>
+                "Delvis skyet" ;
+        <http://purl.oclc.org/NET/ssnx/qu/dim#Temperature>
+                "12" , "13" , "19" .
+
+<2016-05-04>  <http://purl.oclc.org/NET/ssnx/cf/cf-feature>
+                "Delvis skyet" , "Skyet" ;
+        <http://purl.oclc.org/NET/ssnx/qu/dim#Temperature>
+                "11" , "7" , "13" , "8" .
+
+<2016-05-09>  <http://purl.oclc.org/NET/ssnx/cf/cf-feature>
+                "Delvis skyet" , "Skyet" ;
+        <http://purl.oclc.org/NET/ssnx/qu/dim#Temperature>
+                "11" , "16" , "18" .
+
+<2016-05-02>  <http://purl.oclc.org/NET/ssnx/cf/cf-feature>
+                "Kraftig regn" , "Regn" ;
+        <http://purl.oclc.org/NET/ssnx/qu/dim#Temperature>
+                "6" , "7" , "9" .
+
+<2016-05-07>  <http://purl.oclc.org/NET/ssnx/cf/cf-feature>
+                "Skyet" ;
+        <http://purl.oclc.org/NET/ssnx/qu/dim#Temperature>
+                "12" , "8" , "13" , "9" .
