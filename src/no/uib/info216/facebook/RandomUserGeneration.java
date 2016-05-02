@@ -37,8 +37,8 @@ import java.util.Set;
 public class RandomUserGeneration {
 
 	//ArrayLists
-	private ArrayList<String> firstNames = new ArrayList<>();
-	private ArrayList<String> lastNames = new ArrayList<>();
+	private ArrayList<String> firstNames = new ArrayList<String>();
+	private ArrayList<String> lastNames = new ArrayList<String>();
 
 	/**
 	 * This is the Constructor for the RandomUserGeneration class

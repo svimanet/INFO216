@@ -1,6 +1,8 @@
 package no.uib.info216.WeatherData;
 
 
+import no.uib.info216.RDF.RDFHandler;
+import no.uib.info216.RDF.WeatherQuery;
 import org.apache.jena.ontology.OntModel;
 import org.apache.jena.ontology.OntModelSpec;
 import org.apache.jena.rdf.model.Model;
@@ -16,7 +18,10 @@ import static org.apache.jena.shared.RandomOrderGraph.createDefaultModel;
 
 
 /**
- * Created by svimanet on 01/03/16.
+ * Created 01/03/16.
+ * Class for making the RDF model and
+ * printing it to a file.
+ * Also initiates some sparql queries for testing.
  */
 public class Weather {
 
@@ -24,14 +29,13 @@ public class Weather {
 
     private ArrayList<String> dateFrom = yrno.getFromtag();
     private ArrayList<String> nameTag = yrno.getNametag();
-    private ArrayList<String> windTag = yrno.getWindSpeedName();
     private ArrayList<Integer> periodTag = yrno.getPeriodTag();
     private ArrayList<String> tempTag = yrno.getTemprature();
+    private ArrayList<Integer> idTag = yrno.getIdList();
 
     Model model = createDefaultModel();
 
     int arrayLength = nameTag.size();
-
 
     /**
      * The createOntology method is what
@@ -43,7 +47,8 @@ public class Weather {
     public void createOntology(){
 
         Property weatherProperty = model.createProperty("http://www.schema.org/weather");
-        Property weatherPropertyTemp = model.createProperty("http://www.schema.org/temperature-celsius");
+        Property weatherPropertyTemp = model.createProperty("http://www.schema.org/temperatureC     elsius");
+        Property dateFrom = model.createProperty("http://www.schema.org/startDate");
 
         for(int i = 0; i < arrayLength; i++) {
 
@@ -51,9 +56,11 @@ public class Weather {
                 String itemdateFrom = this.dateFrom.get(i);
                 String itemnameTag = this.nameTag.get(i);
                 String itemTempTag = this.tempTag.get(i);
+                String itemTopKek = String.valueOf(this.idTag.get(i));
 
                 Resource weatherData
-                        = model.createResource(itemdateFrom)
+                        = model.createResource(itemTopKek)
+                        .addProperty(dateFrom, itemdateFrom)
                         .addProperty(weatherProperty, itemnameTag)
                         .addProperty(weatherPropertyTemp, itemTempTag);
             }
@@ -94,6 +101,7 @@ public class Weather {
         return model;
     }
 
+
     /**
      * The main method is for testing
      * the two classes yrno.java and weather.java
@@ -105,5 +113,14 @@ public class Weather {
         Weather weather = new Weather();
         weather.createOntology();
         weather.writerMethod();
+
+        RDFHandler rdfHandler = new RDFHandler();
+        WeatherQuery weatherQuery = new WeatherQuery(rdfHandler);
+        Model weatherModel = weather.parse();
+        rdfHandler.addModel(weatherModel);
+
+        //QUERIES
+        weatherQuery.weatherWeek();
+
     }
 }

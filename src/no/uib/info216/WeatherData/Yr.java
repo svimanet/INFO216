@@ -35,6 +35,7 @@ public class Yr{
     private ArrayList<Integer> periodTag = new ArrayList<Integer>();
     private ArrayList<String> windSpeedName = new ArrayList<String>();
     private ArrayList<String> temprature = new ArrayList<String>();
+    private ArrayList<Integer> idList = new ArrayList<Integer>();
 
     long diff = new Date().getTime() - file.lastModified();
 
@@ -121,6 +122,8 @@ public class Yr{
             fromtag.add(StringUtils.left(eElement.getAttribute("from"), 10));
             periodTag.add(Integer.parseInt(eElement.getAttribute("period")));
             temprature.add(tempElement.getAttribute("value"));
+            idList.add(1+i);
+
 
             this.dataStruct.add(obj);
 
@@ -196,5 +199,9 @@ public class Yr{
      */
     public ArrayList<HashMap<String, String>> getDataStruct() {
         return dataStruct;
+    }
+
+    public ArrayList<Integer> getIdList() {
+        return idList;
     }
 }
