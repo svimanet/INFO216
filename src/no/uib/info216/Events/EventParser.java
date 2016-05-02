@@ -53,6 +53,7 @@ public class EventParser {
         Property description = model.createProperty("http://schema.org/description");
         Property url = model.createProperty("http://schema.org/url");
         Property startDate = model.createProperty("http://schema.org/startDate");
+        Property Category = model.createProperty("http://schema.org/category");
 
 
 
@@ -62,6 +63,7 @@ public class EventParser {
                     .addProperty(name, item.get("Name"))
                     .addProperty(location, item.get("Addr"))
                     .addProperty(description, item.get("Desc"))
+                    .addProperty(Category, item.get("Category"))
                     .addProperty(startDate, this.fakeDate());
         }
 
