@@ -36,7 +36,7 @@ public class Interests {
 	 * This is a simple method which prints all the interests the current user
 	 * has and seperates them with categories.
 	 * 
-	 * @param fb
+	 * @param fb a facebook user
 	 * @throws FacebookException
 	 */
 	public void getInterests(Facebook fb) throws FacebookException {
