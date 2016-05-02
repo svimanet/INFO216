@@ -3,13 +3,13 @@
  */
 package no.uib.info216.facebook;
 
-import java.util.ArrayList;
-
 import no.uib.info216.RDF.RDFHandler;
 import org.apache.jena.rdf.model.Model;
 import org.apache.jena.rdf.model.ModelFactory;
 import org.apache.jena.rdf.model.Property;
 import org.apache.jena.rdf.model.Resource;
+
+import java.util.ArrayList;
 
 /**
  * @author mariuslillevik
@@ -45,7 +45,7 @@ public class CreateModels {
 	 * of FacebookUser object and their interests.
 	 * @param users - A list of FacebookUser objects
      */
-	public void createmodel(ArrayList<FacebookUser> users){
+	public Model createmodel(ArrayList<FacebookUser> users){
 		for(FacebookUser u : users){
 			addRes(u.getEvents(), events, model, u.getName() + "_" + u.getLastName());
 			addRes(u.getTvShows(), tvShow, model, u.getName() + "_" + u.getLastName());
@@ -55,6 +55,7 @@ public class CreateModels {
 			addRes(u.getBook(), book, model, u.getName() + "_" + u.getLastName());
 			addRes(u.getLikes(), likes, model, u.getName() + "_" + u.getLastName());
 		}
+		return this.model;
 
 	}
 
@@ -79,9 +80,13 @@ public class CreateModels {
 	 * @return model - An rdf model
      */
 	public Model parse(){
-		ArrayList<FacebookUser> users = rug.createUserWithRandomInterests(10, data.getIr()); //Creates 10 "Fake" users.
-		createmodel(users);
-		return model;
+		if(checkIfKeyExists()) {
+			ArrayList<FacebookUser> users = rug.createUserWithRandomInterests(10, data.getIr()); //Creates 10 "Fake" users.
+			this.model = createmodel(users);
+		}else{
+			this.model = this.readFacebookTurtle();
+		}
+		return this.model;
 	}
 
 
@@ -102,15 +107,8 @@ public class CreateModels {
 	 * This met
 	 * @return
      */
-	public Model checkIfKeyExists(){
-		Model model = ModelFactory.createDefaultModel();
-		if(data.getAccessToken() != ""){
-			model = parse();
-		} else{
-			model = readFacebookTurtle();
-		}
-		this.model = model;
-		return model;
+	public boolean checkIfKeyExists(){
+		return !data.getAccessToken().equals("");
 	}
 
 
@@ -127,7 +125,7 @@ public class CreateModels {
 		RDFHandler rdfHandler = new RDFHandler();
 		CreateModels cm = new CreateModels();
 
-		Model model = cm.checkIfKeyExists(); //cm.readFacebookTurtle();
+		Model model = cm.parse(); //cm.readFacebookTurtle();
 		rdfHandler.addModel(model);
 		//rdfHandler.saveModel("FacebookFriends.ttl", model);
 		String queryString =
