@@ -42,8 +42,8 @@ public class Weather {
      */
     public void createOntology(){
 
-        Property weatherProperty = model.createProperty("http://purl.oclc.org/NET/ssnx/cf/cf-feature");
-        Property weatherPropertyTemp = model.createProperty("http://purl.oclc.org/NET/ssnx/qu/dim#Temperature");
+        Property weatherProperty = model.createProperty("http://www.schema.org/weather");
+        Property weatherPropertyTemp = model.createProperty("http://www.schema.org/temperature-celsius");
 
         for(int i = 0; i < arrayLength; i++) {
 
