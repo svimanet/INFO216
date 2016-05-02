@@ -2,6 +2,8 @@ package no.uib.info216.facebook;
 
 import no.uib.info216.RDF.RDFHandler;
 
+import org.apache.jena.query.ResultSet;
+
 
 /**
  * Created by goat on 02.05.16.
@@ -21,7 +23,7 @@ public class FacebookQueries {
      * the given user in the parameter.
      * @param user
      */
-    public String AllInsterestsFromUser(String user){
+    public ResultSet AllInsterestsFromUser(String user){
        String query =  "PREFIX schema: <http://schema.org/>" +
                 "SELECT  * " +
                 "WHERE {" +
@@ -30,8 +32,8 @@ public class FacebookQueries {
                 "      }" +
                 "ORDER BY ASC(?o) ";
 
-        rdfHandler.runSparql(query);
-        return query;
+        return rdfHandler.runSparql(query);
+
     }
 
     /**
@@ -39,7 +41,7 @@ public class FacebookQueries {
      * in the given Category from the parameter.
      * @param category
      */
-    public String AllFromOneCategory(String category){
+    public ResultSet AllFromOneCategory(String category){
         String query =  "PREFIX schema: <http://schema.org/>" +
                 "SELECT  * " +
                 "WHERE {" +
@@ -49,8 +51,7 @@ public class FacebookQueries {
                 "ORDER BY ASC(?o) ";
 
 
-        rdfHandler.runSparql(query);
-        return query;
+        return rdfHandler.runSparql(query);
     }
 
     /**
@@ -58,7 +59,7 @@ public class FacebookQueries {
      * interest and the given category it is in.
      * @param interest
      */
-    public String UserInterestsFromOneCategory(String interest){
+    public ResultSet UserInterestsFromOneCategory(String interest){
         String query =  "PREFIX schema: <http://schema.org/>" +
                 "SELECT  * " +
                 "WHERE {" +
@@ -68,8 +69,7 @@ public class FacebookQueries {
                 "ORDER BY ASC(?o) ";
 
 
-        rdfHandler.runSparql(query);
-        return query;
+        return rdfHandler.runSparql(query);
     }
 
     /**
@@ -78,7 +78,7 @@ public class FacebookQueries {
      * @param user
      * @param category
      */
-    public String UserInterestsFromOneCategory(String user, String category){
+    public ResultSet UserInterestsFromOneCategory(String user, String category){
         String query =  "PREFIX schema: <http://schema.org/>" +
                 "SELECT  * " +
                 "WHERE {" +
@@ -87,8 +87,8 @@ public class FacebookQueries {
                 "ORDER BY ASC(?o) ";
 
 
-        rdfHandler.runSparql(query);
-        return query;
+        return rdfHandler.runSparql(query);
+
     }
 
 
