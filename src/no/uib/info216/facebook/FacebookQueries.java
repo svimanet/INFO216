@@ -21,7 +21,7 @@ public class FacebookQueries {
      * the given user in the parameter.
      * @param user
      */
-    public void AllInsterestsFromUser(String user){
+    public String AllInsterestsFromUser(String user){
        String query =  "PREFIX schema: <http://schema.org/>" +
                 "SELECT  * " +
                 "WHERE {" +
@@ -31,6 +31,7 @@ public class FacebookQueries {
                 "ORDER BY ASC(?o) ";
 
         rdfHandler.runSparql(query);
+        return query;
     }
 
     /**
@@ -38,7 +39,7 @@ public class FacebookQueries {
      * in the given Category from the parameter.
      * @param category
      */
-    public void AllFromOneCategory(String category){
+    public String AllFromOneCategory(String category){
         String query =  "PREFIX schema: <http://schema.org/>" +
                 "SELECT  * " +
                 "WHERE {" +
@@ -49,6 +50,7 @@ public class FacebookQueries {
 
 
         rdfHandler.runSparql(query);
+        return query;
     }
 
     /**
@@ -56,7 +58,7 @@ public class FacebookQueries {
      * interest and the given category it is in.
      * @param interest
      */
-    public void UserInterestsFromOneCategory(String interest){
+    public String UserInterestsFromOneCategory(String interest){
         String query =  "PREFIX schema: <http://schema.org/>" +
                 "SELECT  * " +
                 "WHERE {" +
@@ -67,6 +69,7 @@ public class FacebookQueries {
 
 
         rdfHandler.runSparql(query);
+        return query;
     }
 
     /**
@@ -75,7 +78,7 @@ public class FacebookQueries {
      * @param user
      * @param category
      */
-    public void UserInterestsFromOneCategory(String user, String category){
+    public String UserInterestsFromOneCategory(String user, String category){
         String query =  "PREFIX schema: <http://schema.org/>" +
                 "SELECT  * " +
                 "WHERE {" +
@@ -85,6 +88,7 @@ public class FacebookQueries {
 
 
         rdfHandler.runSparql(query);
+        return query;
     }
 
 
