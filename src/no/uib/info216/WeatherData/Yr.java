@@ -32,11 +32,7 @@ public class Yr{
 
     private ArrayList<String> nametag = new ArrayList<String>();
     private ArrayList<String> fromtag = new ArrayList<String>();
-    private ArrayList<String> totag = new ArrayList<String>();
     private ArrayList<Integer> periodTag = new ArrayList<Integer>();
-    private ArrayList<String> windDirection = new ArrayList<String>();
-    private ArrayList<String> windDirectionName = new ArrayList<String>();
-    private ArrayList<String> windSpeed = new ArrayList<String>();
     private ArrayList<String> windSpeedName = new ArrayList<String>();
     private ArrayList<String> temprature = new ArrayList<String>();
 
@@ -76,7 +72,7 @@ public class Yr{
 
     /**
      * Lifts the xml to arraylists
-     * which are sent to RDFparser class
+     * which are sent to Weather.java class
      * to be used in .ttl file.
      */
     public void makeSymbolList(){
@@ -119,15 +115,12 @@ public class Yr{
 
             obj.put("name", symbolElement.getAttribute("name"));
             obj.put("from", eElement.getAttribute("from"));
-            obj.put("to", eElement.getAttribute("to"));
             obj.put("period", eElement.getAttribute("period"));
 
             nametag.add(symbolElement.getAttribute("name"));
             fromtag.add(StringUtils.left(eElement.getAttribute("from"), 10));
             periodTag.add(Integer.parseInt(eElement.getAttribute("period")));
             temprature.add(tempElement.getAttribute("value"));
-
-            //System.out.println(temprature);
 
             this.dataStruct.add(obj);
 
