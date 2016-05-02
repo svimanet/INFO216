@@ -108,7 +108,7 @@ public class CreateModels {
 	 * @return
      */
 	public boolean checkIfKeyExists(){
-		return data.getAccessToken().equals("");
+		return !data.getAccessToken().equals("");
 	}
 
 
