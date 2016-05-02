@@ -1,6 +1,8 @@
 package no.uib.info216.WeatherData;
 
 
+import no.uib.info216.RDF.RDFHandler;
+import no.uib.info216.RDF.WeatherQuery;
 import org.apache.jena.ontology.OntModel;
 import org.apache.jena.ontology.OntModelSpec;
 import org.apache.jena.rdf.model.Model;
@@ -31,7 +33,6 @@ public class Weather {
     Model model = createDefaultModel();
 
     int arrayLength = nameTag.size();
-
 
     /**
      * The createOntology method is what
@@ -94,6 +95,7 @@ public class Weather {
         return model;
     }
 
+
     /**
      * The main method is for testing
      * the two classes yrno.java and weather.java
@@ -105,5 +107,15 @@ public class Weather {
         Weather weather = new Weather();
         weather.createOntology();
         weather.writerMethod();
+
+        RDFHandler rdfHandler = new RDFHandler();
+        WeatherQuery weatherQuery = new WeatherQuery(rdfHandler);
+        Model weatherModel = weather.parse();
+        rdfHandler.addModel(weatherModel);
+
+        //QUERIES
+        weatherQuery.weatherWeek();
+        weatherQuery.rainyDays();
+
     }
 }
