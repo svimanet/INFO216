@@ -115,6 +115,7 @@ public class CreateModels {
 
 
 	/**
+	 * Getter for the jena rdf model.
 	 * @return the model
 	 */
 	public Model getModel() {
@@ -122,31 +123,27 @@ public class CreateModels {
 	}
 
 
-
+	/**
+	 * This is a test main method for the facebookUsers and
+	 * turtle files.
+	 * @param args
+	 */
 	public static void main(String[] args){
 		RDFHandler rdfHandler = new RDFHandler();
+		FacebookQueries fq = new FacebookQueries(rdfHandler);
 		CreateModels cm = new CreateModels();
 
 		Model model = cm.checkIfKeyExists(); //cm.readFacebookTurtle();
 		rdfHandler.addModel(model);
 		//rdfHandler.saveModel("FacebookFriends.ttl", model);
-		String queryString =
-				"PREFIX schema: <http://schema.org/>" +
-				"SELECT  * " +
-						"WHERE {" +
-						"       ?name ?property \"Mirrors\"  " + //<Maggy_Kallestad>
 
-						"      }" +
-						"ORDER BY ASC(?o) ";
-		String user = QueryFactory.AllInsterestsFromUser("Seborg_Mathiasen");
-		String category = QueryFactory.AllFromOneCategory("Game");
-		String interest = QueryFactory.UserInterestsFromOneCategory("Hearthstone");
-		String userCategory = QueryFactory.UserInterestsFromOneCategory("Seborg_Mathiasen", "Game");
-		rdfHandler.runSparql(userCategory);
+		fq.AllInsterestsFromUser("Seborg_Mathiasen");
+		fq.AllFromOneCategory("Game");
+		fq.UserInterestsFromOneCategory("Hearthstone");
+		fq.UserInterestsFromOneCategory("Seborg_Mathiasen", "Game");
 
 	}
 
 
 
-	//And so on... This does not nessesarily need to be static.
 }
