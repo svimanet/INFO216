@@ -25,6 +25,8 @@ public class Weather {
     private ArrayList<String> dateFrom = yrno.getFromtag();
     private ArrayList<String> nameTag = yrno.getNametag();
     private ArrayList<String> windTag = yrno.getWindSpeedName();
+    private ArrayList<Integer> periodTag = yrno.getPeriodTag();
+    private ArrayList<String> tempTag = yrno.getTemprature();
 
     Model model = createDefaultModel();
 
@@ -33,16 +35,21 @@ public class Weather {
     public void createOntology(){
 
         // Temp
-        Property weatherProperty = model.createProperty("http://schema.org/Weater");
+        Property weatherProperty = model.createProperty("http://purl.oclc.org/NET/ssnx/cf/cf-feature");
+        Property weatherPropertyTemp = model.createProperty("http://purl.oclc.org/NET/ssnx/qu/dim#Temperature");
 
-        for(int i = 0; i < arrayLength; i++){
+        for(int i = 0; i < arrayLength; i++) {
 
-            String itemdateFrom = this.dateFrom.get(i);
-            String itemnameTag = this.nameTag.get(i);
+            if (periodTag.contains(2)) {
+                String itemdateFrom = this.dateFrom.get(i);
+                String itemnameTag = this.nameTag.get(i);
+                String itemTempTag = this.tempTag.get(i);
 
-            Resource weatherData
-                    = model.createResource(itemdateFrom)
-                    .addProperty(weatherProperty, itemnameTag);
+                Resource weatherData
+                        = model.createResource(itemdateFrom)
+                        .addProperty(weatherProperty, itemnameTag)
+                        .addProperty(weatherPropertyTemp, itemTempTag);
+            }
         }
     }
 
@@ -51,7 +58,7 @@ public class Weather {
 
         FileWriter out = null;
         try {
-            out = new FileWriter( "rdfOut.ttl" );
+            out = new FileWriter( "weather.ttl" );
             m.write( out, "Turtle" );
         } catch (IOException e) {
             e.printStackTrace();
