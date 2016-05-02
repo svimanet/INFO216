@@ -25,33 +25,53 @@ public class Weather {
     private ArrayList<String> dateFrom = yrno.getFromtag();
     private ArrayList<String> nameTag = yrno.getNametag();
     private ArrayList<String> windTag = yrno.getWindSpeedName();
+    private ArrayList<Integer> periodTag = yrno.getPeriodTag();
+    private ArrayList<String> tempTag = yrno.getTemprature();
 
     Model model = createDefaultModel();
 
     int arrayLength = nameTag.size();
 
+
+    /**
+     * The createOntology method is what
+     * speciefies all data used in the endresult of the .ttl file.
+     * It takes arraylists from the yrno.java class and
+     * applies the correct URI to the correct list and
+     * parses it to one end-ttl-list.
+     */
     public void createOntology(){
 
-        // Temp
-        Property weatherProperty = model.createProperty("http://schema.org/Weater");
+        Property weatherProperty = model.createProperty("http://www.schema.org/weather");
+        Property weatherPropertyTemp = model.createProperty("http://www.schema.org/temperature-celsius");
 
-        for(int i = 0; i < arrayLength; i++){
+        for(int i = 0; i < arrayLength; i++) {
 
-            String itemdateFrom = this.dateFrom.get(i);
-            String itemnameTag = this.nameTag.get(i);
+            if (periodTag.contains(2)) {
+                String itemdateFrom = this.dateFrom.get(i);
+                String itemnameTag = this.nameTag.get(i);
+                String itemTempTag = this.tempTag.get(i);
 
-            Resource weatherData
-                    = model.createResource(itemdateFrom)
-                    .addProperty(weatherProperty, itemnameTag);
+                Resource weatherData
+                        = model.createResource(itemdateFrom)
+                        .addProperty(weatherProperty, itemnameTag)
+                        .addProperty(weatherPropertyTemp, itemTempTag);
+            }
         }
     }
 
+    /**
+     * The writerMethod is a method for
+     * writing the information made as
+     * Turtle RDF format to the
+     * weather.ttl file.
+     */
     public void writerMethod(){
         OntModel m = createOntologyModel(OntModelSpec.OWL_MEM, model);
 
         FileWriter out = null;
         try {
-            out = new FileWriter( "rdfOut.ttl" );
+            out = new FileWriter( "weather.ttl" );
             m.write( out, "Turtle" );
         } catch (IOException e) {
             e.printStackTrace();
@@ -62,11 +82,25 @@ public class Weather {
         }
     }
 
+    /**
+     * The parse method sends the model used
+     * to create the ontology.
+     * The model is sendt on to be used to
+     * querry through sparql.
+     * @return model
+     */
     public Model parse(){
         createOntology();
         return model;
     }
 
+    /**
+     * The main method is for testing
+     * the two classes yrno.java and weather.java
+     * without having to run through the whole
+     * program and creating all ontologies over and over.
+     * @param args
+     */
     public static void main(String[] args) {
         Weather weather = new Weather();
         weather.createOntology();

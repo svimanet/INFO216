@@ -1,5 +1,7 @@
 package no.uib.info216.WeatherData;
 
+import org.apache.commons.lang3.StringUtils;
+import org.apache.jena.base.Sys;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 import org.w3c.dom.Node;
@@ -20,7 +22,9 @@ import java.util.Date;
 import java.util.HashMap;
 
 /**
- * Created by svimanet on 23/02/16.
+ * Created 23/02/16.
+ * Class for recieving data from Yr.no and parsing it to a local document aswell as
+ * arrays to be used for creating the rdf.
  */
 public class Yr{
 
@@ -28,16 +32,13 @@ public class Yr{
 
     private ArrayList<String> nametag = new ArrayList<String>();
     private ArrayList<String> fromtag = new ArrayList<String>();
-    private ArrayList<String> totag = new ArrayList<String>();
-    private ArrayList<String> windDirection = new ArrayList<String>();
-    private ArrayList<String> windDirectionName = new ArrayList<>();
-    private ArrayList<String> windSpeed = new ArrayList<String>();
+    private ArrayList<Integer> periodTag = new ArrayList<Integer>();
     private ArrayList<String> windSpeedName = new ArrayList<String>();
     private ArrayList<String> temprature = new ArrayList<String>();
 
     long diff = new Date().getTime() - file.lastModified();
 
-    public ArrayList<HashMap<String,String>> dataStruct = new ArrayList<>();
+    public ArrayList<HashMap<String,String>> dataStruct = new ArrayList<HashMap<String, String>>();
 
     /**
      * Checks the varsel.xml file on startup.
@@ -71,7 +72,7 @@ public class Yr{
 
     /**
      * Lifts the xml to arraylists
-     * which are sent to RDFparser class
+     * which are sent to Weather.java class
      * to be used in .ttl file.
      */
     public void makeSymbolList(){
@@ -99,35 +100,27 @@ public class Yr{
 
         Element nodelist = (Element)doc.getElementsByTagName("tabular").item(0);
         NodeList timeNodeList = nodelist.getElementsByTagName("time");
+        Element tempNodeList = (Element)doc.getElementsByTagName("temperature").item(0);
 
         for (int i = 0; i < timeNodeList.getLength(); i++) {
-            HashMap<String, String> obj = new HashMap<>();
+            HashMap<String, String> obj = new HashMap<String, String>();
             Node node = timeNodeList.item(i);
             Element eElement = (Element) node;
 
             Node symbolNode = eElement.getElementsByTagName("symbol").item(0);
             Element symbolElement = (Element) symbolNode;
 
-            Node windDirectionNode = eElement.getElementsByTagName("windDirection").item(1);
-            Element directionElement = (Element) windDirectionNode;
-
-            Node windSpeedNode = eElement.getElementsByTagName("windSpeed").item(2);
-            Element windSpeedElement = (Element) windSpeedNode;
-
-            Node tempNode = eElement.getElementsByTagName("temperature").item(3);
+            Node tempNode = eElement.getElementsByTagName("temperature").item(0);
             Element tempElement = (Element) tempNode;
 
             obj.put("name", symbolElement.getAttribute("name"));
             obj.put("from", eElement.getAttribute("from"));
-            obj.put("to", eElement.getAttribute("to"));
+            obj.put("period", eElement.getAttribute("period"));
 
             nametag.add(symbolElement.getAttribute("name"));
-            fromtag.add(eElement.getAttribute("from"));
-//            windDirection.add(directionElement.getAttribute("deg"));
-//            windDirectionName.add(directionElement.getAttribute("name"));
-//            windSpeed.add(windSpeedElement.getAttribute("mps"));
-//            windSpeedName.add(windSpeedElement.getAttribute("name"));
-//            temprature.add(tempElement.getAttribute("value"));
+            fromtag.add(StringUtils.left(eElement.getAttribute("from"), 10));
+            periodTag.add(Integer.parseInt(eElement.getAttribute("period")));
+            temprature.add(tempElement.getAttribute("value"));
 
             this.dataStruct.add(obj);
 
@@ -173,6 +166,27 @@ public class Yr{
      */
     public ArrayList<String> getWindSpeedName() {
         return windSpeedName;
+    }
+
+
+    /**
+     * Getter for the periodTag arrayList
+     * which is a list containing 0-3 periods of the day.
+     * It is used to limit the weather to one day on mid day.
+     * @return
+     */
+    public ArrayList<Integer> getPeriodTag() {
+        return periodTag;
+    }
+
+    /**
+     * The temprature arraylist is an array
+     * containting all the temeratures of the day
+     * in celsius.
+     * @return
+     */
+    public ArrayList<String> getTemprature() {
+        return temprature;
     }
 
     /**
