@@ -9,13 +9,28 @@ import org.json.simple.parser.ParseException;
 
 import java.io.FileReader;
 import java.io.IOException;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Calendar;
 import java.util.HashMap;
+import java.util.Random;
 
 /**
  * Created by fox on 4/30/16.
  */
 public class EventParser {
+
+    public String fakeDate(){
+        // Random day
+        Random rand = new Random();
+        String n = Integer.toString(rand.nextInt(31) + 1);
+        if(n.length() == 1)
+            n = "0"+n;
+        Calendar cal = Calendar.getInstance();
+        String date = new SimpleDateFormat("YYYY-MM").format(cal.getTime());
+        return date+"-"+n;
+    }
+
     public Model parse(){
         Model model = ModelFactory.createDefaultModel();
 
@@ -47,7 +62,7 @@ public class EventParser {
                     .addProperty(name, item.get("Name"))
                     .addProperty(location, item.get("Addr"))
                     .addProperty(description, item.get("Desc"))
-                    .addProperty(startDate, item.get("start date"));
+                    .addProperty(startDate, this.fakeDate());
         }
 
 

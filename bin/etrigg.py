@@ -60,13 +60,12 @@ def parse_event(url):
   # print("Addr:", soup.find(itemprop='streetAddress').text)
   # print("Url:", soup.find(class_="truncate").find("a", href=True)["href"])
   # print("Category:", soup.find("i", title=True)["title"].split(": ")[1])
-  
+
   id = url.split('/')
-  event["id"] = id[2]+'/'+id[3] 
+  event["id"] = id[2]+'/'+id[3]
   event["Name"] = event_name["content"]
-  event["start date"] = soup.find(itemprop='startDate')["content"]
-  event["end date"] = soup.find(itemprop='endDate')["content"]
-  event["end date"] = soup.find(itemprop='endDate')["content"]
+  event["start date"] = soup.find(itemprop='startDate')["content"].split("U")[0]
+  event["end date"] = soup.find(itemprop='endDate')["content"].split("U")[0]
   event["Desc"] = soup.find(itemprop='description').text
   event["Location"] = location["content"]
   event["Addr"] = soup.find(itemprop='streetAddress').text

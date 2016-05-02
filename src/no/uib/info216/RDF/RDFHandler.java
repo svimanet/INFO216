@@ -21,11 +21,11 @@ public class RDFHandler {
     public ResultSet runSparql(String queryString){
 
         // Create a new query
-       /* queryString =
+       queryString =
                 "SELECT ?o ?p ?s " +
                         "WHERE {" +
                         "       ?o ?p ?s " +
-                        "      }";*/
+                        "      }";
 
         Query query = QueryFactory.create(queryString);
 
