@@ -3,11 +3,12 @@
  */
 package no.uib.info216.facebook;
 
-import java.io.FileWriter;
-import java.io.IOException;
+import java.io.*;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Random;
 
+import com.sun.org.apache.xpath.internal.operations.Mod;
 import facebook4j.Facebook;
 import facebook4j.FacebookException;
 import no.uib.info216.RDF.RDFHandler;
@@ -15,6 +16,7 @@ import org.apache.jena.rdf.model.Model;
 import org.apache.jena.rdf.model.ModelFactory;
 import org.apache.jena.rdf.model.Property;
 import org.apache.jena.rdf.model.Resource;
+import org.apache.jena.riot.system.stream.StreamManager;
 import org.apache.jena.vocabulary.DCTerms;
 
 /**
@@ -64,18 +66,32 @@ public class CreateModels {
 	public Model parse(){
 		ArrayList<FacebookUser> users = rug.createUserWithRandomInterests(10, data.getIr()); //Creates 10 "Fake" users.
 		createmodel(users);
-
 		return model;
 	}
 
-	
+	public Model readFacebookTurtle(){
+		Model model = ModelFactory.createDefaultModel();
+			model.read("FacebookFriends.ttl", "TURTLE");
+
+		this.model = model;
+		return model;
+	}
+
+	public Model checkIfKeyExists(){
+		Model model = ModelFactory.createDefaultModel();
+		if(data.getAccessToken() != ""){
+			model = parse();
+		} else{
+			model = readFacebookTurtle();
+		}
+		return model;
+	}
 
 
 	/**
 	 * @return the model
 	 */
 	public Model getModel() {
-
 		return model;
 	}
 
@@ -84,14 +100,14 @@ public class CreateModels {
 		RDFHandler rdfHandler = new RDFHandler();
 		CreateModels cm = new CreateModels();
 
-		Model model = cm.parse();
+		Model model = cm.checkIfKeyExists();
 		rdfHandler.addModel(model);
-		rdfHandler.saveModel("FacebookFriends.ttl", model);
+		//rdfHandler.saveModel("FacebookFriends.ttl", model);
 		String queryString =
 				"PREFIX schema: <http://schema.org/>" +
 				"SELECT  * " +
 						"WHERE {" +
-						"       ?name schema:Event ?title " +
+						"       ?name ?uri ?title " +
 						"      }";
 		rdfHandler.runSparql(queryString);
 	}
