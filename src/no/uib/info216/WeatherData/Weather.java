@@ -29,6 +29,7 @@ public class Weather {
     private ArrayList<String> windTag = yrno.getWindSpeedName();
     private ArrayList<Integer> periodTag = yrno.getPeriodTag();
     private ArrayList<String> tempTag = yrno.getTemprature();
+    private ArrayList<Integer> idTag = yrno.getIdList();
 
     Model model = createDefaultModel();
 
@@ -44,7 +45,8 @@ public class Weather {
     public void createOntology(){
 
         Property weatherProperty = model.createProperty("http://www.schema.org/weather");
-        Property weatherPropertyTemp = model.createProperty("http://www.schema.org/temperature-celsius");
+        Property weatherPropertyTemp = model.createProperty("http://www.schema.org/temperatureC     elsius");
+        Property dateFrom = model.createProperty("http://www.schema.org/startDate");
 
         for(int i = 0; i < arrayLength; i++) {
 
@@ -52,9 +54,11 @@ public class Weather {
                 String itemdateFrom = this.dateFrom.get(i);
                 String itemnameTag = this.nameTag.get(i);
                 String itemTempTag = this.tempTag.get(i);
+                String itemTopKek = String.valueOf(this.idTag.get(i));
 
                 Resource weatherData
-                        = model.createResource(itemdateFrom)
+                        = model.createResource(itemTopKek)
+                        .addProperty(dateFrom, itemdateFrom)
                         .addProperty(weatherProperty, itemnameTag)
                         .addProperty(weatherPropertyTemp, itemTempTag);
             }
@@ -115,7 +119,6 @@ public class Weather {
 
         //QUERIES
         weatherQuery.weatherWeek();
-        weatherQuery.rainyDays();
 
     }
 }
