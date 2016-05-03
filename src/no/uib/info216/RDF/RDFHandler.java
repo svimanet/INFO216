@@ -6,7 +6,6 @@ import org.apache.jena.rdf.model.ModelFactory;
 
 import java.io.FileWriter;
 import java.io.IOException;
-import java.util.Scanner;
 
 /**
  * Created by fox on 4/30/16.
@@ -21,14 +20,8 @@ public class RDFHandler {
 
     public ResultSet runSparql(String queryString){
 
-        if(queryString.equals("all")) {
-            queryString =
-                    "SELECT ?o ?p ?s " +
-                            "WHERE {" +
-                            "       ?o ?p ?s " +
-                            "      }";
-        }
         queryString = "PREFIX schema: <http://schema.org/> " + queryString;
+        queryString = "PREFIX foaf: <http://xmlns.com/foaf/0.1/> " + queryString;
         System.out.println(queryString);
 
         Query query = null;
@@ -47,15 +40,6 @@ public class RDFHandler {
 
         qe.close();
         return results;
-    }
-
-    public void REPL(){
-        while(true){
-            Scanner scan=new Scanner(System.in);
-            System.out.print("> ");
-            String line = scan.nextLine();
-            this.runSparql(line);
-        }
     }
 
 

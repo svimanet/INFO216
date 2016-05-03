@@ -13,7 +13,7 @@ public class FacebookData{
     // These are the fields for the main class.
     private String appId = "1565029937145946";
     private String appSecret = "69fec6df69ae3da5a308d62005f85976";
-    private String accessToken = "";//"EAAWPYu13aFoBAAra0ZBcGf7aeYVKcTBveiR45Hf5aKpUr46ZCiO2sfdtMVEYwMarUKNRYzV5lZCOjEPe2YJKLWWQuUJDEfehHGrQfWlxr5qo0pmr6Xd47jwqEMutZA91iWKr13huOZAlFIZBarDjZCgrt141CUnqMIZD";
+    private String accessToken = "EAAWPYu13aFoBAAra0ZBcGf7aeYVKcTBveiR45Hf5aKpUr46ZCiO2sfdtMVEYwMarUKNRYzV5lZCOjEPe2YJKLWWQuUJDEfehHGrQfWlxr5qo0pmr6Xd47jwqEMutZA91iWKr13huOZAlFIZBarDjZCgrt141CUnqMIZD";
     private String appToken = "1565029937145946|RVWOId2jQZjW89yHa9fONbi4rto";
     private Facebook user = new FacebookFactory().getInstance();
     private Interests ir = new Interests();
@@ -32,7 +32,7 @@ public class FacebookData{
         user.setOAuthAppId(appId, appSecret);
         user.setOAuthPermissions(appToken);
         user.setOAuthAccessToken(new AccessToken(accessToken));
-        //getUserInterests(); <<<<<<<-----------------------
+        getUserInterests();
 
     }
 

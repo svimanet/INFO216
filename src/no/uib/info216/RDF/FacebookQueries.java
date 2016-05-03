@@ -1,7 +1,5 @@
 package no.uib.info216.RDF;
 
-import no.uib.info216.RDF.RDFHandler;
-
 import org.apache.jena.query.ResultSet;
 
 
@@ -35,6 +33,24 @@ public class FacebookQueries {
         return rdfHandler.runSparql(query);
 
     }
+
+
+    public ResultSet AllUsers(){
+        String query =  "PREFIX schema: <http://schema.org/>" +
+                "SELECT  * " +
+                "WHERE {" +
+                " ?res a foaf:Person ;" +
+                " foaf:name ?name." +
+                "      }";
+
+        return rdfHandler.runSparql(query);
+
+    }
+
+
+
+    /**
+     * This method finds all the Users and their interests
 
     /**
      * This method finds all the Users and their interests
