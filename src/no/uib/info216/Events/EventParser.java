@@ -9,13 +9,28 @@ import org.json.simple.parser.ParseException;
 
 import java.io.FileReader;
 import java.io.IOException;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Calendar;
 import java.util.HashMap;
+import java.util.Random;
 
 /**
  * Created by fox on 4/30/16.
  */
 public class EventParser {
+
+    public String fakeDate(){
+        // Random day
+        Random rand = new Random();
+        String n = Integer.toString(rand.nextInt(31) + 1);
+        if(n.length() == 1)
+            n = "0"+n;
+        Calendar cal = Calendar.getInstance();
+        String date = new SimpleDateFormat("YYYY-MM").format(cal.getTime());
+        return date+"-"+n;
+    }
+
     public Model parse(){
         Model model = ModelFactory.createDefaultModel();
 
@@ -38,6 +53,7 @@ public class EventParser {
         Property description = model.createProperty("http://schema.org/description");
         Property url = model.createProperty("http://schema.org/url");
         Property startDate = model.createProperty("http://schema.org/startDate");
+        Property Category = model.createProperty("http://schema.org/category");
 
 
 
@@ -47,7 +63,8 @@ public class EventParser {
                     .addProperty(name, item.get("Name"))
                     .addProperty(location, item.get("Addr"))
                     .addProperty(description, item.get("Desc"))
-                    .addProperty(startDate, item.get("start date"));
+                    .addProperty(Category, item.get("Category"))
+                    .addProperty(startDate, this.fakeDate());
         }
 
 

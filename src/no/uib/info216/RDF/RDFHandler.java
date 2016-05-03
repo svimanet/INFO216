@@ -6,6 +6,7 @@ import org.apache.jena.rdf.model.ModelFactory;
 
 import java.io.FileWriter;
 import java.io.IOException;
+import java.util.Scanner;
 
 /**
  * Created by fox on 4/30/16.
@@ -20,14 +21,21 @@ public class RDFHandler {
 
     public ResultSet runSparql(String queryString){
 
-        // Create a new query
-       /* queryString =
-                "SELECT ?o ?p ?s " +
-                        "WHERE {" +
-                        "       ?o ?p ?s " +
-                        "      }";*/
+        if(queryString.equals("all")) {
+            queryString =
+                    "SELECT ?o ?p ?s " +
+                            "WHERE {" +
+                            "       ?o ?p ?s " +
+                            "      }";
+        }
 
-        Query query = QueryFactory.create(queryString);
+        Query query = null;
+        try {
+            query = QueryFactory.create(queryString);
+        }catch (Exception e){
+            System.out.println("Error!");
+            return null;
+        }
 
         QueryExecution qe = QueryExecutionFactory.create(query, model);
         ResultSet results = qe.execSelect();
@@ -36,6 +44,15 @@ public class RDFHandler {
 
         qe.close();
         return results;
+    }
+
+    public void REPL(){
+        while(true){
+            Scanner scan=new Scanner(System.in);
+            System.out.print("> ");
+            String line = scan.next();
+            this.runSparql(line);
+        }
     }
 
 
