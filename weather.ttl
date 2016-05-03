@@ -3,254 +3,218 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
 
-<35>    <http://www.schema.org/startDate>
+<20>    <http://www.schema.org/rain>  "Skyet" ;
+        <http://www.schema.org/startDate>
+                "2016-05-06" ;
+        <http://www.schema.org/temperatureCelsius>
+                "14" .
+
+<26>    <http://www.schema.org/rain>  "Skyet" ;
+        <http://www.schema.org/startDate>
+                "2016-05-08" ;
+        <http://www.schema.org/temperatureCelsius>
+                "7" .
+
+<35>    <http://www.schema.org/rain>  "Delvis skyet" ;
+        <http://www.schema.org/startDate>
                 "2016-05-10" ;
         <http://www.schema.org/temperatureCelsius>
-                "13" ;
-        <http://www.schema.org/weather>
-                "Delvis skyet" .
+                "13" .
 
-<26>    <http://www.schema.org/startDate>
-                "2016-05-08" ;
-        <http://www.schema.org/temperatureCelsius>
-                "7" ;
-        <http://www.schema.org/weather>
-                "Skyet" .
-
-<6>     <http://www.schema.org/startDate>
-                "2016-05-03" ;
-        <http://www.schema.org/temperatureCelsius>
-                "8" ;
-        <http://www.schema.org/weather>
-                "Regn" .
-
-<20>    <http://www.schema.org/startDate>
-                "2016-05-06" ;
-        <http://www.schema.org/temperatureCelsius>
-                "14" ;
-        <http://www.schema.org/weather>
-                "Skyet" .
-
-<10>    <http://www.schema.org/startDate>
+<10>    <http://www.schema.org/rain>  "Delvis skyet" ;
+        <http://www.schema.org/startDate>
                 "2016-05-04" ;
         <http://www.schema.org/temperatureCelsius>
-                "7" ;
-        <http://www.schema.org/weather>
-                "Delvis skyet" .
+                "7" .
 
-<16>    <http://www.schema.org/startDate>
+<16>    <http://www.schema.org/rain>  "Skyet" ;
+        <http://www.schema.org/startDate>
                 "2016-05-05" ;
         <http://www.schema.org/temperatureCelsius>
-                "14" ;
-        <http://www.schema.org/weather>
-                "Skyet" .
+                "14" .
 
-<25>    <http://www.schema.org/startDate>
+<6>     <http://www.schema.org/rain>  "Regn" ;
+        <http://www.schema.org/startDate>
+                "2016-05-03" ;
+        <http://www.schema.org/temperatureCelsius>
+                "8" .
+
+<25>    <http://www.schema.org/rain>  "Skyet" ;
+        <http://www.schema.org/startDate>
                 "2016-05-07" ;
         <http://www.schema.org/temperatureCelsius>
-                "12" ;
-        <http://www.schema.org/weather>
-                "Skyet" .
+                "12" .
 
-<5>     <http://www.schema.org/startDate>
+<5>     <http://www.schema.org/rain>  "Kraftig regn" ;
+        <http://www.schema.org/startDate>
                 "2016-05-02" ;
         <http://www.schema.org/temperatureCelsius>
-                "7" ;
-        <http://www.schema.org/weather>
-                "Kraftig regn" .
+                "7" .
 
-<15>    <http://www.schema.org/startDate>
+<15>    <http://www.schema.org/rain>  "Skyet" ;
+        <http://www.schema.org/startDate>
                 "2016-05-05" ;
         <http://www.schema.org/temperatureCelsius>
-                "10" ;
-        <http://www.schema.org/weather>
-                "Skyet" .
+                "10" .
 
-<33>    <http://www.schema.org/startDate>
-                "2016-05-09" ;
-        <http://www.schema.org/temperatureCelsius>
-                "16" ;
-        <http://www.schema.org/weather>
-                "Delvis skyet" .
-
-<24>    <http://www.schema.org/startDate>
+<24>    <http://www.schema.org/rain>  "Skyet" ;
+        <http://www.schema.org/startDate>
                 "2016-05-07" ;
         <http://www.schema.org/temperatureCelsius>
-                "13" ;
-        <http://www.schema.org/weather>
-                "Skyet" .
+                "13" .
 
-<34>    <http://www.schema.org/startDate>
+<34>    <http://www.schema.org/rain>  "Delvis skyet" ;
+        <http://www.schema.org/startDate>
                 "2016-05-10" ;
         <http://www.schema.org/temperatureCelsius>
-                "12" ;
-        <http://www.schema.org/weather>
-                "Delvis skyet" .
+                "12" .
 
-<4>     <http://www.schema.org/startDate>
+<4>     <http://www.schema.org/rain>  "Regn" ;
+        <http://www.schema.org/startDate>
                 "2016-05-02" ;
         <http://www.schema.org/temperatureCelsius>
-                "9" ;
-        <http://www.schema.org/weather>
-                "Regn" .
+                "9" .
 
-<23>    <http://www.schema.org/startDate>
-                "2016-05-07" ;
+<33>    <http://www.schema.org/rain>  "Delvis skyet" ;
+        <http://www.schema.org/startDate>
+                "2016-05-09" ;
         <http://www.schema.org/temperatureCelsius>
-                "9" ;
-        <http://www.schema.org/weather>
-                "Skyet" .
+                "16" .
 
-<29>    <http://www.schema.org/startDate>
-                "2016-05-08" ;
-        <http://www.schema.org/temperatureCelsius>
-                "14" ;
-        <http://www.schema.org/weather>
-                "Delvis skyet" .
-
-<14>    <http://www.schema.org/startDate>
+<14>    <http://www.schema.org/rain>  "Regn" ;
+        <http://www.schema.org/startDate>
                 "2016-05-05" ;
         <http://www.schema.org/temperatureCelsius>
-                "9" ;
-        <http://www.schema.org/weather>
-                "Regn" .
+                "9" .
 
-<3>     <http://www.schema.org/startDate>
-                "2016-05-02" ;
-        <http://www.schema.org/temperatureCelsius>
-                "6" ;
-        <http://www.schema.org/weather>
-                "Regn" .
-
-<32>    <http://www.schema.org/startDate>
-                "2016-05-09" ;
-        <http://www.schema.org/temperatureCelsius>
-                "18" ;
-        <http://www.schema.org/weather>
-                "Delvis skyet" .
-
-<13>    <http://www.schema.org/startDate>
-                "2016-05-04" ;
-        <http://www.schema.org/temperatureCelsius>
-                "11" ;
-        <http://www.schema.org/weather>
-                "Skyet" .
-
-<9>     <http://www.schema.org/startDate>
-                "2016-05-03" ;
-        <http://www.schema.org/temperatureCelsius>
-                "9" ;
-        <http://www.schema.org/weather>
-                "Skyet" .
-
-<19>    <http://www.schema.org/startDate>
-                "2016-05-06" ;
-        <http://www.schema.org/temperatureCelsius>
-                "10" ;
-        <http://www.schema.org/weather>
-                "Delvis skyet" .
-
-<22>    <http://www.schema.org/startDate>
+<23>    <http://www.schema.org/rain>  "Skyet" ;
+        <http://www.schema.org/startDate>
                 "2016-05-07" ;
         <http://www.schema.org/temperatureCelsius>
-                "8" ;
-        <http://www.schema.org/weather>
-                "Skyet" .
+                "9" .
 
-<28>    <http://www.schema.org/startDate>
+<29>    <http://www.schema.org/rain>  "Delvis skyet" ;
+        <http://www.schema.org/startDate>
                 "2016-05-08" ;
         <http://www.schema.org/temperatureCelsius>
-                "16" ;
-        <http://www.schema.org/weather>
-                "Delvis skyet" .
+                "14" .
 
-<31>    <http://www.schema.org/startDate>
+<32>    <http://www.schema.org/rain>  "Delvis skyet" ;
+        <http://www.schema.org/startDate>
                 "2016-05-09" ;
         <http://www.schema.org/temperatureCelsius>
-                "11" ;
-        <http://www.schema.org/weather>
-                "Skyet" .
+                "18" .
 
-<8>     <http://www.schema.org/startDate>
-                "2016-05-03" ;
-        <http://www.schema.org/temperatureCelsius>
-                "10" ;
-        <http://www.schema.org/weather>
-                "Delvis skyet" .
-
-<12>    <http://www.schema.org/startDate>
-                "2016-05-04" ;
-        <http://www.schema.org/temperatureCelsius>
-                "13" ;
-        <http://www.schema.org/weather>
-                "Skyet" .
-
-<2>     <http://www.schema.org/startDate>
+<3>     <http://www.schema.org/rain>  "Regn" ;
+        <http://www.schema.org/startDate>
                 "2016-05-02" ;
         <http://www.schema.org/temperatureCelsius>
-                "6" ;
-        <http://www.schema.org/weather>
-                "Regn" .
+                "6" .
 
-<18>    <http://www.schema.org/startDate>
+<13>    <http://www.schema.org/rain>  "Skyet" ;
+        <http://www.schema.org/startDate>
+                "2016-05-04" ;
+        <http://www.schema.org/temperatureCelsius>
+                "11" .
+
+<9>     <http://www.schema.org/rain>  "Skyet" ;
+        <http://www.schema.org/startDate>
+                "2016-05-03" ;
+        <http://www.schema.org/temperatureCelsius>
+                "9" .
+
+<19>    <http://www.schema.org/rain>  "Delvis skyet" ;
+        <http://www.schema.org/startDate>
                 "2016-05-06" ;
         <http://www.schema.org/temperatureCelsius>
-                "10" ;
-        <http://www.schema.org/weather>
-                "Regn" .
+                "10" .
 
-<21>    <http://www.schema.org/startDate>
-                "2016-05-06" ;
+<22>    <http://www.schema.org/rain>  "Skyet" ;
+        <http://www.schema.org/startDate>
+                "2016-05-07" ;
         <http://www.schema.org/temperatureCelsius>
-                "11" ;
-        <http://www.schema.org/weather>
-                "Skyet" .
+                "8" .
 
-<27>    <http://www.schema.org/startDate>
+<2>     <http://www.schema.org/rain>  "Regn" ;
+        <http://www.schema.org/startDate>
+                "2016-05-02" ;
+        <http://www.schema.org/temperatureCelsius>
+                "6" .
+
+<28>    <http://www.schema.org/rain>  "Delvis skyet" ;
+        <http://www.schema.org/startDate>
                 "2016-05-08" ;
         <http://www.schema.org/temperatureCelsius>
-                "8" ;
-        <http://www.schema.org/weather>
-                "Skyet" .
+                "16" .
 
-<30>    <http://www.schema.org/startDate>
+<31>    <http://www.schema.org/rain>  "Skyet" ;
+        <http://www.schema.org/startDate>
                 "2016-05-09" ;
         <http://www.schema.org/temperatureCelsius>
-                "11" ;
-        <http://www.schema.org/weather>
-                "Delvis skyet" .
+                "11" .
 
-<1>     <http://www.schema.org/startDate>
+<8>     <http://www.schema.org/rain>  "Delvis skyet" ;
+        <http://www.schema.org/startDate>
+                "2016-05-03" ;
+        <http://www.schema.org/temperatureCelsius>
+                "10" .
+
+<18>    <http://www.schema.org/rain>  "Regn" ;
+        <http://www.schema.org/startDate>
+                "2016-05-06" ;
+        <http://www.schema.org/temperatureCelsius>
+                "10" .
+
+<21>    <http://www.schema.org/rain>  "Skyet" ;
+        <http://www.schema.org/startDate>
+                "2016-05-06" ;
+        <http://www.schema.org/temperatureCelsius>
+                "11" .
+
+<27>    <http://www.schema.org/rain>  "Skyet" ;
+        <http://www.schema.org/startDate>
+                "2016-05-08" ;
+        <http://www.schema.org/temperatureCelsius>
+                "8" .
+
+<12>    <http://www.schema.org/rain>  "Skyet" ;
+        <http://www.schema.org/startDate>
+                "2016-05-04" ;
+        <http://www.schema.org/temperatureCelsius>
+                "13" .
+
+<30>    <http://www.schema.org/rain>  "Delvis skyet" ;
+        <http://www.schema.org/startDate>
+                "2016-05-09" ;
+        <http://www.schema.org/temperatureCelsius>
+                "11" .
+
+<36>    <http://www.schema.org/rain>  "Delvis skyet" ;
+        <http://www.schema.org/startDate>
+                "2016-05-10" ;
+        <http://www.schema.org/temperatureCelsius>
+                "19" .
+
+<1>     <http://www.schema.org/rain>  "Regn" ;
+        <http://www.schema.org/startDate>
                 "2016-05-01" ;
         <http://www.schema.org/temperatureCelsius>
-                "7" ;
-        <http://www.schema.org/weather>
-                "Regn" .
+                "7" .
 
-<36>    <http://www.schema.org/startDate>
-                "2016-05-10" ;
-        <http://www.schema.org/temperatureCelsius>
-                "19" ;
-        <http://www.schema.org/weather>
-                "Delvis skyet" .
-
-<7>     <http://www.schema.org/startDate>
+<7>     <http://www.schema.org/rain>  "Tåke" ;
+        <http://www.schema.org/startDate>
                 "2016-05-03" ;
         <http://www.schema.org/temperatureCelsius>
-                "7" ;
-        <http://www.schema.org/weather>
-                "Tåke" .
+                "7" .
 
-<11>    <http://www.schema.org/startDate>
+<11>    <http://www.schema.org/rain>  "Delvis skyet" ;
+        <http://www.schema.org/startDate>
                 "2016-05-04" ;
         <http://www.schema.org/temperatureCelsius>
-                "8" ;
-        <http://www.schema.org/weather>
-                "Delvis skyet" .
+                "8" .
 
-<17>    <http://www.schema.org/startDate>
+<17>    <http://www.schema.org/rain>  "Skyet" ;
+        <http://www.schema.org/startDate>
                 "2016-05-05" ;
         <http://www.schema.org/temperatureCelsius>
-                "12" ;
-        <http://www.schema.org/weather>
-                "Skyet" .
+                "12" .

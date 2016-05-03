@@ -49,6 +49,10 @@ public class Weather {
         Property weatherProperty = model.createProperty("http://www.schema.org/weather");
         Property weatherPropertyTemp = model.createProperty("http://www.schema.org/temperatureCelsius");
         Property dateFrom = model.createProperty("http://www.schema.org/startDate");
+        Property rain = model.createProperty("http://www.schema.org/rain");
+        Property sun = model.createProperty("http://www.schema.org/sun");
+        Property clouds = model.createProperty("http://www.schema.org/clouds");
+        Property misty = model.createProperty("http://www.schema.org/misty");
 
         for(int i = 0; i < arrayLength; i++) {
 
@@ -61,7 +65,7 @@ public class Weather {
                 Resource weatherData
                         = model.createResource(itemTopKek)
                         .addProperty(dateFrom, itemdateFrom)
-                        .addProperty(weatherProperty, itemnameTag)
+                        .addProperty(rain, itemnameTag)
                         .addProperty(weatherPropertyTemp, itemTempTag);
             }
         }

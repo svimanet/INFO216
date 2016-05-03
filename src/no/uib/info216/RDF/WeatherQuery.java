@@ -26,8 +26,11 @@ public class WeatherQuery {
      * @return query
      */
     public ResultSet weatherWeek(){
-        String query = "PREFIX schema: <http://schema.org/>" +
-                "SELECT  * WHERE { ?o ?p ?s } ORDER BY ASC(?o)";
+        String query = "all";
+
+//                "PREFIX schema: <http://schema.org/>" +
+//                "SELECT  ?o ?p ?s WHERE { ?o ?p ?s } ORDER BY DESC(?o)";
+
         return rdfh.runSparql(query);
     }
 
