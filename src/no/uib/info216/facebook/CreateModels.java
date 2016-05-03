@@ -9,6 +9,8 @@ import no.uib.info216.RDF.RDFHandler;
 import org.apache.jena.rdf.model.Model;
 import org.apache.jena.rdf.model.ModelFactory;
 import org.apache.jena.rdf.model.Property;
+import org.apache.jena.rdf.model.Resource;
+import org.apache.jena.sparql.vocabulary.FOAF;
 
 import java.util.ArrayList;
 
@@ -70,8 +72,8 @@ public class CreateModels {
      */
 	public void addRes(ArrayList<String> a, Property p, Model m, String name){
 		for (String s : a) {
-			m.createResource(name/*, FOAF.Person*/)
-				.addProperty(p, s);
+			Resource res = m.createResource(name, FOAF.Person);
+			res.addProperty(p, s);
 		}
 	}
 

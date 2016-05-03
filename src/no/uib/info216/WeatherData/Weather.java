@@ -46,9 +46,11 @@ public class Weather {
      */
     public void createOntology(){
 
-        Property weatherProperty = model.createProperty("http://www.schema.org/weather");
-        Property weatherPropertyTemp = model.createProperty("http://www.schema.org/temperatureCelsius");
-        Property dateFrom = model.createProperty("http://www.schema.org/startDate");
+        Property weatherProperty = model.createProperty("http://www.schema.org/name");
+        Property weatherPropertyTemp = model.createProperty("http://www.schema.org/temperature-celsius");
+        Property startDate = model.createProperty("http://www.schema.org/startDate");
+
+        Resource weatherResource= model.createResource("http://schema.org/Weather");
 
         for(int i = 0; i < arrayLength; i++) {
 
@@ -59,10 +61,10 @@ public class Weather {
                 String itemTopKek = String.valueOf(this.idTag.get(i));
 
                 Resource weatherData
-                        = model.createResource(itemTopKek)
-                        .addProperty(dateFrom, itemdateFrom)
+                        = model.createResource(itemdateFrom, weatherResource)
                         .addProperty(weatherProperty, itemnameTag)
-                        .addProperty(weatherPropertyTemp, itemTempTag);
+                        .addProperty(weatherPropertyTemp, itemTempTag)
+                        .addProperty(startDate, itemdateFrom);
             }
         }
     }
