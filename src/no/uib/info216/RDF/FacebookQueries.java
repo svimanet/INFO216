@@ -1,4 +1,4 @@
-package no.uib.info216.facebook;
+package no.uib.info216.RDF;
 
 import no.uib.info216.RDF.RDFHandler;
 

@@ -5,11 +5,11 @@ package no.uib.info216.facebook;
 
 import java.util.ArrayList;
 
+import no.uib.info216.RDF.FacebookQueries;
 import no.uib.info216.RDF.RDFHandler;
 import org.apache.jena.rdf.model.Model;
 import org.apache.jena.rdf.model.ModelFactory;
 import org.apache.jena.rdf.model.Property;
-import org.apache.jena.rdf.model.Resource;
 
 /**
  * @author mariuslillevik
@@ -68,8 +68,8 @@ public class CreateModels {
      */
 	public void addRes(ArrayList<String> a, Property p, Model m, String name){
 		for (String s : a) {
-			Resource res = m.createResource(name);
-			res.addProperty(p, s);
+			m.createResource(name/*, FOAF.Person*/)
+				.addProperty(p, s);
 		}
 	}
 
@@ -135,12 +135,12 @@ public class CreateModels {
 
 		Model model = cm.checkIfKeyExists(); //cm.readFacebookTurtle();
 		rdfHandler.addModel(model);
-		//rdfHandler.saveModel("FacebookFriends.ttl", model);
+		rdfHandler.saveModel("FacebookFriends.ttl", model);
 
-		fq.AllInsterestsFromUser("Seborg_Mathiasen");
+		fq.AllInsterestsFromUser("Maggy_Valle");
 		fq.AllFromOneCategory("Game");
 		fq.UserInterestsFromOneCategory("Hearthstone");
-		fq.UserInterestsFromOneCategory("Seborg_Mathiasen", "Game");
+		fq.UserInterestsFromOneCategory("Maggy_Valle", "Game");
 
 	}
 
