@@ -35,7 +35,7 @@ public class Weather {
 
     Model model = createDefaultModel();
 
-    int arrayLength = nameTag.size();
+    private int arrayLength = nameTag.size();
 
     /**
      * The createOntology method is what
@@ -47,11 +47,11 @@ public class Weather {
     public void createOntology(){
 
         Property weatherPropertyTemp = model.createProperty("http://www.schema.org/temperatureCelsius");
-        Property dateFrom = model.createProperty("http://www.schema.org/startDate");
-        Property rain = model.createProperty("http://www.schema.org/rain");
-        Property sun = model.createProperty("http://www.schema.org/sun");
-        Property clouds = model.createProperty("http://www.schema.org/clouds");
-        Property misty = model.createProperty("http://www.schema.org/misty");
+//        Property dateFrom = model.createProperty("http://www.schema.org/startDate");
+//        Property rain = model.createProperty("http://www.schema.org/rain");
+//        Property sun = model.createProperty("http://www.schema.org/sun");
+//        Property clouds = model.createProperty("http://www.schema.org/clouds");
+//        Property misty = model.createProperty("http://www.schema.org/misty");
         Property weatherProperty = model.createProperty("http://www.schema.org/name");
         Property startDate = model.createProperty("http://www.schema.org/startDate");
 

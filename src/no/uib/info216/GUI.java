@@ -21,6 +21,8 @@ public class GUI extends JPanel{
     private JTextArea tab6 = new JTextArea("Tab 6");
     private JTextArea tab7 = new JTextArea("Tab 7");
 
+    private JTextArea tab1Qout = new JTextArea("QUERY OUT");
+
     private JPanel panel1 = new JPanel();
     private JPanel panel2 = new JPanel();
     private JPanel panel3 = new JPanel();
@@ -37,10 +39,17 @@ public class GUI extends JPanel{
         ImageIcon icon = createImageIcon("images/middle.gif");
         tabbedPane.setPreferredSize(new Dimension(600, 300));
 
+        // --------------------------- PANEL FOR TAB NR 1 -----------------------------
         //JComponent panel1 = makeTextPanel("-- micromandag-Det Akademiske Kvarter sol-11-celsius  ");
         tabbedPane.addTab("Mandag", icon, panel1, "Mandag");
         tabbedPane.setMnemonicAt(0, KeyEvent.VK_1);
+
+        tab1Qout.setPreferredSize(new Dimension(600, 280));
+
         panel1.add(tab1);
+        panel1.add(tab1Qout);
+
+        // ----------------------------------------------------------------------------
 
         //JComponent panel2 = makeTextPanel("sol-12-celsius");
         JComponent panel2 = makeTextPanel(tab2.getText());
@@ -108,7 +117,7 @@ public class GUI extends JPanel{
      */
     public static void createAndShowGUI() {
         //Create and set up the window.
-        JFrame frame = new JFrame("216");
+        JFrame frame = new JFrame("( ͡° ͜ʖ ͡°)");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
         //Add content to the window.
@@ -117,5 +126,15 @@ public class GUI extends JPanel{
         //Display the window.
         frame.pack();
         frame.setVisible(true);
+    }
+
+    public static void main (String[]args){
+
+        SwingUtilities.invokeLater(new Runnable() {
+            public void run() {
+                UIManager.put("swing.boldMetal", Boolean.FALSE);
+                createAndShowGUI();
+            }
+        });
     }
 }
