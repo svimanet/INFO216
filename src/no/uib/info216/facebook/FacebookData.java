@@ -22,6 +22,12 @@ public class FacebookData{
         setupUser();
     }
 
+
+    /**
+     * This method sets up the facebook user and
+     * gets all the interests and puts them in the lists
+     * in the interests class.
+     */
     public void setupUser(){
         user.setOAuthAppId(appId, appSecret);
         user.setOAuthPermissions(appToken);
@@ -30,10 +36,10 @@ public class FacebookData{
 
     }
 
-    public Facebook getUser(){
-        return user;
-    }
-
+    /**
+     * This method fetches the interests from the users
+     * and puts them in the lists in Interests class
+     */
     public void getUserInterests(){
         try {
             ir.getInterests(user);
@@ -48,5 +54,9 @@ public class FacebookData{
 
     public String getAccessToken() {
         return accessToken;
+    }
+
+    public Facebook getUser(){
+        return user;
     }
 }
