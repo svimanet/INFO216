@@ -3,11 +3,14 @@
  */
 package no.uib.info216.facebook;
 
+import java.util.ArrayList;
+import no.uib.info216.RDF.FacebookQueries;
 import no.uib.info216.RDF.RDFHandler;
 import org.apache.jena.rdf.model.Model;
 import org.apache.jena.rdf.model.ModelFactory;
 import org.apache.jena.rdf.model.Property;
 import org.apache.jena.rdf.model.Resource;
+import org.apache.jena.sparql.vocabulary.FOAF;
 
 import java.util.ArrayList;
 
@@ -69,7 +72,7 @@ public class CreateModels {
      */
 	public void addRes(ArrayList<String> a, Property p, Model m, String name){
 		for (String s : a) {
-			Resource res = m.createResource(name);
+			Resource res = m.createResource(name, FOAF.Person);
 			res.addProperty(p, s);
 		}
 	}
@@ -113,6 +116,7 @@ public class CreateModels {
 
 
 	/**
+	 * Getter for the jena rdf model.
 	 * @return the model
 	 */
 	public Model getModel() {
@@ -120,31 +124,27 @@ public class CreateModels {
 	}
 
 
-
+	/**
+	 * This is a test main method for the facebookUsers and
+	 * turtle files.
+	 * @param args
+	 */
 	public static void main(String[] args){
 		RDFHandler rdfHandler = new RDFHandler();
+		FacebookQueries fq = new FacebookQueries(rdfHandler);
 		CreateModels cm = new CreateModels();
 
 		Model model = cm.parse(); //cm.readFacebookTurtle();
 		rdfHandler.addModel(model);
-		//rdfHandler.saveModel("FacebookFriends.ttl", model);
-		String queryString =
-				"PREFIX schema: <http://schema.org/>" +
-				"SELECT  * " +
-						"WHERE {" +
-						"       ?name ?property \"Mirrors\"  " + //<Maggy_Kallestad>
+		rdfHandler.saveModel("FacebookFriends.ttl", model);
 
-						"      }" +
-						"ORDER BY ASC(?o) ";
-		String user = QueryFactory.AllInsterestsFromUser("Seborg_Mathiasen");
-		String category = QueryFactory.AllFromOneCategory("Game");
-		String interest = QueryFactory.UserInterestsFromOneCategory("Hearthstone");
-		String userCategory = QueryFactory.UserInterestsFromOneCategory("Seborg_Mathiasen", "Game");
-		rdfHandler.runSparql(userCategory);
+		fq.AllInsterestsFromUser("Maggy_Valle");
+		fq.AllFromOneCategory("Game");
+		fq.UserInterestsFromOneCategory("Hearthstone");
+		fq.UserInterestsFromOneCategory("Maggy_Valle", "Game");
 
 	}
 
 
 
-	//And so on... This does not nessesarily need to be static.
 }

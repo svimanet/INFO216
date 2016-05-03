@@ -28,12 +28,15 @@ public class RDFHandler {
                             "       ?o ?p ?s " +
                             "      }";
         }
+        queryString = "PREFIX schema: <http://schema.org/> " + queryString;
+        System.out.println(queryString);
 
         Query query = null;
         try {
             query = QueryFactory.create(queryString);
         }catch (Exception e){
             System.out.println("Error!");
+            System.out.println(e.toString());
             return null;
         }
 
@@ -50,7 +53,7 @@ public class RDFHandler {
         while(true){
             Scanner scan=new Scanner(System.in);
             System.out.print("> ");
-            String line = scan.next();
+            String line = scan.nextLine();
             this.runSparql(line);
         }
     }

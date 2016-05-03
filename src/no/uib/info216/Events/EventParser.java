@@ -54,12 +54,14 @@ public class EventParser {
         Property url = model.createProperty("http://schema.org/url");
         Property startDate = model.createProperty("http://schema.org/startDate");
         Property Category = model.createProperty("http://schema.org/category");
+        Property eventProp = model.createProperty("http://schema.org/Event");
 
+        Resource eventResource = model.createResource("http://schema.org/Event");
 
 
         Resource event;
         for(HashMap<String, String> item: jsonObject){
-            event = model.createResource(item.get("id"))
+            event = model.createResource(item.get("id"), eventResource)
                     .addProperty(name, item.get("Name"))
                     .addProperty(location, item.get("Addr"))
                     .addProperty(description, item.get("Desc"))
