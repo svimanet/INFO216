@@ -37,7 +37,7 @@ public class Main {
         rdfHandler.addModel(weatherModel);
 
 
-        rdfHandler.runSparql("lol");
+        rdfHandler.REPL();
 
     }
 }

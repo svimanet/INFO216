@@ -47,7 +47,7 @@ public class Weather {
     public void createOntology(){
 
         Property weatherProperty = model.createProperty("http://www.schema.org/weather");
-        Property weatherPropertyTemp = model.createProperty("http://www.schema.org/temperatureC     elsius");
+        Property weatherPropertyTemp = model.createProperty("http://www.schema.org/temperatureCelsius");
         Property dateFrom = model.createProperty("http://www.schema.org/startDate");
 
         for(int i = 0; i < arrayLength; i++) {
