@@ -4,6 +4,7 @@ import org.apache.jena.query.*;
 import org.apache.jena.rdf.model.Model;
 import org.apache.jena.rdf.model.ModelFactory;
 
+import javax.swing.*;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.Scanner;
@@ -49,10 +50,11 @@ public class RDFHandler {
         return results;
     }
 
-    public void REPL(){
+    public void REPL(JTextField text){
         while(true){
-            Scanner scan=new Scanner(System.in);
-            System.out.print("> ");
+            Scanner scan = new Scanner(text.getText());
+            text.setText("> ");
+            //System.out.print("> ");
             String line = scan.nextLine();
             this.runSparql(line);
         }

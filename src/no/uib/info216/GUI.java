@@ -21,7 +21,7 @@ public class GUI extends JPanel{
     private JTextArea tab6 = new JTextArea("Tab 6");
     private JTextArea tab7 = new JTextArea("Tab 7");
 
-    private JTextArea tab1Qout = new JTextArea("QUERY OUT");
+    private JTextField tab1Qout = new JTextField("QUERY OUT");
 
     private JPanel panel1 = new JPanel();
     private JPanel panel2 = new JPanel();
@@ -45,6 +45,7 @@ public class GUI extends JPanel{
         tabbedPane.setMnemonicAt(0, KeyEvent.VK_1);
 
         tab1Qout.setPreferredSize(new Dimension(600, 280));
+        tab1.setPreferredSize(new Dimension(600, 20));
 
         panel1.add(tab1);
         panel1.add(tab1Qout);
@@ -136,5 +137,9 @@ public class GUI extends JPanel{
                 createAndShowGUI();
             }
         });
+    }
+
+    public JTextField getTab1Qout() {
+        return tab1Qout;
     }
 }
