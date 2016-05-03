@@ -2,6 +2,7 @@ package no.uib.info216;
 
 import no.uib.info216.Events.EventParser;
 import no.uib.info216.RDF.RDFHandler;
+import no.uib.info216.RDF.REPL;
 import no.uib.info216.WeatherData.Weather;
 import no.uib.info216.facebook.CreateModels;
 import org.apache.jena.rdf.model.Model;
@@ -37,7 +38,8 @@ public class Main {
         rdfHandler.addModel(weatherModel);
 
 
-        rdfHandler.REPL();
+        REPL repl = new REPL(rdfHandler);
+        repl.REPL();
 
     }
 }

@@ -3,7 +3,6 @@
  */
 package no.uib.info216.facebook;
 
-import java.util.ArrayList;
 import no.uib.info216.RDF.FacebookQueries;
 import no.uib.info216.RDF.RDFHandler;
 import org.apache.jena.rdf.model.Model;
@@ -28,13 +27,13 @@ public class CreateModels {
 
 	private Model model = ModelFactory.createDefaultModel();
 	//Properties
-	private Property tvShow = model.createProperty("https://schema.org/TVSeries");
+	private Property tvShow = model.createProperty("http://schema.org/TVSeries");
 	private Property movie = model.createProperty("http://schema.org/Movie");
-	private Property music = model.createProperty("https://schema.org/MusicRecording");
-	private Property book = model.createProperty("https://schema.org/Book");
+	private Property music = model.createProperty("http://schema.org/MusicRecording");
+	private Property book = model.createProperty("http://schema.org/Book");
 	private Property games = model.createProperty("http://schema.org/Game");
 	private Property events = model.createProperty("http://schema.org/Event");
-	private Property likes = model.createProperty("https://schema.org/UserLikes"); //This URI is not exactly what we're looking for, but it works for now.
+	private Property likes = model.createProperty("http://schema.org/UserLikes"); //This URI is not exactly what we're looking for, but it works for now.
 
 	/**
 	 * This is the constructor for the CreateModels Class
@@ -71,8 +70,9 @@ public class CreateModels {
      * @param name - The name
      */
 	public void addRes(ArrayList<String> a, Property p, Model m, String name){
+		Resource res = m.createResource(name, FOAF.Person);
+		res.addProperty(FOAF.name, name);
 		for (String s : a) {
-			Resource res = m.createResource(name, FOAF.Person);
 			res.addProperty(p, s);
 		}
 	}

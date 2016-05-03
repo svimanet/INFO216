@@ -65,4 +65,17 @@ public class WeatherQuery {
                 "SELECT  * WHERE { ?o ?p \"Skyet\" } ORDER BY ASC(?o)";
         return rdfh.runSparql(query);
     }
+
+    public ResultSet getAllWeather() {
+        String query = "PREFIX schema: <http://schema.org/>" +
+                "SELECT  ?name ?date " +
+                "WHERE {" +
+                " ?res a schema:Weather ; " +
+                " schema:startDate ?date ; " +
+                " schema:name ?name. " +
+                "      }" +
+                "";
+
+        return rdfh.runSparql(query);
+    }
 }
