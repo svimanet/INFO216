@@ -61,7 +61,7 @@ public class Weather {
                 String itemTopKek = String.valueOf(this.idTag.get(i));
 
                 Resource weatherData
-                        = model.createResource(itemdateFrom, weatherResource)
+                        = model.createResource("http://uib.no/info216/weather/"+itemdateFrom, weatherResource)
                         .addProperty(weatherProperty, itemnameTag)
                         .addProperty(weatherPropertyTemp, itemTempTag)
                         .addProperty(startDate, itemdateFrom);

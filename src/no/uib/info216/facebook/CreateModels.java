@@ -70,7 +70,7 @@ public class CreateModels {
      * @param name - The name
      */
 	public void addRes(ArrayList<String> a, Property p, Model m, String name){
-		Resource res = m.createResource(name, FOAF.Person);
+		Resource res = m.createResource("http://uib.no/info216/person/"+name, FOAF.Person);
 		res.addProperty(FOAF.name, name);
 		for (String s : a) {
 			res.addProperty(p, s);
