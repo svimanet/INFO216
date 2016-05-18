@@ -69,11 +69,12 @@ public class WeatherQuery {
 
     public ResultSet getAllWeather() {
         String query = "PREFIX schema: <http://schema.org/>" +
-                "SELECT  ?name ?date " +
+                "SELECT  * " +
                 "WHERE {" +
                 " ?res a schema:Weather ; " +
                 " schema:startDate ?date ; " +
-                " schema:name ?name. " +
+                " schema:name ?name ; " +
+                " schema:temperature-celsius ?temp. " +
                 "      }" +
                 "";
 
