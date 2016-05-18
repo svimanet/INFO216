@@ -84,6 +84,7 @@ public class CreateModels {
      */
 	public Model parse(){
 		if(checkIfKeyExists()) {
+			this.data.setupUser();
 			ArrayList<FacebookUser> users = rug.createUserWithRandomInterests(10, data.getIr()); //Creates 10 "Fake" users.
 			this.model = createmodel(users);
 		}else{

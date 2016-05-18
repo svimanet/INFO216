@@ -18,11 +18,6 @@ public class FacebookData{
     private Facebook user = new FacebookFactory().getInstance();
     private Interests ir = new Interests();
 
-    public FacebookData(){
-        setupUser();
-    }
-
-
     /**
      * This method sets up the facebook user and
      * gets all the interests and puts them in the lists
