@@ -44,7 +44,7 @@ public class CreateModels {
 	private Property games = model.createProperty("http://schema.org/Game");
 	private Property events = model.createProperty("http://schema.org/Event");
 	private Property likes = model.createProperty("http://schema.org/UserLikes"); //This URI is not exactly what we're looking for, but it works for now.
-
+	
 	/**
 	 * This is the constructor for the CreateModels Class
 	 */
@@ -68,7 +68,7 @@ public class CreateModels {
 			addRes(u.getBook(), book, model, u.getName() + "_" + u.getLastName());
 			addRes(u.getLikes(), likes, model, u.getName() + "_" + u.getLastName());
 		}
-		this.createUserModelKnowns();
+		//this.createUserModelKnowns();
 		return this.model;
 	}
 
@@ -76,15 +76,15 @@ public class CreateModels {
 	 * Creates the user model for the RDF model
 	 * Based on the random generated user URIs
 	 */
-	private void createUserModelKnowns() {
-		Resource res = this.userModel.createResource("http://uib.no/info216/User", FOAF.Person);
+	private void createUserModelKnowns(String name) {
+		Resource res = this.userModel.createResource(name, FOAF.Person);
 		for (Resource s: this.friendResource) {
 			this.userModel.add(res, FOAF.knows, s);
 		}
 	}
 
 	public Model createUserModel(FacebookUser u){
-
+		String uri = "http://uib.no/info216/User/";
 			addResUserModel(u.getEvents(), events, userModel, u.getName());
 			addResUserModel(u.getTvShows(), tvShow, userModel, u.getName());
 			addResUserModel(u.getMovies(), movie, userModel, u.getName());
@@ -92,7 +92,7 @@ public class CreateModels {
 			addResUserModel(u.getGames(), games, userModel, u.getName());
 			addResUserModel(u.getBook(), book, userModel, u.getName());
 			addResUserModel(u.getLikes(), likes, userModel, u.getName());
-		this.createUserModelKnowns();
+		this.createUserModelKnowns(uri + u.getName());
 		return this.userModel;
 	}
 
