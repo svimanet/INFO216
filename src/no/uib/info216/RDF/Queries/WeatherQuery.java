@@ -37,7 +37,7 @@ public class WeatherQuery {
      * @return qury
      */
     public ResultSet getAllWeather() {
-        String query = "PREFIX schema: <http://schema.org/> PREFIX WEATHER: <https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#> " +
+        String query =
                 "SELECT  ?date ?name ?temp " +
                 "WHERE {" +
                 " ?res a schema:Weather ; " +
