@@ -21,7 +21,6 @@ import java.util.ArrayList;
  */
 public class CreateModels {
 
-	public ArrayList<String> friendURIs = new ArrayList<String>();
 	public ArrayList<Resource> friendResource = new ArrayList<Resource>();
 
 	//Fields
@@ -84,10 +83,6 @@ public class CreateModels {
      * @param name - The name
      */
 	public void addRes(ArrayList<String> a, Property p, Model m, String name){
-		// Store the friend URI for later
-		String uri = "http://uib.no/info216/person/"+name;
-		friendURIs.add(uri);
-
 		Resource res = m.createResource(uri, FOAF.Person);
 		res.addProperty(FOAF.name, name);
 		this.friendResource.add(res);
