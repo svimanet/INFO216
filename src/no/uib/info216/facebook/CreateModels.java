@@ -3,7 +3,6 @@
  */
 package no.uib.info216.facebook;
 
-import no.uib.info216.RDF.Queries.FacebookQueries;
 import no.uib.info216.RDF.RDFHandler;
 import org.apache.jena.rdf.model.Model;
 import org.apache.jena.rdf.model.ModelFactory;
@@ -46,14 +45,6 @@ public class CreateModels {
 	private Property likes = model.createProperty("http://schema.org/UserLikes"); //This URI is not exactly what we're looking for, but it works for now.
 
 	/**
-	 * This is the constructor for the CreateModels Class
-	 */
-	public CreateModels() {
-		setUpFacebookUser();
-		parse();
-	}
-
-	/**
 	 * This method creates an rdf model using a list
 	 * of FacebookUser object and their interests.
 	 * @param users - A list of FacebookUser objects
@@ -68,7 +59,6 @@ public class CreateModels {
 			addRes(u.getBook(), book, model, u.getName() + "_" + u.getLastName());
 			addRes(u.getLikes(), likes, model, u.getName() + "_" + u.getLastName());
 		}
-		//this.createUserModelKnowns();
 		return this.model;
 	}
 
@@ -135,22 +125,18 @@ public class CreateModels {
 			this.data.setupUser();
 			ArrayList<FacebookUser> users = rug.createUserWithRandomInterests(10, data.getIr());
 			this.model = createmodel(users);
+			this.setUpFacebookUser();
 			this.userModel = createUserModel(user);
+			this.model.add(this.userModel);
 			new RDFHandler().saveModel("FacebookFiles/FacebookFriends.ttl", model);
 			new RDFHandler().saveModel("FacebookFiles/FacebookUser.ttl", userModel);
 		}else{
 			this.model = this.readFacebookTurtle("FacebookFiles/FacebookFriends.ttl");
-			this.userModel = this.readFacebookTurtle("FacebookFiles/FacebookUser.ttl");
+			this.model.add(this.readFacebookTurtle("FacebookFiles/FacebookUser.ttl"));
 
 		}
 		return this.model;
 	}
-
-	public void addFacebookToFinalModel(Model model){
-		model.add(this.model);
-		model.add(this.userModel);
-	}
-
 
 	/**
 	 * This method reads a .ttl file and sets the model to
@@ -191,24 +177,5 @@ public class CreateModels {
 	 */
 	public Model getModel() {
 		return model;
-	}
-
-
-	/**
-	 * This is a test main method for the facebookUsers and
-	 * turtle files.
-	 * @param args
-	 */
-	public static void main(String[] args){
-		RDFHandler rdfHandler = new RDFHandler();
-		FacebookQueries fq = new FacebookQueries(rdfHandler);
-		CreateModels cm = new CreateModels();
-
-		Model model = ModelFactory.createDefaultModel();
-		cm.addFacebookToFinalModel(model);
-		rdfHandler.addModel(model);
-		rdfHandler.saveModel("FacebookFiles/FacebookModel.ttl", model);
-
-		fq.sameInterests();
 	}
 }
