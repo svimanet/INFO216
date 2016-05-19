@@ -23,6 +23,8 @@ public class GUI extends JPanel{
     private ArrayList<JPanel> panelList;
 
 
+
+
     public GUI() {
 
         super(new GridLayout(1, 3));
