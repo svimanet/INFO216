@@ -42,8 +42,8 @@ public class WeatherQuery {
                 "WHERE {" +
                 " ?res a schema:Weather ; " +
                 " schema:startDate ?date ; " +
-                " WEATHER:WeatherCondition ?name ; " +
-                " WEATHER:Temperature ?temp. " +
+                " Weather:WeatherCondition ?name ; " +
+                " Weather:Temperature ?temp. " +
                 "      }" +
                 "";
 
