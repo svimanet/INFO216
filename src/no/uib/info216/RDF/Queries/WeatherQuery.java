@@ -40,7 +40,7 @@ public class WeatherQuery {
         String query =
                 "SELECT  ?date ?name ?temp " +
                 "WHERE {" +
-                " ?res a schema:Weather ; " +
+                " ?res a Weather:WeatherCondition ; " +
                 " schema:startDate ?date ; " +
                 " Weather:WeatherCondition ?name ; " +
                 " Weather:Temperature ?temp. " +

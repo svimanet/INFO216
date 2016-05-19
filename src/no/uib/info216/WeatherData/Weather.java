@@ -54,7 +54,7 @@ public class Weather {
         Property weatherPropertyTemp = model.createProperty(ontUri + "Temperature");
         Property startDate = model.createProperty("http://schema.org/startDate");
 
-        Resource weatherResource= model.createResource("http://schema.org/Weather");
+        Resource weatherResource= model.createResource(ontUri + "WeatherCondition");
 
         for(int i = 0; i < arrayLength; i++) {
 
