@@ -1,5 +1,6 @@
-package no.uib.info216.RDF;
+package no.uib.info216.RDF.Queries;
 
+import no.uib.info216.RDF.RDFHandler;
 import org.apache.jena.query.ResultSet;
 
 /**

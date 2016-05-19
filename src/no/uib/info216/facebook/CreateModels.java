@@ -3,7 +3,7 @@
  */
 package no.uib.info216.facebook;
 
-import no.uib.info216.RDF.FacebookQueries;
+import no.uib.info216.RDF.Queries.FacebookQueries;
 import no.uib.info216.RDF.RDFHandler;
 import org.apache.jena.rdf.model.Model;
 import org.apache.jena.rdf.model.ModelFactory;
@@ -83,6 +83,7 @@ public class CreateModels {
      * @param name - The name
      */
 	public void addRes(ArrayList<String> a, Property p, Model m, String name){
+		String uri = "http://uib.no/info216/person/"+name;
 		Resource res = m.createResource(uri, FOAF.Person);
 		res.addProperty(FOAF.name, name);
 		this.friendResource.add(res);
