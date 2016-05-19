@@ -238,10 +238,20 @@ public class Yr{
         return dataStruct;
     }
 
+    /**
+     * Getter for idList, used for giving values in table a unique values.
+     * @return idList
+     */
     public ArrayList<Integer> getIdList() {
         return idList;
     }
 
+    /**
+     * Getter for english version of nameTag list.
+     * Contains translated names of all weather types.
+     * To use in ontology.
+     * @return nametagEng - ArrayList<String>
+     */
     public ArrayList<String> getNametagEng() {
         return nametagEng;
     }
