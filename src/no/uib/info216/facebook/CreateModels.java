@@ -117,7 +117,7 @@ public class CreateModels {
 	}
 
 	public void addResUserModel(ArrayList<String> a, Property p, Model m, String name){
-		String uri = "http://uib.no/info216/User/";
+		String uri = "http://uib.no/info216/User";
 		Resource res = m.createResource(uri, FOAF.Person);
 		res.addProperty(FOAF.name, name);
 		for (String s : a) {
