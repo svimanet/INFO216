@@ -1,8 +1,8 @@
 package no.uib.info216.Misc;
 
 import java.text.SimpleDateFormat;
+import java.util.ArrayList;
 import java.util.Calendar;
-import java.util.HashMap;
 
 /**
  * Created by fox on 5/19/16.
@@ -34,8 +34,8 @@ public class WeekDates {
      * @param numberOfDays int Number of days lookahead
      * @return Hashmap String,String. Name of day -> Date
      */
-    public HashMap<String, String> getWeekDates(int numberOfDays){
-        HashMap<String,String> returnDates = new HashMap<String,String>();
+    public ArrayList<ArrayList<String>> getWeekDates(int numberOfDays){
+        ArrayList<ArrayList<String>> returnDates = new ArrayList<ArrayList<String>>();
 
         Calendar cal = Calendar.getInstance();
         int day = cal.get(Calendar.DAY_OF_WEEK);
@@ -46,7 +46,10 @@ public class WeekDates {
             if(day > numberOfDays){
                 day = 1;
             }
-            returnDates.put(this.getName(day), formatter.format(cal.getTime()));
+            ArrayList<String> tmp = new ArrayList<String>();
+            tmp.add(this.getName(day));
+            tmp.add(formatter.format(cal.getTime()));
+            returnDates.add(tmp);
 
             //Increments
             cal.add(Calendar.DATE, 1);

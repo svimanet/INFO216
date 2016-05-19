@@ -1,10 +1,11 @@
 package no.uib.info216;
 
+import no.uib.info216.Misc.WeekDates;
+
 import javax.swing.*;
-import java.awt.BorderLayout;
-import java.awt.Dimension;
-import java.awt.GridLayout;
-import java.awt.event.KeyEvent;
+import java.awt.*;
+import java.util.ArrayList;
+import java.util.ListIterator;
 
 /**
  * Created 04.04.2016.
@@ -13,13 +14,9 @@ import java.awt.event.KeyEvent;
  */
 public class GUI extends JPanel{
 
-    private JTextArea tab1 = new JTextArea("Tab 1");
-    private JTextArea tab2 = new JTextArea("Tab 2");
-    private JTextArea tab3 = new JTextArea("Tab 3");
-    private JTextArea tab4 = new JTextArea("Tab 4");
-    private JTextArea tab5 = new JTextArea("Tab 5");
-    private JTextArea tab6 = new JTextArea("Tab 6");
-    private JTextArea tab7 = new JTextArea("Tab 7");
+    private ArrayList<JTextArea> tabList;
+    private JTabbedPane tabbedPane = new JTabbedPane();
+    private ImageIcon icon = createImageIcon("images/middle.gif");
 
     private JPanel panel1 = new JPanel();
     private JPanel panel2 = new JPanel();
@@ -33,52 +30,39 @@ public class GUI extends JPanel{
 
         super(new GridLayout(1, 3));
 
-        JTabbedPane tabbedPane = new JTabbedPane();
-        ImageIcon icon = createImageIcon("images/middle.gif");
-        tabbedPane.setPreferredSize(new Dimension(600, 300));
+        this.tabbedPane.setPreferredSize(new Dimension(600, 300));
 
-        //JComponent panel1 = makeTextPanel("-- micromandag-Det Akademiske Kvarter sol-11-celsius  ");
-        JComponent panel1 = makeTextPanel(tab1.getText());
-        tabbedPane.addTab("Søndag", icon, panel1, "Søndag");
-        tabbedPane.setMnemonicAt(0, KeyEvent.VK_1);
-
-        //JComponent panel2 = makeTextPanel("sol-12-celsius");
-        JComponent panel2 = makeTextPanel(tab2.getText());
-        tabbedPane.addTab("Mandag", icon, panel2, "Mandag");
-        tabbedPane.setMnemonicAt(1, KeyEvent.VK_2);
-
-        //JComponent panel3 = makeTextPanel("50% Quiz-Det Akademiske Kvarter");
-        JComponent panel3 = makeTextPanel(tab3.getText());
-        tabbedPane.addTab("Tirsdag", icon, panel3, "Tirsdag");
-        tabbedPane.setMnemonicAt(2, KeyEvent.VK_3);
-
-        //JComponent panel4 = makeTextPanel("0% Feministisk initiativ møte-Det Akademiske Kvarter skyet-8-celsius");
-        JComponent panel4 = makeTextPanel(tab4.getText());
-        tabbedPane.addTab("Onsdag", icon, panel4, "Onsdag");
-        tabbedPane.setMnemonicAt(3, KeyEvent.VK_4);
-
-        //JComponent panel5 = makeTextPanel("10% pysjamas party-kvarteret Regn-5-celsius");
-        JComponent panel5 = makeTextPanel(tab5.getText());
-        tabbedPane.addTab("Torsdag", icon, panel5, "Torsdag");
-        tabbedPane.setMnemonicAt(4, KeyEvent.VK_5);
-
-        //JComponent panel6 = makeTextPanel("80% Konsert-Verftet Skyet-9-celsius ");
-        JComponent panel6 = makeTextPanel(tab6.getText());
-        tabbedPane.addTab("Fredag", icon, panel6, "Fredag");
-        tabbedPane.setMnemonicAt(5, KeyEvent.VK_6);
-
-        //JComponent panel7 = makeTextPanel("100% ingenting-heima kem-bryr-seg");
-        JComponent panel7 = makeTextPanel(tab7.getText());
-        tabbedPane.addTab("Lørdag", icon, panel7, "Lørdag");
-        tabbedPane.setMnemonicAt(6, KeyEvent.VK_7);
+        this.tabList = this.populateTappedPane();
+        this.generateTabTextArea(this.tabList);
 
         //Add the tabbed pane to this panel.
-        add(tabbedPane);
+        add(this.tabbedPane);
 
         //The following line enables to use scrolling tabs.
         tabbedPane.setTabLayoutPolicy(JTabbedPane.SCROLL_TAB_LAYOUT);
+    }
 
+    private ArrayList<JTextArea> populateTappedPane() {
+        ArrayList<JTextArea> retList = new ArrayList<JTextArea>();
+        for(int i = 7; i != 0; i--){
+           retList.add(new JTextArea());
+        }
+        return retList;
+    }
 
+    private void generateTabTextArea(ArrayList<JTextArea> tabList) {
+        ArrayList<ArrayList<String>> days = new WeekDates().getWeekDates(7);
+        ListIterator<ArrayList<String>> daysItems = days.listIterator();
+
+        for(JTextArea jtabText: tabList) {
+            ArrayList<String> day = daysItems.next();
+            JComponent panel1 = makeTextPanel(jtabText.getText());
+            System.out.println(day.get(0));
+            tabbedPane.addTab(day.get(0), this.icon, panel1, day.get(1));
+
+            //Needed?
+            //tabbedPane.setMnemonicAt(0, KeyEvent.VK_1);
+        }
     }
 
     protected JComponent makeTextPanel(String text) {
