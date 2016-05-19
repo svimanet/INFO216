@@ -57,7 +57,6 @@ public class EventParser {
         Property Category = model.createProperty("http://schema.org/category");
         Resource eventResource = model.createResource("http://schema.org/Event");
 
-
         Resource event;
         for(HashMap<String, String> item: jsonObject){
             String fakeDate = this.fakeDate();
@@ -66,6 +65,7 @@ public class EventParser {
                     .addProperty(location, item.get("Addr"))
                     .addProperty(description, item.get("Desc"))
                     .addProperty(Category, item.get("Category"))
+                    .addProperty(url, item.get("Url"))
                     .addProperty(doorTime, fakeDate+"UTC"+item.get("doorTime"))
                     .addProperty(startDate, fakeDate);
 

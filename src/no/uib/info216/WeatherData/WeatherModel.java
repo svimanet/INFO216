@@ -23,7 +23,7 @@ import static org.apache.jena.shared.RandomOrderGraph.createDefaultModel;
  * printing it to a file.
  * Also initiates some sparql queries for testing.
  */
-public class Weather {
+public class WeatherModel {
 
     Yr yrno = new Yr();
 
@@ -63,7 +63,6 @@ public class Weather {
                 String itemnameTag = this.nameTag.get(i);
                 String itemnameTagEng = this.nameTagEng.get(i);
                 String itemTempTag = this.tempTag.get(i);
-                String itemTopKek = String.valueOf(this.idTag.get(i));
 
                 Resource weatherData
                         = model.createResource("http://uib.no/info216/weather/"+itemdateFrom, weatherResource)
@@ -117,7 +116,7 @@ public class Weather {
      * @param args
      */
     public static void main(String[] args) {
-        Weather weather = new Weather();
+        WeatherModel weather = new WeatherModel();
         weather.createOntology();
         weather.writerMethod();
 
