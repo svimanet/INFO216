@@ -22,6 +22,7 @@ public class RDFHandler {
 
         queryString = "PREFIX schema: <http://schema.org/> " + queryString;
         queryString = "PREFIX foaf: <http://xmlns.com/foaf/0.1/> " + queryString;
+        queryString = "PREFIX uib: <http://uib.no/info216/> " + queryString;
         System.out.println(queryString);
 
         Query query = null;
@@ -43,7 +44,7 @@ public class RDFHandler {
     }
 
 
-    public void saveModel(String name, Model model){
+    public static void saveModel(String name, Model model){
         FileWriter out = null;
         try {
             out = new FileWriter(name);

@@ -40,7 +40,7 @@ public class Main {
 
         EventQueries evt = new EventQueries(rdfHandler);
 
-        //evt.getEventForDay();
+        evt.getEventForDay();
 
         REPL repl = new REPL(rdfHandler);
         repl.REPL();
