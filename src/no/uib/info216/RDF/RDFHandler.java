@@ -52,14 +52,4 @@ public class RDFHandler {
         }
         model.write(out, "TURTLE");
     }
-
-    public void saveFacebookModel(String name, Model model){
-        FileWriter out = null;
-        try {
-            out = new FileWriter("FacebookFiles/" + name);
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-        model.write(out, "TURTLE");
-    }
 }

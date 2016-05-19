@@ -84,7 +84,7 @@ public class CreateModels {
 	}
 
 	public Model createUserModel(FacebookUser u){
-		
+
 			addResUserModel(u.getEvents(), events, userModel, u.getName());
 			addResUserModel(u.getTvShows(), tvShow, userModel, u.getName());
 			addResUserModel(u.getMovies(), movie, userModel, u.getName());
@@ -136,8 +136,8 @@ public class CreateModels {
 			ArrayList<FacebookUser> users = rug.createUserWithRandomInterests(10, data.getIr());
 			this.model = createmodel(users);
 			this.userModel = createUserModel(user);
-			new RDFHandler().saveFacebookModel("FacebookFriends.ttl", model);
-			new RDFHandler().saveFacebookModel("FacebookUser.ttl", userModel);
+			new RDFHandler().saveModel("FacebookFiles/FacebookFriends.ttl", model);
+			new RDFHandler().saveModel("FacebookFiles/FacebookUser.ttl", userModel);
 		}else{
 			this.model = this.readFacebookTurtle("FacebookFiles/FacebookFriends.ttl");
 			this.userModel = this.readFacebookTurtle("FacebookFiles/FacebookUser.ttl");
@@ -207,8 +207,8 @@ public class CreateModels {
 		Model model = ModelFactory.createDefaultModel();
 		cm.addFacebookToFinalModel(model);
 		rdfHandler.addModel(model);
-		rdfHandler.saveFacebookModel("FacebookModel.ttl", model);
+		rdfHandler.saveModel("FacebookFiles/FacebookModel.ttl", model);
 
-		fq.UserKnowns();
+		fq.sameInterests();
 	}
 }
