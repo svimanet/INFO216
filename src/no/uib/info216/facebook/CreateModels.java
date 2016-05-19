@@ -21,6 +21,9 @@ import java.util.ArrayList;
  */
 public class CreateModels {
 
+	public ArrayList<String> friendURIs = new ArrayList<String>();
+	public ArrayList<Resource> friendResource = new ArrayList<Resource>();
+
 	//Fields
 	FacebookData data = new FacebookData();
 	RandomUserGeneration rug = new RandomUserGeneration();
@@ -57,8 +60,19 @@ public class CreateModels {
 			addRes(u.getBook(), book, model, u.getName() + "_" + u.getLastName());
 			addRes(u.getLikes(), likes, model, u.getName() + "_" + u.getLastName());
 		}
+		this.createUserModel();
 		return this.model;
+	}
 
+	/**
+	 * Creates the user model for the RDF model
+	 * Based on the random generated user URIs
+	 */
+	private void createUserModel() {
+		Resource res = this.model.createResource("http://uib.no/info216/User", FOAF.Person);
+		for (Resource s: this.friendResource) {
+			this.model.add(res, FOAF.knows, s);
+		}
 	}
 
 	/**
@@ -70,8 +84,13 @@ public class CreateModels {
      * @param name - The name
      */
 	public void addRes(ArrayList<String> a, Property p, Model m, String name){
-		Resource res = m.createResource("http://uib.no/info216/person/"+name, FOAF.Person);
+		// Store the friend URI for later
+		String uri = "http://uib.no/info216/person/"+name;
+		friendURIs.add(uri);
+
+		Resource res = m.createResource(uri, FOAF.Person);
 		res.addProperty(FOAF.name, name);
+		this.friendResource.add(res);
 		for (String s : a) {
 			res.addProperty(p, s);
 		}
@@ -87,6 +106,7 @@ public class CreateModels {
 			this.data.setupUser();
 			ArrayList<FacebookUser> users = rug.createUserWithRandomInterests(10, data.getIr()); //Creates 10 "Fake" users.
 			this.model = createmodel(users);
+			new RDFHandler().saveModel("FacebookFriends.ttl", model);
 		}else{
 			this.model = this.readFacebookTurtle();
 		}
