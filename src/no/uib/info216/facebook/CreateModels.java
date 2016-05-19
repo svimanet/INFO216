@@ -44,7 +44,7 @@ public class CreateModels {
 	private Property games = model.createProperty("http://schema.org/Game");
 	private Property events = model.createProperty("http://schema.org/Event");
 	private Property likes = model.createProperty("http://schema.org/UserLikes"); //This URI is not exactly what we're looking for, but it works for now.
-	
+
 	/**
 	 * This is the constructor for the CreateModels Class
 	 */
@@ -84,7 +84,7 @@ public class CreateModels {
 	}
 
 	public Model createUserModel(FacebookUser u){
-		String uri = "http://uib.no/info216/User/";
+		String uri = "http://uib.no/info216/User";
 			addResUserModel(u.getEvents(), events, userModel, u.getName());
 			addResUserModel(u.getTvShows(), tvShow, userModel, u.getName());
 			addResUserModel(u.getMovies(), movie, userModel, u.getName());
