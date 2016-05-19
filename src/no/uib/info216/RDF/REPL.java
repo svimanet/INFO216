@@ -1,5 +1,9 @@
 package no.uib.info216.RDF;
 
+import no.uib.info216.RDF.Queries.EventQueries;
+import no.uib.info216.RDF.Queries.FacebookQueries;
+import no.uib.info216.RDF.Queries.WeatherQuery;
+
 import java.util.Scanner;
 
 /**
