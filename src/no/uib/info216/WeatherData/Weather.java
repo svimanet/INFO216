@@ -2,7 +2,7 @@ package no.uib.info216.WeatherData;
 
 
 import no.uib.info216.RDF.RDFHandler;
-import no.uib.info216.RDF.WeatherQuery;
+import no.uib.info216.RDF.Queries.WeatherQuery;
 import org.apache.jena.ontology.OntModel;
 import org.apache.jena.ontology.OntModelSpec;
 import org.apache.jena.rdf.model.Model;

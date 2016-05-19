@@ -1,7 +1,8 @@
 package no.uib.info216;
 
 import no.uib.info216.Events.EventParser;
-import no.uib.info216.RDF.EventQueries;
+import no.uib.info216.Misc.WeekDates;
+import no.uib.info216.RDF.Queries.EventQueries;
 import no.uib.info216.RDF.RDFHandler;
 import no.uib.info216.RDF.REPL;
 import no.uib.info216.WeatherData.Weather;
@@ -41,7 +42,7 @@ public class Main {
         EventQueries evt = new EventQueries(rdfHandler);
 
         //evt.getEventForDay();
-
+        new WeekDates().getWeekDates();
         REPL repl = new REPL(rdfHandler);
         repl.REPL();
 
