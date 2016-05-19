@@ -31,6 +31,7 @@ public class Yr{
     private File file = new File("varsel.xml");
 
     private ArrayList<String> nametag = new ArrayList<String>();
+    private ArrayList<String> nametagEng = new ArrayList<String>();
     private ArrayList<String> fromtag = new ArrayList<String>();
     private ArrayList<Integer> periodTag = new ArrayList<Integer>();
     private ArrayList<String> windSpeedName = new ArrayList<String>();
@@ -40,6 +41,12 @@ public class Yr{
     long diff = new Date().getTime() - file.lastModified();
 
     public ArrayList<HashMap<String,String>> dataStruct = new ArrayList<HashMap<String, String>>();
+
+    public Yr(){
+        getWeatherAPI();
+        makeSymbolList();
+
+    }
 
     /**
      * Checks the varsel.xml file on startup.
@@ -114,9 +121,9 @@ public class Yr{
             Node tempNode = eElement.getElementsByTagName("temperature").item(0);
             Element tempElement = (Element) tempNode;
 
-            obj.put("name", symbolElement.getAttribute("name"));
-            obj.put("from", eElement.getAttribute("from"));
-            obj.put("period", eElement.getAttribute("period"));
+//            obj.put("name", symbolElement.getAttribute("name"));
+//            obj.put("from", eElement.getAttribute("from"));
+//            obj.put("period", eElement.getAttribute("period"));
 
             nametag.add(symbolElement.getAttribute("name"));
             fromtag.add(StringUtils.left(eElement.getAttribute("from"), 10));
@@ -124,17 +131,47 @@ public class Yr{
             temprature.add(tempElement.getAttribute("value"));
             idList.add(1+i);
 
+            if (nametag.contains("Skyet")){
+                nametagEng.add("Cloud");
+
+            } else if (nametag.contains("Delvis skyet")){
+                nametagEng.add("PartlyCloud");
+
+            } else if (nametag.contains("Regn")){
+                nametagEng.add("Rain");
+
+            } else if (nametag.contains("Kraftig Regn")){
+                nametagEng.add("Rain");
+
+            } else if (nametag.contains("Tåke")){
+                nametagEng.add("Fog");
+
+            } else if (nametag.contains("Lett regn")){
+                nametagEng.add("Rain");
+
+            } else if (nametag.contains("Sol")){
+                nametagEng.add("Sun");
+
+            } else if (nametag.contains("Snø")){
+                nametagEng.add("Snow");
+
+            } else if (nametag.contains("Sludd")){
+                nametagEng.add("Sleet");
+
+            } else if (nametag.contains("Hagl")){
+                nametagEng.add("Hail");
+
+            } else if (nametag.contains("Lyn")){
+                nametagEng.add("Thunder");
+
+            } else {
+                nametagEng.add("Rain");
+            }
 
             this.dataStruct.add(obj);
 
         }
         System.out.print("Success!\n");
-    }
-
-    public Yr(){
-        getWeatherAPI();
-        makeSymbolList();
-
     }
 
     /**
@@ -201,7 +238,21 @@ public class Yr{
         return dataStruct;
     }
 
+    /**
+     * Getter for idList, used for giving values in table a unique values.
+     * @return idList
+     */
     public ArrayList<Integer> getIdList() {
         return idList;
+    }
+
+    /**
+     * Getter for english version of nameTag list.
+     * Contains translated names of all weather types.
+     * To use in ontology.
+     * @return nametagEng - ArrayList<String>
+     */
+    public ArrayList<String> getNametagEng() {
+        return nametagEng;
     }
 }

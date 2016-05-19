@@ -41,7 +41,9 @@ public class REPL {
                 facebookQ.AllUsers();
             }else if(line.equals("weather")) {
                 weatherQ.getAllWeather();
-            }else{
+            } else if(line.equals("test")){
+                weatherQ.getWeatherAndEvent();
+            } else {
                 this.rdfHandler.runSparql(line);
             }
         }

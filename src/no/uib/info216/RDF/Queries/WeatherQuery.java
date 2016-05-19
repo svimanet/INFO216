@@ -33,47 +33,35 @@ public class WeatherQuery {
     }
 
     /**
-     * Sparql query that lets you get all
-     * the days where it is raining.
-     * @return query
+     * Returns a week worth of date, name and temperature in Bergen.
+     * @return qury
      */
-    public ResultSet rainyDays(){
-        String query = "PREFIX schema: <http://schema.org/>" +
-                "SELECT  * WHERE { ?o ?p \"Regn \" } ORDER BY ASC(?o)";
+    public ResultSet getAllWeather() {
+        String query =
+                "SELECT  ?date ?name ?temp " +
+                "WHERE {" +
+                " ?res a Weather:WeatherCondition ; " +
+                " schema:startDate ?date ; " +
+                " Weather:WeatherCondition ?name ; " +
+                " Weather:Temperature ?temp. " +
+                "      }" +
+                "";
+
         return rdfh.runSparql(query);
     }
 
     /**
-     * Sparql query that lets you get all
-     * the sunny days of the week
-     * (Usually returns nothing).
-     * @return query
-     */
-    public ResultSet sunnyDays(){
-        String query = "PREFIX schema: <http://schema.org/>" +
-                "SELECT  * WHERE { ?o ?p \"Sol\" } ORDER BY ASC(?o)";
-        return rdfh.runSparql(query);
-    }
-
-    /**
-     * Sparql query that lets you get all
-     * the cloudy days of the week.
-     * (might as well ask for * ).
+     *
      * @return
      */
-    public ResultSet cloudyDays(){
+    public ResultSet getWeatherAndEvent() {
         String query = "PREFIX schema: <http://schema.org/>" +
-                "SELECT  * WHERE { ?o ?p \"Skyet\" } ORDER BY ASC(?o)";
-        return rdfh.runSparql(query);
-    }
-
-    public ResultSet getAllWeather() {
-        String query = "PREFIX schema: <http://schema.org/>" +
-                "SELECT  ?name ?date " +
+                "SELECT  ?date ?name ?weather ?temp " +
                 "WHERE {" +
-                " ?res a schema:Weather ; " +
-                " schema:startDate ?date ; " +
-                " schema:name ?name. " +
+                " ?x schema:Event ?name" +
+                " ?x schema:Weather ?weather" +
+                " ?x schema:Weather ?temp" +
+                " ?x Schema:Event ?date" +
                 "      }" +
                 "";
 
