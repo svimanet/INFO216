@@ -149,7 +149,7 @@ public class RandomUserGeneration {
 	 * users.
 	 */
 	public void fillNameLists() {
-		File file = new File("Names.xml");
+		File file = new File("FacebookFiles/Names.xml");
 		try {
 			DocumentBuilderFactory dbFactory = DocumentBuilderFactory.newInstance();
 			DocumentBuilder dBuilder = dbFactory.newDocumentBuilder();

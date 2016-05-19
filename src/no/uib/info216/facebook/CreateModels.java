@@ -27,8 +27,13 @@ public class CreateModels {
 	//Fields
 	FacebookData data = new FacebookData();
 	RandomUserGeneration rug = new RandomUserGeneration();
+	FacebookUser user;
+
 
 	private Model model = ModelFactory.createDefaultModel();
+	private Model userModel = ModelFactory.createDefaultModel();
+
+
 
 
 	//Properties
@@ -44,7 +49,8 @@ public class CreateModels {
 	 * This is the constructor for the CreateModels Class
 	 */
 	public CreateModels() {
-
+		setUpFacebookUser();
+		parse();
 	}
 
 	/**
@@ -62,7 +68,7 @@ public class CreateModels {
 			addRes(u.getBook(), book, model, u.getName() + "_" + u.getLastName());
 			addRes(u.getLikes(), likes, model, u.getName() + "_" + u.getLastName());
 		}
-		this.createUserModel();
+		this.createUserModelKnowns();
 		return this.model;
 	}
 
@@ -70,12 +76,27 @@ public class CreateModels {
 	 * Creates the user model for the RDF model
 	 * Based on the random generated user URIs
 	 */
-	private void createUserModel() {
-		Resource res = this.model.createResource("http://uib.no/info216/User", FOAF.Person);
+	private void createUserModelKnowns() {
+		Resource res = this.userModel.createResource("http://uib.no/info216/User", FOAF.Person);
 		for (Resource s: this.friendResource) {
-			this.model.add(res, FOAF.knows, s);
+			this.userModel.add(res, FOAF.knows, s);
 		}
 	}
+
+	public Model createUserModel(FacebookUser u){
+		
+			addResUserModel(u.getEvents(), events, userModel, u.getName());
+			addResUserModel(u.getTvShows(), tvShow, userModel, u.getName());
+			addResUserModel(u.getMovies(), movie, userModel, u.getName());
+			addResUserModel(u.getMusic(), music, userModel, u.getName());
+			addResUserModel(u.getGames(), games, userModel, u.getName());
+			addResUserModel(u.getBook(), book, userModel, u.getName());
+			addResUserModel(u.getLikes(), likes, userModel, u.getName());
+		this.createUserModelKnowns();
+		return this.userModel;
+	}
+
+
 
 	/**
 	 * This methid Creates resources for each element in an arrayList
@@ -95,6 +116,15 @@ public class CreateModels {
 		}
 	}
 
+	public void addResUserModel(ArrayList<String> a, Property p, Model m, String name){
+		String uri = "http://uib.no/info216/User/"+name;
+		Resource res = m.createResource(uri, FOAF.Person);
+		res.addProperty(FOAF.name, name);
+		for (String s : a) {
+			res.addProperty(p, s);
+		}
+	}
+
 	/**
 	 * This model creates a list of random FacebookUsers and
 	 * creates a model with each of these users interests.
@@ -103,13 +133,22 @@ public class CreateModels {
 	public Model parse(){
 		if(checkIfKeyExists()) {
 			this.data.setupUser();
-			ArrayList<FacebookUser> users = rug.createUserWithRandomInterests(10, data.getIr()); //Creates 10 "Fake" users.
+			ArrayList<FacebookUser> users = rug.createUserWithRandomInterests(10, data.getIr());
 			this.model = createmodel(users);
-			new RDFHandler().saveModel("FacebookFriends.ttl", model);
+			this.userModel = createUserModel(user);
+			new RDFHandler().saveFacebookModel("FacebookFriends.ttl", model);
+			new RDFHandler().saveFacebookModel("FacebookUser.ttl", userModel);
 		}else{
-			this.model = this.readFacebookTurtle("FacebookFriends.ttl");
+			this.model = this.readFacebookTurtle("FacebookFiles/FacebookFriends.ttl");
+			this.userModel = this.readFacebookTurtle("FacebookFiles/FacebookUser.ttl");
+
 		}
 		return this.model;
+	}
+
+	public void addFacebookToFinalModel(Model model){
+		model.add(this.model);
+		model.add(this.userModel);
 	}
 
 
@@ -122,6 +161,19 @@ public class CreateModels {
 		Model model = ModelFactory.createDefaultModel();
 		model.read(fileName, "TURTLE");
 		return model;
+	}
+
+	public void setUpFacebookUser(){
+		Interests ir = data.getIr();
+		this.user = new FacebookUser(
+				ir.getTvShows(),
+				ir.getMovies(),
+				ir.getMusic(),
+				ir.getBook(),
+				ir.getGames(),
+				ir.getEvents(),
+				ir.getLikes());
+		user.setName("Bruker_Brukersen");
 	}
 
 	/**
@@ -152,12 +204,11 @@ public class CreateModels {
 		FacebookQueries fq = new FacebookQueries(rdfHandler);
 		CreateModels cm = new CreateModels();
 
-		Model model = cm.parse(); //cm.readFacebookTurtle();
+		Model model = ModelFactory.createDefaultModel();
+		cm.addFacebookToFinalModel(model);
 		rdfHandler.addModel(model);
+		rdfHandler.saveFacebookModel("FacebookModel.ttl", model);
 
 		fq.UserKnowns();
 	}
-
-
-
 }
