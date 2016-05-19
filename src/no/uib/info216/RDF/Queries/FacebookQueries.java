@@ -17,6 +17,36 @@ public class FacebookQueries {
 
     }
 
+    public ResultSet sameInterests(){
+        String query =  "PREFIX schema: <http://schema.org/>" +
+                "SELECT  * " +
+                "WHERE {" +
+                "        ?bruker schema:Game ?value  " +
+
+                "      }" +
+                "ORDER BY ASC(?property) ";
+
+        String test = "\"PREFIX schema: <http://schema.org/>\"" +
+                " select * where {\n" +
+                "  values * { ?x ?a ?o }\n" +
+                "  filter(regex(?x, 'http://schema.org/')" +
+                "}";
+
+        return rdfHandler.runSparql(test);
+    }
+
+    public ResultSet UserKnowns(){
+        String query =  "PREFIX schema: <http://schema.org/>" +
+                "SELECT  * " +
+                "WHERE {" +
+                "        <http://uib.no/info216/User> ?property ?value  " +
+
+                "      }" +
+                "ORDER BY ASC(?property) ";
+
+        return rdfHandler.runSparql(query);
+    }
+
     /**
      * This method finds all the interests of
      * the given user in the parameter.
@@ -26,7 +56,7 @@ public class FacebookQueries {
        String query =  "PREFIX schema: <http://schema.org/>" +
                 "SELECT  * " +
                 "WHERE {" +
-                "       <" + user + ">  ?property ?value  " + //<Maggy_Kallestad>
+                "       <" + user + ">  ?property ?value  " +
 
                 "      }" +
                 "ORDER BY ASC(?o) ";

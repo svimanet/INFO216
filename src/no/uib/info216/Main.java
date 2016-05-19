@@ -42,7 +42,7 @@ public class Main {
         EventQueries evt = new EventQueries(rdfHandler);
 
         //evt.getEventForDay();
-        new WeekDates().getWeekDates();
+        new WeekDates().getWeekDates(0);
         REPL repl = new REPL(rdfHandler);
         repl.REPL();
 
