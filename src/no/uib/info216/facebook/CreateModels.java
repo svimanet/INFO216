@@ -1,3 +1,4 @@
+
 /**
  * 
  */
@@ -166,3 +167,4 @@ public class CreateModels {
 		rdfHandler.runSparql(query);
 	}
 }
+
