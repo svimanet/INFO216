@@ -47,8 +47,11 @@ public class Weather {
      */
     public void createOntology(){
 
-        Property weatherProperty = model.createProperty("http://schema.org/name");
-        Property weatherPropertyTemp = model.createProperty("http://schema.org/temperature-celsius");
+        String ontUri = "https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#";
+
+        //Property weatherProperty = model.createProperty("http://schema.org/name");
+        Property weatherProperty = model.createProperty(ontUri + "WeatherCondition");
+        Property weatherPropertyTemp = model.createProperty(ontUri + "Temperature");
         Property startDate = model.createProperty("http://schema.org/startDate");
 
         Resource weatherResource= model.createResource("http://schema.org/Weather");
