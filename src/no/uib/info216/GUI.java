@@ -13,18 +13,15 @@ import java.util.ListIterator;
  *
  */
 public class GUI extends JPanel{
+    private int NUMBER_OF_DAYS = 7;
+
+    private ImageIcon icon = createImageIcon("images/middle.gif");
 
     private ArrayList<JTextArea> tabList;
     private JTabbedPane tabbedPane = new JTabbedPane();
-    private ImageIcon icon = createImageIcon("images/middle.gif");
 
-    private JPanel panel1 = new JPanel();
-    private JPanel panel2 = new JPanel();
-    private JPanel panel3 = new JPanel();
-    private JPanel panel4 = new JPanel();
-    private JPanel panel5 = new JPanel();
-    private JPanel panel6 = new JPanel();
-    private JPanel panel7 = new JPanel();
+    private ArrayList<JPanel> panelList;
+
 
     public GUI() {
 
@@ -32,8 +29,11 @@ public class GUI extends JPanel{
 
         this.tabbedPane.setPreferredSize(new Dimension(600, 300));
 
+        // Generates the tab
         this.tabList = this.populateTappedPane();
         this.generateTabTextArea(this.tabList);
+
+        //this.panelList = this.populatePanelList();
 
         //Add the tabbed pane to this panel.
         add(this.tabbedPane);
@@ -44,30 +44,28 @@ public class GUI extends JPanel{
 
     private ArrayList<JTextArea> populateTappedPane() {
         ArrayList<JTextArea> retList = new ArrayList<JTextArea>();
-        for(int i = 7; i != 0; i--){
+        for(int i = this.NUMBER_OF_DAYS; i != 0; i--){
            retList.add(new JTextArea());
         }
         return retList;
     }
 
     private void generateTabTextArea(ArrayList<JTextArea> tabList) {
-        ArrayList<ArrayList<String>> days = new WeekDates().getWeekDates(7);
+        ArrayList<ArrayList<String>> days = new WeekDates().getWeekDates(this.NUMBER_OF_DAYS);
         ListIterator<ArrayList<String>> daysItems = days.listIterator();
+
 
         for(JTextArea jtabText: tabList) {
             ArrayList<String> day = daysItems.next();
-            JComponent panel1 = makeTextPanel(jtabText.getText());
-            System.out.println(day.get(0));
-            tabbedPane.addTab(day.get(0), this.icon, panel1, day.get(1));
-
-            //Needed?
-            //tabbedPane.setMnemonicAt(0, KeyEvent.VK_1);
+            jtabText.setText(day.get(0));
+            JComponent panel = makeTextPanel(day);
+            tabbedPane.addTab(day.get(0), this.icon, panel, day.get(1));
         }
     }
 
-    protected JComponent makeTextPanel(String text) {
+    protected JComponent makeTextPanel(ArrayList<String> day) {
         JPanel panel = new JPanel(false);
-        JLabel filler = new JLabel(text);
+        JLabel filler = new JLabel(day.get(0));
         filler.setHorizontalAlignment(JLabel.CENTER);
         panel.setLayout(new GridLayout(1, 1));
         panel.add(filler);
