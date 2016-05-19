@@ -1,10 +1,9 @@
-
 /**
  * 
  */
 package no.uib.info216.facebook;
 
-import no.uib.info216.RDF.FacebookQueries;
+import no.uib.info216.RDF.Queries.FacebookQueries;
 import no.uib.info216.RDF.RDFHandler;
 import org.apache.jena.rdf.model.Model;
 import org.apache.jena.rdf.model.ModelFactory;
@@ -22,12 +21,15 @@ import java.util.ArrayList;
  */
 public class CreateModels {
 
+	public ArrayList<Resource> friendResource = new ArrayList<Resource>();
+
+
 	//Fields
 	FacebookData data = new FacebookData();
 	RandomUserGeneration rug = new RandomUserGeneration();
 
 	private Model model = ModelFactory.createDefaultModel();
-	private Model userModel = ModelFactory.createDefaultModel();
+
 
 	//Properties
 	private Property tvShow = model.createProperty("http://schema.org/TVSeries");
@@ -60,32 +62,34 @@ public class CreateModels {
 			addRes(u.getBook(), book, model, u.getName() + "_" + u.getLastName());
 			addRes(u.getLikes(), likes, model, u.getName() + "_" + u.getLastName());
 		}
+		this.createUserModel();
 		return this.model;
 	}
 
-	public Model createUserModel(){
-		Interests ir = data.getIr();
-			addRes(ir.getEvents(), events, userModel, "Ole");
-			addRes(ir.getTvShows(), tvShow, userModel, "Ole");
-			addRes(ir.getMovies(), movie, userModel, "Ole");
-			addRes(ir.getMusic(), music, userModel, "Ole");
-			addRes(ir.getGames(), games, userModel, "Ole");
-			addRes(ir.getBook(), book, userModel, "Ole");
-			addRes(ir.getLikes(), likes, userModel, "Ole");
-		return this.userModel;
+	/**
+	 * Creates the user model for the RDF model
+	 * Based on the random generated user URIs
+	 */
+	private void createUserModel() {
+		Resource res = this.model.createResource("http://uib.no/info216/User", FOAF.Person);
+		for (Resource s: this.friendResource) {
+			this.model.add(res, FOAF.knows, s);
+		}
 	}
 
 	/**
-	 * This method Creates resources for each element in an arrayList
+	 * This methid Creates resources for each element in an arrayList
 	 * and adds properties to the resourse.
 	 * @param a - The arrayList
 	 * @param p - The property
-	 * @param m - The mode to be used
+	 * @param m - The model
      * @param name - The name
      */
 	public void addRes(ArrayList<String> a, Property p, Model m, String name){
-		Resource res = m.createResource(name, FOAF.Person);
+		String uri = "http://uib.no/info216/person/"+name;
+		Resource res = m.createResource(uri, FOAF.Person);
 		res.addProperty(FOAF.name, name);
+		this.friendResource.add(res);
 		for (String s : a) {
 			res.addProperty(p, s);
 		}
@@ -98,11 +102,11 @@ public class CreateModels {
      */
 	public Model parse(){
 		if(checkIfKeyExists()) {
+			this.data.setupUser();
 			ArrayList<FacebookUser> users = rug.createUserWithRandomInterests(10, data.getIr()); //Creates 10 "Fake" users.
 			this.model = createmodel(users);
-			this.userModel = createUserModel();
+			new RDFHandler().saveModel("FacebookFriends.ttl", model);
 		}else{
-			this.userModel = this.readFacebookTurtle("FacebookUser.ttl");
 			this.model = this.readFacebookTurtle("FacebookFriends.ttl");
 		}
 		return this.model;
@@ -113,16 +117,11 @@ public class CreateModels {
 	 * This method reads a .ttl file and sets the model to
 	 * this .ttl file with its content.
 	 * @return Model - An rdf model.
-     */
+	 */
 	public Model readFacebookTurtle(String fileName){
 		Model model = ModelFactory.createDefaultModel();
-			model.read(fileName, "TURTLE");
+		model.read(fileName, "TURTLE");
 		return model;
-	}
-
-	public void addFacebookModelsToFinalModel(Model finalModel){
-		finalModel.add(this.model);
-		finalModel.add(this.userModel);
 	}
 
 	/**
@@ -135,12 +134,13 @@ public class CreateModels {
 
 
 	/**
-	 * Getter for the jena rdf freidnsModel.
-	 * @return the friendsModel
+	 * Getter for the jena rdf model.
+	 * @return the model
 	 */
 	public Model getModel() {
 		return model;
 	}
+
 
 	/**
 	 * This is a test main method for the facebookUsers and
@@ -151,20 +151,13 @@ public class CreateModels {
 		RDFHandler rdfHandler = new RDFHandler();
 		FacebookQueries fq = new FacebookQueries(rdfHandler);
 		CreateModels cm = new CreateModels();
-		Model finalModel = ModelFactory.createDefaultModel();
 
-		cm.parse();
-		cm.addFacebookModelsToFinalModel(finalModel);
-		rdfHandler.addModel(finalModel);
-		String query =  "PREFIX schema: <http://schema.org/>" +
-				"SELECT  * " +
-				"WHERE {" +
-				"       ?name  ?o ?value  " +
+		Model model = cm.parse(); //cm.readFacebookTurtle();
+		rdfHandler.addModel(model);
 
-				"    }" +
-				"ORDER BY ASC(?o) ";
-
-		rdfHandler.runSparql(query);
+		fq.UserKnowns();
 	}
-}
 
+
+
+}

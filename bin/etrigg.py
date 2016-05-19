@@ -64,6 +64,7 @@ def parse_event(url):
   id = url.split('/')
   event["id"] = id[2]+'/'+id[3]
   event["Name"] = event_name["content"]
+  event["doorTime"] = soup.find(itemprop='startDate')["content"].split("UTC")[-1]
   event["start date"] = soup.find(itemprop='startDate')["content"].split("U")[0]
   event["end date"] = soup.find(itemprop='endDate')["content"].split("U")[0]
   event["Desc"] = soup.find(itemprop='description').text

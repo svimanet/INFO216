@@ -1,5 +1,6 @@
-package no.uib.info216.RDF;
+package no.uib.info216.RDF.Queries;
 
+import no.uib.info216.RDF.RDFHandler;
 import org.apache.jena.query.ResultSet;
 
 
@@ -16,6 +17,18 @@ public class FacebookQueries {
 
     }
 
+    public ResultSet UserKnowns(){
+        String query =  "PREFIX schema: <http://schema.org/>" +
+                "SELECT  * " +
+                "WHERE {" +
+                "        <http://uib.no/info216/User> ?property ?value  " +
+
+                "      }" +
+                "ORDER BY ASC(?property) ";
+
+        return rdfHandler.runSparql(query);
+    }
+
     /**
      * This method finds all the interests of
      * the given user in the parameter.
@@ -25,7 +38,7 @@ public class FacebookQueries {
        String query =  "PREFIX schema: <http://schema.org/>" +
                 "SELECT  * " +
                 "WHERE {" +
-                "       <" + user + ">  ?property ?value  " + //<Maggy_Kallestad>
+                "       <" + user + ">  ?property ?value  " +
 
                 "      }" +
                 "ORDER BY ASC(?o) ";
