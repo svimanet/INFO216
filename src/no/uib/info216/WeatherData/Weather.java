@@ -29,6 +29,7 @@ public class Weather {
 
     private ArrayList<String> dateFrom = yrno.getFromtag();
     private ArrayList<String> nameTag = yrno.getNametag();
+    private ArrayList<String> nameTagEng = yrno.getNametagEng();
     private ArrayList<Integer> periodTag = yrno.getPeriodTag();
     private ArrayList<String> tempTag = yrno.getTemprature();
     private ArrayList<Integer> idTag = yrno.getIdList();
@@ -57,12 +58,13 @@ public class Weather {
             if (periodTag.contains(2)) {
                 String itemdateFrom = this.dateFrom.get(i);
                 String itemnameTag = this.nameTag.get(i);
+                String itemnameTagEng = this.nameTagEng.get(i);
                 String itemTempTag = this.tempTag.get(i);
                 String itemTopKek = String.valueOf(this.idTag.get(i));
 
                 Resource weatherData
                         = model.createResource("http://uib.no/info216/weather/"+itemdateFrom, weatherResource)
-                        .addProperty(weatherProperty, itemnameTag)
+                        .addProperty(weatherProperty, itemnameTagEng)
                         .addProperty(weatherPropertyTemp, itemTempTag)
                         .addProperty(startDate, itemdateFrom);
             }
