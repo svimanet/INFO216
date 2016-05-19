@@ -102,4 +102,20 @@ public class GUI extends JPanel{
         frame.pack();
         frame.setVisible(true);
     }
+
+    public JLabel getTab1() {
+        return tab1;
+    }
+
+    public JLabel getTab11() {
+        return tab11;
+    }
+
+    public JLabel getTab12() {
+        return tab12;
+    }
+
+    public JLabel getTab13() {
+        return tab13;
+    }
 }

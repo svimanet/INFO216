@@ -8,6 +8,7 @@
         <http://schema.org/TVSeries>   "TV 2 Nyhetene" , "Senkveld med Thomas og Harald" , "The Walking Dead Norge" , "Ellen DeGeneres" , "Dexter" , "Worlds Best Pranks" , "Playboy TV" ;
         <http://schema.org/UserLikes>  "Aglaia" , "RuneScape" , "DigitalOcean" , "ByLAN Bergen" , "Valve" , "Mr Cian Twomey" , "Old El Paso Norge" , "Unixstickers" , "Galleri Steinkjelleren" , "Facebook" , "Hildesklippoteque" , "Microsoft Developer" , "Just Sul" , "Solskogen" , "REMA 1000 Kløverhuset" , "Ryggklinikken" , "Telia Norge" , "Politikar Vilde Tøfte Øvstetun" , "Horrible tipster" , "Starbucks Norge" , "Truls Svendsen" , "Jamie and Adam" , "På Høyden" , "Elkjøp" , "Twitch" ;
         <http://xmlns.com/foaf/0.1/knows>
+<<<<<<< 43ee208ab50c220b655f2225c8d88be39451a3d7
 <<<<<<< 687bab8096fcc21d7f4f979a76d107e266090b23
 <<<<<<< 64ccb67c631b42a069757a36186be923b6e8a009
 <<<<<<< 4c6312e7b689d51554c5dc6a50439558760dfc5f
@@ -19,11 +20,20 @@
                 <http://uib.no/info216/person/Amaldus_Berger> , <http://uib.no/info216/person/Kristhild_Kallestad> , <http://uib.no/info216/person/Sem_Osberg> , <http://uib.no/info216/person/Annbjørn_Mehle> , <http://uib.no/info216/person/Hartuvike_Brevig> , <http://uib.no/info216/person/Karfinn_Kallestad> , <http://uib.no/info216/person/Elias_Tastad> , <http://uib.no/info216/person/Kristhild_Aros> , <http://uib.no/info216/person/Lava_Berger> , <http://uib.no/info216/person/Tolli_Aagard> ;
 >>>>>>> Added a few more things
 =======
+=======
+<<<<<<< 2567b4cdc9613e8fe180298f74572e087e290ec5
+>>>>>>> new class for details on event
 <<<<<<< 1149ffbb81075cf2277a50332ba319d3ccdcbcb2
                 <http://uib.no/info216/person/Amaldus_Berger> , <http://uib.no/info216/person/Kristhild_Kallestad> , <http://uib.no/info216/person/Sem_Osberg> , <http://uib.no/info216/person/Annbjørn_Mehle> , <http://uib.no/info216/person/Hartuvike_Brevig> , <http://uib.no/info216/person/Karfinn_Kallestad> , <http://uib.no/info216/person/Elias_Tastad> , <http://uib.no/info216/person/Kristhild_Aros> , <http://uib.no/info216/person/Lava_Berger> , <http://uib.no/info216/person/Tolli_Aagard> ;
 =======
                 <http://uib.no/info216/person/Barbo_Tastad> , <http://uib.no/info216/person/Signhild_Brevig> , <http://uib.no/info216/person/Amaldus_Brevig> , <http://uib.no/info216/person/Leiv_Tastad> , <http://uib.no/info216/person/Kristhild_Mathiasen> , <http://uib.no/info216/person/Amaldus_Valle> , <http://uib.no/info216/person/Karfinn_Mathiasen> , <http://uib.no/info216/person/Asser_Eggum> , <http://uib.no/info216/person/Sem_Olsen> ;
 >>>>>>> gui example
+<<<<<<< 43ee208ab50c220b655f2225c8d88be39451a3d7
 >>>>>>> gui example
+=======
+=======
+                <http://uib.no/info216/person/Elias_Berger> , <http://uib.no/info216/person/Karfinn_Kallestad> , <http://uib.no/info216/person/Lava_Mathiasen> , <http://uib.no/info216/person/Barbo_Olsen> , <http://uib.no/info216/person/Kristhild_Strommen> , <http://uib.no/info216/person/Seborg_Eggum> , <http://uib.no/info216/person/Eliza_Mehle> , <http://uib.no/info216/person/Asser_Borgen> , <http://uib.no/info216/person/Sem_Kallestad> , <http://uib.no/info216/person/Jytte_Lassen> ;
+>>>>>>> new class for details on event
+>>>>>>> new class for details on event
         <http://xmlns.com/foaf/0.1/name>
                 "Bruker_Brukersen" .
