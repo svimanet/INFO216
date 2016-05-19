@@ -92,7 +92,7 @@ public class CreateModels {
 			addResUserModel(u.getGames(), games, userModel, u.getName());
 			addResUserModel(u.getBook(), book, userModel, u.getName());
 			addResUserModel(u.getLikes(), likes, userModel, u.getName());
-		this.createUserModelKnowns(uri + u.getName());
+		this.createUserModelKnowns(uri);
 		return this.userModel;
 	}
 
@@ -117,7 +117,7 @@ public class CreateModels {
 	}
 
 	public void addResUserModel(ArrayList<String> a, Property p, Model m, String name){
-		String uri = "http://uib.no/info216/User/"+name;
+		String uri = "http://uib.no/info216/User/";
 		Resource res = m.createResource(uri, FOAF.Person);
 		res.addProperty(FOAF.name, name);
 		for (String s : a) {
