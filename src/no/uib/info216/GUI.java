@@ -1,10 +1,22 @@
 package no.uib.info216;
 
+
+import no.uib.info216.Misc.WeekDates;
+import no.uib.info216.Models.Weather;
+import no.uib.info216.RDF.Queries.EventQueries;
+import no.uib.info216.RDF.Queries.FacebookQueries;
+import no.uib.info216.RDF.Queries.WeatherQuery;
+import no.uib.info216.RDF.RDFHandler;
+
 import javax.swing.*;
-import java.awt.BorderLayout;
-import java.awt.Dimension;
-import java.awt.GridLayout;
-import java.awt.event.KeyEvent;
+import javax.swing.border.TitledBorder;
+import java.awt.*;
+import java.awt.event.MouseEvent;
+import java.awt.event.MouseListener;
+import java.util.ArrayList;
+import java.util.ListIterator;
+
+
 
 /**
  * Created 04.04.2016.
@@ -12,14 +24,31 @@ import java.awt.event.KeyEvent;
  *
  */
 public class GUI extends JPanel{
+    private int NUMBER_OF_DAYS = 7;
 
-    private JTextArea tab1 = new JTextArea("Tab 1");
+    private ImageIcon icon = createImageIcon("images/middle.gif");
+
+    private ArrayList<JTextArea> tabList;
+    private JTabbedPane tabbedPane = new JTabbedPane();
+
+    private ArrayList<JPanel> panelList;
+
+    private RDFHandler rdfHandler;
+
+    // Query handler
+
+    private EventQueries evtQueries;
+    private WeatherQuery weatherQuery;
+    private FacebookQueries facebookQueries;
+
+
     private JTextArea tab2 = new JTextArea("Tab 2");
     private JTextArea tab3 = new JTextArea("Tab 3");
     private JTextArea tab4 = new JTextArea("Tab 4");
     private JTextArea tab5 = new JTextArea("Tab 5");
     private JTextArea tab6 = new JTextArea("Tab 6");
     private JTextArea tab7 = new JTextArea("Tab 7");
+
 
     private JPanel panel1 = new JPanel();
     private JPanel panel2 = new JPanel();
@@ -29,61 +58,197 @@ public class GUI extends JPanel{
     private JPanel panel6 = new JPanel();
     private JPanel panel7 = new JPanel();
 
-    public GUI() {
+    private ImageIcon snow = createImageIcon("snow.png");
+    private ImageIcon rain = createImageIcon("rain.png");
+    private ImageIcon cloud = createImageIcon("cloud.png");
+    private ImageIcon clouds = createImageIcon("clouds.png");
+    private ImageIcon sleet = createImageIcon("sleet.png");
+    private ImageIcon thunder = createImageIcon("thunder.png");
 
+
+    public GUI(RDFHandler rdfHandler) {
         super(new GridLayout(1, 3));
 
-        JTabbedPane tabbedPane = new JTabbedPane();
-        ImageIcon icon = createImageIcon("images/middle.gif");
+        this.rdfHandler = rdfHandler;
+        this.evtQueries = new EventQueries(rdfHandler);
+        this.weatherQuery = new WeatherQuery(rdfHandler);
+        this.facebookQueries = new FacebookQueries(rdfHandler);
+
+        //JTabbedPane tabbedPane = new JTabbedPane();
+        ImageIcon icon = createImageIcon("  rain.png");
         tabbedPane.setPreferredSize(new Dimension(600, 300));
 
-        //JComponent panel1 = makeTextPanel("-- micromandag-Det Akademiske Kvarter sol-11-celsius  ");
-        tabbedPane.addTab("Mandag", icon, panel1, "Mandag");
-        tabbedPane.setMnemonicAt(0, KeyEvent.VK_1);
-        panel1.add(tab1);
-
-        //JComponent panel2 = makeTextPanel("sol-12-celsius");
-        JComponent panel2 = makeTextPanel(tab2.getText());
-        tabbedPane.addTab("Tirsdag", icon, panel2, "Tirsdag");
-        tabbedPane.setMnemonicAt(1, KeyEvent.VK_2);
-
-        //JComponent panel3 = makeTextPanel("50% Quiz-Det Akademiske Kvarter");
-        JComponent panel3 = makeTextPanel(tab3.getText());
-        tabbedPane.addTab("Onsdag", icon, panel3, "Onsdag");
-        tabbedPane.setMnemonicAt(2, KeyEvent.VK_3);
-
-        //JComponent panel4 = makeTextPanel("0% Feministisk initiativ møte-Det Akademiske Kvarter skyet-8-celsius");
-        JComponent panel4 = makeTextPanel(tab4.getText());
-        tabbedPane.addTab("Torsdag", icon, panel4, "Torsdag");
-        tabbedPane.setMnemonicAt(3, KeyEvent.VK_4);
-
-        //JComponent panel5 = makeTextPanel("10% pysjamas party-kvarteret Regn-5-celsius");
-        JComponent panel5 = makeTextPanel(tab5.getText());
-        tabbedPane.addTab("Fredag", icon, panel5, "Fredag");
-        tabbedPane.setMnemonicAt(4, KeyEvent.VK_5);
-
-        //JComponent panel6 = makeTextPanel("80% Konsert-Verftet Skyet-9-celsius ");
-        JComponent panel6 = makeTextPanel(tab6.getText());
-        tabbedPane.addTab("Lørdag", icon, panel6, "Lørdag");
-        tabbedPane.setMnemonicAt(5, KeyEvent.VK_6);
-
-        //JComponent panel7 = makeTextPanel("100% ingenting-heima kem-bryr-seg");
-        JComponent panel7 = makeTextPanel(tab7.getText());
-        tabbedPane.addTab("Søndag", icon, panel7, "Søndag");
-        tabbedPane.setMnemonicAt(6, KeyEvent.VK_7);
+        // Generates the tab
+        this.tabList = this.populateTappedPane();
+        this.generateTabTextArea(this.tabList);
 
         //Add the tabbed pane to this panel.
-        add(tabbedPane);
+        add(this.tabbedPane);
 
         //The following line enables to use scrolling tabs.
         tabbedPane.setTabLayoutPolicy(JTabbedPane.SCROLL_TAB_LAYOUT);
-
-
     }
 
-    protected JComponent makeTextPanel(String text) {
+    private ArrayList<JTextArea> populateTappedPane() {
+        ArrayList<JTextArea> retList = new ArrayList<JTextArea>();
+        for(int i = this.NUMBER_OF_DAYS; i != 0; i--){
+            retList.add(new JTextArea());
+        }
+        return retList;
+    }
+
+    private void generateTabTextArea(ArrayList<JTextArea> tabList) {
+        ArrayList<ArrayList<String>> days = new WeekDates().getWeekDates(this.NUMBER_OF_DAYS);
+        ListIterator<ArrayList<String>> daysItems = days.listIterator();
+
+
+        for(JTextArea jtabText: tabList) {
+            ArrayList<String> day = daysItems.next();
+
+            jtabText.setText(day.get(0));
+
+            final ArrayList<no.uib.info216.Models.Event> events = evtQueries.getEventsForDay(day.get(1));
+            Weather weather = weatherQuery.getWeatherForDay(day.get(1));
+            System.out.println("CURRENT LENGTH OF EVENTS:");
+            System.out.println(events.size());
+            JPanel panel = new JPanel();
+
+            String weatherImg = weather.getWeatherCondition();
+            ImageIcon pic = createImageIcon("sun.png");
+
+            if (weatherImg.equals("Rain")) {
+                pic = rain;
+            } else if (weatherImg.equals("Sleet")) {
+                pic = sleet;
+            } else if (weatherImg.equals("Thunder")) {
+                pic = thunder;
+            } else if (weatherImg.equals("PartlyCloud")) {
+                pic = cloud;
+            } else if (weatherImg.equals("Cloud")) {
+                pic = clouds;
+            } else if (weatherImg.equals("Snow")){
+                pic = snow;
+            } else {
+                
+            }
+
+            JLabel icon = new JLabel(pic);
+            JLabel tab1 = new JLabel(weather.getWeatherCondition() +
+                    "            " +
+                    weather.getTemprature() + " Degrees Celsius");
+
+            JLabel tab11 = new JLabel("");
+            if(events.size() >= 1){
+               tab11.setText(events.get(0).getName());
+
+                tab11.addMouseListener(new MouseListener() {
+                    public void mouseClicked(MouseEvent e) {
+                        DetailsPanel dp = new DetailsPanel(events.get(0));
+                        dp.getInterestsDesc().setText(events.get(0).getDescription());
+                        dp.getInterestsLoc().setText(events.get(0).getLocation());
+                        dp.getInterestsTime().setText(events.get(0).getDoorTime());
+                        dp.getInterestsURL().setText(events.get(0).getUrl());
+                    }
+
+                    public void mousePressed(MouseEvent e) {
+
+                    }
+
+                    public void mouseReleased(MouseEvent e) {
+
+                    }
+
+                    public void mouseEntered(MouseEvent e) {
+
+                    }
+
+                    public void mouseExited(MouseEvent e) {
+
+                    }
+                });
+            }
+
+            JLabel tab12 = new JLabel("");
+            if(events.size() >= 2){
+                tab12.setText(events.get(1).getName());
+                tab12.addMouseListener(new MouseListener() {
+                    public void mouseClicked(MouseEvent e) {
+                        DetailsPanel dp = new DetailsPanel(events.get(1));
+                        dp.getInterestsDesc().setText(events.get(1).getDescription());
+                        dp.getInterestsLoc().setText(events.get(1).getLocation());
+                        dp.getInterestsTime().setText(events.get(1).getDoorTime());
+                        dp.getInterestsURL().setText(events.get(1).getUrl());
+                    }
+
+                    public void mousePressed(MouseEvent e) {
+                    }
+
+                    public void mouseReleased(MouseEvent e) {
+                    }
+
+                    public void mouseEntered(MouseEvent e) {
+                    }
+
+                    public void mouseExited(MouseEvent e) {
+                    }
+                });
+            }
+
+            JLabel tab13 = new JLabel("");
+            if(events.size() >= 3){
+                tab13.setText(events.get(2).getName());
+                tab13.addMouseListener(new MouseListener() {
+                    public void mouseClicked(MouseEvent e) {
+                        DetailsPanel dp = new DetailsPanel(events.get(2));
+                        dp.getInterestsDesc().setText(events.get(2).getDescription());
+                        dp.getInterestsLoc().setText(events.get(2).getLocation());
+                        dp.getInterestsTime().setText(events.get(2).getDoorTime());
+                        dp.getInterestsURL().setText(events.get(2).getUrl());
+                    }
+
+                    public void mousePressed(MouseEvent e) {
+
+                    }
+
+                    public void mouseReleased(MouseEvent e) {
+
+                    }
+
+                    public void mouseEntered(MouseEvent e) {
+
+                    }
+
+                    public void mouseExited(MouseEvent e) {
+
+                    }
+                });
+            }
+
+            JLabel suggested = new JLabel("<html><b><font size=+1> Suggested events: </font></b></html>");
+
+            panel.add(icon);
+            panel.add(tab1, BorderLayout.NORTH);
+            panel.add(suggested, BorderLayout.NORTH);
+            panel.add(tab11, BorderLayout.CENTER);
+            panel.add(tab12, BorderLayout.SOUTH);
+            panel.add(tab13);
+
+            tabbedPane.addTab(day.get(0), this.icon, panel, day.get(1));
+
+            icon.setPreferredSize(new Dimension(40, 40));
+            tab1.setPreferredSize(new Dimension(550, 40));
+            tab11.setPreferredSize(new Dimension(550, 40));
+            tab12.setPreferredSize(new Dimension(550, 40));
+            tab13.setPreferredSize(new Dimension(550, 40));
+            tab11.setBorder(BorderFactory.createTitledBorder(new TitledBorder("")));
+            tab12.setBorder(BorderFactory.createTitledBorder(new TitledBorder("")));
+            tab13.setBorder(BorderFactory.createTitledBorder(new TitledBorder("")));
+        }
+    }
+
+    protected JComponent makeTextPanel(ArrayList<String> day) {
         JPanel panel = new JPanel(false);
-        JLabel filler = new JLabel(text);
+        JLabel filler = new JLabel(day.get(0));
         filler.setHorizontalAlignment(JLabel.CENTER);
         panel.setLayout(new GridLayout(1, 1));
         panel.add(filler);
@@ -106,16 +271,17 @@ public class GUI extends JPanel{
      * this method should be invoked from
      * the event dispatch thread.
      */
-    public static void createAndShowGUI() {
+    public static void createAndShowGUI(RDFHandler rdfHandler) {
         //Create and set up the window.
         JFrame frame = new JFrame("216");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
         //Add content to the window.
-        frame.add(new GUI(), BorderLayout.CENTER);
+        frame.add(new GUI(rdfHandler), BorderLayout.CENTER);
 
         //Display the window.
         frame.pack();
         frame.setVisible(true);
     }
 }
+
