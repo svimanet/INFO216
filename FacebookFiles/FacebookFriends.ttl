@@ -1,3 +1,4 @@
+<<<<<<< 7d907ccbcffce6ce36308cd354a795d71bc549c8
 <<<<<<< 43ee208ab50c220b655f2225c8d88be39451a3d7
 <<<<<<< 687bab8096fcc21d7f4f979a76d107e266090b23
 <<<<<<< 64ccb67c631b42a069757a36186be923b6e8a009
@@ -92,6 +93,9 @@
 =======
 =======
 =======
+=======
+<<<<<<< 60be6dd6feed286bb56defbd12201d9836c8f926
+>>>>>>> GUI Stuff
 <<<<<<< 2567b4cdc9613e8fe180298f74572e087e290ec5
 >>>>>>> new class for details on event
 <<<<<<< 1149ffbb81075cf2277a50332ba319d3ccdcbcb2
@@ -102,49 +106,94 @@
         <http://schema.org/Event>      "Årets første SV-fest @ Tidi" , "Kurt Nilsen - Julekonsert" , "ħ and chill" , "Linjefest Data/IT ★★★★★" , "Black Friday 2015" , "Pils & Programming" ;
         <http://schema.org/Game>       "Minecraft" , "Bloons Tower Defense 4" , "Tidligere DinCraft" ;
         <http://schema.org/Movie>      "SF Studios Norge" , "Spillefilmen HARAM" ;
-        <http://schema.org/MusicRecording>
-                "Ado Kojo" , "Merton" ;
-        <http://schema.org/TVSeries>   "TV 2 Nyhetene" , "Ellen DeGeneres" , "Playboy TV" ;
-        <http://schema.org/UserLikes>  "På Høyden" , "RuneScape" , "Horrible tipster" , "Unixstickers" , "Telia Norge" , "Mr Cian Twomey" , "Starbucks Norge" , "Hildesklippoteque" , "Facebook" , "Microsoft Developer" , "Elkjøp" , "DigitalOcean" , "Valve" , "Truls Svendsen" , "Galleri Steinkjelleren" , "Just Sul" , "Ryggklinikken" , "Jamie and Adam" , "Aglaia" , "Twitch" , "Politikar Vilde Tøfte Øvstetun" , "Solskogen" , "Old El Paso Norge" , "REMA 1000 Kløverhuset" , "ByLAN Bergen" ;
-        <http://xmlns.com/foaf/0.1/name>
-                "Tolli_Aagard" .
-
-<http://uib.no/info216/person/Kristhild_Kallestad>
+=======
+<http://uib.no/info216/person/Eliza_Mathiasen>
         a                              <http://xmlns.com/foaf/0.1/Person> ;
-        <http://schema.org/Event>      "Bursdagfest (nummer 2)" , "Warpzone 2016" , "JavaZone Academy Bergen" , "Intensivt kveldskurs i Netflix & chill" , "ALLSANG & LYKKEPROMILLE" ;
-        <http://schema.org/Game>       "Minecraft" , "Gigacon - Oslo Games Week" , "Bloons Tower Defense 4" ;
-        <http://schema.org/Movie>      "SF Studios Norge" , "Mirrors" ;
+        <http://schema.org/Event>      "Årets første SV-fest @ Tidi" , "Warpzone 2016" , "Bergens Råeste 2016" , "SVs Eksamensfest @ Tidi" , "Linjefest Data/IT ★★★★★" , "Black Friday 2015" ;
+        <http://schema.org/Game>       "Kuyi Mobile" , "Gigacon - Oslo Games Week" , "Hearthstone" , "League of Legends" ;
+        <http://schema.org/Movie>      "Mirrors" , "SF Studios Norge" ;
         <http://schema.org/MusicRecording>
-                "Istårn" , "Charlotte Jaconelli (Official)" ;
-        <http://schema.org/TVSeries>   "Playboy TV" , "TV 2 Nyhetene" ;
-        <http://schema.org/UserLikes>  "RuneScape" , "Unixstickers" , "Elkjøp" , "Starbucks Norge" , "Jamie and Adam" , "ByLAN Bergen" , "Aglaia" , "Valve" , "Mr Cian Twomey" , "Microsoft Developer" , "Truls Svendsen" , "Facebook" , "Politikar Vilde Tøfte Øvstetun" , "Just Sul" , "Twitch" , "Telia Norge" , "Horrible tipster" , "Hildesklippoteque" , "På Høyden" , "DigitalOcean" , "REMA 1000 Kløverhuset" , "Galleri Steinkjelleren" , "Solskogen" , "Ryggklinikken" , "Old El Paso Norge" ;
+                "Ado Kojo" , "SANS" ;
+        <http://schema.org/TVSeries>   "Ellen DeGeneres" , "Dexter" , "Worlds Best Pranks" ;
+        <http://schema.org/UserLikes>  "Solskogen" , "Aglaia" , "Ryggklinikken" , "Truls Svendsen" , "DigitalOcean" , "Just Sul" , "Telia Norge" , "Hildesklippoteque" , "Valve" , "Unixstickers" , "Microsoft Developer" , "Twitch" , "ByLAN Bergen" , "Mr Cian Twomey" , "Galleri Steinkjelleren" , "REMA 1000 Kløverhuset" , "RuneScape" , "Politikar Vilde Tøfte Øvstetun" , "Starbucks Norge" , "Jamie and Adam" , "Horrible tipster" , "På Høyden" , "Facebook" , "Elkjøp" , "Old El Paso Norge" ;
         <http://xmlns.com/foaf/0.1/name>
-                "Kristhild_Kallestad" .
+                "Eliza_Mathiasen" .
 
-<http://uib.no/info216/person/Karfinn_Kallestad>
+<http://uib.no/info216/person/Maggy_Borgen>
         a                              <http://xmlns.com/foaf/0.1/Person> ;
-        <http://schema.org/Event>      "Årets første SV-fest @ Tidi" , "Warpzone 2016" , "(Pils & Programmering) + Sol" , "Septemberfest: Kvarterets ølfestival og Bakgårdsbaluba" , "ALLSANG & LYKKEPROMILLE" ;
-        <http://schema.org/Game>       "RuneScape" , "Mini Golf MatchUp" , "Gigacon - Oslo Games Week" ;
-        <http://schema.org/Movie>      "SF Studios Norge" ;
+        <http://schema.org/Event>      "Bursdagfest (nummer 2)" , "Septemberfest: Kvarterets ølfestival og Bakgårdsbaluba" , "SOLFORMØRKELSE 2061" , "JavaZone Academy Bergen" , "Pils & Programming" ;
+        <http://schema.org/Game>       "Gigacon - Oslo Games Week" , "Minecraft" , "Tidligere DinCraft" ;
+        <http://schema.org/Movie>      "Jackass" , "SF Studios Norge" ;
+>>>>>>> GUI Stuff
         <http://schema.org/MusicRecording>
+                "Excision" , "Ado Kojo" ;
+        <http://schema.org/TVSeries>   "TV 2 Nyhetene" , "Ellen DeGeneres" , "The Walking Dead Norge" ;
+        <http://schema.org/UserLikes>  "Jamie and Adam" , "Telia Norge" , "Ryggklinikken" , "Solskogen" , "Galleri Steinkjelleren" , "Hildesklippoteque" , "Aglaia" , "Truls Svendsen" , "Unixstickers" , "REMA 1000 Kløverhuset" , "ByLAN Bergen" , "Old El Paso Norge" , "På Høyden" , "Horrible tipster" , "Facebook" , "Starbucks Norge" , "Mr Cian Twomey" , "Microsoft Developer" , "Politikar Vilde Tøfte Øvstetun" , "RuneScape" , "Valve" , "Twitch" , "Just Sul" , "DigitalOcean" , "Elkjøp" ;
+        <http://xmlns.com/foaf/0.1/name>
+                "Maggy_Borgen" .
+
+<http://uib.no/info216/person/Sem_Berger>
+        a                              <http://xmlns.com/foaf/0.1/Person> ;
+        <http://schema.org/Event>      "Pils & Programming" , "Halloweenfest" , "Bergen Ølfestival & Grand Bergen presenterer:  Juleølfestival 2015" , "Warpzone 2016" , "Kurt Nilsen - Julekonsert" ;
+        <http://schema.org/Game>       "RuneScape" , "Bloons Tower Defense 4" , "Hearthstone" ;
+        <http://schema.org/Movie>      "Mirrors" , "Spillefilmen HARAM" ;
+        <http://schema.org/MusicRecording>
+                "Merton" , "Frk. Fryd" ;
+        <http://schema.org/TVSeries>   "Ellen DeGeneres" , "Playboy TV" , "Senkveld med Thomas og Harald" ;
+        <http://schema.org/UserLikes>  "Just Sul" , "Mr Cian Twomey" , "Telia Norge" , "Aglaia" , "Jamie and Adam" , "Twitch" , "Horrible tipster" , "Facebook" , "DigitalOcean" , "Starbucks Norge" , "REMA 1000 Kløverhuset" , "ByLAN Bergen" , "Hildesklippoteque" , "Ryggklinikken" , "Old El Paso Norge" , "Unixstickers" , "Elkjøp" , "Truls Svendsen" , "Politikar Vilde Tøfte Øvstetun" , "Galleri Steinkjelleren" , "Solskogen" , "Microsoft Developer" , "På Høyden" , "RuneScape" , "Valve" ;
+        <http://xmlns.com/foaf/0.1/name>
+                "Sem_Berger" .
+
+<http://uib.no/info216/person/Maggy_Langland>
+        a                              <http://xmlns.com/foaf/0.1/Person> ;
+        <http://schema.org/Event>      "SOLFORMØRKELSE 2061" , "Intensivt kveldskurs i Netflix & chill" , "SVs Eksamensfest @ Tidi" , "Pils & Programming" , "JavaZone Academy Bergen" , "byNATT torsdag 19. november" ;
+        <http://schema.org/Game>       "Minecraft" , "Hearthstone" ;
+        <http://schema.org/Movie>      "Jackass" ;
+        <http://schema.org/MusicRecording>
+<<<<<<< 60be6dd6feed286bb56defbd12201d9836c8f926
                 "YLVIS What does the fox say?" , "Frk. Fryd" ;
         <http://schema.org/TVSeries>   "The Walking Dead Norge" , "Playboy TV" , "Ellen DeGeneres" ;
         <http://schema.org/UserLikes>  "ByLAN Bergen" , "Solskogen" , "På Høyden" , "REMA 1000 Kløverhuset" , "Old El Paso Norge" , "Truls Svendsen" , "Jamie and Adam" , "DigitalOcean" , "Elkjøp" , "Galleri Steinkjelleren" , "RuneScape" , "Ryggklinikken" , "Aglaia" , "Starbucks Norge" , "Just Sul" , "Telia Norge" , "Politikar Vilde Tøfte Øvstetun" , "Mr Cian Twomey" , "Facebook" , "Hildesklippoteque" , "Horrible tipster" , "Twitch" , "Valve" , "Unixstickers" , "Microsoft Developer" ;
+=======
+                "SANS" ;
+        <http://schema.org/TVSeries>   "The Walking Dead Norge" , "TV 2 Nyhetene" , "Senkveld med Thomas og Harald" ;
+        <http://schema.org/UserLikes>  "Twitch" , "Microsoft Developer" , "Truls Svendsen" , "Telia Norge" , "RuneScape" , "Elkjøp" , "Politikar Vilde Tøfte Øvstetun" , "Aglaia" , "På Høyden" , "Solskogen" , "Hildesklippoteque" , "Old El Paso Norge" , "Ryggklinikken" , "Mr Cian Twomey" , "Jamie and Adam" , "ByLAN Bergen" , "Facebook" , "DigitalOcean" , "Just Sul" , "Starbucks Norge" , "Unixstickers" , "Horrible tipster" , "REMA 1000 Kløverhuset" , "Valve" , "Galleri Steinkjelleren" ;
+>>>>>>> GUI Stuff
         <http://xmlns.com/foaf/0.1/name>
-                "Karfinn_Kallestad" .
+                "Maggy_Langland" .
 
+<<<<<<< 60be6dd6feed286bb56defbd12201d9836c8f926
 <http://uib.no/info216/person/Elias_Tastad>
+=======
+<http://uib.no/info216/person/Hartuvike_Morland>
         a                              <http://xmlns.com/foaf/0.1/Person> ;
-        <http://schema.org/Event>      "Bergens Råeste 2016" , "Kurt Nilsen - Julekonsert" , "26 and feelin great!" , "Linjefest Data/IT ★★★★★" , "Bergen Ølfestival & Grand Bergen presenterer:  Juleølfestival 2015" , "Warpzone 2016" ;
-        <http://schema.org/Game>       "Tidligere DinCraft" , "Kuyi Mobile" , "Hearthstone" , "Gigacon - Oslo Games Week" ;
+        <http://schema.org/Event>      "Fyll Hodets Tanker" , "JavaZone Academy Bergen" , "ħ and chill" , "byNATT torsdag 19. november" , "Linjefest Data/IT ★★★★★" , "Pils & Programming" ;
+        <http://schema.org/Game>       "Kuyi Mobile" , "Hearthstone" , "League of Legends" ;
+        <http://schema.org/Movie>      "SF Studios Norge" , "Spillefilmen HARAM" ;
+        <http://schema.org/MusicRecording>
+                "Charlotte Jaconelli (Official)" , "Istårn" ;
+        <http://schema.org/TVSeries>   "Senkveld med Thomas og Harald" , "Dexter" ;
+        <http://schema.org/UserLikes>  "Old El Paso Norge" , "Valve" , "Mr Cian Twomey" , "Jamie and Adam" , "ByLAN Bergen" , "Starbucks Norge" , "Telia Norge" , "Elkjøp" , "Hildesklippoteque" , "Microsoft Developer" , "DigitalOcean" , "Unixstickers" , "På Høyden" , "Politikar Vilde Tøfte Øvstetun" , "Galleri Steinkjelleren" , "Horrible tipster" , "Twitch" , "Aglaia" , "Facebook" , "Solskogen" , "REMA 1000 Kløverhuset" , "Truls Svendsen" , "RuneScape" , "Ryggklinikken" , "Just Sul" ;
+        <http://xmlns.com/foaf/0.1/name>
+                "Hartuvike_Morland" .
+
+<http://uib.no/info216/person/Maggy_Morland>
+>>>>>>> GUI Stuff
+        a                              <http://xmlns.com/foaf/0.1/Person> ;
+        <http://schema.org/Event>      "Kurt Nilsen - Julekonsert" , "Annual meetup / Go-away partheeeeey" , "Pils & Programming" , "Fyll Hodets Tanker" ;
+        <http://schema.org/Game>       "Kuyi Mobile" , "Mini Golf MatchUp" , "Tidligere DinCraft" ;
         <http://schema.org/Movie>      "Jackass" , "SF Studios Norge" ;
         <http://schema.org/MusicRecording>
-                "Frk. Fryd" , "SANS" ;
-        <http://schema.org/TVSeries>   "Worlds Best Pranks" , "Senkveld med Thomas og Harald" , "Ellen DeGeneres" ;
-        <http://schema.org/UserLikes>  "Jamie and Adam" , "Truls Svendsen" , "Galleri Steinkjelleren" , "Facebook" , "Old El Paso Norge" , "ByLAN Bergen" , "Telia Norge" , "RuneScape" , "Unixstickers" , "Horrible tipster" , "REMA 1000 Kløverhuset" , "Twitch" , "På Høyden" , "Mr Cian Twomey" , "Starbucks Norge" , "Ryggklinikken" , "Valve" , "Solskogen" , "Elkjøp" , "Aglaia" , "Microsoft Developer" , "DigitalOcean" , "Hildesklippoteque" , "Just Sul" , "Politikar Vilde Tøfte Øvstetun" ;
+                "Landstreff Stavanger" , "Frk. Fryd" ;
+        <http://schema.org/TVSeries>   "Worlds Best Pranks" , "TV 2 Nyhetene" , "Senkveld med Thomas og Harald" ;
+        <http://schema.org/UserLikes>  "Horrible tipster" , "Hildesklippoteque" , "REMA 1000 Kløverhuset" , "Solskogen" , "Truls Svendsen" , "Starbucks Norge" , "Microsoft Developer" , "Old El Paso Norge" , "RuneScape" , "Just Sul" , "Galleri Steinkjelleren" , "ByLAN Bergen" , "Facebook" , "Valve" , "Unixstickers" , "Elkjøp" , "Telia Norge" , "Aglaia" , "Twitch" , "På Høyden" , "Jamie and Adam" , "Ryggklinikken" , "Mr Cian Twomey" , "Politikar Vilde Tøfte Øvstetun" , "DigitalOcean" ;
         <http://xmlns.com/foaf/0.1/name>
+<<<<<<< 7d907ccbcffce6ce36308cd354a795d71bc549c8
                 "Elias_Tastad" .
 >>>>>>> Added autogeneration
+=======
+                "Maggy_Morland" .
+>>>>>>> GUI Stuff
 
 <http://uib.no/info216/person/Amaldus_Osberg>
         a                              <http://xmlns.com/foaf/0.1/Person> ;
@@ -161,12 +210,16 @@
         <http://schema.org/TVSeries>   "TV 2 Nyhetene" , "Senkveld med Thomas og Harald" , "The Walking Dead Norge" , "Ellen DeGeneres" , "Worlds Best Pranks" , "Dexter" , "Playboy TV" ;
         <http://schema.org/UserLikes>  "Aglaia" , "RuneScape" , "DigitalOcean" , "ByLAN Bergen" , "Valve" , "Mr Cian Twomey" , "Old El Paso Norge" , "Unixstickers" , "Galleri Steinkjelleren" , "Facebook" , "Hildesklippoteque" , "Microsoft Developer" , "Just Sul" , "Solskogen" , "REMA 1000 Kløverhuset" , "Ryggklinikken" , "Telia Norge" , "Horrible tipster" , "Politikar Vilde Tøfte Øvstetun" , "Starbucks Norge" , "Truls Svendsen" , "Jamie and Adam" , "På Høyden" , "Elkjøp" , "Twitch" ;
         <http://xmlns.com/foaf/0.1/knows>
+<<<<<<< 7d907ccbcffce6ce36308cd354a795d71bc549c8
 <<<<<<< 64ccb67c631b42a069757a36186be923b6e8a009
                 <http://uib.no/info216/person/Tolli_Osberg> , <http://uib.no/info216/person/Eliza_Aagard> , <http://uib.no/info216/person/Isidor_Mathiasen> , <http://uib.no/info216/person/Savi_Morland> , <http://uib.no/info216/person/Kristhild_Olsen> , <http://uib.no/info216/person/Elias_Tastad> , <http://uib.no/info216/person/Seborg_Brevig> , <http://uib.no/info216/person/Annbjørn_Kallestad> , <http://uib.no/info216/person/Asser_Borgen> , <http://uib.no/info216/person/Elias_Langland> ;
 >>>>>>> Added autogeneration
 =======
                 <http://uib.no/info216/person/Amaldus_Berger> , <http://uib.no/info216/person/Kristhild_Kallestad> , <http://uib.no/info216/person/Sem_Osberg> , <http://uib.no/info216/person/Annbjørn_Mehle> , <http://uib.no/info216/person/Hartuvike_Brevig> , <http://uib.no/info216/person/Karfinn_Kallestad> , <http://uib.no/info216/person/Elias_Tastad> , <http://uib.no/info216/person/Kristhild_Aros> , <http://uib.no/info216/person/Lava_Berger> , <http://uib.no/info216/person/Tolli_Aagard> ;
 >>>>>>> Added a few more things
+=======
+                <http://uib.no/info216/person/Maggy_Morland> , <http://uib.no/info216/person/Annbjørn_Mehle> , <http://uib.no/info216/person/Maggy_Borgen> , <http://uib.no/info216/person/Eliza_Mathiasen> , <http://uib.no/info216/person/Hartuvike_Morland> , <http://uib.no/info216/person/Maggy_Mehle> , <http://uib.no/info216/person/Sem_Berger> , <http://uib.no/info216/person/Isidor_Lassen> , <http://uib.no/info216/person/Annbjørn_Brevig> , <http://uib.no/info216/person/Maggy_Langland> ;
+>>>>>>> GUI Stuff
         <http://xmlns.com/foaf/0.1/name>
                 "Amaldus_Osberg" .
 
@@ -196,6 +249,7 @@
         <http://xmlns.com/foaf/0.1/name>
                 "Karfinn_Brevig" .
 
+<<<<<<< 7d907ccbcffce6ce36308cd354a795d71bc549c8
 <http://uib.no/info216/person/Leiv_Brevig>
         a                              <http://xmlns.com/foaf/0.1/Person> ;
         <http://schema.org/Event>      "Intensivt kveldskurs i Netflix & chill" , "Septemberfest: Kvarterets ølfestival og Bakgårdsbaluba" , "Årets første SV-fest @ Tidi" , "ħ and chill" , "byNATT torsdag 19. november" , "JavaZone Academy Bergen" ;
@@ -212,27 +266,19 @@
 =======
 <http://uib.no/info216/person/Lava_Berger>
 >>>>>>> Added a few more things
+=======
+<http://uib.no/info216/person/Isidor_Lassen>
+>>>>>>> GUI Stuff
         a                              <http://xmlns.com/foaf/0.1/Person> ;
-        <http://schema.org/Event>      "JavaZone Academy Bergen" , "ħ and chill" , "(Pils & Programmering) + Sol" , "Black Friday 2015" , "SOLFORMØRKELSE 2061" , "Halloweenfest" ;
-        <http://schema.org/Game>       "Hearthstone" , "Tidligere DinCraft" , "Kuyi Mobile" , "Minecraft" ;
-        <http://schema.org/Movie>      "Mirrors" ;
-        <http://schema.org/MusicRecording>
-                "Merton" , "Zara Larsson" ;
-        <http://schema.org/TVSeries>   "Dexter" , "Worlds Best Pranks" ;
-        <http://schema.org/UserLikes>  "Microsoft Developer" , "Jamie and Adam" , "Aglaia" , "Just Sul" , "Hildesklippoteque" , "Old El Paso Norge" , "Solskogen" , "Unixstickers" , "På Høyden" , "Valve" , "Horrible tipster" , "Elkjøp" , "Mr Cian Twomey" , "Ryggklinikken" , "ByLAN Bergen" , "Starbucks Norge" , "REMA 1000 Kløverhuset" , "RuneScape" , "Telia Norge" , "Facebook" , "Politikar Vilde Tøfte Øvstetun" , "Galleri Steinkjelleren" , "DigitalOcean" , "Truls Svendsen" , "Twitch" ;
-        <http://xmlns.com/foaf/0.1/name>
-                "Lava_Berger" .
-
-<http://uib.no/info216/person/Hartuvike_Brevig>
-        a                              <http://xmlns.com/foaf/0.1/Person> ;
-        <http://schema.org/Event>      "Fyll Hodets Tanker" , "Kurt Nilsen - Julekonsert" , "Warpzone 2016" , "(Pils & Programmering) + Sol" ;
-        <http://schema.org/Game>       "Bloons Tower Defense 4" , "Mini Golf MatchUp" , "Minecraft" , "League of Legends" ;
+        <http://schema.org/Event>      "SVs Eksamensfest @ Tidi" , "Halloweenfest" , "Warpzone 2016" , "Pils & Programming" , "byNATT torsdag 19. november" ;
+        <http://schema.org/Game>       "Tidligere DinCraft" , "League of Legends" , "Bloons Tower Defense 4" , "RuneScape" ;
         <http://schema.org/Movie>      "Spillefilmen HARAM" , "Jackass" ;
         <http://schema.org/MusicRecording>
-                "Excision" , "Landstreff Stavanger" ;
-        <http://schema.org/TVSeries>   "Dexter" , "The Walking Dead Norge" , "Playboy TV" ;
-        <http://schema.org/UserLikes>  "Twitch" , "På Høyden" , "Valve" , "Politikar Vilde Tøfte Øvstetun" , "Elkjøp" , "ByLAN Bergen" , "Facebook" , "Microsoft Developer" , "Mr Cian Twomey" , "DigitalOcean" , "Old El Paso Norge" , "Galleri Steinkjelleren" , "Jamie and Adam" , "Starbucks Norge" , "Solskogen" , "RuneScape" , "Ryggklinikken" , "Telia Norge" , "Hildesklippoteque" , "Truls Svendsen" , "REMA 1000 Kløverhuset" , "Unixstickers" , "Horrible tipster" , "Aglaia" , "Just Sul" ;
+                "Zara Larsson" , "SANS" ;
+        <http://schema.org/TVSeries>   "Dexter" , "Senkveld med Thomas og Harald" , "Worlds Best Pranks" ;
+        <http://schema.org/UserLikes>  "Galleri Steinkjelleren" , "Just Sul" , "Mr Cian Twomey" , "Old El Paso Norge" , "Telia Norge" , "Twitch" , "Elkjøp" , "Microsoft Developer" , "REMA 1000 Kløverhuset" , "Starbucks Norge" , "Valve" , "Unixstickers" , "Solskogen" , "Hildesklippoteque" , "RuneScape" , "På Høyden" , "DigitalOcean" , "Politikar Vilde Tøfte Øvstetun" , "Jamie and Adam" , "Aglaia" , "ByLAN Bergen" , "Facebook" , "Ryggklinikken" , "Truls Svendsen" , "Horrible tipster" ;
         <http://xmlns.com/foaf/0.1/name>
+<<<<<<< 60be6dd6feed286bb56defbd12201d9836c8f926
                 "Hartuvike_Brevig" .
 
 <http://uib.no/info216/person/Annbjørn_Mehle>
@@ -434,4 +480,46 @@
 =======
                 "Seborg_Eggum" .
 >>>>>>> new class for details on event
+<<<<<<< 7d907ccbcffce6ce36308cd354a795d71bc549c8
 >>>>>>> new class for details on event
+=======
+=======
+                "Isidor_Lassen" .
+
+<http://uib.no/info216/person/Annbjørn_Mehle>
+        a                              <http://xmlns.com/foaf/0.1/Person> ;
+        <http://schema.org/Event>      "Kurt Nilsen - Julekonsert" , "Bursdagfest (nummer 2)" , "Bergens Råeste 2016" , "ħ and chill" , "JavaZone Academy Bergen" , "Septemberfest: Kvarterets ølfestival og Bakgårdsbaluba" ;
+        <http://schema.org/Game>       "Hearthstone" , "Kuyi Mobile" , "League of Legends" ;
+        <http://schema.org/Movie>      "Mirrors" , "SF Studios Norge" ;
+        <http://schema.org/MusicRecording>
+                "Ado Kojo" , "Istårn" ;
+        <http://schema.org/TVSeries>   "Senkveld med Thomas og Harald" , "TV 2 Nyhetene" ;
+        <http://schema.org/UserLikes>  "Microsoft Developer" , "Truls Svendsen" , "Telia Norge" , "Twitch" , "Elkjøp" , "Horrible tipster" , "RuneScape" , "DigitalOcean" , "Politikar Vilde Tøfte Øvstetun" , "Hildesklippoteque" , "ByLAN Bergen" , "Just Sul" , "Facebook" , "Solskogen" , "Galleri Steinkjelleren" , "Mr Cian Twomey" , "På Høyden" , "Starbucks Norge" , "Jamie and Adam" , "Unixstickers" , "REMA 1000 Kløverhuset" , "Ryggklinikken" , "Valve" ;
+        <http://xmlns.com/foaf/0.1/name>
+                "Annbjørn_Mehle" .
+
+<http://uib.no/info216/person/Maggy_Mehle>
+        a                              <http://xmlns.com/foaf/0.1/Person> ;
+        <http://schema.org/Event>      "Årets første SV-fest @ Tidi" , "ALLSANG & LYKKEPROMILLE" , "26 and feelin great!" , "Halloweenfest" , "Annual meetup / Go-away partheeeeey" , "Fyll Hodets Tanker" ;
+        <http://schema.org/Game>       "Minecraft" , "League of Legends" , "Gigacon - Oslo Games Week" , "RuneScape" ;
+        <http://schema.org/Movie>      "Spillefilmen HARAM" , "SF Studios Norge" ;
+        <http://schema.org/MusicRecording>
+                "YLVIS What does the fox say?" , "Ado Kojo" ;
+        <http://schema.org/TVSeries>   "The Walking Dead Norge" ;
+        <http://schema.org/UserLikes>  "Unixstickers" , "Mr Cian Twomey" , "Hildesklippoteque" , "Telia Norge" , "Starbucks Norge" , "DigitalOcean" , "Twitch" , "ByLAN Bergen" , "Microsoft Developer" , "På Høyden" , "Politikar Vilde Tøfte Øvstetun" , "Ryggklinikken" , "Truls Svendsen" , "Valve" , "Solskogen" , "Just Sul" , "Horrible tipster" , "Galleri Steinkjelleren" , "Jamie and Adam" , "Facebook" , "Old El Paso Norge" , "REMA 1000 Kløverhuset" , "RuneScape" , "Aglaia" , "Elkjøp" ;
+        <http://xmlns.com/foaf/0.1/name>
+                "Maggy_Mehle" .
+
+<http://uib.no/info216/person/Annbjørn_Brevig>
+        a                              <http://xmlns.com/foaf/0.1/Person> ;
+        <http://schema.org/Event>      "BI QUIZ-KVELD 5 NOVEMBER STUDENTAKSJONEN" , "26 and feelin great!" , "(Pils & Programmering) + Sol" , "Halloweenfest" , "Warpzone 2016" , "Kurt Nilsen - Julekonsert" ;
+        <http://schema.org/Game>       "Mini Golf MatchUp" , "League of Legends" , "Bloons Tower Defense 4" , "Kuyi Mobile" ;
+        <http://schema.org/Movie>      "Spillefilmen HARAM" , "Mirrors" ;
+        <http://schema.org/MusicRecording>
+                "Landstreff Stavanger" , "YLVIS What does the fox say?" ;
+        <http://schema.org/TVSeries>   "TV 2 Nyhetene" , "Senkveld med Thomas og Harald" , "Worlds Best Pranks" ;
+        <http://schema.org/UserLikes>  "Elkjøp" , "Politikar Vilde Tøfte Øvstetun" , "ByLAN Bergen" , "Ryggklinikken" , "Mr Cian Twomey" , "Galleri Steinkjelleren" , "På Høyden" , "Twitch" , "Hildesklippoteque" , "Jamie and Adam" , "Horrible tipster" , "DigitalOcean" , "Aglaia" , "Microsoft Developer" , "Valve" , "RuneScape" , "Just Sul" , "Telia Norge" , "Truls Svendsen" , "Old El Paso Norge" , "Facebook" , "Solskogen" , "Unixstickers" , "REMA 1000 Kløverhuset" , "Starbucks Norge" ;
+        <http://xmlns.com/foaf/0.1/name>
+                "Annbjørn_Brevig" .
+>>>>>>> GUI Stuff
+>>>>>>> GUI Stuff

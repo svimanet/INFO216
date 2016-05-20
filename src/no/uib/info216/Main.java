@@ -4,12 +4,7 @@ import no.uib.info216.Events.EventParser;
 import no.uib.info216.RDF.Queries.EventQueries;
 import no.uib.info216.RDF.Queries.WeatherQuery;
 import no.uib.info216.RDF.RDFHandler;
-<<<<<<< 4c6312e7b689d51554c5dc6a50439558760dfc5f
-import no.uib.info216.RDF.REPL;
 import no.uib.info216.WeatherData.WeatherModel;
-=======
-import no.uib.info216.WeatherData.Weather;
->>>>>>> Added autogeneration
 import no.uib.info216.facebook.CreateModels;
 import org.apache.jena.rdf.model.Model;
 
@@ -19,19 +14,11 @@ import javax.swing.*;
  * Created by fox on 2/22/16.
  */
 public class Main {
-    private static GUI newgui = new GUI();
 
     public static void main(String[] args) {
 
-        SwingUtilities.invokeLater(new Runnable() {
-            public void run() {
-                UIManager.put("swing.boldMetal", Boolean.FALSE);
-                newgui.createAndShowGUI();
-            }
-        });
 
-
-        RDFHandler rdfHandler = new RDFHandler();
+        final RDFHandler rdfHandler = new RDFHandler();
 
         EventParser events = new EventParser();
         Model eventModel = events.parse();
@@ -52,10 +39,19 @@ public class Main {
         wth.getWeatherForDay(date);
         evt.getEventsForDay(date);
 
+        final GUI newgui = new GUI(rdfHandler);
+
+        SwingUtilities.invokeLater(new Runnable() {
+            public void run() {
+                UIManager.put("swing.boldMetal", Boolean.FALSE);
+                newgui.createAndShowGUI(rdfHandler);
+            }
+        });
 
         //evt.getEventForDay();
-        REPL repl = new REPL(rdfHandler);
-        repl.REPL();
+        //REPL repl = new REPL(rdfHandler);
+        //repl.REPL();
+
 
     }
 }
