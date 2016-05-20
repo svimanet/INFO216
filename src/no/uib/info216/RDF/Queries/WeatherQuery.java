@@ -1,6 +1,8 @@
 package no.uib.info216.RDF.Queries;
 
+import no.uib.info216.Models.Weather;
 import no.uib.info216.RDF.RDFHandler;
+import org.apache.jena.query.QuerySolution;
 import org.apache.jena.query.ResultSet;
 
 /**
@@ -67,4 +69,26 @@ public class WeatherQuery {
 
         return rdfh.runSparql(query);
     }
+
+    public Weather getWeatherForDay(String date) {
+
+        String query = "SELECT  * " +
+                "WHERE {" +
+                " ?uri a weather:WeatherCondition; " +
+                " schema:startDate \""+date+"\"; " +
+                " weather:WeatherCondition ?name; " +
+                " schema:startDate ?date. " +
+                "      }" +
+                "";
+
+        ResultSet rs =  rdfh.runSparql(query);
+        if(rs.hasNext()){
+           QuerySolution response = rs.next();
+            return new Weather(response.get("WeatherCondition").toString(),
+                                response.get("Temperature").toString(),
+                                response.get("startDate").toString());
+        }
+        return null;
+    }
+
 }

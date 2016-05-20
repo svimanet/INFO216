@@ -36,7 +36,7 @@ public class REPL {
                                 "      }";
                 this.rdfHandler.runSparql(line);
             }else if(line.equals("events")) {
-                eventQ.getEventForDay();
+                eventQ.getEventForDay("2016-05-19");
             }else if(line.equals("friends")) {
                 facebookQ.AllUsers();
             }else if(line.equals("weather")) {

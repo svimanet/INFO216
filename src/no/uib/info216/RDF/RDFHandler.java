@@ -22,7 +22,7 @@ public class RDFHandler {
 
         queryString = "PREFIX schema: <http://schema.org/> " + queryString;
         queryString = "PREFIX foaf: <http://xmlns.com/foaf/0.1/> " + queryString;
-        queryString = "PREFIX Weather: <https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#> " + queryString;
+        queryString = "PREFIX weather: <https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#> " + queryString;
         System.out.println(queryString);
 
         Query query = null;
