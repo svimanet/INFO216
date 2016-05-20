@@ -58,6 +58,13 @@ public class GUI extends JPanel{
     private JPanel panel6 = new JPanel();
     private JPanel panel7 = new JPanel();
 
+    private ImageIcon snow = createImageIcon("snow.png");
+    private ImageIcon rain = createImageIcon("rain.png");
+    private ImageIcon cloud = createImageIcon("cloud.png");
+    private ImageIcon clouds = createImageIcon("clouds.png");
+    private ImageIcon sleet = createImageIcon("sleet.png");
+    private ImageIcon thunder = createImageIcon("thunder.png");
+
 
     public GUI(RDFHandler rdfHandler) {
         super(new GridLayout(1, 3));
@@ -68,23 +75,12 @@ public class GUI extends JPanel{
         this.facebookQueries = new FacebookQueries(rdfHandler);
 
         //JTabbedPane tabbedPane = new JTabbedPane();
-        ImageIcon icon = createImageIcon("images/middle.gif");
+        ImageIcon icon = createImageIcon("  rain.png");
         tabbedPane.setPreferredSize(new Dimension(600, 300));
-
-        // ------------- Tab 1 filled ----------------------------
-
-        // --------------- Mouse Listeners -----------------------
-
-        // -------------------------------------------------------
-
-
 
         // Generates the tab
         this.tabList = this.populateTappedPane();
         this.generateTabTextArea(this.tabList);
-
-        //this.panelList = this.populatePanelList();
-
 
         //Add the tabbed pane to this panel.
         add(this.tabbedPane);
@@ -116,7 +112,30 @@ public class GUI extends JPanel{
             System.out.println("CURRENT LENGTH OF EVENTS:");
             System.out.println(events.size());
             JPanel panel = new JPanel();
-            JLabel tab1 = new JLabel(weather.getWeatherCondition());
+
+            String weatherImg = weather.getWeatherCondition();
+            ImageIcon pic = createImageIcon("sun.png");
+
+            if (weatherImg.equals("Rain")) {
+                pic = rain;
+            } else if (weatherImg.equals("Sleet")) {
+                pic = sleet;
+            } else if (weatherImg.equals("Thunder")) {
+                pic = thunder;
+            } else if (weatherImg.equals("PartlyCloud")) {
+                pic = cloud;
+            } else if (weatherImg.equals("Cloud")) {
+                pic = clouds;
+            } else if (weatherImg.equals("Snow")){
+                pic = snow;
+            } else {
+                
+            }
+
+            JLabel icon = new JLabel(pic);
+            JLabel tab1 = new JLabel(weather.getWeatherCondition() +
+                    "            " +
+                    weather.getTemprature() + " Degrees Celsius");
 
             JLabel tab11 = new JLabel("");
             if(events.size() >= 1){
@@ -125,6 +144,10 @@ public class GUI extends JPanel{
                 tab11.addMouseListener(new MouseListener() {
                     public void mouseClicked(MouseEvent e) {
                         DetailsPanel dp = new DetailsPanel(events.get(0));
+                        dp.getInterestsDesc().setText(events.get(0).getDescription());
+                        dp.getInterestsLoc().setText(events.get(0).getLocation());
+                        dp.getInterestsTime().setText(events.get(0).getDoorTime());
+                        dp.getInterestsURL().setText(events.get(0).getUrl());
                     }
 
                     public void mousePressed(MouseEvent e) {
@@ -151,6 +174,10 @@ public class GUI extends JPanel{
                 tab12.addMouseListener(new MouseListener() {
                     public void mouseClicked(MouseEvent e) {
                         DetailsPanel dp = new DetailsPanel(events.get(1));
+                        dp.getInterestsDesc().setText(events.get(1).getDescription());
+                        dp.getInterestsLoc().setText(events.get(1).getLocation());
+                        dp.getInterestsTime().setText(events.get(1).getDoorTime());
+                        dp.getInterestsURL().setText(events.get(1).getUrl());
                     }
 
                     public void mousePressed(MouseEvent e) {
@@ -173,6 +200,10 @@ public class GUI extends JPanel{
                 tab13.addMouseListener(new MouseListener() {
                     public void mouseClicked(MouseEvent e) {
                         DetailsPanel dp = new DetailsPanel(events.get(2));
+                        dp.getInterestsDesc().setText(events.get(2).getDescription());
+                        dp.getInterestsLoc().setText(events.get(2).getLocation());
+                        dp.getInterestsTime().setText(events.get(2).getDoorTime());
+                        dp.getInterestsURL().setText(events.get(2).getUrl());
                     }
 
                     public void mousePressed(MouseEvent e) {
@@ -195,6 +226,7 @@ public class GUI extends JPanel{
 
             JLabel suggested = new JLabel("<html><b><font size=+1> Suggested events: </font></b></html>");
 
+            panel.add(icon);
             panel.add(tab1, BorderLayout.NORTH);
             panel.add(suggested, BorderLayout.NORTH);
             panel.add(tab11, BorderLayout.CENTER);
@@ -203,7 +235,7 @@ public class GUI extends JPanel{
 
             tabbedPane.addTab(day.get(0), this.icon, panel, day.get(1));
 
-
+            icon.setPreferredSize(new Dimension(40, 40));
             tab1.setPreferredSize(new Dimension(550, 40));
             tab11.setPreferredSize(new Dimension(550, 40));
             tab12.setPreferredSize(new Dimension(550, 40));
