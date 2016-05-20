@@ -2,25 +2,10 @@
  * 
  */
 package no.uib.info216.facebook;
+import facebook4j.*;
+
 import java.util.ArrayList;
 
-import facebook4j.Book;
-import facebook4j.Event;
-import facebook4j.Facebook;
-import facebook4j.FacebookException;
-import facebook4j.Game;
-import facebook4j.Like;
-import facebook4j.Movie;
-import facebook4j.Music;
-import facebook4j.Television;
-import org.apache.jena.base.Sys;
-
-/**
- * @author mariuslillevik
- *
- *         The intention for this class is to create some sort of structure for
- *         the different interests for the different users.
- */
 public class Interests {
 
 	private ArrayList<String> tvShows = new ArrayList<String>();

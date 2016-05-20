@@ -12,12 +12,6 @@ import org.apache.jena.sparql.vocabulary.FOAF;
 
 import java.util.ArrayList;
 
-/**
- * @author mariuslillevik
- *
- *         This class will be creating an RDF file that represents the users and
- *         their interests. Nothing yet.
- */
 public class CreateModels {
 
 	public ArrayList<Resource> friendResource = new ArrayList<Resource>();

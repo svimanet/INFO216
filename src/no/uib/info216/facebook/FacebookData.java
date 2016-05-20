@@ -5,9 +5,6 @@ import facebook4j.FacebookException;
 import facebook4j.FacebookFactory;
 import facebook4j.auth.AccessToken;
 
-/**
- * Created by marius on 01.05.2016.
- */
 public class FacebookData{
 
     // These are the fields for the main class.

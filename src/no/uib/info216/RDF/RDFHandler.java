@@ -7,11 +7,14 @@ import org.apache.jena.rdf.model.ModelFactory;
 import java.io.FileWriter;
 import java.io.IOException;
 
-/**
- * Created by fox on 4/30/16.
- */
 public class RDFHandler {
-    private Model model = ModelFactory.createDefaultModel();
+
+    private Model model;
+
+    public RDFHandler(){
+
+        this.model = ModelFactory.createDefaultModel();
+    }
 
 
     public void addModel(Model model){
@@ -35,10 +38,6 @@ public class RDFHandler {
 
         QueryExecution qe = QueryExecutionFactory.create(query, model);
         ResultSet results = qe.execSelect();
-
-        //ResultSetFormatter.out(System.out, results, query);
-
-        //qe.close();
         return results;
     }
 

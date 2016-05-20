@@ -1,14 +1,8 @@
-package no.uib.info216;
-
-import no.uib.info216.Models.*;
+package no.uib.info216.Interface;
 
 import javax.swing.*;
-import javax.swing.border.TitledBorder;
 import java.awt.*;
 
-/**
- * Created by svimanet on 19/05/16.
- */
 public class DetailsPanel extends JFrame{
 
     private JPanel spine;
@@ -22,7 +16,6 @@ public class DetailsPanel extends JFrame{
     private JLabel interestsTime = new JLabel(" KLOKKEN 2 i natt .");
     private JLabel interestsURL = new JLabel(" No home page. ");
     private JLabel friends = new JLabel("<html><b><font size=+1> FRIENDS: </font></b></html>");
-    private JLabel friends1 = new JLabel(" PEOPLE + /n MORE PEOPLE");
 
     public DetailsPanel(no.uib.info216.Models.Event event){
         this.event = event;
@@ -44,9 +37,8 @@ public class DetailsPanel extends JFrame{
         spine.add(interestsURL);
 
         spine.add(friends, BorderLayout.CENTER);
-        spine.add(friends1, BorderLayout.SOUTH);
 
-        friends1.setBorder(BorderFactory.createTitledBorder(new TitledBorder("")));
+        //friends1.setBorder(BorderFactory.createTitledBorder(new TitledBorder("")));
 
         interestsURL.setPreferredSize(new Dimension(550, 40));
         interests.setPreferredSize(new Dimension(550, 40));
@@ -54,16 +46,17 @@ public class DetailsPanel extends JFrame{
         interestsLoc.setPreferredSize(new Dimension(550, 40));
         interestsTime.setPreferredSize(new Dimension(550, 40));
         friends.setPreferredSize(new Dimension(550, 40));
-        friends1.setPreferredSize(new Dimension(550, 40));
+
+
 
     }
-
+    public void addFriend(String name, String score){
+       JLabel friends = new JLabel("<html>"+name+" | score: "+score+"</html>");
+        friends.setPreferredSize(new Dimension(550, 20));
+        spine.add(friends, BorderLayout.SOUTH);
+    }
     public no.uib.info216.Models.Event getEvent() {
         return event;
-    }
-
-    public JLabel getInterests() {
-        return interests;
     }
 
     public JLabel getInterestsDesc() {
@@ -76,14 +69,6 @@ public class DetailsPanel extends JFrame{
 
     public JLabel getInterestsTime() {
         return interestsTime;
-    }
-
-    public JLabel getFriends() {
-        return friends;
-    }
-
-    public JLabel getFriends1() {
-        return friends1;
     }
 
     public JLabel getInterestsURL() {

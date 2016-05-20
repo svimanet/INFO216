@@ -1,8 +1,5 @@
 package no.uib.info216.Models;
 
-/**
- * Created by fox on 5/20/16.
- */
 public class Event {
     private String name;
     private String location;

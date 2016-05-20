@@ -1,4 +1,4 @@
-package no.uib.info216;
+package no.uib.info216.Interface;
 
 
 import no.uib.info216.Misc.WeekDates;
@@ -20,10 +20,10 @@ import java.util.ListIterator;
 
 /**
  * Created 04.04.2016.
- * Class for setting up the GUI and making it all visible.
+ * Class for setting up the Interface and making it all visible.
  *
  */
-public class GUI extends JPanel{
+public class MainGUI extends JPanel{
     private int NUMBER_OF_DAYS = 7;
 
     private ImageIcon icon = createImageIcon("images/middle.gif");
@@ -31,42 +31,22 @@ public class GUI extends JPanel{
     private ArrayList<JTextArea> tabList;
     private JTabbedPane tabbedPane = new JTabbedPane();
 
-    private ArrayList<JPanel> panelList;
-
     private RDFHandler rdfHandler;
 
     // Query handler
-
     private EventQueries evtQueries;
     private WeatherQuery weatherQuery;
     private FacebookQueries facebookQueries;
 
-
-    private JTextArea tab2 = new JTextArea("Tab 2");
-    private JTextArea tab3 = new JTextArea("Tab 3");
-    private JTextArea tab4 = new JTextArea("Tab 4");
-    private JTextArea tab5 = new JTextArea("Tab 5");
-    private JTextArea tab6 = new JTextArea("Tab 6");
-    private JTextArea tab7 = new JTextArea("Tab 7");
-
-
-    private JPanel panel1 = new JPanel();
-    private JPanel panel2 = new JPanel();
-    private JPanel panel3 = new JPanel();
-    private JPanel panel4 = new JPanel();
-    private JPanel panel5 = new JPanel();
-    private JPanel panel6 = new JPanel();
-    private JPanel panel7 = new JPanel();
-
-    private ImageIcon snow = createImageIcon("snow.png");
-    private ImageIcon rain = createImageIcon("rain.png");
-    private ImageIcon cloud = createImageIcon("cloud.png");
-    private ImageIcon clouds = createImageIcon("clouds.png");
-    private ImageIcon sleet = createImageIcon("sleet.png");
-    private ImageIcon thunder = createImageIcon("thunder.png");
+    private ImageIcon snow = createImageIcon("Files/snow.png");
+    private ImageIcon rain = createImageIcon("Files/rain.png");
+    private ImageIcon cloud = createImageIcon("Files/cloud.png");
+    private ImageIcon clouds = createImageIcon("Files/clouds.png");
+    private ImageIcon sleet = createImageIcon("Files/sleet.png");
+    private ImageIcon thunder = createImageIcon("Files/thunder.png");
 
 
-    public GUI(RDFHandler rdfHandler) {
+    public MainGUI(RDFHandler rdfHandler) {
         super(new GridLayout(1, 3));
 
         this.rdfHandler = rdfHandler;
@@ -75,7 +55,7 @@ public class GUI extends JPanel{
         this.facebookQueries = new FacebookQueries(rdfHandler);
 
         //JTabbedPane tabbedPane = new JTabbedPane();
-        ImageIcon icon = createImageIcon("  rain.png");
+        ImageIcon icon = createImageIcon("Files/rain.png");
         tabbedPane.setPreferredSize(new Dimension(600, 300));
 
         // Generates the tab
@@ -109,12 +89,10 @@ public class GUI extends JPanel{
 
             final ArrayList<no.uib.info216.Models.Event> events = evtQueries.getEventsForDay(day.get(1));
             Weather weather = weatherQuery.getWeatherForDay(day.get(1));
-            System.out.println("CURRENT LENGTH OF EVENTS:");
-            System.out.println(events.size());
             JPanel panel = new JPanel();
 
             String weatherImg = weather.getWeatherCondition();
-            ImageIcon pic = createImageIcon("sun.png");
+            ImageIcon pic = createImageIcon("Files/sun.png");
 
             if (weatherImg.equals("Rain")) {
                 pic = rain;
@@ -148,6 +126,11 @@ public class GUI extends JPanel{
                         dp.getInterestsLoc().setText(events.get(0).getLocation());
                         dp.getInterestsTime().setText(events.get(0).getDoorTime());
                         dp.getInterestsURL().setText(events.get(0).getUrl());
+
+                        ArrayList<ArrayList<String>> scores = facebookQueries.GetFriendInterestScore();
+                        for(ArrayList<String> score: scores){
+                           dp.addFriend(score.get(0), score.get(1));
+                        }
                     }
 
                     public void mousePressed(MouseEvent e) {
@@ -178,6 +161,10 @@ public class GUI extends JPanel{
                         dp.getInterestsLoc().setText(events.get(1).getLocation());
                         dp.getInterestsTime().setText(events.get(1).getDoorTime());
                         dp.getInterestsURL().setText(events.get(1).getUrl());
+                        ArrayList<ArrayList<String>> scores = facebookQueries.GetFriendInterestScore();
+                        for(ArrayList<String> score: scores){
+                            dp.addFriend(score.get(0), score.get(1));
+                        }
                     }
 
                     public void mousePressed(MouseEvent e) {
@@ -204,6 +191,10 @@ public class GUI extends JPanel{
                         dp.getInterestsLoc().setText(events.get(2).getLocation());
                         dp.getInterestsTime().setText(events.get(2).getDoorTime());
                         dp.getInterestsURL().setText(events.get(2).getUrl());
+                        ArrayList<ArrayList<String>> scores = facebookQueries.GetFriendInterestScore();
+                        for(ArrayList<String> score: scores){
+                            dp.addFriend(score.get(0), score.get(1));
+                        }
                     }
 
                     public void mousePressed(MouseEvent e) {
@@ -246,18 +237,9 @@ public class GUI extends JPanel{
         }
     }
 
-    protected JComponent makeTextPanel(ArrayList<String> day) {
-        JPanel panel = new JPanel(false);
-        JLabel filler = new JLabel(day.get(0));
-        filler.setHorizontalAlignment(JLabel.CENTER);
-        panel.setLayout(new GridLayout(1, 1));
-        panel.add(filler);
-        return panel;
-    }
-
     /** Returns an ImageIcon, or null if the path was invalid. */
     protected static ImageIcon createImageIcon(String path) {
-        java.net.URL imgURL = GUI.class.getResource(path);
+        java.net.URL imgURL = MainGUI.class.getResource(path);
         if (imgURL != null) {
             return new ImageIcon(imgURL);
         } else {
@@ -267,7 +249,7 @@ public class GUI extends JPanel{
     }
 
     /**
-     * Create the GUI and show it.  For thread safety,
+     * Create the Interface and show it.  For thread safety,
      * this method should be invoked from
      * the event dispatch thread.
      */
@@ -277,7 +259,7 @@ public class GUI extends JPanel{
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
         //Add content to the window.
-        frame.add(new GUI(rdfHandler), BorderLayout.CENTER);
+        frame.add(new MainGUI(rdfHandler), BorderLayout.CENTER);
 
         //Display the window.
         frame.pack();

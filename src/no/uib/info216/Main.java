@@ -1,14 +1,12 @@
 package no.uib.info216;
 
 import no.uib.info216.Events.EventParser;
+import no.uib.info216.Interface.MainGUI;
 import no.uib.info216.RDF.RDFHandler;
 import no.uib.info216.WeatherData.WeatherModel;
 import no.uib.info216.facebook.CreateModels;
 import org.apache.jena.rdf.model.Model;
 
-/**
- * Created by fox on 2/22/16.
- */
 public class Main {
 
     public static void main(String[] args) {
@@ -33,7 +31,7 @@ public class Main {
 
         //fbQ.GetFriendInterestScore();
 
-        GUI.createAndShowGUI(rdfHandler);
+        MainGUI.createAndShowGUI(rdfHandler);
 
         //evt.getEventForDay();
         //REPL repl = new REPL(rdfHandler);

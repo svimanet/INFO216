@@ -2,9 +2,6 @@ package no.uib.info216.facebook;
 
 import java.util.ArrayList;
 
-/**
- * Created by marius on 29.04.2016.
- */
 public class FacebookUser {
 
     private String name = new String();

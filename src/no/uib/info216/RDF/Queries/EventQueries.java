@@ -7,9 +7,6 @@ import org.apache.jena.query.ResultSet;
 
 import java.util.ArrayList;
 
-/**
- * Created by fox on 5/3/16.
- */
 public class EventQueries {
     private RDFHandler rdfHandler;
 
@@ -45,7 +42,6 @@ public class EventQueries {
                                     row.get("url").toString(),
                                     row.get("doorTime").toString(),
                                     row.get("date").toString());
-            System.out.println(row.get("name"));
             events.add(event);
 
         }

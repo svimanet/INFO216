@@ -15,11 +15,12 @@ import java.util.Calendar;
 import java.util.HashMap;
 import java.util.Random;
 
-/**
- * Created by fox on 4/30/16.
- */
 public class EventParser {
 
+    /**
+     * Fake date as we wont be able to scrape etrigg every day
+     * @return
+     */
     public String fakeDate(){
         // Random day
         Random rand = new Random();
@@ -45,7 +46,6 @@ public class EventParser {
             e.printStackTrace();
         }
         ArrayList<HashMap<String, String>> jsonObject = (ArrayList<HashMap<String, String>>) obj;
-        System.out.println(jsonObject.toString());
 
 
         Property name = model.createProperty("http://schema.org/name");
@@ -68,9 +68,7 @@ public class EventParser {
                     .addProperty(url, item.get("Url"))
                     .addProperty(doorTime, fakeDate+"UTC"+item.get("doorTime"))
                     .addProperty(startDate, fakeDate);
-
         }
-
 
        return model;
     }

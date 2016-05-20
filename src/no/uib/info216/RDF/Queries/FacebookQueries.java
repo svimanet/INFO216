@@ -7,9 +7,6 @@ import org.apache.jena.query.ResultSet;
 import java.util.*;
 
 
-/**
- * Created by goat on 02.05.16.
- */
 public class FacebookQueries {
 
     private RDFHandler rdfHandler;

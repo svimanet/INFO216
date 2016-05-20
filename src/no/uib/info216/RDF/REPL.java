@@ -6,9 +6,6 @@ import no.uib.info216.RDF.Queries.WeatherQuery;
 
 import java.util.Scanner;
 
-/**
- * Created by fox on 5/3/16.
- */
 public class REPL {
 
     private final RDFHandler rdfHandler;

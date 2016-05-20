@@ -4,9 +4,6 @@ import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Calendar;
 
-/**
- * Created by fox on 5/19/16.
- */
 public class WeekDates {
 
     public String getName(int day) {
