@@ -108,7 +108,9 @@ public class GUI extends JPanel{
             ArrayList<String> day = daysItems.next();
 
             jtabText.setText(day.get(0));
-            //JComponent panel = makeTextPanel(day);
+
+            ArrayList<Event> events = evtQueries.
+
             JPanel panel = new JPanel();
             JLabel tab1 = new JLabel(" SUNNY + 'pic?' + 666*C ");
             JLabel tab11 = new JLabel(" RAVE PAR10 + 'klare kje skrifto di' + 'fuck skrifto di' ");

@@ -8,6 +8,7 @@
         <http://schema.org/TVSeries>   "TV 2 Nyhetene" , "Senkveld med Thomas og Harald" , "The Walking Dead Norge" , "Ellen DeGeneres" , "Dexter" , "Worlds Best Pranks" , "Playboy TV" ;
         <http://schema.org/UserLikes>  "Aglaia" , "RuneScape" , "DigitalOcean" , "ByLAN Bergen" , "Valve" , "Mr Cian Twomey" , "Old El Paso Norge" , "Unixstickers" , "Galleri Steinkjelleren" , "Facebook" , "Hildesklippoteque" , "Microsoft Developer" , "Just Sul" , "Solskogen" , "REMA 1000 Kløverhuset" , "Ryggklinikken" , "Telia Norge" , "Politikar Vilde Tøfte Øvstetun" , "Horrible tipster" , "Starbucks Norge" , "Truls Svendsen" , "Jamie and Adam" , "På Høyden" , "Elkjøp" , "Twitch" ;
         <http://xmlns.com/foaf/0.1/knows>
+<<<<<<< bf82f6ca446081c843698eede95c75bf16f621bd
 <<<<<<< 7d907ccbcffce6ce36308cd354a795d71bc549c8
 <<<<<<< 43ee208ab50c220b655f2225c8d88be39451a3d7
 <<<<<<< 687bab8096fcc21d7f4f979a76d107e266090b23
@@ -45,5 +46,8 @@
                 <http://uib.no/info216/person/Maggy_Morland> , <http://uib.no/info216/person/Annbjørn_Mehle> , <http://uib.no/info216/person/Maggy_Borgen> , <http://uib.no/info216/person/Eliza_Mathiasen> , <http://uib.no/info216/person/Hartuvike_Morland> , <http://uib.no/info216/person/Maggy_Mehle> , <http://uib.no/info216/person/Sem_Berger> , <http://uib.no/info216/person/Isidor_Lassen> , <http://uib.no/info216/person/Annbjørn_Brevig> , <http://uib.no/info216/person/Maggy_Langland> ;
 >>>>>>> GUI Stuff
 >>>>>>> GUI Stuff
+=======
+                <http://uib.no/info216/person/Kristhild_Eggum> , <http://uib.no/info216/person/Seborg_Borgen> , <http://uib.no/info216/person/Lava_Borgen> , <http://uib.no/info216/person/Maggy_Aagard> , <http://uib.no/info216/person/Lava_Aagard> , <http://uib.no/info216/person/Jytte_Morland> , <http://uib.no/info216/person/Seborg_Mathiasen> , <http://uib.no/info216/person/Isidor_Morland> , <http://uib.no/info216/person/Eliza_Brevig> ;
+>>>>>>> More stuff
         <http://xmlns.com/foaf/0.1/name>
                 "Bruker_Brukersen" .
