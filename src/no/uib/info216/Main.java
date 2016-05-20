@@ -1,7 +1,6 @@
 package no.uib.info216;
 
 import no.uib.info216.Events.EventParser;
-import no.uib.info216.RDF.Queries.FacebookQueries;
 import no.uib.info216.RDF.RDFHandler;
 import no.uib.info216.WeatherData.WeatherModel;
 import no.uib.info216.facebook.CreateModels;
@@ -30,11 +29,11 @@ public class Main {
         rdfHandler.addModel(weatherModel);
 
 
-        FacebookQueries fbQ = new FacebookQueries(rdfHandler);
+        //FacebookQueries fbQ = new FacebookQueries(rdfHandler);
 
-        fbQ.GetFriendInterestScore();
+        //fbQ.GetFriendInterestScore();
 
-        //GUI.createAndShowGUI(rdfHandler);
+        GUI.createAndShowGUI(rdfHandler);
 
         //evt.getEventForDay();
         //REPL repl = new REPL(rdfHandler);

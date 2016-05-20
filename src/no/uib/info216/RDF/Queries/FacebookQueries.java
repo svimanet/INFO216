@@ -146,6 +146,13 @@ public class FacebookQueries {
     }
 
 
+    /**
+     *
+     * @param name
+     * @param interest
+     * @return
+     */
+
     public ArrayList<String> getAllInterestOfFriend(String name, String interest){
         String query = "SELECT  * " +
                 "WHERE {" +
@@ -180,7 +187,7 @@ public class FacebookQueries {
 
     }
 
-    public ArrayList<String> GetFriendInterestScore(){
+    public ArrayList<ArrayList<String>> GetFriendInterestScore(){
         HashMap<String, ArrayList<String>> userInterest = new HashMap<String, ArrayList<String>>();
         for(String userInterestItem : this.interestCategories){
             userInterest.put(userInterestItem, this.getAllInterestOfUser(userInterestItem));
@@ -213,10 +220,13 @@ public class FacebookQueries {
         Iterator<Map.Entry<String, Integer>> entries = friendScore.entrySet().iterator();
         Map<String, Integer> sorted = this.sortByValue(friendScore);
         entries = sorted.entrySet().iterator();
-        ArrayList<String> ret = new ArrayList<String>();
+        ArrayList<ArrayList<String>> ret = new ArrayList<ArrayList<String>>();
         while (entries.hasNext()) {
+            ArrayList<String> singleItem = new ArrayList<String>();
             Map.Entry<String, Integer> entry = entries.next();
-            ret.add(entry.getKey());
+            singleItem.add(entry.getKey());
+            singleItem.add(entry.getValue().toString());
+            ret.add(singleItem);
         }
         Collections.reverse(ret);
         return ret;
@@ -247,15 +257,12 @@ public class FacebookQueries {
                 score += 1;
             }
         }
-        System.out.println(score);
-        System.out.println(user.size());
         double finalScore;
         try {
             finalScore = ((double)score / (double)user.size()) * 100.0;
         }catch(ArithmeticException e){
             finalScore = 0.0;
         }
-        System.out.println((int)Math.ceil(finalScore));
         return (int)Math.ceil(finalScore);
     }
 }
