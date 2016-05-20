@@ -37,7 +37,7 @@ public class RDFHandler {
         QueryExecution qe = QueryExecutionFactory.create(query, model);
         ResultSet results = qe.execSelect();
 
-        ResultSetFormatter.out(System.out, results, query);
+        //ResultSetFormatter.out(System.out, results, query);
 
         //qe.close();
         return results;

@@ -112,81 +112,88 @@ public class GUI extends JPanel{
             jtabText.setText(day.get(0));
 
             final ArrayList<no.uib.info216.Models.Event> events = evtQueries.getEventsForDay(day.get(1));
-            System.out.println(day.get(1));
             Weather weather = weatherQuery.getWeatherForDay(day.get(1));
-
+            System.out.println("CURRENT LENGTH OF EVENTS:");
+            System.out.println(events.size());
             JPanel panel = new JPanel();
             JLabel tab1 = new JLabel(weather.getWeatherCondition());
 
-            JLabel tab11 = new JLabel(events.get(0).getName());
+            JLabel tab11 = new JLabel("");
+            if(events.size() >= 1){
+               tab11.setText(events.get(0).getName());
 
-            JLabel tab12 = new JLabel(events.get(1).getName());
+                tab11.addMouseListener(new MouseListener() {
+                    public void mouseClicked(MouseEvent e) {
+                        DetailsPanel dp = new DetailsPanel(events.get(0));
+                    }
 
-            JLabel tab13 = new JLabel(events.get(2).getName());
+                    public void mousePressed(MouseEvent e) {
+
+                    }
+
+                    public void mouseReleased(MouseEvent e) {
+
+                    }
+
+                    public void mouseEntered(MouseEvent e) {
+
+                    }
+
+                    public void mouseExited(MouseEvent e) {
+
+                    }
+                });
+            }
+
+            JLabel tab12 = new JLabel("");
+            if(events.size() >= 2){
+                tab12.setText(events.get(1).getName());
+                tab12.addMouseListener(new MouseListener() {
+                    public void mouseClicked(MouseEvent e) {
+                        DetailsPanel dp = new DetailsPanel(events.get(1));
+                    }
+
+                    public void mousePressed(MouseEvent e) {
+                    }
+
+                    public void mouseReleased(MouseEvent e) {
+                    }
+
+                    public void mouseEntered(MouseEvent e) {
+                    }
+
+                    public void mouseExited(MouseEvent e) {
+                    }
+                });
+            }
+
+            JLabel tab13 = new JLabel("");
+            if(events.size() >= 3){
+                tab13.setText(events.get(2).getName());
+                tab13.addMouseListener(new MouseListener() {
+                    public void mouseClicked(MouseEvent e) {
+                        DetailsPanel dp = new DetailsPanel(events.get(2));
+                    }
+
+                    public void mousePressed(MouseEvent e) {
+
+                    }
+
+                    public void mouseReleased(MouseEvent e) {
+
+                    }
+
+                    public void mouseEntered(MouseEvent e) {
+
+                    }
+
+                    public void mouseExited(MouseEvent e) {
+
+                    }
+                });
+            }
 
             JLabel suggested = new JLabel("<html><b><font size=+1> Suggested events: </font></b></html>");
-
-            tab11.addMouseListener(new MouseListener() {
-                public void mouseClicked(MouseEvent e) {
-                    DetailsPanel dp = new DetailsPanel(events.get(0));
-                }
-
-                public void mousePressed(MouseEvent e) {
-
-                }
-
-                public void mouseReleased(MouseEvent e) {
-
-                }
-
-                public void mouseEntered(MouseEvent e) {
-
-                }
-
-                public void mouseExited(MouseEvent e) {
-
-                }
-            });
-
-            tab12.addMouseListener(new MouseListener() {
-                public void mouseClicked(MouseEvent e) {
-                    DetailsPanel dp = new DetailsPanel(events.get(1));
-                }
-
-                public void mousePressed(MouseEvent e) {
-                }
-
-                public void mouseReleased(MouseEvent e) {
-                }
-
-                public void mouseEntered(MouseEvent e) {
-                }
-
-                public void mouseExited(MouseEvent e) {
-                }
-            });
-
-            tab13.addMouseListener(new MouseListener() {
-                public void mouseClicked(MouseEvent e) {
-                    DetailsPanel dp = new DetailsPanel(events.get(2));
-                }
-
-                public void mousePressed(MouseEvent e) {
-
-                }
-
-                public void mouseReleased(MouseEvent e) {
-
-                }
-
-                public void mouseEntered(MouseEvent e) {
-
-                }
-
-                public void mouseExited(MouseEvent e) {
-
-                }
-            });
 
             panel.add(tab1, BorderLayout.NORTH);
             panel.add(suggested, BorderLayout.NORTH);
