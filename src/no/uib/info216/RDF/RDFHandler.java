@@ -39,7 +39,7 @@ public class RDFHandler {
 
         ResultSetFormatter.out(System.out, results, query);
 
-        qe.close();
+        //qe.close();
         return results;
     }
 

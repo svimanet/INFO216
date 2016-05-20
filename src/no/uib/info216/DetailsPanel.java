@@ -12,6 +12,8 @@ public class DetailsPanel extends JFrame{
     private JPanel spine;
     private JPanel panel1 = new JPanel();
 
+    private no.uib.info216.Models.Event event;
+
     private JLabel interests = new JLabel("<html><b><font size=+1> EVENT DESCRIPTION </font></b></html>");
     private JLabel interestsDesc = new JLabel(" Livestreaming PlayBoy-TV with Goat as host.");
     private JLabel interestsLoc = new JLabel(" LOCATION: SOME URL OR SOME SHIT HERE   ");
@@ -19,8 +21,8 @@ public class DetailsPanel extends JFrame{
     private JLabel friends = new JLabel("<html><b><font size=+1> FRIENDS: </font></b></html>");
     private JLabel friends1 = new JLabel(" PEOPLE + /n MORE PEOPLE");
 
-    public DetailsPanel(){
-
+    public DetailsPanel(no.uib.info216.Models.Event event){
+        this.event = event;
         spine = new JPanel();
         setContentPane(spine);
         this.setVisible(true);

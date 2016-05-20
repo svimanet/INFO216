@@ -23,13 +23,13 @@ public class EventQueries {
                 "SELECT  * " +
                 "WHERE {" +
                 " ?uri a schema:Event ; " +
-                " schema:startDate \""+date+"\"; " +
-                " schema:name ?name; " +
-                " schema:location ?location; " +
-                " schema:description ?description; " +
-                " schema:url ?url; " +
-                " schema:doorTime ?doorTime; " +
-                " schema:category ?category; " +
+                " schema:startDate \""+date+"\" ; " +
+                " schema:name ?name ; " +
+                " schema:location ?location ; " +
+                " schema:description ?description ; " +
+                " schema:category ?category ; " +
+                " schema:url ?url ; " +
+                " schema:doorTime ?doorTime ; " +
                 " schema:startDate ?date. " +
                 "      }" +
                 "";
@@ -45,6 +45,7 @@ public class EventQueries {
                                     row.get("url").toString(),
                                     row.get("doorTime").toString(),
                                     row.get("date").toString());
+            System.out.println(row.get("name"));
             events.add(event);
 
         }

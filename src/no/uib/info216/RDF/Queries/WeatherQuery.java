@@ -77,18 +77,16 @@ public class WeatherQuery {
                 " ?uri a weather:WeatherCondition; " +
                 " schema:startDate \""+date+"\"; " +
                 " weather:WeatherCondition ?name; " +
+                " weather:Temperature ?temp; " +
                 " schema:startDate ?date. " +
                 "      }" +
                 "";
 
         ResultSet rs =  rdfh.runSparql(query);
-        if(rs.hasNext()){
-           QuerySolution response = rs.next();
-            return new Weather(response.get("WeatherCondition").toString(),
-                                response.get("Temperature").toString(),
-                                response.get("startDate").toString());
-        }
-        return null;
+        QuerySolution response = rs.next();
+        return new Weather(response.get("temp").toString(),
+                response.get("date").toString(),
+                response.get("name").toString());
     }
 
 }

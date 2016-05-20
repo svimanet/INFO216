@@ -39,7 +39,7 @@ public class WeekDates {
 
         Calendar cal = Calendar.getInstance();
         int day = cal.get(Calendar.DAY_OF_WEEK);
-        SimpleDateFormat formatter = new SimpleDateFormat("yyyy/MM/dd");
+        SimpleDateFormat formatter = new SimpleDateFormat("yyyy-MM-dd");
 
         //Get 7 days
         for(int i = numberOfDays; i!=0; i--){

@@ -2,6 +2,7 @@ package no.uib.info216;
 
 
 import no.uib.info216.Misc.WeekDates;
+import no.uib.info216.Models.Weather;
 import no.uib.info216.RDF.Queries.EventQueries;
 import no.uib.info216.RDF.Queries.FacebookQueries;
 import no.uib.info216.RDF.Queries.WeatherQuery;
@@ -14,6 +15,7 @@ import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
 import java.util.ArrayList;
 import java.util.ListIterator;
+
 
 
 /**
@@ -109,18 +111,24 @@ public class GUI extends JPanel{
 
             jtabText.setText(day.get(0));
 
-            ArrayList<Event> events = evtQueries.
+            final ArrayList<no.uib.info216.Models.Event> events = evtQueries.getEventsForDay(day.get(1));
+            System.out.println(day.get(1));
+            Weather weather = weatherQuery.getWeatherForDay(day.get(1));
 
             JPanel panel = new JPanel();
-            JLabel tab1 = new JLabel(" SUNNY + 'pic?' + 666*C ");
-            JLabel tab11 = new JLabel(" RAVE PAR10 + 'klare kje skrifto di' + 'fuck skrifto di' ");
-            JLabel tab12 = new JLabel(" RAVE PAR10 + 'klare kje skrifto di' + 'fuck skrifto di' ");
-            JLabel tab13 = new JLabel(" RAVE PAR10 + 'klare kje skrifto di' + 'fuck skrifto di' ");
+            JLabel tab1 = new JLabel(weather.getWeatherCondition());
+
+            JLabel tab11 = new JLabel(events.get(0).getName());
+
+            JLabel tab12 = new JLabel(events.get(1).getName());
+
+            JLabel tab13 = new JLabel(events.get(2).getName());
+
             JLabel suggested = new JLabel("<html><b><font size=+1> Suggested events: </font></b></html>");
 
             tab11.addMouseListener(new MouseListener() {
                 public void mouseClicked(MouseEvent e) {
-                    DetailsPanel dp = new DetailsPanel();
+                    DetailsPanel dp = new DetailsPanel(events.get(0));
                 }
 
                 public void mousePressed(MouseEvent e) {
@@ -142,7 +150,7 @@ public class GUI extends JPanel{
 
             tab12.addMouseListener(new MouseListener() {
                 public void mouseClicked(MouseEvent e) {
-                    DetailsPanel dp = new DetailsPanel();
+                    DetailsPanel dp = new DetailsPanel(events.get(1));
                 }
 
                 public void mousePressed(MouseEvent e) {
@@ -160,7 +168,7 @@ public class GUI extends JPanel{
 
             tab13.addMouseListener(new MouseListener() {
                 public void mouseClicked(MouseEvent e) {
-                    DetailsPanel dp = new DetailsPanel();
+                    DetailsPanel dp = new DetailsPanel(events.get(2));
                 }
 
                 public void mousePressed(MouseEvent e) {
