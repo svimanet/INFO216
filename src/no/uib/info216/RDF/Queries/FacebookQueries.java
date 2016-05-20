@@ -1,7 +1,10 @@
 package no.uib.info216.RDF.Queries;
 
 import no.uib.info216.RDF.RDFHandler;
+import org.apache.jena.query.QuerySolution;
 import org.apache.jena.query.ResultSet;
+
+import java.util.*;
 
 
 /**
@@ -10,9 +13,19 @@ import org.apache.jena.query.ResultSet;
 public class FacebookQueries {
 
     private RDFHandler rdfHandler;
+    private ArrayList<String> interestCategories;
 
 
     public FacebookQueries(RDFHandler rdfHandler){
+        this.interestCategories = new ArrayList<String>();
+        interestCategories.add("TVSeries");
+        interestCategories.add("Movies");
+        interestCategories.add("MusicRecording");
+        interestCategories.add("Book");
+        interestCategories.add("Game");
+        interestCategories.add("Event");
+        interestCategories.add("UserLikes");
+
         this.rdfHandler = rdfHandler;
 
     }
@@ -119,12 +132,6 @@ public class FacebookQueries {
         return rdfHandler.runSparql(query);
     }
 
-    /**
-     * This method finds all interests for a given user
-     * in a given category.
-     * @param user
-     * @param category
-     */
     public ResultSet UserInterestsFromOneCategory(String user, String category){
         String query =  "PREFIX schema: <http://schema.org/>" +
                 "SELECT  * " +
@@ -139,4 +146,116 @@ public class FacebookQueries {
     }
 
 
+    public ArrayList<String> getAllInterestOfFriend(String name, String interest){
+        String query = "SELECT  * " +
+                "WHERE {" +
+                " ?uri a foaf:Person ; " +
+                " foaf:name \""+name+"\" ; " +
+                " schema:"+interest+" ?interest . " +
+                "      }" +
+                "";
+        ResultSet rs = rdfHandler.runSparql(query);
+        ArrayList<String> res = new ArrayList<String>();
+        while(rs.hasNext()){
+            QuerySolution row = rs.next();
+            res.add(row.get("interest").toString());
+        }
+        return res;
+    }
+
+    public ArrayList<String> getAllInterestOfUser(String interest){
+        String query = "SELECT  * " +
+                "WHERE {" +
+                " <http://uib.no/info216/User> a foaf:Person ; " +
+                " schema:"+interest+" ?interest . " +
+                "      }" +
+                "";
+        ResultSet rs = rdfHandler.runSparql(query);
+        ArrayList<String> res = new ArrayList<String>();
+        while(rs.hasNext()){
+            QuerySolution row = rs.next();
+            res.add(row.get("interest").toString());
+        }
+        return res;
+
+    }
+
+    public ArrayList<String> GetFriendInterestScore(){
+        HashMap<String, ArrayList<String>> userInterest = new HashMap<String, ArrayList<String>>();
+        for(String userInterestItem : this.interestCategories){
+            userInterest.put(userInterestItem, this.getAllInterestOfUser(userInterestItem));
+        }
+
+        String query = "SELECT  DISTINCT ?name ?friendName " +
+                        "WHERE {" +
+                        " ?a  foaf:knows ?b ." +
+                        " ?a  foaf:name ?name ." +
+                        " ?b  foaf:name ?friendName ." +
+                        "      }";
+
+
+        ResultSet rs = rdfHandler.runSparql(query);
+        //ResultSetFormatter.out(System.out, rs);
+        QuerySolution response = rs.next();
+
+        HashMap<String, Integer> friendScore= new HashMap<String, Integer>();
+
+        while(rs.hasNext()){
+            QuerySolution row = rs.next();
+            friendScore.put(row.get("friendName").toString(), 0);
+            for(String friendInterest: this.interestCategories) {
+                ArrayList<String> interestsFromOneCategory = this.getAllInterestOfFriend(row.get("friendName").toString(), friendInterest);
+                ArrayList<String> oneInterestFromUser = userInterest.get(friendInterest);
+                int score = this.calculateScore(interestsFromOneCategory, oneInterestFromUser);
+                friendScore.put(row.get("friendName").toString(), friendScore.get(row.get("friendName").toString())+score);
+            }
+        }
+        Iterator<Map.Entry<String, Integer>> entries = friendScore.entrySet().iterator();
+        Map<String, Integer> sorted = this.sortByValue(friendScore);
+        entries = sorted.entrySet().iterator();
+        ArrayList<String> ret = new ArrayList<String>();
+        while (entries.hasNext()) {
+            Map.Entry<String, Integer> entry = entries.next();
+            ret.add(entry.getKey());
+        }
+        Collections.reverse(ret);
+        return ret;
+
+    }
+
+    private Map sortByValue(Map map) {
+         List list = new LinkedList(map.entrySet());
+         Collections.sort(list, new Comparator() {
+              public int compare(Object o1, Object o2) {
+                   return ((Comparable) ((Map.Entry) (o1)).getValue())
+                  .compareTo(((Map.Entry) (o2)).getValue());
+              }
+         });
+
+        Map result = new LinkedHashMap();
+        for (Iterator it = list.iterator(); it.hasNext();) {
+            Map.Entry entry = (Map.Entry)it.next();
+            result.put(entry.getKey(), entry.getValue());
+        }
+        return result;
+    }
+
+    private int calculateScore(ArrayList<String> friend, ArrayList<String> user) {
+        int score = 0;
+        for(String item: friend){
+            if(user.contains(item)){
+                score += 1;
+            }
+        }
+        System.out.println(score);
+        System.out.println(user.size());
+        double finalScore;
+        try {
+            finalScore = ((double)score / (double)user.size()) * 100.0;
+        }catch(ArithmeticException e){
+            finalScore = 0.0;
+        }
+        System.out.println((int)Math.ceil(finalScore));
+        return (int)Math.ceil(finalScore);
+    }
 }

@@ -99,7 +99,7 @@ public class CreateModels {
 	public void addRes(ArrayList<String> a, Property p, Model m, String name){
 		String uri = "http://uib.no/info216/person/"+name;
 		Resource res = m.createResource(uri, FOAF.Person);
-		res.addProperty(FOAF.name, name);
+		res.addProperty(FOAF.name, name.replace("_"," "));
 		this.friendResource.add(res);
 		for (String s : a) {
 			res.addProperty(p, s);
@@ -109,7 +109,7 @@ public class CreateModels {
 	public void addResUserModel(ArrayList<String> a, Property p, Model m, String name){
 		String uri = "http://uib.no/info216/User";
 		Resource res = m.createResource(uri, FOAF.Person);
-		res.addProperty(FOAF.name, name);
+		res.addProperty(FOAF.name, name.replace("_", " "));
 		for (String s : a) {
 			res.addProperty(p, s);
 		}

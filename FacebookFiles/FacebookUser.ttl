@@ -8,6 +8,10 @@
         <http://schema.org/TVSeries>   "TV 2 Nyhetene" , "Senkveld med Thomas og Harald" , "The Walking Dead Norge" , "Ellen DeGeneres" , "Dexter" , "Worlds Best Pranks" , "Playboy TV" ;
         <http://schema.org/UserLikes>  "Aglaia" , "RuneScape" , "DigitalOcean" , "ByLAN Bergen" , "Valve" , "Mr Cian Twomey" , "Old El Paso Norge" , "Unixstickers" , "Galleri Steinkjelleren" , "Facebook" , "Hildesklippoteque" , "Microsoft Developer" , "Just Sul" , "Solskogen" , "REMA 1000 Kløverhuset" , "Ryggklinikken" , "Telia Norge" , "Politikar Vilde Tøfte Øvstetun" , "Horrible tipster" , "Starbucks Norge" , "Truls Svendsen" , "Jamie and Adam" , "På Høyden" , "Elkjøp" , "Twitch" ;
         <http://xmlns.com/foaf/0.1/knows>
+<<<<<<< 5d9ee23b9d2e9ac72043fc454356d4b48ee99fa3
                 <http://uib.no/info216/person/Amaldus_Mehle> , <http://uib.no/info216/person/Kristhild_Tastad> , <http://uib.no/info216/person/Lava_Valle> , <http://uib.no/info216/person/Sem_Skare> , <http://uib.no/info216/person/Hartuvike_Aros> , <http://uib.no/info216/person/Amaldus_Borgen> , <http://uib.no/info216/person/Annbjørn_Aros> , <http://uib.no/info216/person/Eliza_Brevig> , <http://uib.no/info216/person/Signhild_Strommen> , <http://uib.no/info216/person/Asser_Strommen> ;
+=======
+                <http://uib.no/info216/person/Tolli_Brevig> , <http://uib.no/info216/person/Udve_Brevig> , <http://uib.no/info216/person/Kristhild_Brevig> , <http://uib.no/info216/person/Elias_Kallestad> , <http://uib.no/info216/person/Kristhild_Morland> , <http://uib.no/info216/person/Barbo_Kallestad> , <http://uib.no/info216/person/Asser_Brevig> , <http://uib.no/info216/person/Amaldus_Mathiasen> , <http://uib.no/info216/person/Asser_Eggum> , <http://uib.no/info216/person/Signhild_Strommen> ;
+>>>>>>> A lot of shit
         <http://xmlns.com/foaf/0.1/name>
-                "Bruker_Brukersen" .
+                "Bruker Brukersen" .
