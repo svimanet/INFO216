@@ -3,10 +3,13 @@ package no.uib.info216;
 import no.uib.info216.Events.EventParser;
 import no.uib.info216.Misc.WeekDates;
 import no.uib.info216.RDF.Queries.EventQueries;
+import no.uib.info216.RDF.Queries.FacebookQueries;
 import no.uib.info216.RDF.RDFHandler;
 import no.uib.info216.RDF.REPL;
 import no.uib.info216.WeatherData.Weather;
 import no.uib.info216.facebook.CreateModels;
+import no.uib.info216.facebook.User;
+import org.apache.jena.query.ResultSet;
 import org.apache.jena.rdf.model.Model;
 
 /**
@@ -26,7 +29,6 @@ public class Main {
 
 
         RDFHandler rdfHandler = new RDFHandler();
-
         EventParser events = new EventParser();
         Model eventModel = events.parse();
         rdfHandler.addModel(eventModel);
@@ -40,6 +42,14 @@ public class Main {
         rdfHandler.addModel(weatherModel);
 
         EventQueries evt = new EventQueries(rdfHandler);
+        FacebookQueries fq = new FacebookQueries(rdfHandler);
+
+        User user = new User(cm, fq);
+
+
+        rdfHandler.saveModel("FacebookFiles/FacebookModel.ttl", friendsModel);
+        //fq.UserKnowns();
+
 
         //evt.getEventForDay();
         new WeekDates().getWeekDates(0);

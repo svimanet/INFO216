@@ -17,34 +17,36 @@ public class FacebookQueries {
 
     }
 
-    public ResultSet sameInterests(){
+    public ResultSet sameInterests(String user){
         String query =  "PREFIX schema: <http://schema.org/>" +
                 "SELECT  * " +
                 "WHERE {" +
-                "        ?bruker schema:Game ?value  " +
+                " <http://uib.no/info216/User>  ?prop ?name." +
+                "?user schema:Game ?name" +
+                " }";
 
-                "      }" +
-                "ORDER BY ASC(?property) ";
+        String test = "SELECT ?user ?prop ?object "+
+                "WHERE { " +
+                "<" + user + "> ?prop ?object . \n" +
+                "} ORDER BY ASC(?prop) ";
 
-        String test = "\"PREFIX schema: <http://schema.org/>\"" +
-                " select * where {\n" +
-                "  values * { ?x ?a ?o }\n" +
-                "  filter(regex(?x, 'http://schema.org/')" +
-                "}";
+        String test2 = "";
+        ResultSet rs = rdfHandler.runResultQuery(test);
 
-        return rdfHandler.runSparql(test);
+        return rs;
     }
 
     public ResultSet UserKnowns(){
         String query =  "PREFIX schema: <http://schema.org/>" +
-                "SELECT  * " +
+                "SELECT  ?user ?friend ?value " +
                 "WHERE {" +
-                "        <http://uib.no/info216/User> ?property ?value  " +
+                "        <http://uib.no/info216/User> foaf:knows ?value  " +
 
                 "      }" +
-                "ORDER BY ASC(?property) ";
+                "ORDER BY ASC(?value) ";
+        ResultSet rs = rdfHandler.runResultQuery(query);
 
-        return rdfHandler.runSparql(query);
+        return rs;
     }
 
     /**

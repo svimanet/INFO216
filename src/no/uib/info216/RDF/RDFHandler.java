@@ -43,6 +43,30 @@ public class RDFHandler {
         return results;
     }
 
+    public ResultSet runResultQuery(String queryString){
+
+        queryString = "PREFIX schema: <http://schema.org/> " + queryString;
+        queryString = "PREFIX foaf: <http://xmlns.com/foaf/0.1/> " + queryString;
+        queryString = "PREFIX Weather: <https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#> " + queryString;
+        System.out.println(queryString);
+
+        Query query = null;
+        try {
+            query = QueryFactory.create(queryString);
+        }catch (Exception e){
+            System.out.println("Error!");
+            System.out.println(e.toString());
+            return null;
+        }
+
+        QueryExecution qe = QueryExecutionFactory.create(query, model);
+        ResultSet results = qe.execSelect();
+
+
+        //Remember to close.
+        return results;
+    }
+
 
     public void saveModel(String name, Model model){
         FileWriter out = null;

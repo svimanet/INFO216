@@ -149,6 +149,10 @@ public class CreateModels {
 		return model;
 	}
 
+	public FacebookUser getUser() {
+		return user;
+	}
+
 	public void setUpFacebookUser(){
 		Interests ir = data.getIr();
 		this.user = new FacebookUser(
@@ -160,6 +164,8 @@ public class CreateModels {
 				ir.getEvents(),
 				ir.getLikes());
 		user.setName("Bruker_Brukersen");
+
+
 	}
 
 	/**
